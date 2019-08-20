@@ -1,6 +1,8 @@
 {
   "channelName": "dkp-test",
   "officerRole": "officer",
+  "reactionTagName": "internal-tag",
+  "prefix": "!",
   "items": [
     {
       "name": "Choker of Enlightenment",
