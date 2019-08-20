@@ -15,8 +15,8 @@ function getItem(searchQuery) {
 function addReactions(message) {
   const bid = message.guild.emojis.find(em => em.name === 'bid');
   const cancel = message.guild.emojis.find(em => em.name === 'cancel');
-  message.react(bid);
-  message.react(cancel);
+  message.react(bid)
+    .then(() => message.react(cancel));
 }
 
 module.exports = {
@@ -34,14 +34,15 @@ module.exports = {
     content.setTitle("Bids for " + item.name);
     content.setImage(getImage(item));
     content.setDescription("");
+    content.addField("cost", item.cost, false);
+    
     content.addField(reactionTagName, "bidscreen", true);
-    content.addField("cost", item.cost, true);
     message.channel.send(content)
       .then(bidMessage => {
         addReactions(bidMessage);
         const receivedEmbed = bidMessage.embeds[0];
         const newEmbed = new Discord.RichEmbed(receivedEmbed).setFooter("Bid ID: " + bidMessage.id);
-        bidMessage.edit(newEmbed);
+        bidMessage.edit(null, newEmbed);
       });
   }
 }

@@ -3,6 +3,10 @@
   "officerRole": "officer",
   "reactionTagName": "internal-tag",
   "prefix": "!",
+  "raidTemplate": {
+    "title": "Molten Core",
+    "description": "Please mark attendance below with the reactions corresponding to your class."
+  },
   "items": [
     {
       "name": "Choker of Enlightenment",

@@ -35,15 +35,13 @@ module.exports = {
       const receivedEmbed = reaction.message.embeds[0];
       const newEmbed = new Discord.RichEmbed(receivedEmbed)
         .setDescription(addUser(receivedEmbed.description, user.username));
-      
-      reaction.message.edit(newEmbed);
+      reaction.message.edit(null, newEmbed);
     }
     if (reaction.emoji.name === 'cancel') {
       const receivedEmbed = reaction.message.embeds[0];
       const newEmbed = new Discord.RichEmbed(receivedEmbed)
         .setDescription(removeUser(receivedEmbed.description, user.username));
-      
-      reaction.message.edit(newEmbed);
+      reaction.message.edit(null, newEmbed);
     }
   }
 }
