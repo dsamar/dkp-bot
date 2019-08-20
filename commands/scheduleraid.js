@@ -2,6 +2,7 @@ const Discord = require('discord.js')
 const {channelName, reactionTagName, raidTemplate} = require('../config.json');
 
 function addRaidSignups (message) {
+  // Add other classes/specs
   const mage = message.guild.emojis.find(em => em.name === 'mage');
   const cancel = message.guild.emojis.find(em => em.name === 'cancel');
   message.react(mage)
@@ -20,6 +21,7 @@ module.exports = {
     content.setTitle(raidTemplate.title);
     content.setDescription(raidTemplate.description);
     content.addField("date-time", datetime);
+    content.addField("signup-list", "<empty>");
     content.addField("total-players", 0);
     content.addField(reactionTagName, "raidsignup", true);
     channel.send(content)
@@ -27,7 +29,7 @@ module.exports = {
       addRaidSignups(raidMessage)
       const receivedEmbed = raidMessage.embeds[0];
       const newEmbed = new Discord.RichEmbed(receivedEmbed).setFooter("Raid ID: " + raidMessage.id);
-      raidMessage.edit(null, newEmbed);
+      raidMessage.edit("", newEmbed);
     });
 	},
 };

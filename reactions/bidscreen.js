@@ -31,17 +31,15 @@ function removeUser(description, user) {
 module.exports = {
   name: 'bidscreen',
   execute: function(reaction, user) {
+    const receivedEmbed = reaction.message.embeds[0];
+    const newEmbed = new Discord.RichEmbed(receivedEmbed);
     if (reaction.emoji.name === 'bid') {
-      const receivedEmbed = reaction.message.embeds[0];
-      const newEmbed = new Discord.RichEmbed(receivedEmbed)
-        .setDescription(addUser(receivedEmbed.description, user.username));
-      reaction.message.edit(null, newEmbed);
+      newEmbed.setDescription(addUser(receivedEmbed.description, user.username));
     }
     if (reaction.emoji.name === 'cancel') {
-      const receivedEmbed = reaction.message.embeds[0];
-      const newEmbed = new Discord.RichEmbed(receivedEmbed)
-        .setDescription(removeUser(receivedEmbed.description, user.username));
-      reaction.message.edit(null, newEmbed);
+      newEmbed.setDescription(removeUser(receivedEmbed.description, user.username));
+      
     }
+    reaction.message.edit("", newEmbed);
   }
 }

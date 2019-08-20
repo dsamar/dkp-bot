@@ -42,7 +42,7 @@ module.exports = {
         addReactions(bidMessage);
         const receivedEmbed = bidMessage.embeds[0];
         const newEmbed = new Discord.RichEmbed(receivedEmbed).setFooter("Bid ID: " + bidMessage.id);
-        bidMessage.edit(null, newEmbed);
+        bidMessage.edit("", newEmbed);
       });
   }
 }
