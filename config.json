@@ -1,0 +1,36 @@
+{
+  "channelName": "dkp-test",
+  "officerRole": "officer",
+  "items": [
+    {
+      "name": "Choker of Enlightenment",
+      "cost": 300,
+      "wowheadID": 17109
+    },
+    {
+      "name": "Heavy Dark Iron Ring",
+      "cost": 100,
+      "wowheadID": 18879
+    },
+    {
+      "name": "Manastorm Leggings",
+      "cost": 50,
+      "wowheadID": 18872
+    },
+    {
+      "name": "Ring of Spell Power",
+      "cost": 200,
+      "wowheadID": 19147
+    },
+    {
+      "name": "Shadowstrike",
+      "cost": 100,
+      "wowheadID": 17074
+    },
+    {
+      "name": "Crimson Shoker",
+      "cost": 100,
+      "wowheadID": 17074
+    }
+  ]
+}
