@@ -61,16 +61,15 @@ module.exports = {
     message.edit("", newEmbed);
   },
   clearCurrentRaids: function(channel) {
+    // Returns a promise that finished when all messages are unpinned.
     return channel.fetchPinnedMessages()
       .then(messages => {
-        Promise.all()
-        // Make sure all these promises exit before continuing.
-        messages.forEach((message) => {
+        return Promise.all(messages.map(message => {
           const tag = message.embeds[0].fields.find(field => field.name === reactionTagName);
           if (tag.value == 'raidsignup') {
             return message.unpin();
           }
-        });
+        }));
       });
   },
   getCurrentRaidRoster: function(channel) {
