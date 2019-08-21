@@ -34,7 +34,8 @@ function removeUser(description, user) {
 // username, value, #attended, #missed
 
 function userToString(dkpUser) {
-  return [ dkpUser.username, parseFloat(dkpUser.value).toFixed(2), dkpUser.attended, dkpUser.missed ];
+  const attendancePercentage = dkpUser.attended / (dkpUser.attended + dkpUser.missed) * 100;
+  return [ dkpUser.username, parseFloat(dkpUser.value).toFixed(2), dkpUser.attended, dkpUser.missed, attendancePercentage.toFixed(2) + " %"];
 }
 function stringToUser(string) {
   const dkpUser = {};
@@ -58,6 +59,14 @@ function newUser(username) {
 }
 
 function parseLeaderBoard(message, roster) {
+  // sanitize roster, trim any names over 12 characters down.
+  roster = roster.map((name) => {
+    const length = 15;
+    name = name.length > length ? 
+           name.substring(0, length - 3) + "..." : 
+           name;
+    return name;
+  });
   let description = message.embeds[0].description  || "";
   let all = description.split("\n").slice(3, -1).map((line) => {
     return stringToUser(line);
@@ -86,16 +95,17 @@ function serializeAndUpdate(message, all) {
     return userToString(member);
   });
   // add header
-  data.unshift(['username', 'dkp', 'raids attended', 'raids missed'])
+  data.unshift(['username', 'dkp', '✓', 'X', 'attendance'])
   const config = {
     drawHorizontalLine: (index, size) => {
       return index === 0 || index === 1 || index === size;
     }
   };
   const output = table(data, config);
+  updatedMessage.setTitle("DKP LEADERBOARD");
   updatedMessage.setDescription("```" + output + "```");
   updatedMessage.setTimestamp();
-  return message.edit("", updatedMessage);
+  return message.edit(updatedMessage);
 }
 
 module.exports = {
