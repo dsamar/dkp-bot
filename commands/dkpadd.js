@@ -10,7 +10,7 @@ module.exports = {
     // args[0] == dkp value
     // args[1] == reason
     raid.getCurrentRaidRoster(message.channel).then(roster => {
-      const number = parseInt(args[0]);
+      const number = parseFloat(args[0]);
       const valueFn = (prev) => { return prev + number; };
       return dkp.updateDkp(message.guild, roster, valueFn)
     });
