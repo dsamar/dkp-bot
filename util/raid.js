@@ -74,13 +74,20 @@ module.exports = {
   },
   getRoster: function(message) {
     // message should be a raidsignup message
+    // todo: deduplicate with function below.
     const tag = message.embeds[0].fields.find(field => field.name === reactionTagName);
     if (tag.value !== 'raidsignup') {
       return [];
     }
     const signupList = getField(message.embeds[0], "signup-list");
-    const lines = signupList.value.split("\n");
+    let lines = signupList.value.split("\n");
     lines.filter(user => user === '<empty>');
+    lines = lines.map((name) => {
+              const length = 12;
+              name = name.length > length ? 
+                     name.substring(0, length): name;
+              return name;
+            });
     return lines;
   },
   getCurrentRaidRoster: function(channel) {
@@ -93,8 +100,15 @@ module.exports = {
           const tag = message.embeds[0].fields.find(field => field.name === reactionTagName);
           if (tag.value == 'raidsignup') {
             const signupList = getField(message.embeds[0], "signup-list");
-            const lines = signupList.value.split("\n");
+            let lines = signupList.value.split("\n");
             lines.filter(user => user === '<empty>');
+            // sanitize roster, trim any names over 12 characters down.
+            lines = lines.map((name) => {
+              const length = 12;
+              name = name.length > length ? 
+                     name.substring(0, length): name;
+              return name;
+            });
             roster = lines;
           }
         });

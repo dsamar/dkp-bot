@@ -59,14 +59,6 @@ function newUser(username) {
 }
 
 function parseLeaderBoard(message, roster) {
-  // sanitize roster, trim any names over 12 characters down.
-  roster = roster.map((name) => {
-    const length = 15;
-    name = name.length > length ? 
-           name.substring(0, length - 3) + "..." : 
-           name;
-    return name;
-  });
   let description = message.embeds[0].description  || "";
   let all = description.split("\n").slice(3, -1).map((line) => {
     return stringToUser(line);
@@ -125,6 +117,28 @@ module.exports = {
     return channel.fetchPinnedMessages().then(messages => {
       const message = messages.first();
       // TODO
+    });
+  },
+  spendDkp: function(guild, roster, username, value) {
+    if (isNaN(value)) throw new Error('unable to spend dkp, value to spend is not a number: ' + value);
+    // Returns a promise with the dkp value.
+    const channel = guild.channels.find(ch => ch.name === leaderboardName);
+    return channel.fetchPinnedMessages().then(messages => {
+      const message = messages.first();
+      const all = parseLeaderBoard(message, roster);
+
+      // decrement spend user, increment roster
+      console.log(value);
+      all.forEach((member) => {
+        if (username === member.username) {
+          member.value -= value;
+        }
+        if (roster.includes(member.username) && username !== member.username) {
+          member.value += value / (roster.length - 1);
+        }
+      });
+      
+      return serializeAndUpdate(message, all);
     });
   },
   incrementAttendance: function(guild, roster) {
