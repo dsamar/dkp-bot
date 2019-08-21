@@ -23,6 +23,7 @@ module.exports = {
   name: 'bidstart',
 	description: 'todo',
   args: true,
+  aliases: ['item'],
   execute: function(message, args) {
     const itemQuery = args[0];
     const content = new Discord.RichEmbed();

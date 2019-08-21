@@ -1,6 +1,6 @@
 const fs = require('fs');
 const Discord = require('discord.js')
-const {prefix, channelName, officerRole, reactionTagName} = require('./config.json');
+const {prefix, commandChannel, raidAnnounceChannel, botCategory, officerRole, reactionTagName} = require('./config.json');
 
 const client = new Discord.Client()
 client.commands = new Discord.Collection();
@@ -21,18 +21,20 @@ for (const file of reactionFiles) {
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-  // Iterate all messages in the dkp-bot channel to put them in cache for reactions.
+  // Iterate all messages in the dkp command channel to put them in cache for reactions.
   client.guilds.forEach((guild) =>{
-    const channel = guild.channels.find(ch => ch.name === channelName);
-    channel.fetchMessages().then((messages) => {
-      // messages.forEach(msg => msg.delete());      
-    });
+    guild.channels.find(ch => ch.name === commandChannel).fetchMessages().then((messages) => {});
+    guild.channels.find(ch => ch.name === raidAnnounceChannel).fetchMessages().then((messages) => {});
   });
 });
 
 client.on('message', message => {
-  if (message.channel.name !== channelName) return;
-  if (!message.content.startsWith(prefix) || message.author.bot) return;
+  if (message.channel.name !== commandChannel) return;
+  if (message.author.bot) return;
+  if (!message.content.startsWith(prefix)) {
+    message.delete();
+    return;
+  }
   const args = message.content.slice(prefix.length).split(/ +/);
 	const commandName = args.shift().toLowerCase();
 
@@ -60,29 +62,32 @@ client.on('message', message => {
   
   try {
 		command.execute(message, args).catch((error) => {
-      message.reply("ERROR: " + error.message);
+      return message.reply("ERROR: ```" + error.message + "```");
     });
 	} catch (error) {
-		console.error(error);
-		message.reply('there was an error trying to execute that command!');
+		message.reply("ERROR: ```" + error.message + "```");
 	}
 })
 
 client.on('messageReactionAdd', (reaction, user) => {
-  if (reaction.message.channel.name !== channelName || user.bot) {
+  if (reaction.message.channel.parent.name !== botCategory || user.bot) {
     return;
   }
-  reaction.remove(user);
+  
+  // Check to see if this is one of the messages we have a reaction handler for
   if (reaction.message.embeds.length !== 1) return;  
   const tag = reaction.message.embeds[0].fields.find(field => field.name === reactionTagName);
   if (!tag) return;
   const reactionHandler = client.reactions.get(tag.value);
   if (!reactionHandler) return;
+  
+  // Run the reaction handler
   try {
-    reactionHandler.execute(reaction, user);
+    reactionHandler.execute(reaction, user).catch((error) => {
+      reaction.message.reply("ERROR: ```" + error.message + "```");
+    });
   } catch (error) {
-    console.error(error);
-		reaction.message.reply('there was an error trying to execute the reaction handler!');
+		reaction.message.reply("ERROR: ```" + error.message + "```");
   }
 });
 

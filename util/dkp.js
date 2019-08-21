@@ -2,41 +2,14 @@ const Discord = require('discord.js')
 const {reactionTagName, leaderboardName} = require('../config.json');
 const {table} = require('table')
 
-function addUser(description, user) {
-  let lines = [];
-  if (description) {
-    description.split("\n");
-  }  
-  if (!lines.find(el => el.startsWith(user))) {
-    lines.push(user);
-  }
-  return lines.join("\n");
-}
-
-function removeUser(description, user) {
-  let lines = [];
-  if (description) {
-    description.split("\n");
-  }
-  let userLine = -1;
-  for(let i = 0; i < lines.length; i++) {
-    if (lines[i].startsWith(user)) {
-      userLine = i;
-    }
-  }
-  if (userLine != -1) {
-    lines.splice(userLine , 1);
-  }
-  return lines.join("\n");
-}
-
 // A dkpUser object has 3 fields
-// username, value, #attended, #missed
+// username, value, attended, missed
 
 function userToString(dkpUser) {
   const attendancePercentage = dkpUser.attended / (dkpUser.attended + dkpUser.missed) * 100;
   return [ dkpUser.username, parseFloat(dkpUser.value).toFixed(2), dkpUser.attended, dkpUser.missed, attendancePercentage.toFixed(2) + " %"];
 }
+
 function stringToUser(string) {
   const dkpUser = {};
   const list = string.split('│').map((el) => {
@@ -49,6 +22,7 @@ function stringToUser(string) {
   dkpUser.missed = parseInt(list[3]);
   return dkpUser;
 }
+
 function newUser(username) {
   const dkpUser = {};
   dkpUser.username = username;
@@ -111,12 +85,16 @@ module.exports = {
       return leaderboard.pin();
     });
   },
-  queryDkp: function(guild, user) {
-    // Returns a promise with the dkp value.
+  query: function(guild, user) {
+    // Returns a promise with the dkpUser object.
     const channel = guild.channels.find(ch => ch.name === leaderboardName);
     return channel.fetchPinnedMessages().then(messages => {
       const message = messages.first();
-      // TODO
+      const all = parseLeaderBoard(message, []);
+      
+      return all.find((el) => {
+        return el.username === user;
+      });
     });
   },
   spendDkp: function(guild, roster, username, value) {

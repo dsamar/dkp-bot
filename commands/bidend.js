@@ -12,25 +12,25 @@ function getField(message, fieldName) {
 }
 
 module.exports = {
-	name: 'dkpspend',
+	name: 'bidend',
 	description: 'Spends dkp from one member, while awarding dkp to rest of roster.',
   args: true,
   usage: '',
-  aliases: ['bidend', 'winner'],
+  aliases: ['dkpspend', 'winner'],
 	execute(message, args) {
     // args[0] == bidID
     // args[1] == username
     return message.channel.fetchMessage(args[0]).then(fetched => {
       const cost = parseFloat(getField(fetched.embeds[0], "cost").value);
       const username = sanitize.name(args[1]);      
-      return raid.getCurrentRaidRoster(message.channel).then(roster => {
+      return raid.getCurrentRaidRoster(message.channel.guild).then(roster => {
         // Check that username is in the current roster
         if (!roster.includes(username)) {
           throw new Error(username + " not in the current roster: " + roster);
         }
         return dkp.spendDkp(message.guild, roster, username, cost)
       }).then(() => {
-        return message.reply(username + " was awarded " + args[0] + " for value: " + cost);
+        return message.reply(username + " was awarded winning bid on " + sanitize.makeMessageLink(fetched) + " for cost: " + cost);
       });
     });
   }

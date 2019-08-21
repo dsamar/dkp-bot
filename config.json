@@ -1,5 +1,7 @@
 {
-  "channelName": "dkp-raid",
+  "botCategory": "dkp",
+  "commandChannel": "dkp-commands",
+  "raidAnnounceChannel": "dkp-raid-announce",
   "leaderboardName": "dkp-leaderboard",
   "officerRole": "officer",
   "reactionTagName": "internal-tag",

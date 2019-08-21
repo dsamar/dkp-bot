@@ -1,5 +1,6 @@
 const Discord = require('discord.js')
-const {channelName, reactionTagName, raidTemplate} = require('../config.json');
+const {raidAnnounceChannel, reactionTagName, raidTemplate} = require('../config.json');
+const sanitize = require('../util/sanitize.js');
 
 function addRaidSignups (message) {
   // Add other classes/specs
@@ -13,10 +14,11 @@ module.exports = {
 	name: 'scheduleraid',
 	description: 'todo',
   args: true,
-  aliases: ['raid'],
+  aliases: ['create', 'raid', 'schedule', 'makeraid', 'createraid', 'raidschedule'],
 	execute(message, args) {
+    // args[0] date
     const datetime = args[0];
-		const channel = message.guild.channels.find(ch => ch.name === channelName);
+		const channel = message.guild.channels.find(ch => ch.name === raidAnnounceChannel);
     const content = new Discord.RichEmbed();
     content.setTitle(raidTemplate.title);
     content.setDescription(raidTemplate.description);
@@ -29,7 +31,10 @@ module.exports = {
         addRaidSignups(raidMessage)
         const receivedEmbed = raidMessage.embeds[0];
         const newEmbed = new Discord.RichEmbed(receivedEmbed).setFooter("Raid ID: " + raidMessage.id);
-        return raidMessage.edit("", newEmbed);
+        const ref = sanitize.makeMessageLink(raidMessage);
+        const promise1 = message.reply("created raid: " + ref);
+        const promise2 = raidMessage.edit("", newEmbed);
+        return Promise.all([promise1, promise2]);
       });
 	},
 };

@@ -4,7 +4,7 @@ module.exports = {
   name: 'setup',
 	description: 'Commands for managing emojis',
   args: false,
-  aliases: ['setup', 'emoji'],
+  aliases: ['setup'],
   execute: function(message) {
     // TODO:
     // arg[0] factory-reset - optional, default false.

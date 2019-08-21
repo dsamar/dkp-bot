@@ -17,5 +17,8 @@ module.exports = {
       dkpUsername = guildUser.nickname;
     }
     return sanitizeName(dkpUsername);
+  },
+  makeMessageLink: function(message) {
+    return "http://discordapp.com/channels/" + message.guild.id + "/" + message.channel.id + "/" + message.id;
   }
 }

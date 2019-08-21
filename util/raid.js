@@ -1,5 +1,5 @@
 const Discord = require('discord.js')
-const {reactionTagName} = require('../config.json');
+const {reactionTagName, raidAnnounceChannel} = require('../config.json');
 const sanitize = require('./sanitize.js');
 
 function addUser(field, user) {
@@ -59,10 +59,11 @@ module.exports = {
     
     const totalPlayers = getField(newEmbed, "total-players");
     totalPlayers.value = signupList.value.split("\n").length;
-    message.edit("", newEmbed);
+    return message.edit("", newEmbed);
   },
-  clearCurrentRaids: function(channel) {
+  clearCurrentRaids: function(guild) {
     // Returns a promise that finished when all messages are unpinned.
+    const channel = guild.channels.find(ch => ch.name === raidAnnounceChannel);
     return channel.fetchPinnedMessages()
       .then(messages => {
         return Promise.all(messages.map(message => {
@@ -75,6 +76,7 @@ module.exports = {
   },
   getRoster: function(message) {
     // message should be a raidsignup message
+    // returns a list
     // todo: deduplicate with function below.
     const tag = message.embeds[0].fields.find(field => field.name === reactionTagName);
     if (tag.value !== 'raidsignup') {
@@ -86,8 +88,9 @@ module.exports = {
     lines = lines.map(sanitize.name);
     return lines;
   },
-  getCurrentRaidRoster: function(channel) {
+  getCurrentRaidRoster: function(guild) {
     // returns a promise with a list of members in current raid
+    const channel = guild.channels.find(ch => ch.name === raidAnnounceChannel);
     return channel.fetchPinnedMessages()
       .then(messages => {
         let roster = [];

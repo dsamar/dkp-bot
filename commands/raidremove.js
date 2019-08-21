@@ -6,6 +6,7 @@ module.exports = {
 	description: 'todo',
   args: true,
   usage: '',
+  aliases: ['remove'],
 	execute(message, args) {
     // args[0] == raid ID
     // args[1] == member name
