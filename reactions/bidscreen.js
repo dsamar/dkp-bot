@@ -1,6 +1,7 @@
 const Discord = require('discord.js')
 const sanitize = require('../util/sanitize.js');
 const dkp = require('../util/dkp.js');
+const tableview = require('../util/tableview.js');
 
 function addUser(description, user) {
   let lines = [];
@@ -39,19 +40,15 @@ module.exports = {
       if (!dkpUser) {
         throw new Error("dkp user not found: " + dkpUsername);
       }
-      if (reaction.emoji.name === 'bid') {
-        return reaction.message.channel.send("--> **" + dkpUsername + "** wants this | DKP: " + dkpUser.value + " | Number of raids attended: " + dkpUser.attended);
+      const message = reaction.message;
+      let all = tableview.parse(message, []);
+      if (reaction.emoji.name === 'bid' && !all.find((el) => el.username === dkpUser.username)) {
+        all.push(dkpUser);
       }
-      
-      // const receivedEmbed = reaction.message.embeds[0];
-      // const newEmbed = new Discord.RichEmbed(receivedEmbed);
-      // if (reaction.emoji.name === 'bid') {
-      //   newEmbed.setDescription(addUser(receivedEmbed.description, sanitize.name(dkpUsername)));
-      // }
-      // if (reaction.emoji.name === 'cancel') {
-      //   newEmbed.setDescription(removeUser(receivedEmbed.description, dkpUsername));
-      // }
-      // return reaction.message.edit("", newEmbed);
+      else if (reaction.emoji.name === 'cancel') {
+        all = all.filter(item => item.username !== dkpUser.username)
+      }
+      return tableview.serialize(message, all);
     });
   }
 }

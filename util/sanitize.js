@@ -2,7 +2,7 @@ function sanitizeName(name) {
   const length = 12;
   name = name.length > length ? 
          name.substring(0, length): name;
-  return name;
+  return name.toLowerCase();
 }
 
 module.exports = {
