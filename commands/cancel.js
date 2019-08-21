@@ -6,11 +6,9 @@ module.exports = {
   args: true,
   usage: '',
 	execute(message, args) {
-    message.channel.fetchMessage(args[0])
+    return message.channel.fetchMessage(args[0])
       .then(message => {
-        message.delete();
-      }).catch(error => {
-        message.reply(error.message)
+        return message.delete();
       });
   }
 };

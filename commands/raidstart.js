@@ -8,12 +8,12 @@ module.exports = {
   usage: '',
 	execute(message, args) {
     // args[0] == raid ID
-    return raid.clearCurrentRaids(message.channel).then(()=> {
-      message.channel.fetchMessage(args[0]).then(fetched => {
+    return raid.clearCurrentRaids(message.channel).then(() => {
+      return message.channel.fetchMessage(args[0]).then(fetched => {
         fetched.pin();
         const roster = raid.getRoster(fetched);
         message.reply("marked attendance for: " + roster);
-        dkp.incrementAttendance(message.guild, roster);
+        return dkp.incrementAttendance(message.guild, roster);
       });
     });
   }

@@ -20,13 +20,17 @@ module.exports = {
 	execute(message, args) {
     // args[0] == bidID
     // args[1] == username
-    message.channel.fetchMessage(args[0]).then(fetched => {
+    return message.channel.fetchMessage(args[0]).then(fetched => {
       const cost = parseFloat(getField(fetched.embeds[0], "cost").value);
-      const username = sanitize.name(args[1]);
-      raid.getCurrentRaidRoster(message.channel).then(roster => {
+      const username = sanitize.name(args[1]);      
+      return raid.getCurrentRaidRoster(message.channel).then(roster => {
+        // Check that username is in the current roster
+        if (!roster.includes(username)) {
+          throw new Error(username + " not in the current roster: " + roster);
+        }
         return dkp.spendDkp(message.guild, roster, username, cost)
       }).then(() => {
-        message.reply(username + " was awarded " + args[0] + " for value: " + cost);
+        return message.reply(username + " was awarded " + args[0] + " for value: " + cost);
       });
     });
   }

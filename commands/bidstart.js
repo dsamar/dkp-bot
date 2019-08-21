@@ -37,12 +37,12 @@ module.exports = {
     content.addField("cost", item.cost, false);
     
     content.addField(reactionTagName, "bidscreen", true);
-    message.channel.send(content)
+    return message.channel.send(content)
       .then(bidMessage => {
         addReactions(bidMessage);
         const receivedEmbed = bidMessage.embeds[0];
         const newEmbed = new Discord.RichEmbed(receivedEmbed).setFooter("Bid ID: " + bidMessage.id);
-        bidMessage.edit("", newEmbed);
+        return bidMessage.edit("", newEmbed);
       });
   }
 }

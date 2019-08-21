@@ -42,6 +42,6 @@ module.exports = {
       newEmbed.setDescription(removeUser(receivedEmbed.description, dkpUsername));
       
     }
-    reaction.message.edit("", newEmbed);
+    return reaction.message.edit("", newEmbed);
   }
 }
