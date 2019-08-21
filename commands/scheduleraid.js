@@ -4,9 +4,9 @@ const sanitize = require('../util/sanitize.js');
 
 function addRaidSignups (message) {
   // Add other classes/specs
-  const mage = message.guild.emojis.find(em => em.name === 'mage');
+  const bid = message.guild.emojis.find(em => em.name === 'bid');
   const cancel = message.guild.emojis.find(em => em.name === 'cancel');
-  message.react(mage)
+  message.react(bid)
     .then(() => message.react(cancel));
 }
 
@@ -15,9 +15,10 @@ module.exports = {
 	description: 'todo',
   args: true,
   aliases: ['create', 'raid', 'schedule', 'makeraid', 'createraid', 'raidschedule'],
+  officer: true,
 	execute(message, args) {
-    // args[0] date
-    const datetime = args[0];
+    // args[0] date-time
+    const datetime = args.join(" ");
 		const channel = message.guild.channels.find(ch => ch.name === raidAnnounceChannel);
     const content = new Discord.RichEmbed();
     content.setTitle(raidTemplate.title);
@@ -31,8 +32,7 @@ module.exports = {
         addRaidSignups(raidMessage)
         const receivedEmbed = raidMessage.embeds[0];
         const newEmbed = new Discord.RichEmbed(receivedEmbed).setFooter("Raid ID: " + raidMessage.id);
-        const ref = sanitize.makeMessageLink(raidMessage);
-        const promise1 = message.reply("created raid: " + ref);
+        const promise1 = message.channel.send("created raid: " + sanitize.makeMessageLink(raidMessage));
         const promise2 = raidMessage.edit("", newEmbed);
         return Promise.all([promise1, promise2]);
       });

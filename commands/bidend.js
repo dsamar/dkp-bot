@@ -1,3 +1,4 @@
+const Discord = require('discord.js')
 const raid = require('../util/raid.js')
 const dkp = require('../util/dkp.js')
 const sanitize = require('../util/sanitize.js');
@@ -17,9 +18,12 @@ module.exports = {
   args: true,
   usage: '',
   aliases: ['dkpspend', 'winner'],
+  officer: true,
 	execute(message, args) {
     // args[0] == bidID
     // args[1] == username
+    
+    // todo: check if bid already ended
     return message.channel.fetchMessage(args[0]).then(fetched => {
       const cost = parseFloat(getField(fetched.embeds[0], "cost").value);
       const username = sanitize.name(args[1]);      
@@ -28,9 +32,18 @@ module.exports = {
         if (!roster.includes(username)) {
           throw new Error(username + " not in the current roster: " + roster);
         }
-        return dkp.spendDkp(message.guild, roster, username, cost)
+        
+        // Set winner on bid screen
+        const receivedEmbed = fetched.embeds[0];
+        const newEmbed = new Discord.RichEmbed(receivedEmbed);
+        newEmbed.addField("winner", username);
+        newEmbed.setColor("RED");
+        const promise1 = fetched.edit("", newEmbed);
+        const promise2 = dkp.spendDkp(message.guild, roster, username, cost)
+        const promise3 = fetched.clearReactions();
+        return Promise.all([promise1, promise2, promise3]);
       }).then(() => {
-        return message.reply(username + " was awarded winning bid on " + sanitize.makeMessageLink(fetched) + " for cost: " + cost);
+        return message.channel.send(username + " was awarded winning bid on " + sanitize.makeMessageLink(fetched) + " for cost: " + cost);
       });
     });
   }

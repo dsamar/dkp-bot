@@ -40,7 +40,7 @@ module.exports = {
         throw new Error("dkp user not found: " + dkpUsername);
       }
       if (reaction.emoji.name === 'bid') {
-        return reaction.message.channel.send("**" + dkpUsername + "** has put a bid in | DKP: " + dkpUser.value + " | Number of raids attended: " + dkpUser.attended);
+        return reaction.message.channel.send("--> **" + dkpUsername + "** wants this | DKP: " + dkpUser.value + " | Number of raids attended: " + dkpUser.attended);
       }
       
       // const receivedEmbed = reaction.message.embeds[0];

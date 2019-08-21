@@ -7,6 +7,7 @@ module.exports = {
   args: true,
   usage: '',
   aliases: ['add'],
+  officer: true,
 	execute(message, args) {
     // args[0] == raid ID
     // args[1] == member name

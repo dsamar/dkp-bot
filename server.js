@@ -28,45 +28,52 @@ client.on('ready', () => {
   });
 });
 
-client.on('message', message => {
-  if (message.channel.name !== commandChannel) return;
-  if (message.author.bot) return;
+function handleMessage(message) {
   if (!message.content.startsWith(prefix)) {
-    message.delete();
     return;
   }
   const args = message.content.slice(prefix.length).split(/ +/);
-	const commandName = args.shift().toLowerCase();
+  const commandName = args.shift().toLowerCase();
 
-	const command = client.commands.get(commandName)
-		|| client.commands.find(cmd => cmd.aliases && cmd.aliases.includes(commandName));
+  const command = client.commands.get(commandName)
+    || client.commands.find(cmd => cmd.aliases && cmd.aliases.includes(commandName));
 
-	if (!command) return;
-  
+  if (!command) return;
+
   // No action taken on messages from non-members and non-officers.
-  if (!message.member || !message.member.roles.some(role => role.name === officerRole)) {
-    message.reply("you need to be an " + officerRole + " to send commands here.");
-    return;
+  if (command.officer) {
+    if (!message.member || !message.member.roles.some(role => role.name === officerRole)) {
+      return message.author.send("you need to have the " + officerRole + " role to send that command.");
+    }
   }
-  
+
   // Validate args.
   if (command.args && !args.length) {
-		let reply = `You didn't provide any arguments, ${message.author}!`;
+    let reply = `You didn't provide any arguments, ${message.author}!`;
+    if (command.usage) {
+      reply += `\nThe proper usage would be: \`${prefix}${command.name} ${command.usage}\``;
+    }
+    return message.author.send(reply);
+  }
 
-		if (command.usage) {
-			reply += `\nThe proper usage would be: \`${prefix}${command.name} ${command.usage}\``;
-		}
-
-		return message.reply(reply);
-	}
-  
   try {
-		command.execute(message, args).catch((error) => {
-      return message.reply("ERROR: ```" + error.message + "```");
-    });
-	} catch (error) {
-		message.reply("ERROR: ```" + error.message + "```");
-	}
+    command.execute(message, args)
+      .catch((error) => {
+      console.error(error);
+        return message.author.send("ERROR: ```" + error.message + "```");
+      });
+  } catch (error) {
+    console.error(error);
+    message.author.send("ERROR: ```" + error.message + "```");
+  }
+}
+
+client.on('message', message => {
+  if (message.channel.name !== commandChannel) return;
+  if (message.author.bot) return;
+  
+  handleMessage(message);
+  message.delete()
 })
 
 client.on('messageReactionAdd', (reaction, user) => {
@@ -84,10 +91,12 @@ client.on('messageReactionAdd', (reaction, user) => {
   // Run the reaction handler
   try {
     reactionHandler.execute(reaction, user).catch((error) => {
-      reaction.message.reply("ERROR: ```" + error.message + "```");
+      console.error(error);
+      user.send("ERROR: ```" + error.message + "```");
     });
   } catch (error) {
-		reaction.message.reply("ERROR: ```" + error.message + "```");
+    console.error(error);
+		user.send("ERROR: ```" + error.message + "```");
   }
 });
 

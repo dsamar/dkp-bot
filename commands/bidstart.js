@@ -14,9 +14,7 @@ function getItem(searchQuery) {
 
 function addReactions(message) {
   const bid = message.guild.emojis.find(em => em.name === 'bid');
-  const cancel = message.guild.emojis.find(em => em.name === 'cancel');
-  message.react(bid)
-    .then(() => message.react(cancel));
+  message.react(bid);
 }
 
 module.exports = {
@@ -24,15 +22,15 @@ module.exports = {
 	description: 'todo',
   args: true,
   aliases: ['item'],
+  officer: true,
   execute: function(message, args) {
-    const itemQuery = args[0];
+    const itemQuery = args.join(" ");
     const content = new Discord.RichEmbed();
     const item = getItem(itemQuery);
     if (!item) {
-      message.reply("No item found!");
-      return;
+      throw new Error("item not found: " + itemQuery);
     }
-    content.setTitle("Bids for " + item.name);
+    content.setTitle("**" + item.name + "**");
     content.setImage(getImage(item));
     content.setDescription("");
     content.addField("cost", item.cost, false);
