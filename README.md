@@ -3,18 +3,28 @@
 Things left to do:
 - add command for editing dkp of a member
 
-- add command for locking bids
-
 - add command that allow adding/removing members from bid lists
 
 - decay dkp command
-
-- allow closing a bid (bidend). should determine winner automatically and subtract dkp, while adding dkp to rest of raid.
 
 - add rest of classes to raid signups
 
 - make the raid screen look nicer, show stats of dps/melee/healers?
 
-- import/export function
+- after raid is started, remove emoji reactions and don't allow users to register without officer command.
 
-- use server nickname instead of usernames
+- backup/restore function for leaderboard
+
+- add an audit log for dkp value changes (separate channel?)
+
+- all commands need to have a reply on errors. on success, something visible needs to happen.
+
+- all commands should validate input, and handle errors from sub-promises
+
+- help command
+
+- setup should not delete all emojis
+- setup needs to have a first run mode, should not wipe DKP.
+
+- invalid commands need to be deleted?
+- command to cleanup chat of commands that are not relevant 

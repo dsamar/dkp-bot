@@ -1,5 +1,6 @@
 const Discord = require('discord.js')
 const {reactionTagName} = require('../config.json');
+const sanitize = require('./sanitize.js');
 
 function addUser(field, user) {
   let lines = [];
@@ -82,12 +83,7 @@ module.exports = {
     const signupList = getField(message.embeds[0], "signup-list");
     let lines = signupList.value.split("\n");
     lines.filter(user => user === '<empty>');
-    lines = lines.map((name) => {
-              const length = 12;
-              name = name.length > length ? 
-                     name.substring(0, length): name;
-              return name;
-            });
+    lines = lines.map(sanitize.name);
     return lines;
   },
   getCurrentRaidRoster: function(channel) {
@@ -103,12 +99,7 @@ module.exports = {
             let lines = signupList.value.split("\n");
             lines.filter(user => user === '<empty>');
             // sanitize roster, trim any names over 12 characters down.
-            lines = lines.map((name) => {
-              const length = 12;
-              name = name.length > length ? 
-                     name.substring(0, length): name;
-              return name;
-            });
+            lines = lines.map(sanitize.name);
             roster = lines;
           }
         });

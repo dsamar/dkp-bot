@@ -1,0 +1,21 @@
+function sanitizeName(name) {
+  const length = 12;
+  name = name.length > length ? 
+         name.substring(0, length): name;
+  return name;
+}
+
+module.exports = {
+  name: sanitizeName,
+  getNickname: function(user,guild) {
+    let dkpUsername = user.username;
+    const members = guild.members;
+    const guildUser = members.find((gm) => {
+      return gm.user.id === user.id;
+    });
+    if (guildUser && guildUser.nickname) {
+      dkpUsername = guildUser.nickname;
+    }
+    return sanitizeName(dkpUsername);
+  }
+}

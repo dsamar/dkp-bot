@@ -1,4 +1,5 @@
 const raid = require('../util/raid.js')
+const sanitize = require('../util/sanitize.js');
 
 module.exports = {
 	name: 'raidremove',
@@ -10,7 +11,7 @@ module.exports = {
     // args[1] == member name
     return message.channel.fetchMessage(args[0])
       .then(message => {
-        return raid.update("cancel", message, args[1]);
+        return raid.update("cancel", message, sanitize.name(args[1]));
       })
   }
 };

@@ -1,4 +1,5 @@
 const Discord = require('discord.js')
+const sanitize = require('../util/sanitize.js');
 
 function addUser(description, user) {
   let lines = [];
@@ -31,13 +32,14 @@ function removeUser(description, user) {
 module.exports = {
   name: 'bidscreen',
   execute: function(reaction, user) {
+    const dkpUsername = sanitize.getNickname(user, reaction.message.guild);
     const receivedEmbed = reaction.message.embeds[0];
     const newEmbed = new Discord.RichEmbed(receivedEmbed);
     if (reaction.emoji.name === 'bid') {
-      newEmbed.setDescription(addUser(receivedEmbed.description, user.username));
+      newEmbed.setDescription(addUser(receivedEmbed.description, sanitize.name(dkpUsername)));
     }
     if (reaction.emoji.name === 'cancel') {
-      newEmbed.setDescription(removeUser(receivedEmbed.description, user.username));
+      newEmbed.setDescription(removeUser(receivedEmbed.description, dkpUsername));
       
     }
     reaction.message.edit("", newEmbed);

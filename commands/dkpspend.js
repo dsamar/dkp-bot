@@ -1,5 +1,6 @@
 const raid = require('../util/raid.js')
 const dkp = require('../util/dkp.js')
+const sanitize = require('../util/sanitize.js');
 
 function getField(message, fieldName) {
   let field = message.fields.find(field => field.name === fieldName);
@@ -21,7 +22,7 @@ module.exports = {
     // args[1] == username
     message.channel.fetchMessage(args[0]).then(fetched => {
       const cost = parseFloat(getField(fetched.embeds[0], "cost").value);
-      const username = args[1];
+      const username = sanitize.name(args[1]);
       raid.getCurrentRaidRoster(message.channel).then(roster => {
         return dkp.spendDkp(message.guild, roster, username, cost)
       }).then(() => {
