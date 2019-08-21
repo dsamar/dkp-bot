@@ -72,7 +72,19 @@ module.exports = {
         }));
       });
   },
+  getRoster: function(message) {
+    // message should be a raidsignup message
+    const tag = message.embeds[0].fields.find(field => field.name === reactionTagName);
+    if (tag.value !== 'raidsignup') {
+      return [];
+    }
+    const signupList = getField(message.embeds[0], "signup-list");
+    const lines = signupList.value.split("\n");
+    lines.filter(user => user === '<empty>');
+    return lines;
+  },
   getCurrentRaidRoster: function(channel) {
+    // returns a promise with a list of members in current raid
     return channel.fetchPinnedMessages()
       .then(messages => {
         let roster = [];

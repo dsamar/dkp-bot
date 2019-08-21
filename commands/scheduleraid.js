@@ -24,12 +24,12 @@ module.exports = {
     content.addField("signup-list", "<empty>");
     content.addField("total-players", 0);
     content.addField(reactionTagName, "raidsignup", true);
-    channel.send(content)
+    return channel.send(content)
       .then(raidMessage => {
-      addRaidSignups(raidMessage)
-      const receivedEmbed = raidMessage.embeds[0];
-      const newEmbed = new Discord.RichEmbed(receivedEmbed).setFooter("Raid ID: " + raidMessage.id);
-      raidMessage.edit("", newEmbed);
-    });
+        addRaidSignups(raidMessage)
+        const receivedEmbed = raidMessage.embeds[0];
+        const newEmbed = new Discord.RichEmbed(receivedEmbed).setFooter("Raid ID: " + raidMessage.id);
+        return raidMessage.edit("", newEmbed);
+      });
 	},
 };

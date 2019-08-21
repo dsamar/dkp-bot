@@ -1,5 +1,6 @@
 {
-  "channelName": "dkp-test",
+  "channelName": "dkp-raid",
+  "leaderboardName": "dkp-leaderboard",
   "officerRole": "officer",
   "reactionTagName": "internal-tag",
   "prefix": "!",
