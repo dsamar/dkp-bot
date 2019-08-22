@@ -25,6 +25,9 @@ module.exports = {
     
     // todo: check if bid already ended
     return message.channel.fetchMessage(args[0]).then(fetched => {
+      if (args.length != 2) {
+        throw new Error("usage: !bidend BID_ID USERNAME")
+      }
       const cost = parseFloat(getField(fetched.embeds[0], "cost").value);
       const username = sanitize.name(args[1]);      
       return raid.getCurrentRaidRoster(message.channel.guild).then(roster => {
@@ -37,6 +40,7 @@ module.exports = {
         const receivedEmbed = fetched.embeds[0];
         const newEmbed = new Discord.RichEmbed(receivedEmbed);
         newEmbed.addField("winner", username);
+        getField(newEmbed, "locked").value = 'true';
         newEmbed.setColor("RED");
         const promise1 = fetched.edit("", newEmbed);
         const promise2 = dkp.spendDkp(message.guild, roster, username, cost)

@@ -1,10 +1,5 @@
 ## OUTSTANDING ISSUES
 
-- command to decay everyone's dkp
-
-- command to lock raid signups !raidlock
-  - after raid is started, remove emoji reactions and don't allow users to register without officer command.
-
 - command to backup/restore function for leaderboard
 
 - setup should not delete all emojis
@@ -14,6 +9,13 @@
 - command DEMO to award 20 random items to raid, as if members were winning it
 
 - command to undo awarding item with !bidend, refunding dkp back to raid. (may be needed if item was assigned by accident)
+
+- when any item is won, check other pending items to update
+- bidID dissapears
+
+- add a command to award micro-ammounts for folks that farm and subtract from rest. 
+
+- add item name to message for winning the item
 
 ## OPTIONAL
 

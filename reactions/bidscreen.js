@@ -3,37 +3,20 @@ const sanitize = require('../util/sanitize.js');
 const dkp = require('../util/dkp.js');
 const tableview = require('../util/tableview.js');
 
-function addUser(description, user) {
-  let lines = [];
-  if (description) {
-    description.split("\n");
-  }  
-  if (!lines.find(el => el.startsWith(user))) {
-    lines.push(user);
-  }
-  return lines.join("\n");
-}
-
-function removeUser(description, user) {
-  let lines = [];
-  if (description) {
-    description.split("\n");
-  }
-  let userLine = -1;
-  for(let i = 0; i < lines.length; i++) {
-    if (lines[i].startsWith(user)) {
-      userLine = i;
-    }
-  }
-  if (userLine != -1) {
-    lines.splice(userLine , 1);
-  }
-  return lines.join("\n");
+function getField(message, fieldName) {
+  let field = message.fields.find(field => field.name === fieldName);
+  return field;
 }
 
 module.exports = {
   name: 'bidscreen',
   execute: function(reaction, user) {
+    const bidMessage = reaction.message.embeds[0];
+    const lockState = getField(bidMessage, "locked");
+    if (lockState && lockState.value == "true") {
+      return user.send("Sorry, the item is no longer accepting bids!");
+    }
+    
     const dkpUsername = sanitize.getNickname(user, reaction.message.guild);
     // Get user dkp value
     return dkp.query(reaction.message.guild, dkpUsername).then((dkpUser) => {

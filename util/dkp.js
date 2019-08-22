@@ -13,6 +13,14 @@ module.exports = {
       return leaderboard.pin();
     });
   },
+  all: function(guild) {
+    // Returns a promise with the dkpUser object.
+    const channel = guild.channels.find(ch => ch.name === leaderboardName);
+    return channel.fetchPinnedMessages().then(messages => {
+      const message = messages.first();
+      return tableview.parse(message, []);
+    });
+  },
   query: function(guild, user) {
     // Returns a promise with the dkpUser object.
     const channel = guild.channels.find(ch => ch.name === leaderboardName);
