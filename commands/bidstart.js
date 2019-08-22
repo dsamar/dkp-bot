@@ -13,8 +13,14 @@ function getItem(searchQuery) {
 function addReactions(message) {
   const bid = message.guild.emojis.find(em => em.name === 'bid');
   const cancel = message.guild.emojis.find(em => em.name === 'cancel');
-  message.react(bid)
-    .then(() => message.react(cancel));
+  const refresh = message.guild.emojis.find(em => em.name === 'refresh');
+  return message.react(bid)
+    .then(() => {
+      return message.react(cancel)
+    })
+    .then(() => {
+      return message.react(refresh);
+    });
 }
 
 module.exports = {
@@ -38,10 +44,11 @@ module.exports = {
     content.addField(reactionTagName, "bidscreen", true);
     return message.channel.send(content)
       .then(bidMessage => {
-        addReactions(bidMessage);
         const receivedEmbed = bidMessage.embeds[0];
         const newEmbed = new Discord.RichEmbed(receivedEmbed).setFooter("Bid ID: " + bidMessage.id);
-        return bidMessage.edit("", newEmbed);
+        return bidMessage.edit("", newEmbed).then(() => {
+          return addReactions(bidMessage);
+        });
       });
   }
 }

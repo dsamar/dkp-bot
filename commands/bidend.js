@@ -47,7 +47,11 @@ module.exports = {
         const promise3 = fetched.clearReactions();
         return Promise.all([promise1, promise2, promise3]);
       }).then(() => {
-        return message.channel.send(username + " was awarded winning bid on " + sanitize.makeMessageLink(fetched) + " for cost: " + cost);
+        return message.channel.send(username + 
+                                    " was awarded winning bid on **" + 
+                                    fetched.embeds[0].title + 
+                                    "** and charged: " + cost + " DKP\n" + 
+                                    sanitize.makeMessageLink(fetched));
       });
     });
   }

@@ -19,19 +19,23 @@ module.exports = {
     
     const dkpUsername = sanitize.getNickname(user, reaction.message.guild);
     // Get user dkp value
-    return dkp.query(reaction.message.guild, dkpUsername).then((dkpUser) => {
+    return dkp.all(reaction.message.guild).then((all) => {
+      const dkpUser = all.find((el) => {
+        return el.username === dkpUsername;
+      });
       if (!dkpUser) {
         throw new Error("dkp user not found: " + dkpUsername);
       }
       const message = reaction.message;
-      let all = tableview.parse(message, []);
-      if (reaction.emoji.name === 'bid' && !all.find((el) => el.username === dkpUser.username)) {
-        all.push(dkpUser);
+      let allBids = tableview.parse(message.embeds[0].description  || "", []);
+      if (reaction.emoji.name === 'bid' && !allBids.find((el) => el.username === dkpUser.username)) {
+        allBids.push(dkpUser);
+      } else if (reaction.emoji.name === 'cancel') {
+        allBids = allBids.filter(item => item.username !== dkpUser.username)
       }
-      else if (reaction.emoji.name === 'cancel') {
-        all = all.filter(item => item.username !== dkpUser.username)
-      }
-      return tableview.serialize(message, all);
+      // Refresh all names from source
+      allBids = allBids.map((el) => all.find((allEl) => allEl.username === el.username));
+      return tableview.serializeEmbedded(message, allBids);
     });
   }
 }

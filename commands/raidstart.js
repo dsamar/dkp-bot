@@ -17,6 +17,7 @@ module.exports = {
       return channel.fetchMessage(args[0]).then(fetched => {
         const promise1 = fetched.pin();
         const roster = raid.getRoster(fetched);
+        // TODO: send success message after the other two promises.
         const promise2 = message.channel.send(sanitize.makeMessageLink(fetched) + " ```raid started!\nattendance marked for: " + roster + "```");
         const promise3 = dkp.incrementAttendance(message.guild, roster);
         return Promise.all([promise1, promise2, promise3]);

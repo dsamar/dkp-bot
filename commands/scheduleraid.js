@@ -6,8 +6,10 @@ function addRaidSignups (message) {
   // Add other classes/specs
   const bid = message.guild.emojis.find(em => em.name === 'bid');
   const cancel = message.guild.emojis.find(em => em.name === 'cancel');
-  message.react(bid)
-    .then(() => message.react(cancel));
+  return message.react(bid)
+    .then(() => {
+      return message.react(cancel)
+    });
 }
 
 module.exports = {
@@ -29,12 +31,13 @@ module.exports = {
     content.addField(reactionTagName, "raidsignup", true);
     return channel.send(content)
       .then(raidMessage => {
-        addRaidSignups(raidMessage)
         const receivedEmbed = raidMessage.embeds[0];
         const newEmbed = new Discord.RichEmbed(receivedEmbed).setFooter("Raid ID: " + raidMessage.id);
         const promise1 = message.channel.send("created raid: " + sanitize.makeMessageLink(raidMessage));
         const promise2 = raidMessage.edit("", newEmbed);
-        return Promise.all([promise1, promise2]);
+        return Promise.all([promise1, promise2]).then(() => {
+          return addRaidSignups(raidMessage);
+        });
       });
 	},
 };
