@@ -13,7 +13,8 @@ function getField(message, fieldName) {
 
 module.exports = {
 	name: 'raidlock',
-	description: 'Locks a raid screen from user signups',
+	description: 'locks a raid screen from user signups',
+  usage: '<raid_id>',
   args: true,
   usage: '',
   officer: true,

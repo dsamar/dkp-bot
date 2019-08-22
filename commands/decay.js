@@ -4,9 +4,9 @@ const sanitize = require('../util/sanitize.js');
 
 module.exports = {
 	name: 'decay',
-	description: 'Decay the dkp of all members',
+	description: 'decay the dkp of all members by multiplying each member dkp value by the multiplier',
+  usage: '<numeric_value>',
   args: true,
-  usage: '',
   officer: true,
   locks: ['dkp'],
 	execute(message, args) {

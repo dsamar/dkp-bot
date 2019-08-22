@@ -14,9 +14,9 @@ function getField(message, fieldName) {
 
 module.exports = {
 	name: 'bidend',
-	description: 'Spends dkp from one member, while awarding dkp to rest of roster.',
+	description: 'ends bidding on an item, spends dkp from one member, while awarding dkp to rest of roster',
+  usage: '<bid_id> <username>',
   args: true,
-  usage: '',
   aliases: ['dkpspend', 'winner'],
   officer: true,
   locks: ['dkp', 'raid'],

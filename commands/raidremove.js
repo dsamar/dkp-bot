@@ -4,15 +4,18 @@ const config = require('../config.json');
 
 module.exports = {
 	name: 'raidremove',
-	description: 'todo',
+	description: 'removes member from a raid',
   args: true,
-  usage: '',
+  usage: '<raid_id> <username>',
   aliases: ['remove'],
   officer: true,
   locks: ['raid'],
 	execute(message, args) {
     // args[0] == raid ID
     // args[1] == member name
+    if (args.length < 2) {
+      throw new Error("this function takes two arguments");
+    }
     const channel = message.guild.channels.find(ch => ch.name === config.raidAnnounceChannel);
     return message.channel.fetchMessage(args[0])
       .then(message => {

@@ -5,9 +5,9 @@ const sanitize = require('../util/sanitize.js');
 
 module.exports = {
 	name: 'adjust',
-	description: 'Adjusts dkp from one member, while offseting it to the whole leaderboard.',
+	description: 'adjusts dkp from one member, while offseting it to the whole leaderboard',
+  usage: '<username> <numeric_value>',
   args: true,
-  usage: '',
   aliases: ['dkpadjust'],
   officer: true,
   locks: ['dkp'],

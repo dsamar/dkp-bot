@@ -5,9 +5,9 @@ const sanitize = require('../util/sanitize.js');
 
 module.exports = {
 	name: 'setroster',
-	description: 'Sets the currently active raid, without incrementing attendance.',
+	description: 'sets the currently active raid, without incrementing attendance',
   args: true,
-  usage: '',
+  usage: '<raid_id>',
   aliases: ['currentraid'],
   officer: true,
   locks: ['raid'],

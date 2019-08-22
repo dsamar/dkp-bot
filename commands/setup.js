@@ -2,9 +2,8 @@ const dkp = require('../util/dkp.js')
 
 module.exports = {
   name: 'setup',
-	description: 'Commands for managing emojis',
+	description: 'setup emoji used by the bot and, optionally initialize the leaderboard',
   args: false,
-  aliases: ['setup'],
   officer: true,
   locks: ['dkp', 'raid'],
   execute: function(message, args) {

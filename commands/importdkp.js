@@ -3,9 +3,9 @@ const config = require('../config.json');
 // TODO: rework.
 module.exports = {
 	name: 'import',
-	description: 'imports a dkp list from the message id, sets it as the current leaderboard',
+	description: 'NOT QUITE WORKING: imports a dkp list from the message id, sets it as the current leaderboard',
+  usage: '<message_id>',
   args: true,
-  usage: '',
   officer: true,
   locks: [],
 	execute(message, args) {

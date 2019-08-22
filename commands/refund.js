@@ -5,9 +5,9 @@ const sanitize = require('../util/sanitize.js');
 
 module.exports = {
 	name: 'refund',
-	description: 'refunds dkp from to one member, while subtracting dkp to rest of roster.',
+	description: 'refunds dkp from to one member, while subtracting dkp to rest of roster. useful for when you mess up a bid',
   args: true,
-  usage: '',
+  usage: '<username> <numeric_value>',
   aliases: ['reverse'],
   officer: true,
   locks: ['dkp', 'raid'],
@@ -19,7 +19,9 @@ module.exports = {
     }
     const username = sanitize.name(args[0]);        
     const cost = parseFloat(args[1]);
-      
+    if (isNaN(cost)) {
+      throw new Error("refund value provided is not a number");
+    }      
     return raid.getCurrentRaidRoster(message.channel.guild).then(roster => {
       // Check that username is in the current roster
       if (!roster.includes(username)) {

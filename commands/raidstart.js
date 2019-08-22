@@ -5,9 +5,9 @@ const sanitize = require('../util/sanitize.js');
 
 module.exports = {
 	name: 'raidstart',
-	description: 'todo',
+	description: 'sets the active raid roster, and increments attendance for members.',
   args: true,
-  usage: '',
+  usage: '<raid_id>',
   aliases: ['start', 'startraid'],
   officer: true,
   locks: ['dkp', 'raid'],

@@ -25,7 +25,8 @@ function addReactions(message) {
 
 module.exports = {
   name: 'bidstart',
-	description: 'Starts bidding on an item.',
+	description: 'starts bidding on an item, displays the item bid screen',
+  usage: '<query>',
   args: true,
   aliases: ['item'],
   officer: true,

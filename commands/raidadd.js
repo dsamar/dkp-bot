@@ -4,15 +4,18 @@ const config = require('../config.json');
 
 module.exports = {
 	name: 'raidadd',
-	description: 'todo',
+	description: 'adds member to a raid roster',
+  usage: '<raid_id> <username>',
   args: true,
-  usage: '',
   aliases: ['add'],
   officer: true,
   locks: ["raid"],
 	execute(message, args) {
     // args[0] == raid ID
     // args[1] == member name
+    if (args.length < 2) {
+      throw new Error("this function takes two arguments");
+    }
     const channel = message.guild.channels.find(ch => ch.name === config.raidAnnounceChannel);
     return channel.fetchMessage(args[0])
       .then(message => {

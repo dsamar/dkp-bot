@@ -14,8 +14,9 @@ function addRaidSignups (message) {
 
 module.exports = {
 	name: 'schedule',
-	description: 'todo',
-  args: true,
+	description: 'makes a new raid entry, allows anyone to sign up',
+  args: false,
+  usage: '[date or time]',
   aliases: ['raid', 'scheduleraid', 'makeraid', 'createraid', 'raidschedule'],
   officer: true,
   locks: [],

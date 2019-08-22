@@ -2,9 +2,8 @@ const config = require('../config.json');
 
 module.exports = {
 	name: 'itemlist',
-	description: 'Lists all items in database, and their cost.',
+	description: 'lists all items in database, and their cost',
   args: false,
-  usage: '',
   officer: false,
   locks: [],
 	execute(message, args) {

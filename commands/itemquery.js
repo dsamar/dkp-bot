@@ -4,9 +4,9 @@ const item = require('../util/item.js');
 
 module.exports = {
 	name: 'itemquery',
-	description: 'Lists all the cost of a particular item.',
+	description: "lists the cost of a particular item alongside its wowhead image",
+  usage: '<query>',
   args: true,
-  usage: '',
   officer: false,
   locks: [],
   aliases: ['query'],
