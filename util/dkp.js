@@ -2,12 +2,48 @@ const Discord = require('discord.js')
 const {reactionTagName, leaderboardName} = require('../config.json');
 const tableview = require('./tableview.js');
 
-// TODO: Spread leaderboard over multiple messages.
-// Limit is 2000 characters per message.
+const MESSAGE_LIMIT = 500;
+
+function contentFromMessages(messages) {
+  const messageArray = messages.array().sort((a, b) => a.id - b.id);
+  return messageArray.map((m) => {
+    return m.content.replace('`',' ').trim();
+  }).join();
+}
+
+function splitToMessages(channel, messages, serialized) {
+  const messageArray = messages.array().sort((a, b) => a.id - b.id);
+  const serializedLines = serialized.split("\n");
+  const numMessages = Math.ceil(serialized.length / MESSAGE_LIMIT);
+  const chunkSize = Math.floor(serializedLines.length / numMessages);
+
+  const promiseList = [];
+  for (let i = 0; i <= numMessages; i++) {
+    let currentContent = "";
+    if (i != numMessages) {
+      currentContent = "```" + serializedLines.slice(i*chunkSize, (i+1)*chunkSize).join("\n") + "```";
+    } else {
+      currentContent = "```" + serializedLines.slice(i*chunkSize).join("\n") + "```";
+    }
+    if (i > messageArray.length - 1) {
+      promiseList.push(channel.send(currentContent).then((toPin) => toPin.pin()));
+    } else {
+      console.log(i);
+      console.log(messageArray[i].id);
+      promiseList.push(messageArray[i].edit(currentContent));
+    }
+  }
+  // blank out rest of messages from numMessages -> messages.length();
+  for (let i = numMessages; i < messageArray.length; i++) {
+    promiseList.push(messageArray[i].edit("PLACEHOLDER"));
+  }  
+  return Promise.all(promiseList);
+}
+
 module.exports = {
   setup: function(guild) {
     const channel = guild.channels.find(ch => ch.name === leaderboardName);    
-    const content = "DKP LEADERBOARD";
+    const content = "PLACEHOLDER";
     return channel.send(content).then(leaderboard => {
       return leaderboard.pin();
     });
@@ -16,16 +52,14 @@ module.exports = {
     // Returns a promise with the dkpUser object.
     const channel = guild.channels.find(ch => ch.name === leaderboardName);
     return channel.fetchPinnedMessages().then(messages => {
-      const message = messages.first();
-      return tableview.parse(message.content, []);
+      return tableview.parse(contentFromMessages(messages), []);
     });
   },
   query: function(guild, user) {
     // Returns a promise with the dkpUser object.
     const channel = guild.channels.find(ch => ch.name === leaderboardName);
     return channel.fetchPinnedMessages().then(messages => {
-      const message = messages.first();
-      const all = tableview.parse(message.content, []);
+      const all = tableview.parse(contentFromMessages(messages), []);
       
       return all.find((el) => {
         return el.username === user;
@@ -42,8 +76,7 @@ module.exports = {
     if (isNaN(value)) throw new Error('unable to spend dkp, value to spend is not a number: ' + value);
     const channel = guild.channels.find(ch => ch.name === leaderboardName);
     return channel.fetchPinnedMessages().then(messages => {
-      const message = messages.first();
-      const all = tableview.parse(message.content, roster);
+      const all = tableview.parse(contentFromMessages(messages), roster);
 
       // decrement spend user, increment roster
       console.log(value);
@@ -56,15 +89,15 @@ module.exports = {
         }
       });
       
-      return tableview.serializeRegular(message, all);
+      const serialized = tableview.serializeRegular(all);
+      return splitToMessages(channel, messages, serialized);
     });
   },
   adjust: function(guild, username, value) {
     if (isNaN(value)) throw new Error('unable to adjust dkp, value is not a number: ' + value);
     const channel = guild.channels.find(ch => ch.name === leaderboardName);
     return channel.fetchPinnedMessages().then(messages => {
-      const message = messages.first();
-      const all = tableview.parse(message.content, []);
+      const all = tableview.parse(contentFromMessages(messages), []);
       if (all.length === 1 || all.length === 0) {
         throw new Error("unable to adjust DKP, leaderboard needs to be set up and have at least 2 members present");
       }
@@ -78,15 +111,15 @@ module.exports = {
         }
       });
       
-      return tableview.serializeRegular(message, all);
+      const serialized = tableview.serializeRegular(all);
+      return splitToMessages(channel, messages, serialized);
     });
   },
   incrementAttendance: function(guild, roster) {
     const channel = guild.channels.find(ch => ch.name === leaderboardName);
     // This channel should only have 1 message.
     return channel.fetchPinnedMessages().then(messages => {
-      const message = messages.first();
-      const all = tableview.parse(message.content, roster);
+      const all = tableview.parse(contentFromMessages(messages), roster);
       
       // Apply valueFn
       all.forEach((member) => {
@@ -97,15 +130,15 @@ module.exports = {
         }          
       });
       
-      return tableview.serializeRegular(message, all);
+      const serialized = tableview.serializeRegular(all);
+      return splitToMessages(channel, messages, serialized);
     });
   },
   updateDkp: function(guild, roster, valueFn) {
     const channel = guild.channels.find(ch => ch.name === leaderboardName);
     // This channel should only have 1 message.
     return channel.fetchPinnedMessages().then(messages => {
-      const message = messages.first();
-      const all = tableview.parse(message.content, roster);
+      const all = tableview.parse(contentFromMessages(messages), roster);
       
       // Apply valueFn
       all.forEach((member) => {
@@ -114,7 +147,8 @@ module.exports = {
         }
       });
       
-      return tableview.serializeRegular(message, all);
+      const serialized = tableview.serializeRegular(all);
+      return splitToMessages(channel, messages, serialized);
     });
   }
 }

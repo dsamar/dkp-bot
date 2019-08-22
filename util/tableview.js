@@ -36,6 +36,7 @@ function parseLeaderBoard(text, roster) {
     if (isNaN(el.value)) return false;
     return (el != null && el.username != "");
   });
+  all = removeDupes(all);
   
   // Add any new users from roster.
   roster.forEach((user) => {
@@ -61,7 +62,7 @@ function serialize(all) {
       return index === 0 || index === 1 || index === size;
     }
   };
-  return "```" + table(data, config) + "```";
+  return table(data, config);
 }
 
 function serializeEmbedded(message, all) {
@@ -72,13 +73,17 @@ function serializeEmbedded(message, all) {
   return message.edit(updatedMessage);
 }
 
-function serializeRegular(message, all) {
-  const output = serialize(all);
-  return message.edit(output);
+function removeDupes(dkpUserList) {
+  return dkpUserList
+    .sort((a,b) => (a.last_nom > b.last_nom) ? 1 : ((b.last_nom > a.last_nom) ? -1 : 0))
+    .filter((item, pos, ary) => {
+      return !pos || item != ary[pos - 1];
+    });
 }
 
 module.exports = {
   parse: parseLeaderBoard,
   serializeEmbedded: serializeEmbedded,
-  serializeRegular: serializeRegular,
+  serializeRegular: serialize,
+  removeDupes: removeDupes,
 }

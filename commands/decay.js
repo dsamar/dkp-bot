@@ -17,8 +17,8 @@ module.exports = {
         throw new Error("invalid argument: " + args[0])
       }
       const valueFn = (prev) => { return prev * number; };
-      return dkp.updateDkp(message.guild, roster, valueFn).then((leaderboard) => {
-        message.channel.send("decayed leaderboard dkp values with multiplier: " + args[0] + " " + sanitize.makeMessageLink(leaderboard));
+      return dkp.updateDkp(message.guild, roster, valueFn).then(() => {
+        message.channel.send("decayed leaderboard dkp values with multiplier: " + args[0]);
       });
     });
   }

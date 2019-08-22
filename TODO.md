@@ -1,9 +1,5 @@
 ## OUTSTANDING ISSUES
 
-BIG BUG: can't have a message more than 2000 characters, leadearboard needs to be split up
-  - make 20 lines per message or something.
-  - always remove duplicates from leaderboard
-- setup should not delete all emojis
 - add commands to edit user's attendance numbers?
 
 ## OPTIONAL
