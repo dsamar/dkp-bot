@@ -6,6 +6,7 @@ module.exports = {
   args: false,
   aliases: ['setup'],
   officer: true,
+  locks: ['dkp', 'raid'],
   execute: function(message, args) {
     // TODO:
     // arg[0] factory-reset - optional, default false.
@@ -24,7 +25,7 @@ module.exports = {
     });
     let setup2 = Promise.resolve();
     if (factoryReset) {
-      setup2 = dkp.setup(guild).then(() => console.log("leaderboard setup"));
+      setup2 = dkp.setup(guild);
     }
     return Promise.all([setup1, setup2]);
   }

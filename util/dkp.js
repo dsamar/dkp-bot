@@ -2,13 +2,17 @@ const Discord = require('discord.js')
 const {reactionTagName, leaderboardName} = require('../config.json');
 const tableview = require('./tableview.js');
 
-const MESSAGE_LIMIT = 500;
+const MESSAGE_LIMIT = 1500;
 
 function contentFromMessages(messages) {
   const messageArray = messages.array().sort((a, b) => a.id - b.id);
-  return messageArray.map((m) => {
-    return m.content.replace('`',' ').trim();
-  }).join();
+  return messageArray
+    .filter((m) => m.content !== "PLACEHOLDER")
+    .map((m) => {
+      let str = m.content.trim();
+      str = str.slice(3, str.length - 3);
+      return str;
+    }).join("\n");
 }
 
 function splitToMessages(channel, messages, serialized) {
@@ -28,13 +32,11 @@ function splitToMessages(channel, messages, serialized) {
     if (i > messageArray.length - 1) {
       promiseList.push(channel.send(currentContent).then((toPin) => toPin.pin()));
     } else {
-      console.log(i);
-      console.log(messageArray[i].id);
       promiseList.push(messageArray[i].edit(currentContent));
     }
   }
   // blank out rest of messages from numMessages -> messages.length();
-  for (let i = numMessages; i < messageArray.length; i++) {
+  for (let i = numMessages + 1; i < messageArray.length; i++) {
     promiseList.push(messageArray[i].edit("PLACEHOLDER"));
   }  
   return Promise.all(promiseList);
@@ -79,7 +81,6 @@ module.exports = {
       const all = tableview.parse(contentFromMessages(messages), roster);
 
       // decrement spend user, increment roster
-      console.log(value);
       all.forEach((member) => {
         if (username === member.username) {
           member.value -= value;
@@ -100,6 +101,10 @@ module.exports = {
       const all = tableview.parse(contentFromMessages(messages), []);
       if (all.length === 1 || all.length === 0) {
         throw new Error("unable to adjust DKP, leaderboard needs to be set up and have at least 2 members present");
+      }
+      
+      if (!all.find((el) => el.username === username)) {
+        throw new Error("user not found: " + username);
       }
       
       // decrement spend user, increment everyone else

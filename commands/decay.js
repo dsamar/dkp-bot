@@ -8,6 +8,7 @@ module.exports = {
   args: true,
   usage: '',
   officer: true,
+  locks: ['dkp'],
 	execute(message, args) {
     // args[0] == decay multiplier
     return dkp.all(message.channel.guild).then(all => {

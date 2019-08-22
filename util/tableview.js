@@ -62,13 +62,13 @@ function serialize(all) {
       return index === 0 || index === 1 || index === size;
     }
   };
-  return table(data, config);
+  return table(data, config).trim();
 }
 
 function serializeEmbedded(message, all) {
   const output = serialize(all);
   const updatedMessage = new Discord.RichEmbed(message.embeds[0]);
-  updatedMessage.setDescription(output);
+  updatedMessage.setDescription("```" + output + "```");
   updatedMessage.setTimestamp();
   return message.edit(updatedMessage);
 }

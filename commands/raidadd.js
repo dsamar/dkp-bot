@@ -9,12 +9,14 @@ module.exports = {
   usage: '',
   aliases: ['add'],
   officer: true,
+  locks: ["raid"],
 	execute(message, args) {
     // args[0] == raid ID
     // args[1] == member name
     const channel = message.guild.channels.find(ch => ch.name === config.raidAnnounceChannel);
     return channel.fetchMessage(args[0])
       .then(message => {
+        // If the raid already started, increment attendance, or maybe mark as late somehow.
         return raid.update("unknown", message, sanitize.name(args[1]));
       })
   }

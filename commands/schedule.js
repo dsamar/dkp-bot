@@ -13,11 +13,12 @@ function addRaidSignups (message) {
 }
 
 module.exports = {
-	name: 'scheduleraid',
+	name: 'schedule',
 	description: 'todo',
   args: true,
-  aliases: ['create', 'raid', 'schedule', 'makeraid', 'createraid', 'raidschedule'],
+  aliases: ['raid', 'scheduleraid', 'makeraid', 'createraid', 'raidschedule'],
   officer: true,
+  locks: [],
 	execute(message, args) {
     // args[0] date-time
     const datetime = args.join(" ");

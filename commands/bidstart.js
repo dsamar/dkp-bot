@@ -25,10 +25,11 @@ function addReactions(message) {
 
 module.exports = {
   name: 'bidstart',
-	description: 'todo',
+	description: 'Starts bidding on an item.',
   args: true,
   aliases: ['item'],
   officer: true,
+  locks: [],
   execute: function(message, args) {
     const itemQuery = args.join(" ");
     const content = new Discord.RichEmbed();

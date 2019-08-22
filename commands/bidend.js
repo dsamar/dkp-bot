@@ -19,14 +19,18 @@ module.exports = {
   usage: '',
   aliases: ['dkpspend', 'winner'],
   officer: true,
+  locks: ['dkp', 'raid'],
 	execute(message, args) {
     // args[0] == bidID
     // args[1] == username
     
     // todo: check if bid already ended
     return message.channel.fetchMessage(args[0]).then(fetched => {
+      if (getField(new Discord.RichEmbed(fetched.embeds[0]), "locked").value === 'true') {
+        throw new Error("the item was already awarded, start a new bid with !bidstart");
+      }
       if (args.length != 2) {
-        throw new Error("usage: !bidend BID_ID USERNAME")
+        throw new Error("usage: !bidend BID_ID USERNAME");
       }
       const cost = parseFloat(getField(fetched.embeds[0], "cost").value);
       const username = sanitize.name(args[1]);      

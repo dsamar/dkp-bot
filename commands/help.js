@@ -8,6 +8,7 @@ module.exports = {
   args: false,
   usage: '',
   officer: false,
+  locks: [],
 	execute(message, args) {
     const readme = fs.readFileSync(path.resolve(__dirname, '../README.md'), 'utf8');
     return message.author.send(readme);

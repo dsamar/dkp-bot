@@ -8,6 +8,7 @@ function getField(message, fieldName) {
 
 module.exports = {
   name: 'raidsignup',
+  locks: ['raid'],
   execute: function(reaction, user) {
     // get guildmember, use gm.nickname, fallback to user.username
     const dkpUsername = sanitize.getNickname(user, reaction.message.guild);

@@ -6,6 +6,7 @@ module.exports = {
   args: false,
   usage: '',
   officer: false,
+  locks: [],
 	execute(message, args) {
     const itemList = config.items.map((el) => {
       return "**" + el.name + "** | " + el.cost;

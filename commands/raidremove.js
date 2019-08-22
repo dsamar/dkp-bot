@@ -9,6 +9,7 @@ module.exports = {
   usage: '',
   aliases: ['remove'],
   officer: true,
+  locks: ['raid'],
 	execute(message, args) {
     // args[0] == raid ID
     // args[1] == member name

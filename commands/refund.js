@@ -10,6 +10,7 @@ module.exports = {
   usage: '',
   aliases: ['reverse'],
   officer: true,
+  locks: ['dkp', 'raid'],
 	execute(message, args) {
     // args[0] == username
     // args[1] == value

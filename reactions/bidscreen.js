@@ -10,6 +10,7 @@ function getField(message, fieldName) {
 
 module.exports = {
   name: 'bidscreen',
+  locks: ['dkp'],
   execute: function(reaction, user) {
     const bidMessage = reaction.message.embeds[0];
     const lockState = getField(bidMessage, "locked");

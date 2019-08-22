@@ -1,6 +1,8 @@
 const fs = require('fs');
 const Discord = require('discord.js')
 const {prefix, commandChannel, raidAnnounceChannel, botCategory, officerRole, reactionTagName} = require('./config.json');
+const AsyncLock = require('async-lock');
+const lock = new AsyncLock();
 
 const client = new Discord.Client()
 client.commands = new Discord.Collection();
@@ -22,11 +24,32 @@ for (const file of reactionFiles) {
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
   // Iterate all messages in the dkp command channel to put them in cache for reactions.
-  client.guilds.forEach((guild) =>{
-    guild.channels.find(ch => ch.name === commandChannel).fetchMessages().then((messages) => {});
-    guild.channels.find(ch => ch.name === raidAnnounceChannel).fetchMessages().then((messages) => {});
+  return Promise.all(
+    client.guilds.map((guild) =>{
+      return Promise.all([
+        guild.channels.find(ch => ch.name === commandChannel).fetchMessages(),
+        guild.channels.find(ch => ch.name === raidAnnounceChannel).fetchMessages(),
+      ])
+    })
+  ).then(() => {
+    return console.log("Listening to dkp channels!");
   });
 });
+
+function handleError(error, user, message) {
+  console.error(error);
+  const errorContent = "ERROR: ```" + error.message + "```";
+  // Officer-triggered error messages go in channel chat.
+  if (message && !message.member.roles.some(role => role.name === officerRole)) {
+    return message.channel.send(errorContent);
+  }
+  // Otherwise send error to user directly.
+  return user.send(errorContent);
+}
+
+function generateGuildLocks(locks, guild) {
+  return locks.map((key) => key + guild.id);
+}
 
 function handleMessage(message) {
   if (!message.content.startsWith(prefix)) {
@@ -57,14 +80,20 @@ function handleMessage(message) {
   }
 
   try {
-    return command.execute(message, args)
-      .catch((error) => {
-      console.error(error);
-        return message.author.send("ERROR: ```" + error.message + "```");
-      });
+    // salt each set of locks with guild id.
+    const commandLocks = generateGuildLocks(command.locks, message.guild);
+    const runCommand = () => {
+      return command.execute(message, args)
+        .catch((error) => {
+          return handleError(error, message, message.author);
+        })
+    };
+    console.log("acquire: " + commandLocks);
+    return lock.acquire(commandLocks, runCommand).then(() => {
+      console.log("release: " + commandLocks);
+    });
   } catch (error) {
-    console.error(error);
-    return message.author.send("ERROR: ```" + error.message + "```");
+    return handleError(error, message, message.author);
   }
 }
 
@@ -74,9 +103,13 @@ client.on('message', message => {
   
   message.channel.startTyping();
   return handleMessage(message)
-    .then(() => message.channel.stopTyping());
-  
-  // if there is too much command spam, consider removing messages after they are handled.
+    .then(() => message.channel.stopTyping())
+    .then(() => {
+      // Remove spam from non-officers.
+      if (!message.member.roles.some(role => role.name === officerRole)) {
+        message.delete();
+      }
+    });
 })
 
 function reactionHandler(reaction, user) {
@@ -84,18 +117,25 @@ function reactionHandler(reaction, user) {
   if (reaction.message.embeds.length !== 1) return Promise.resolve();  
   const tag = reaction.message.embeds[0].fields.find(field => field.name === reactionTagName);
   if (!tag) return Promise.resolve();
-  const reactionHandler = client.reactions.get(tag.value);
-  if (!reactionHandler) return Promise.resolve();
+  const reactionCommand = client.reactions.get(tag.value);
+  if (!reactionCommand) return Promise.resolve();
   
   // Run the reaction handler
   try {
-    return reactionHandler.execute(reaction, user).catch((error) => {
-      console.error(error);
-      return user.send("ERROR: ```" + error.message + "```");
+    // salt each set of locks with guild id.
+    const commandLocks = generateGuildLocks(reactionCommand.locks, reaction.message.guild);
+    const runCommand = () => {
+      return reactionCommand.execute(reaction, user)
+        .catch((error) => {
+          return handleError(error, null, user);
+        })
+    };
+    console.log("acquire: " + commandLocks);
+    return lock.acquire(commandLocks, runCommand).then(() => {
+      console.log("release: " + commandLocks);
     });
   } catch (error) {
-    console.error(error);
-		return user.send("ERROR: ```" + error.message + "```");
+    return handleError(error, null, user);
   }
 }
 

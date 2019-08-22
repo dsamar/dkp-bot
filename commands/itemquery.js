@@ -8,6 +8,7 @@ module.exports = {
   args: true,
   usage: '',
   officer: false,
+  locks: [],
   aliases: ['query'],
 	execute(message, args) {
     const query = args.join(" ");
