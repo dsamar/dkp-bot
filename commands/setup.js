@@ -3,11 +3,11 @@ const dkp = require('../util/dkp.js')
 module.exports = {
   name: 'setup',
 	description: 'setup emoji used by the bot and, optionally initialize the leaderboard',
+  usage: "[factory_reset]",
   args: false,
   officer: true,
   locks: ['dkp', 'raid'],
   execute: function(message, args) {
-    // TODO:
     // arg[0] factory-reset - optional, default false.
     let factoryReset = false;
     if (args.length > 0) {

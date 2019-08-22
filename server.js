@@ -1,12 +1,21 @@
 const fs = require('fs');
 const Discord = require('discord.js')
-const {prefix, commandChannel, raidAnnounceChannel, botCategory, officerRole, reactionTagName} = require('./config.json');
+const {prefix, commandChannel, raidAnnounceChannel, leaderboardName, botCategory, officerRole, reactionTagName} = require('./config.json');
 const AsyncLock = require('async-lock');
+const winston = require('winston');
 const lock = new AsyncLock();
 
 const client = new Discord.Client()
 client.commands = new Discord.Collection();
 client.reactions = new Discord.Collection();
+
+const logger = winston.createLogger({
+	transports: [
+		new winston.transports.Console(),
+		new winston.transports.File({ filename: 'log' }),
+	],
+	format: winston.format.printf(log => `[${log.level.toUpperCase()}] - ${log.message}`),
+});
 
 const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
 const reactionFiles = fs.readdirSync('./reactions').filter(file => file.endsWith('.js'));
@@ -22,7 +31,7 @@ for (const file of reactionFiles) {
 }
 
 client.on('ready', () => {
-  console.log(`Logged in as ${client.user.tag}!`);
+  logger.log('info', `Logged in as ${client.user.tag}!`);
   // Iterate all messages in the dkp command channel to put them in cache for reactions.
   return Promise.all(
     client.guilds.map((guild) =>{
@@ -32,12 +41,12 @@ client.on('ready', () => {
       ])
     })
   ).then(() => {
-    return console.log("Listening to dkp channels!");
+    logger.log('info', "Listening to dkp channels!");
   });
 });
 
 function handleError(error, user, message) {
-  console.error(error);
+  logger.log('error', error);
   const errorContent = "ERROR: ```" + error.message + "```";
   // Officer-triggered error messages go in channel chat.
   if (message && !message.member.roles.some(role => role.name === officerRole)) {
@@ -88,9 +97,9 @@ function handleMessage(message) {
           return handleError(error, message, message.author);
         })
     };
-    console.log("acquire: " + commandLocks);
+    logger.log('info', "acquire: " + commandLocks);
     return lock.acquire(commandLocks, runCommand).then(() => {
-      console.log("release: " + commandLocks);
+      logger.log('info', "release: " + commandLocks);
     });
   } catch (error) {
     return handleError(error, message, message.author);
@@ -98,6 +107,9 @@ function handleMessage(message) {
 }
 
 client.on('message', message => {
+  if (message.type === 'PINS_ADD') {
+    return message.delete();
+  }
   if (message.channel.name !== commandChannel) return;
   if (message.author.bot) return;
   
@@ -130,9 +142,9 @@ function reactionHandler(reaction, user) {
           return handleError(error, null, user);
         })
     };
-    console.log("acquire: " + commandLocks);
+    logger.log('info', "acquire: " + commandLocks);
     return lock.acquire(commandLocks, runCommand).then(() => {
-      console.log("release: " + commandLocks);
+      logger.log('info', "release: " + commandLocks);
     });
   } catch (error) {
     return handleError(error, null, user);
