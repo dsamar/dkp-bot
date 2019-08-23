@@ -29,3 +29,16 @@ If you want to join the raid with an alt, change your server nickname to that ch
   - Players can react to the bid message if they wish to get the item. Each reaction will update the list of candidates, and their dkp tally.
 - An officer picks the winner (by looking at the highest dkp, breaking ties as necessary) and runs the `!winner BID_ID NAME` command.
   - The winner gets the cost of the item subtracted, while the roster of the raid gets the cost added evenly.
+  
+## Installation
+
+```
+git clone https://github.com/dsamar/dkp-bot.git
+cd dkp-bot
+npm install dotenv
+npm install
+vim .env
+  > BOT_TOKEN=<TOKEN>
+
+
+```
