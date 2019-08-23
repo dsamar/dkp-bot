@@ -32,13 +32,33 @@ If you want to join the raid with an alt, change your server nickname to that ch
   
 ## Installation
 
+Scopes Needed:
+
+- bot
+
+Premissions Needed:
+
+- Send Messages
+- Manage Messages
+- Embed Links
+- Attach Files
+- Read Message History
+- Use External Emojis
+- Add Reactions
+- Manage Emojis
+- View Channels
+
+Linux Setup:
+
 ```
 git clone https://github.com/dsamar/dkp-bot.git
 cd dkp-bot
-npm install dotenv
 npm install
 vim .env
   > BOT_TOKEN=<TOKEN>
 
-
+sudo npm install -g forever
+forever start server.js
+crontab -u <USERNAME> -e
+  > @reboot /usr/local/bin/forever start /home/<USERNAME>/dkp-bot/server.js
 ```
