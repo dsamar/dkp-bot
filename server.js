@@ -49,7 +49,7 @@ function handleError(error, user, message) {
   logger.log('error', error);
   const errorContent = "ERROR: ```" + error.message + "```";
   // Officer-triggered error messages go in channel chat.
-  if (message && !message.member.roles.some(role => role.name === officerRole)) {
+  if (message && message.member.roles.some(role => role.name === officerRole)) {
     return message.channel.send(errorContent);
   }
   // Otherwise send error to user directly.
@@ -92,17 +92,21 @@ function handleMessage(message) {
     // salt each set of locks with guild id.
     const commandLocks = generateGuildLocks(command.locks, message.guild);
     const runCommand = () => {
-      return command.execute(message, args)
-        .catch((error) => {
-          return handleError(error, message, message.author);
-        })
+      try {
+        return command.execute(message, args)
+          .catch((error) => {
+            return handleError(error, message.author, message);
+          });
+      } catch (error) {
+        return handleError(error, message.author, message);
+      }
     };
     logger.log('info', "acquire: " + commandLocks);
     return lock.acquire(commandLocks, runCommand).then(() => {
       logger.log('info', "release: " + commandLocks);
     });
   } catch (error) {
-    return handleError(error, message, message.author);
+    return handleError(error, message.author, message);
   }
 }
 
@@ -137,10 +141,14 @@ function reactionHandler(reaction, user) {
     // salt each set of locks with guild id.
     const commandLocks = generateGuildLocks(reactionCommand.locks, reaction.message.guild);
     const runCommand = () => {
-      return reactionCommand.execute(reaction, user)
-        .catch((error) => {
-          return handleError(error, user, null);
-        })
+      try {
+        return reactionCommand.execute(reaction, user)
+          .catch((error) => {
+            return handleError(error, user, null);
+          })
+      } catch (error) {
+        return handleError(error, user, null);
+      }
     };
     logger.log('info', "acquire: " + commandLocks);
     return lock.acquire(commandLocks, runCommand).then(() => {
