@@ -4,6 +4,7 @@ const {prefix, commandChannel, raidAnnounceChannel, leaderboardName, botCategory
 const AsyncLock = require('async-lock');
 const winston = require('winston');
 const lock = new AsyncLock();
+require('dotenv').config();
 
 const client = new Discord.Client()
 client.commands = new Discord.Collection();

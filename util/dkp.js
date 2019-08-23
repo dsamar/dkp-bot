@@ -22,9 +22,9 @@ function splitToMessages(channel, messages, serialized) {
   const chunkSize = Math.floor(serializedLines.length / numMessages);
 
   const promiseList = [];
-  for (let i = 0; i <= numMessages; i++) {
+  for (let i = 0; i < numMessages; i++) {
     let currentContent = "";
-    if (i != numMessages) {
+    if (i != numMessages - 1 ) {
       currentContent = "```" + serializedLines.slice(i*chunkSize, (i+1)*chunkSize).join("\n") + "```";
     } else {
       currentContent = "```" + serializedLines.slice(i*chunkSize).join("\n") + "```";

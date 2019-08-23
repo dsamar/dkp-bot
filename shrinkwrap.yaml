@@ -1,6 +1,7 @@
 dependencies:
   async-lock: 1.2.2
   discord.js: 11.5.1
+  dotenv: 8.1.0
   express: 4.16.4
   google-spreadsheet: 2.0.7
   googleapis: 42.0.0
@@ -302,6 +303,12 @@ packages:
       sodium: ^2.0.3
     resolution:
       integrity: sha512-tGhV5xaZXE3Z+4uXJb3hYM6gQ1NmnSxp9PClcsSAYFVRzH6AJH74040mO3afPDMWEAlj8XsoPXXTJHTxesqcGw==
+  /dotenv/8.1.0:
+    dev: false
+    engines:
+      node: '>=8'
+    resolution:
+      integrity: sha512-GUE3gqcDCaMltj2++g6bRQ5rBJWtkWTmqmD0fo1RnnMuUqHNCt2oTPeDnS9n6fKYvlhn7AeBkb38lymBtWBQdA==
   /ecc-jsbn/0.1.2:
     dependencies:
       jsbn: 0.1.1
@@ -1301,6 +1308,7 @@ shrinkwrapVersion: 3
 specifiers:
   async-lock: ^1.2.2
   discord.js: ^11.5.1
+  dotenv: ^8.1.0
   express: ^4.16.4
   google-spreadsheet: ^2.0.7
   googleapis: ^42.0.0

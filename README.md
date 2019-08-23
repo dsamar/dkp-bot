@@ -12,6 +12,10 @@ A good rule of thumb: set discord nickname to match your character name in game.
 The bot will use your nickname for registering for raids and tracking DKP.
 If you want to join the raid with an alt, change your server nickname to that character name before signing up to the raid.
 
+**First time Setup**
+
+- Run the command `!setup fresh` to make the necessary emojis and set up the leaderboard channel.
+
 **Seting up a Raid**
 
 - Schedule a raid with the `!schedule YYYY-MM-DD` command in advance.
@@ -29,3 +33,36 @@ If you want to join the raid with an alt, change your server nickname to that ch
   - Players can react to the bid message if they wish to get the item. Each reaction will update the list of candidates, and their dkp tally.
 - An officer picks the winner (by looking at the highest dkp, breaking ties as necessary) and runs the `!winner BID_ID NAME` command.
   - The winner gets the cost of the item subtracted, while the roster of the raid gets the cost added evenly.
+  
+## Installation
+
+Scopes Needed:
+
+- bot
+
+Premissions Needed:
+
+- Send Messages
+- Manage Messages
+- Embed Links
+- Attach Files
+- Read Message History
+- Use External Emojis
+- Add Reactions
+- Manage Emojis
+- View Channels
+
+Linux Setup:
+
+```
+git clone https://github.com/dsamar/dkp-bot.git
+cd dkp-bot
+npm install
+vim .env
+  > BOT_TOKEN=<TOKEN>
+
+sudo npm install -g forever
+forever start server.js
+crontab -u <USERNAME> -e
+  > @reboot /usr/local/bin/forever start /home/<USERNAME>/dkp-bot/server.js
+```
