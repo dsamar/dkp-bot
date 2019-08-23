@@ -12,6 +12,10 @@ A good rule of thumb: set discord nickname to match your character name in game.
 The bot will use your nickname for registering for raids and tracking DKP.
 If you want to join the raid with an alt, change your server nickname to that character name before signing up to the raid.
 
+**First time Setup**
+
+- Run the command `!setup fresh` to make the necessary emojis and set up the leaderboard channel.
+
 **Seting up a Raid**
 
 - Schedule a raid with the `!schedule YYYY-MM-DD` command in advance.
