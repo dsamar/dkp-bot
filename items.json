@@ -4,6 +4,7 @@
       "name": "Bonereaver's Edge",
       "wowheadID": "17076",
       "slot": "two-hand",
+      "cost": 300,
       "tags": [],
       "source": "molten core"
     },
@@ -19,6 +20,7 @@
       "name": "Robe of Volatile Power",
       "wowheadID": "19145",
       "slot": "chest",
+      "cost": 350,
       "tags": [
         "bis"
       ],
@@ -28,6 +30,7 @@
       "name": "Azuresong Mageblade",
       "wowheadID": "17103",
       "slot": "main hand",
+      "cost": 500,
       "tags": [
         "bis"
       ],
@@ -37,6 +40,7 @@
       "name": "Spinal Reaper",
       "wowheadID": "17104",
       "slot": "two-hand",
+      "cost": 600,
       "tags": [
         "bis"
       ],
@@ -46,6 +50,7 @@
       "name": "Perdition's Blade",
       "wowheadID": "18816",
       "slot": "one-hand",
+      "cost": 500,
       "tags": [
         "bis"
       ],
@@ -55,6 +60,7 @@
       "name": "Ring of Spell Power",
       "wowheadID": "19147",
       "slot": "finger",
+      "cost": 300,
       "tags": [
         "bis"
       ],
@@ -72,6 +78,7 @@
       "name": "Talisman of Ephemeral Power",
       "wowheadID": "18820",
       "slot": "trinket",
+      "cost": 500,
       "tags": [
         "bis"
       ],
@@ -89,6 +96,7 @@
       "name": "Onslaught Girdle",
       "wowheadID": "19137",
       "slot": "waist",
+      "cost": 200,
       "tags": [
         "bis"
       ],
@@ -98,6 +106,7 @@
       "name": "Brutality Blade",
       "wowheadID": "18832",
       "slot": "one-hand",
+      "cost": 500,
       "tags": [
         "bis"
       ],
@@ -107,6 +116,7 @@
       "name": "Cauterizing Band",
       "wowheadID": "19140",
       "slot": "finger",
+      "cost": 300,
       "tags": [
         "bis"
       ],
@@ -116,6 +126,7 @@
       "name": "Core Hound Tooth",
       "wowheadID": "18805",
       "slot": "one-hand",
+      "cost": 500,
       "tags": [
         "bis"
       ],
@@ -125,6 +136,7 @@
       "name": "Aged Core Leather Gloves",
       "wowheadID": "18823",
       "slot": "hands",
+      "cost": 250,
       "tags": [
         "bis"
       ],
@@ -134,6 +146,7 @@
       "name": "Mana Igniting Cord",
       "wowheadID": "19136",
       "slot": "waist",
+      "cost": 200,
       "tags": [
         "bis"
       ],
@@ -151,6 +164,7 @@
       "name": "Striker's Mark",
       "wowheadID": "17069",
       "slot": "ranged",
+      "cost": 200,
       "tags": [
         "bis"
       ],
@@ -160,6 +174,7 @@
       "name": "Choker of the Fire Lord",
       "wowheadID": "18814",
       "slot": "neck",
+      "cost": 300,
       "tags": [
         "bis"
       ],
@@ -169,6 +184,7 @@
       "name": "Wild Growth Spaulders",
       "wowheadID": "18810",
       "slot": "shoulder",
+      "cost": 350,
       "tags": [
         "bis"
       ],
@@ -178,6 +194,7 @@
       "name": "Drillborer Disk",
       "wowheadID": "17066",
       "slot": "shield",
+      "cost": 200,
       "tags": [
         "bis"
       ],
@@ -187,6 +204,7 @@
       "name": "Quick Strike Ring",
       "wowheadID": "18821",
       "slot": "finger",
+      "cost": 300,
       "tags": [
         "bis"
       ],
@@ -196,6 +214,7 @@
       "name": "Aurastone Hammer",
       "wowheadID": "17105",
       "slot": "one-hand",
+      "cost": 500,
       "tags": [
         "bis"
       ],
@@ -205,6 +224,7 @@
       "name": "Band of Accuria",
       "wowheadID": "17063",
       "slot": "finger",
+      "cost": 300,
       "tags": [
         "bis"
       ],
@@ -214,6 +234,7 @@
       "name": "Eskhandar's Right Claw",
       "wowheadID": "18203",
       "slot": "main hand",
+      "cost": 500,
       "tags": [
         "bis"
       ],
@@ -223,6 +244,7 @@
       "name": "Salamander Scale Pants",
       "wowheadID": "18875",
       "slot": "legs",
+      "cost": 350,
       "tags": [
         "bis"
       ],
@@ -232,6 +254,7 @@
       "name": "Wristguards of Stability",
       "wowheadID": "19146",
       "slot": "wrist",
+      "cost": 200,
       "tags": [
         "bis"
       ],
@@ -241,6 +264,7 @@
       "name": "Sash of Whispered Secrets",
       "wowheadID": "18809",
       "slot": "waist",
+      "cost": 200,
       "tags": [
         "bis"
       ],
@@ -250,6 +274,7 @@
       "name": "Heavy Dark Iron Ring",
       "wowheadID": "18879",
       "slot": "finger",
+      "cost": 300,
       "tags": [
         "bis"
       ],
@@ -259,6 +284,7 @@
       "name": "Flameguard Gauntlets",
       "wowheadID": "19143",
       "slot": "hands",
+      "cost": 100,
       "tags": [],
       "source": "molten core"
     },
@@ -266,6 +292,7 @@
       "name": "Staff of Dominance",
       "wowheadID": "18842",
       "slot": "two-hand",
+      "cost": 600,
       "tags": [
         "bis"
       ],
@@ -275,6 +302,7 @@
       "name": "Choker of Enlightenment",
       "wowheadID": "17109",
       "slot": "neck",
+      "cost": 200,
       "tags": [],
       "source": "molten core"
     },
@@ -282,6 +310,7 @@
       "name": "Earthshaker",
       "wowheadID": "17073",
       "slot": "two-hand",
+      "cost": 300,
       "tags": [],
       "source": "molten core"
     },
@@ -289,6 +318,7 @@
       "name": "Malistar's Defender",
       "wowheadID": "17106",
       "slot": "shield",
+      "cost": 150,
       "tags": [],
       "source": "molten core"
     },
@@ -296,6 +326,7 @@
       "name": "Crimson Shocker",
       "wowheadID": "17077",
       "slot": "ranged",
+      "cost": 150,
       "tags": [],
       "source": "molten core"
     },
@@ -303,6 +334,7 @@
       "name": "Gutgore Ripper",
       "wowheadID": "17071",
       "slot": "one-hand",
+      "cost": 200,
       "tags": [],
       "source": "molten core"
     },
@@ -310,6 +342,7 @@
       "name": "Sorcerous Dagger",
       "wowheadID": "18878",
       "slot": "main hand",
+      "cost": 200,
       "tags": [],
       "source": "molten core"
     },
@@ -317,6 +350,7 @@
       "name": "Netherwind Pants",
       "wowheadID": "16915",
       "slot": "legs",
+      "cost": 350,
       "tags": [
         "t2"
       ],
@@ -326,6 +360,7 @@
       "name": "Crown of Destruction",
       "wowheadID": "18817",
       "slot": "head",
+      "cost": 350,
       "tags": [
         "bis"
       ],
@@ -343,6 +378,7 @@
       "name": "Finkle's Lava Dredger",
       "wowheadID": "18803",
       "slot": "two-hand",
+      "cost": 300,
       "tags": [],
       "source": "molten core"
     },
@@ -350,6 +386,7 @@
       "name": "Medallion of Steadfast Might",
       "wowheadID": "17065",
       "slot": "neck",
+      "cost": 300,
       "tags": [
         "bis"
       ],
@@ -359,6 +396,7 @@
       "name": "Arcanist Crown",
       "wowheadID": "16795",
       "slot": "head",
+      "cost": 250,
       "tags": [
         "t1"
       ],
@@ -368,6 +406,7 @@
       "name": "Dragon's Blood Cape",
       "wowheadID": "17107",
       "slot": "back",
+      "cost": 300,
       "tags": [
         "bis"
       ],
@@ -377,6 +416,7 @@
       "name": "Fire Runed Grimoire",
       "wowheadID": "19142",
       "slot": "held in off-hand",
+      "cost": 150,
       "tags": [],
       "source": "molten core"
     },
@@ -384,6 +424,7 @@
       "name": "Deep Earth Spaulders",
       "wowheadID": "18829",
       "slot": "shoulder",
+      "cost": 350,
       "tags": [
         "bis"
       ],
@@ -393,6 +434,7 @@
       "name": "Shard of the Flame",
       "wowheadID": "17082",
       "slot": "trinket",
+      "cost": 200,
       "tags": [],
       "source": "molten core"
     },
@@ -400,6 +442,7 @@
       "name": "Cloak of the Shrouded Mists",
       "wowheadID": "17102",
       "slot": "back",
+      "cost": 300,
       "tags": [
         "bis"
       ],
@@ -409,6 +452,7 @@
       "name": "Blastershot Launcher",
       "wowheadID": "17072",
       "slot": "ranged",
+      "cost": 150,
       "tags": [],
       "source": "molten core"
     },
@@ -416,6 +460,7 @@
       "name": "Giantstalker's Helmet",
       "wowheadID": "16846",
       "slot": "head",
+      "cost": 250,
       "tags": [
         "t1"
       ],
@@ -425,6 +470,7 @@
       "name": "Essence of the Pure Flame",
       "wowheadID": "18815",
       "slot": "trinket",
+      "cost": 200,
       "tags": [],
       "source": "molten core"
     },
@@ -432,6 +478,7 @@
       "name": "Fireguard Shoulders",
       "wowheadID": "19139",
       "slot": "shoulder",
+      "cost": 350,
       "tags": [
         "bis"
       ],
@@ -441,6 +488,7 @@
       "name": "Earthfury Helmet",
       "wowheadID": "16842",
       "slot": "head",
+      "cost": 250,
       "tags": [
         "t1"
       ],
@@ -450,6 +498,7 @@
       "name": "Nightslayer Shoulder Pads",
       "wowheadID": "16823",
       "slot": "shoulder",
+      "cost": 250,
       "tags": [
         "t1"
       ],
@@ -459,6 +508,7 @@
       "name": "Mantle of Prophecy",
       "wowheadID": "16816",
       "slot": "shoulder",
+      "cost": 250,
       "tags": [
         "t1"
       ],
@@ -468,6 +518,7 @@
       "name": "Gauntlets of Might",
       "wowheadID": "16863",
       "slot": "hands",
+      "cost": 150,
       "tags": [
         "t1"
       ],
@@ -477,6 +528,7 @@
       "name": "Pauldrons of Might",
       "wowheadID": "16868",
       "slot": "shoulder",
+      "cost": 250,
       "tags": [
         "t1"
       ],
@@ -486,6 +538,7 @@
       "name": "Leggings of Transcendence",
       "wowheadID": "16922",
       "slot": "legs",
+      "cost": 350,
       "tags": [
         "t2"
       ],
@@ -495,6 +548,7 @@
       "name": "Manastorm Leggings",
       "wowheadID": "18872",
       "slot": "legs",
+      "cost": 200,
       "tags": [],
       "source": "molten core"
     },
@@ -502,6 +556,7 @@
       "name": "Flamewaker Legplates",
       "wowheadID": "18861",
       "slot": "legs",
+      "cost": 200,
       "tags": [],
       "source": "molten core"
     },
@@ -509,6 +564,7 @@
       "name": "Legplates of Wrath",
       "wowheadID": "16962",
       "slot": "legs",
+      "cost": 350,
       "tags": [
         "t2"
       ],
@@ -518,6 +574,7 @@
       "name": "Arcanist Boots",
       "wowheadID": "16800",
       "slot": "feet",
+      "cost": 150,
       "tags": [
         "t1"
       ],
@@ -527,6 +584,7 @@
       "name": "Helm of Might",
       "wowheadID": "16866",
       "slot": "head",
+      "cost": 250,
       "tags": [
         "t1"
       ],
@@ -536,6 +594,7 @@
       "name": "Circlet of Prophecy",
       "wowheadID": "16813",
       "slot": "head",
+      "cost": 250,
       "tags": [
         "t1"
       ],
@@ -545,6 +604,7 @@
       "name": "Band of Sulfuras",
       "wowheadID": "19138",
       "slot": "finger",
+      "cost": 200,
       "tags": [],
       "source": "molten core"
     },
@@ -552,6 +612,7 @@
       "name": "Nemesis Leggings",
       "wowheadID": "16930",
       "slot": "legs",
+      "cost": 350,
       "tags": [
         "t2"
       ],
@@ -561,6 +622,7 @@
       "name": "Bloodfang Pants",
       "wowheadID": "16909",
       "slot": "legs",
+      "cost": 350,
       "tags": [
         "t2"
       ],
@@ -570,6 +632,7 @@
       "name": "Breastplate of Might",
       "wowheadID": "16865",
       "slot": "chest",
+      "cost": 250,
       "tags": [
         "t1"
       ],
@@ -579,6 +642,7 @@
       "name": "Seal of the Archmagus",
       "wowheadID": "17110",
       "slot": "finger",
+      "cost": 200,
       "tags": [],
       "source": "molten core"
     },
@@ -586,6 +650,7 @@
       "name": "Robes of Prophecy",
       "wowheadID": "16815",
       "slot": "chest",
+      "cost": 250,
       "tags": [
         "t1"
       ],
@@ -595,6 +660,7 @@
       "name": "Obsidian Edged Blade",
       "wowheadID": "18822",
       "slot": "two-hand",
+      "cost": 600,
       "tags": [
         "bis"
       ],
@@ -604,6 +670,7 @@
       "name": "Arcanist Robes",
       "wowheadID": "16798",
       "slot": "chest",
+      "cost": 250,
       "tags": [
         "t1"
       ],
@@ -613,6 +680,7 @@
       "name": "Nightslayer Chestpiece",
       "wowheadID": "16820",
       "slot": "chest",
+      "cost": 250,
       "tags": [
         "t1"
       ],
@@ -622,6 +690,7 @@
       "name": "Felheart Horns",
       "wowheadID": "16808",
       "slot": "head",
+      "cost": 250,
       "tags": [
         "t1"
       ],
@@ -631,6 +700,7 @@
       "name": "Boots of Prophecy",
       "wowheadID": "16811",
       "slot": "feet",
+      "cost": 150,
       "tags": [
         "t1"
       ],
@@ -640,6 +710,7 @@
       "name": "Nightslayer Gloves",
       "wowheadID": "16826",
       "slot": "hands",
+      "cost": 150,
       "tags": [
         "t1"
       ],
@@ -649,6 +720,7 @@
       "name": "Judgement Legplates",
       "wowheadID": "16954",
       "slot": "legs",
+      "cost": 350,
       "tags": [
         "t2"
       ],
@@ -658,6 +730,7 @@
       "name": "Gloves of the Hypnotic Flame",
       "wowheadID": "18808",
       "slot": "hands",
+      "cost": 100,
       "tags": [],
       "source": "molten core"
     },
@@ -665,6 +738,7 @@
       "name": "Fireproof Cloak",
       "wowheadID": "18811",
       "slot": "back",
+      "cost": 200,
       "tags": [],
       "source": "molten core"
     },
@@ -672,6 +746,7 @@
       "name": "Felheart Robes",
       "wowheadID": "16809",
       "slot": "chest",
+      "cost": 250,
       "tags": [
         "t1"
       ],
@@ -681,6 +756,7 @@
       "name": "Sabatons of the Flamewalker",
       "wowheadID": "19144",
       "slot": "feet",
+      "cost": 100,
       "tags": [],
       "source": "molten core"
     },
@@ -688,6 +764,7 @@
       "name": "Giantstalker's Epaulets",
       "wowheadID": "16848",
       "slot": "shoulder",
+      "cost": 250,
       "tags": [
         "t1"
       ],
@@ -697,6 +774,7 @@
       "name": "Nightslayer Cover",
       "wowheadID": "16821",
       "slot": "head",
+      "cost": 250,
       "tags": [
         "t1"
       ],
@@ -706,6 +784,7 @@
       "name": "Lawbringer Helm",
       "wowheadID": "16854",
       "slot": "head",
+      "cost": 250,
       "tags": [
         "t1"
       ],
@@ -715,6 +794,7 @@
       "name": "Core Forged Greaves",
       "wowheadID": "18806",
       "slot": "feet",
+      "cost": 100,
       "tags": [],
       "source": "molten core"
     },
@@ -722,6 +802,7 @@
       "name": "Cenarion Spaulders",
       "wowheadID": "16836",
       "slot": "shoulder",
+      "cost": 250,
       "tags": [
         "t1"
       ],
@@ -731,6 +812,7 @@
       "name": "Sabatons of Might",
       "wowheadID": "16862",
       "slot": "feet",
+      "cost": 150,
       "tags": [
         "t1"
       ],
@@ -740,6 +822,7 @@
       "name": "Cenarion Boots",
       "wowheadID": "16829",
       "slot": "feet",
+      "cost": 150,
       "tags": [
         "t1"
       ],
@@ -749,6 +832,7 @@
       "name": "Arcanist Leggings",
       "wowheadID": "16796",
       "slot": "legs",
+      "cost": 250,
       "tags": [
         "t1"
       ],
@@ -758,6 +842,7 @@
       "name": "Stormrage Legguards",
       "wowheadID": "16901",
       "slot": "legs",
+      "cost": 350,
       "tags": [
         "t2"
       ],
@@ -767,6 +852,7 @@
       "name": "Cenarion Helm",
       "wowheadID": "16834",
       "slot": "head",
+      "cost": 250,
       "tags": [
         "t1"
       ],
@@ -776,6 +862,7 @@
       "name": "Gloves of Prophecy",
       "wowheadID": "16812",
       "slot": "hands",
+      "cost": 150,
       "tags": [
         "t1"
       ],
@@ -785,6 +872,7 @@
       "name": "Nightslayer Boots",
       "wowheadID": "16824",
       "slot": "feet",
+      "cost": 150,
       "tags": [
         "t1"
       ],
@@ -794,6 +882,7 @@
       "name": "Magma Tempered Boots",
       "wowheadID": "18824",
       "slot": "feet",
+      "cost": 100,
       "tags": [],
       "source": "molten core"
     },
@@ -801,6 +890,7 @@
       "name": "Felheart Gloves",
       "wowheadID": "16805",
       "slot": "hands",
+      "cost": 150,
       "tags": [
         "t1"
       ],
@@ -810,6 +900,7 @@
       "name": "Giantstalker's Breastplate",
       "wowheadID": "16845",
       "slot": "chest",
+      "cost": 250,
       "tags": [
         "t1"
       ],
@@ -819,6 +910,7 @@
       "name": "Arcanist Mantle",
       "wowheadID": "16797",
       "slot": "shoulder",
+      "cost": 250,
       "tags": [
         "t1"
       ],
@@ -828,6 +920,7 @@
       "name": "Earthfury Epaulets",
       "wowheadID": "16844",
       "slot": "shoulder",
+      "cost": 250,
       "tags": [
         "t1"
       ],
@@ -837,6 +930,7 @@
       "name": "Earthfury Gauntlets",
       "wowheadID": "16839",
       "slot": "hands",
+      "cost": 150,
       "tags": [
         "t1"
       ],
@@ -846,6 +940,7 @@
       "name": "Earthfury Vestments",
       "wowheadID": "16841",
       "slot": "chest",
+      "cost": 250,
       "tags": [
         "t1"
       ],
@@ -855,6 +950,7 @@
       "name": "Legplates of Ten Storms",
       "wowheadID": "16946",
       "slot": "legs",
+      "cost": 350,
       "tags": [
         "t2"
       ],
@@ -864,6 +960,7 @@
       "name": "Nightslayer Pants",
       "wowheadID": "16822",
       "slot": "legs",
+      "cost": 250,
       "tags": [
         "t1"
       ],
@@ -873,6 +970,7 @@
       "name": "Giantstalker's Leggings",
       "wowheadID": "16847",
       "slot": "legs",
+      "cost": 250,
       "tags": [
         "t1"
       ],
@@ -882,6 +980,7 @@
       "name": "Cenarion Vestments",
       "wowheadID": "16833",
       "slot": "chest",
+      "cost": 250,
       "tags": [
         "t1"
       ],
@@ -891,6 +990,7 @@
       "name": "Felheart Shoulder Pads",
       "wowheadID": "16807",
       "slot": "shoulder",
+      "cost": 250,
       "tags": [
         "t1"
       ],
@@ -900,6 +1000,7 @@
       "name": "Lawbringer Chestguard",
       "wowheadID": "16853",
       "slot": "chest",
+      "cost": 250,
       "tags": [
         "t1"
       ],
@@ -909,6 +1010,7 @@
       "name": "Arcanist Gloves",
       "wowheadID": "16801",
       "slot": "hands",
+      "cost": 150,
       "tags": [
         "t1"
       ],
@@ -918,6 +1020,7 @@
       "name": "Lawbringer Spaulders",
       "wowheadID": "16856",
       "slot": "shoulder",
+      "cost": 250,
       "tags": [
         "t1"
       ],
@@ -927,6 +1030,7 @@
       "name": "Legplates of Might",
       "wowheadID": "16867",
       "slot": "legs",
+      "cost": 250,
       "tags": [
         "t1"
       ],
@@ -936,6 +1040,7 @@
       "name": "Earthfury Boots",
       "wowheadID": "16837",
       "slot": "feet",
+      "cost": 150,
       "tags": [
         "t1"
       ],
@@ -945,6 +1050,7 @@
       "name": "Earthfury Legguards",
       "wowheadID": "16843",
       "slot": "legs",
+      "cost": 250,
       "tags": [
         "t1"
       ],
@@ -954,6 +1060,7 @@
       "name": "Giantstalker's Gloves",
       "wowheadID": "16852",
       "slot": "hands",
+      "cost": 150,
       "tags": [
         "t1"
       ],
@@ -963,6 +1070,7 @@
       "name": "Dragonstalker's Legguards",
       "wowheadID": "16938",
       "slot": "legs",
+      "cost": 350,
       "tags": [
         "t2"
       ],
@@ -972,6 +1080,7 @@
       "name": "Felheart Pants",
       "wowheadID": "16810",
       "slot": "legs",
+      "cost": 250,
       "tags": [
         "t1"
       ],
@@ -981,6 +1090,7 @@
       "name": "Giantstalker's Boots",
       "wowheadID": "16849",
       "slot": "feet",
+      "cost": 150,
       "tags": [
         "t1"
       ],
@@ -990,6 +1100,7 @@
       "name": "Pants of Prophecy",
       "wowheadID": "16814",
       "slot": "legs",
+      "cost": 250,
       "tags": [
         "t1"
       ],
@@ -999,6 +1110,7 @@
       "name": "Cenarion Gloves",
       "wowheadID": "16831",
       "slot": "hands",
+      "cost": 150,
       "tags": [
         "t1"
       ],
@@ -1008,6 +1120,7 @@
       "name": "Lawbringer Legplates",
       "wowheadID": "16855",
       "slot": "legs",
+      "cost": 250,
       "tags": [
         "t1"
       ],
@@ -1017,6 +1130,7 @@
       "name": "Lawbringer Boots",
       "wowheadID": "16859",
       "slot": "feet",
+      "cost": 150,
       "tags": [
         "t1"
       ],
@@ -1026,6 +1140,7 @@
       "name": "Cenarion Leggings",
       "wowheadID": "16835",
       "slot": "legs",
+      "cost": 250,
       "tags": [
         "t1"
       ],
@@ -1035,6 +1150,7 @@
       "name": "Lawbringer Gauntlets",
       "wowheadID": "16860",
       "slot": "hands",
+      "cost": 150,
       "tags": [
         "t1"
       ],
@@ -1044,6 +1160,7 @@
       "name": "Felheart Slippers",
       "wowheadID": "16803",
       "slot": "feet",
+      "cost": 150,
       "tags": [
         "t1"
       ],
@@ -1053,6 +1170,7 @@
       "name": "Girdle of Prophecy",
       "wowheadID": "16817",
       "slot": "waist",
+      "cost": 120,
       "tags": [
         "t1"
       ],
@@ -1062,6 +1180,7 @@
       "name": "Belt of Might",
       "wowheadID": "16864",
       "slot": "waist",
+      "cost": 120,
       "tags": [
         "t1"
       ],
@@ -1071,6 +1190,7 @@
       "name": "Vambraces of Prophecy",
       "wowheadID": "16819",
       "slot": "wrist",
+      "cost": 120,
       "tags": [
         "t1"
       ],
@@ -1080,6 +1200,7 @@
       "name": "Nightslayer Belt",
       "wowheadID": "16827",
       "slot": "waist",
+      "cost": 120,
       "tags": [
         "t1"
       ],
@@ -1089,6 +1210,7 @@
       "name": "Bracers of Might",
       "wowheadID": "16861",
       "slot": "wrist",
+      "cost": 120,
       "tags": [
         "t1"
       ],
@@ -1098,6 +1220,7 @@
       "name": "Arcanist Bindings",
       "wowheadID": "16799",
       "slot": "wrist",
+      "cost": 120,
       "tags": [
         "t1"
       ],
@@ -1107,6 +1230,7 @@
       "name": "Felheart Belt",
       "wowheadID": "16806",
       "slot": "waist",
+      "cost": 120,
       "tags": [
         "t1"
       ],
@@ -1116,6 +1240,7 @@
       "name": "Arcanist Belt",
       "wowheadID": "16802",
       "slot": "waist",
+      "cost": 120,
       "tags": [
         "t1"
       ],
@@ -1125,6 +1250,7 @@
       "name": "Giantstalker's Belt",
       "wowheadID": "16851",
       "slot": "waist",
+      "cost": 120,
       "tags": [
         "t1"
       ],
@@ -1134,6 +1260,7 @@
       "name": "Lawbringer Belt",
       "wowheadID": "16858",
       "slot": "waist",
+      "cost": 120,
       "tags": [
         "t1"
       ],
@@ -1143,6 +1270,7 @@
       "name": "Earthfury Belt",
       "wowheadID": "16838",
       "slot": "waist",
+      "cost": 120,
       "tags": [
         "t1"
       ],
@@ -1152,6 +1280,7 @@
       "name": "Felheart Bracers",
       "wowheadID": "16804",
       "slot": "wrist",
+      "cost": 120,
       "tags": [
         "t1"
       ],
@@ -1161,6 +1290,7 @@
       "name": "Cenarion Belt",
       "wowheadID": "16828",
       "slot": "waist",
+      "cost": 120,
       "tags": [
         "t1"
       ],
@@ -1170,6 +1300,7 @@
       "name": "Giantstalker's Bracers",
       "wowheadID": "16850",
       "slot": "wrist",
+      "cost": 120,
       "tags": [
         "t1"
       ],
@@ -1179,6 +1310,7 @@
       "name": "Nightslayer Bracelets",
       "wowheadID": "16825",
       "slot": "wrist",
+      "cost": 120,
       "tags": [
         "t1"
       ],
@@ -1188,6 +1320,7 @@
       "name": "Cenarion Bracers",
       "wowheadID": "16830",
       "slot": "wrist",
+      "cost": 120,
       "tags": [
         "t1"
       ],
@@ -1197,6 +1330,7 @@
       "name": "Earthfury Bracers",
       "wowheadID": "16840",
       "slot": "wrist",
+      "cost": 120,
       "tags": [
         "t1"
       ],
@@ -1206,6 +1340,7 @@
       "name": "Lawbringer Bracers",
       "wowheadID": "16857",
       "slot": "wrist",
+      "cost": 120,
       "tags": [
         "t1"
       ],
@@ -1215,6 +1350,7 @@
       "name": "Wristguards of True Flight",
       "wowheadID": "18812",
       "slot": "wrist",
+      "cost": 80,
       "tags": [],
       "source": "molten core"
     },
@@ -1222,6 +1358,7 @@
       "name": "Vis'kag the Bloodletter",
       "wowheadID": "17075",
       "slot": "one-hand",
+      "cost": 500,
       "tags": [
         "bis"
       ],
@@ -1231,6 +1368,7 @@
       "name": "Dragonstalker's Helm",
       "wowheadID": "16939",
       "slot": "head",
+      "cost": 350,
       "tags": [
         "t2"
       ],
@@ -1248,6 +1386,7 @@
       "name": "Shard of the Scale",
       "wowheadID": "17064",
       "slot": "trinket",
+      "cost": 500,
       "tags": [
         "bis"
       ],
@@ -1257,6 +1396,7 @@
       "name": "Sapphiron Drape",
       "wowheadID": "17078",
       "slot": "back",
+      "cost": 200,
       "tags": [],
       "source": "onyxia"
     },
@@ -1272,6 +1412,7 @@
       "name": "Bloodfang Hood",
       "wowheadID": "16908",
       "slot": "head",
+      "cost": 350,
       "tags": [
         "t2"
       ],
@@ -1281,6 +1422,7 @@
       "name": "Netherwind Crown",
       "wowheadID": "16914",
       "slot": "head",
+      "cost": 350,
       "tags": [
         "t2"
       ],
@@ -1290,6 +1432,7 @@
       "name": "Deathbringer",
       "wowheadID": "17068",
       "slot": "one-hand",
+      "cost": 500,
       "tags": [
         "bis"
       ],
@@ -1299,6 +1442,7 @@
       "name": "Ancient Cornerstone Grimoire",
       "wowheadID": "17067",
       "slot": "held in off-hand",
+      "cost": 150,
       "tags": [],
       "source": "onyxia"
     },
@@ -1306,6 +1450,7 @@
       "name": "Halo of Transcendence",
       "wowheadID": "16921",
       "slot": "head",
+      "cost": 350,
       "tags": [
         "t2"
       ],
@@ -1315,6 +1460,7 @@
       "name": "Nemesis Skullcap",
       "wowheadID": "16929",
       "slot": "head",
+      "cost": 350,
       "tags": [
         "t2"
       ],
@@ -1324,6 +1470,7 @@
       "name": "Stormrage Cover",
       "wowheadID": "16900",
       "slot": "head",
+      "cost": 350,
       "tags": [
         "t2"
       ],
@@ -1333,6 +1480,7 @@
       "name": "Eskhandar's Collar",
       "wowheadID": "18205",
       "slot": "neck",
+      "cost": 200,
       "tags": [],
       "source": "onyxia"
     },
@@ -1340,6 +1488,7 @@
       "name": "Judgement Crown",
       "wowheadID": "16955",
       "slot": "head",
+      "cost": 350,
       "tags": [
         "t2"
       ],
@@ -1349,6 +1498,7 @@
       "name": "Helmet of Ten Storms",
       "wowheadID": "16947",
       "slot": "head",
+      "cost": 350,
       "tags": [
         "t2"
       ],
@@ -1358,6 +1508,7 @@
       "name": "Ring of Binding",
       "wowheadID": "18813",
       "slot": "finger",
+      "cost": 200,
       "tags": [],
       "source": "onyxia"
     },
@@ -1365,6 +1516,7 @@
       "name": "Helm of Wrath",
       "wowheadID": "16963",
       "slot": "head",
+      "cost": 350,
       "tags": [
         "t2"
       ],
