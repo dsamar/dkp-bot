@@ -1,4 +1,5 @@
 const config = require('../config.json');
+const {items} = require('../items.json');
 
 module.exports = {
 	name: 'itemlist',
@@ -7,7 +8,7 @@ module.exports = {
   officer: false,
   locks: [],
 	execute(message, args) {
-    const itemList = config.items.map((el) => {
+    const itemList = items.map((el) => {
       return "**" + el.name + "** | " + el.cost;
     }).join("\n");
     return message.author.send(itemList);
