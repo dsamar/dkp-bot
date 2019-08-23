@@ -1,0 +1,13 @@
+{
+  "botCategory": "dkp",
+  "commandChannel": "dkp-commands",
+  "raidAnnounceChannel": "dkp-raid-announce",
+  "leaderboardName": "dkp-leaderboard",
+  "officerRole": "officer",
+  "reactionTagName": "internal-tag",
+  "prefix": "!",
+  "raidTemplate": {
+    "title": "Molten Core",
+    "description": "Please mark attendance below with the reactions corresponding to your class."
+  }
+}
