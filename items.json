@@ -3,950 +3,1516 @@
     {
       "name": "Bonereaver's Edge",
       "wowheadID": "17076",
-      "slot": "",
-      "cost": -100
-    },
-    {
-      "name": "Dragonstalker's Helm",
-      "wowheadID": "16939",
-      "slot": "",
-      "cost": -100
-    },
-    {
-      "name": "Robe of Volatile Power",
-      "wowheadID": "19145",
-      "slot": "boss drop",
-      "cost": -100
-    },
-    {
-      "name": "Azuresong Mageblade",
-      "wowheadID": "17103",
-      "slot": "",
-      "cost": -100
-    },
-    {
-      "name": "Spinal Reaper",
-      "wowheadID": "17104",
-      "slot": "",
-      "cost": -100
-    },
-    {
-      "name": "Perdition's Blade",
-      "wowheadID": "18816",
-      "slot": "",
-      "cost": -100
-    },
-    {
-      "name": "Ring of Spell Power",
-      "wowheadID": "19147",
-      "slot": "boss drop",
-      "cost": -100
-    },
-    {
-      "name": "The Eye of Divinity",
-      "wowheadID": "18646",
-      "slot": "boss drop",
-      "cost": -100
-    },
-    {
-      "name": "Talisman of Ephemeral Power",
-      "wowheadID": "18820",
-      "slot": "boss drop",
-      "cost": -100
-    },
-    {
-      "name": "Ancient Petrified Leaf",
-      "wowheadID": "18703",
-      "slot": "boss drop",
-      "cost": -100
-    },
-    {
-      "name": "Onslaught Girdle",
-      "wowheadID": "19137",
-      "slot": "",
-      "cost": -100
-    },
-    {
-      "name": "Brutality Blade",
-      "wowheadID": "18832",
-      "slot": "",
-      "cost": -100
-    },
-    {
-      "name": "Cauterizing Band",
-      "wowheadID": "19140",
-      "slot": "",
-      "cost": -100
-    },
-    {
-      "name": "Core Hound Tooth",
-      "wowheadID": "18805",
-      "slot": "boss drop",
-      "cost": -100
-    },
-    {
-      "name": "Aged Core Leather Gloves",
-      "wowheadID": "18823",
-      "slot": "boss drop",
-      "cost": -100
-    },
-    {
-      "name": "Mana Igniting Cord",
-      "wowheadID": "19136",
-      "slot": "boss drop",
-      "cost": -100
-    },
-    {
-      "name": "Sulfuron Ingot",
-      "wowheadID": "17203",
-      "slot": "",
-      "cost": -100
-    },
-    {
-      "name": "Striker's Mark",
-      "wowheadID": "17069",
-      "slot": "",
-      "cost": -100
-    },
-    {
-      "name": "Choker of the Fire Lord",
-      "wowheadID": "18814",
-      "slot": "",
-      "cost": -100
-    },
-    {
-      "name": "Wild Growth Spaulders",
-      "wowheadID": "18810",
-      "slot": "boss drop",
-      "cost": -100
-    },
-    {
-      "name": "Drillborer Disk",
-      "wowheadID": "17066",
-      "slot": "",
-      "cost": -100
-    },
-    {
-      "name": "Quick Strike Ring",
-      "wowheadID": "18821",
-      "slot": "boss drop",
-      "cost": -100
-    },
-    {
-      "name": "Aurastone Hammer",
-      "wowheadID": "17105",
-      "slot": "",
-      "cost": -100
-    },
-    {
-      "name": "Band of Accuria",
-      "wowheadID": "17063",
-      "slot": "",
-      "cost": -100
-    },
-    {
-      "name": "Eskhandar's Right Claw",
-      "wowheadID": "18203",
-      "slot": "",
-      "cost": -100
-    },
-    {
-      "name": "Salamander Scale Pants",
-      "wowheadID": "18875",
-      "slot": "boss drop",
-      "cost": -100
-    },
-    {
-      "name": "Wristguards of Stability",
-      "wowheadID": "19146",
-      "slot": "boss drop",
-      "cost": -100
-    },
-    {
-      "name": "Sash of Whispered Secrets",
-      "wowheadID": "18809",
-      "slot": "boss drop",
-      "cost": -100
-    },
-    {
-      "name": "Heavy Dark Iron Ring",
-      "wowheadID": "18879",
-      "slot": "boss drop",
-      "cost": -100
-    },
-    {
-      "name": "Flameguard Gauntlets",
-      "wowheadID": "19143",
-      "slot": "boss drop",
-      "cost": -100
-    },
-    {
-      "name": "Staff of Dominance",
-      "wowheadID": "18842",
-      "slot": "",
-      "cost": -100
-    },
-    {
-      "name": "Choker of Enlightenment",
-      "wowheadID": "17109",
-      "slot": "",
-      "cost": -100
-    },
-    {
-      "name": "Earthshaker",
-      "wowheadID": "17073",
-      "slot": "",
-      "cost": -100
-    },
-    {
-      "name": "Malistar's Defender",
-      "wowheadID": "17106",
-      "slot": "",
-      "cost": -100
-    },
-    {
-      "name": "Crimson Shocker",
-      "wowheadID": "17077",
-      "slot": "boss drop",
-      "cost": -100
-    },
-    {
-      "name": "Gutgore Ripper",
-      "wowheadID": "17071",
-      "slot": "",
-      "cost": -100
-    },
-    {
-      "name": "Sorcerous Dagger",
-      "wowheadID": "18878",
-      "slot": "boss drop",
-      "cost": -100
-    },
-    {
-      "name": "Netherwind Pants",
-      "wowheadID": "16915",
-      "slot": "",
-      "cost": -100
-    },
-    {
-      "name": "Crown of Destruction",
-      "wowheadID": "18817",
-      "slot": "",
-      "cost": -100
-    },
-    {
-      "name": "Shadowstrike",
-      "wowheadID": "17074",
-      "slot": "",
-      "cost": -100
-    },
-    {
-      "name": "Finkle's Lava Dredger",
-      "wowheadID": "18803",
-      "slot": "",
-      "cost": -100
-    },
-    {
-      "name": "Medallion of Steadfast Might",
-      "wowheadID": "17065",
-      "slot": "",
-      "cost": -100
-    },
-    {
-      "name": "Arcanist Crown",
-      "wowheadID": "16795",
-      "slot": "",
-      "cost": 250
-    },
-    {
-      "name": "Dragon's Blood Cape",
-      "wowheadID": "17107",
-      "slot": "",
-      "cost": -100
-    },
-    {
-      "name": "Fire Runed Grimoire",
-      "wowheadID": "19142",
-      "slot": "boss drop",
-      "cost": -100
-    },
-    {
-      "name": "Deep Earth Spaulders",
-      "wowheadID": "18829",
-      "slot": "boss drop",
-      "cost": -100
-    },
-    {
-      "name": "Shard of the Flame",
-      "wowheadID": "17082",
-      "slot": "",
-      "cost": -100
-    },
-    {
-      "name": "Cloak of the Shrouded Mists",
-      "wowheadID": "17102",
-      "slot": "",
-      "cost": -100
-    },
-    {
-      "name": "Blastershot Launcher",
-      "wowheadID": "17072",
-      "slot": "",
-      "cost": -100
-    },
-    {
-      "name": "Giantstalker's Helmet",
-      "wowheadID": "16846",
-      "slot": "",
-      "cost": 250
-    },
-    {
-      "name": "Essence of the Pure Flame",
-      "wowheadID": "18815",
-      "slot": "",
-      "cost": -100
-    },
-    {
-      "name": "Fireguard Shoulders",
-      "wowheadID": "19139",
-      "slot": "",
-      "cost": -100
-    },
-    {
-      "name": "Earthfury Helmet",
-      "wowheadID": "16842",
-      "slot": "",
-      "cost": 250
-    },
-    {
-      "name": "Nightslayer Shoulder Pads",
-      "wowheadID": "16823",
-      "slot": "",
-      "cost": 250
-    },
-    {
-      "name": "Mantle of Prophecy",
-      "wowheadID": "16816",
-      "slot": "",
-      "cost": 250
-    },
-    {
-      "name": "Gauntlets of Might",
-      "wowheadID": "16863",
-      "slot": "",
-      "cost": 250
-    },
-    {
-      "name": "Pauldrons of Might",
-      "wowheadID": "16868",
-      "slot": "",
-      "cost": 250
-    },
-    {
-      "name": "Leggings of Transcendence",
-      "wowheadID": "16922",
-      "slot": "",
-      "cost": -100
-    },
-    {
-      "name": "Manastorm Leggings",
-      "wowheadID": "18872",
-      "slot": "boss drop",
-      "cost": -100
-    },
-    {
-      "name": "Flamewaker Legplates",
-      "wowheadID": "18861",
-      "slot": "boss drop",
-      "cost": -100
-    },
-    {
-      "name": "Legplates of Wrath",
-      "wowheadID": "16962",
-      "slot": "",
-      "cost": -100
-    },
-    {
-      "name": "Arcanist Boots",
-      "wowheadID": "16800",
-      "slot": "",
-      "cost": 250
-    },
-    {
-      "name": "Helm of Might",
-      "wowheadID": "16866",
-      "slot": "",
-      "cost": 250
-    },
-    {
-      "name": "Circlet of Prophecy",
-      "wowheadID": "16813",
-      "slot": "",
-      "cost": 250
-    },
-    {
-      "name": "Band of Sulfuras",
-      "wowheadID": "19138",
-      "slot": "",
-      "cost": -100
-    },
-    {
-      "name": "Nemesis Leggings",
-      "wowheadID": "16930",
-      "slot": "",
-      "cost": -100
-    },
-    {
-      "name": "Bloodfang Pants",
-      "wowheadID": "16909",
-      "slot": "",
-      "cost": -100
-    },
-    {
-      "name": "Breastplate of Might",
-      "wowheadID": "16865",
-      "slot": "",
-      "cost": 250
-    },
-    {
-      "name": "Seal of the Archmagus",
-      "wowheadID": "17110",
-      "slot": "",
-      "cost": -100
-    },
-    {
-      "name": "Robes of Prophecy",
-      "wowheadID": "16815",
-      "slot": "",
-      "cost": 250
-    },
-    {
-      "name": "Wristguards of True Flight",
-      "wowheadID": "18812",
-      "slot": "boss drop",
-      "cost": -100
-    },
-    {
-      "name": "Arcanist Robes",
-      "wowheadID": "16798",
-      "slot": "",
-      "cost": 250
-    },
-    {
-      "name": "Nightslayer Chestpiece",
-      "wowheadID": "16820",
-      "slot": "",
-      "cost": 250
-    },
-    {
-      "name": "Felheart Horns",
-      "wowheadID": "16808",
-      "slot": "",
-      "cost": 250
-    },
-    {
-      "name": "Boots of Prophecy",
-      "wowheadID": "16811",
-      "slot": "",
-      "cost": 250
-    },
-    {
-      "name": "Nightslayer Gloves",
-      "wowheadID": "16826",
-      "slot": "",
-      "cost": 250
-    },
-    {
-      "name": "Judgement Legplates",
-      "wowheadID": "16954",
-      "slot": "",
-      "cost": -100
-    },
-    {
-      "name": "Gloves of the Hypnotic Flame",
-      "wowheadID": "18808",
-      "slot": "",
-      "cost": -100
-    },
-    {
-      "name": "Fireproof Cloak",
-      "wowheadID": "18811",
-      "slot": "boss drop",
-      "cost": -100
-    },
-    {
-      "name": "Obsidian Edged Blade",
-      "wowheadID": "18822",
-      "slot": "boss drop",
-      "cost": -100
-    },
-    {
-      "name": "Sabatons of the Flamewalker",
-      "wowheadID": "19144",
-      "slot": "",
-      "cost": -100
-    },
-    {
-      "name": "Giantstalker's Epaulets",
-      "wowheadID": "16848",
-      "slot": "",
-      "cost": 250
-    },
-    {
-      "name": "Nightslayer Cover",
-      "wowheadID": "16821",
-      "slot": "",
-      "cost": 250
-    },
-    {
-      "name": "Lawbringer Helm",
-      "wowheadID": "16854",
-      "slot": "",
-      "cost": -100
-    },
-    {
-      "name": "Core Forged Greaves",
-      "wowheadID": "18806",
-      "slot": "",
-      "cost": -100
-    },
-    {
-      "name": "Cenarion Spaulders",
-      "wowheadID": "16836",
-      "slot": "",
-      "cost": 250
-    },
-    {
-      "name": "Sabatons of Might",
-      "wowheadID": "16862",
-      "slot": "",
-      "cost": 250
-    },
-    {
-      "name": "Cenarion Boots",
-      "wowheadID": "16829",
-      "slot": "",
-      "cost": 250
-    },
-    {
-      "name": "Arcanist Leggings",
-      "wowheadID": "16796",
-      "slot": "",
-      "cost": 250
-    },
-    {
-      "name": "Stormrage Legguards",
-      "wowheadID": "16901",
-      "slot": "",
-      "cost": -100
-    },
-    {
-      "name": "Cenarion Helm",
-      "wowheadID": "16834",
-      "slot": "",
-      "cost": 250
-    },
-    {
-      "name": "Gloves of Prophecy",
-      "wowheadID": "16812",
-      "slot": "",
-      "cost": 250
-    },
-    {
-      "name": "Nightslayer Boots",
-      "wowheadID": "16824",
-      "slot": "",
-      "cost": 250
-    },
-    {
-      "name": "Magma Tempered Boots",
-      "wowheadID": "18824",
-      "slot": "boss drop",
-      "cost": -100
-    },
-    {
-      "name": "Felheart Gloves",
-      "wowheadID": "16805",
-      "slot": "",
-      "cost": 250
-    },
-    {
-      "name": "Giantstalker's Breastplate",
-      "wowheadID": "16845",
-      "slot": "",
-      "cost": 250
-    },
-    {
-      "name": "Arcanist Mantle",
-      "wowheadID": "16797",
-      "slot": "",
-      "cost": 250
-    },
-    {
-      "name": "Earthfury Epaulets",
-      "wowheadID": "16844",
-      "slot": "",
-      "cost": 250
-    },
-    {
-      "name": "Earthfury Gauntlets",
-      "wowheadID": "16839",
-      "slot": "",
-      "cost": 250
-    },
-    {
-      "name": "Earthfury Vestments",
-      "wowheadID": "16841",
-      "slot": "",
-      "cost": 250
-    },
-    {
-      "name": "Legplates of Ten Storms",
-      "wowheadID": "16946",
-      "slot": "",
-      "cost": -100
-    },
-    {
-      "name": "Nightslayer Pants",
-      "wowheadID": "16822",
-      "slot": "",
-      "cost": 250
-    },
-    {
-      "name": "Giantstalker's Leggings",
-      "wowheadID": "16847",
-      "slot": "",
-      "cost": 250
-    },
-    {
-      "name": "Cenarion Vestments",
-      "wowheadID": "16833",
-      "slot": "",
-      "cost": 250
-    },
-    {
-      "name": "Felheart Shoulder Pads",
-      "wowheadID": "16807",
-      "slot": "",
-      "cost": 250
-    },
-    {
-      "name": "Lawbringer Chestguard",
-      "wowheadID": "16853",
-      "slot": "",
-      "cost": -100
-    },
-    {
-      "name": "Arcanist Gloves",
-      "wowheadID": "16801",
-      "slot": "",
-      "cost": 250
-    },
-    {
-      "name": "Lawbringer Spaulders",
-      "wowheadID": "16856",
-      "slot": "",
-      "cost": -100
-    },
-    {
-      "name": "Legplates of Might",
-      "wowheadID": "16867",
-      "slot": "",
-      "cost": 250
-    },
-    {
-      "name": "Earthfury Boots",
-      "wowheadID": "16837",
-      "slot": "",
-      "cost": 250
-    },
-    {
-      "name": "Earthfury Legguards",
-      "wowheadID": "16843",
-      "slot": "",
-      "cost": 250
-    },
-    {
-      "name": "Giantstalker's Gloves",
-      "wowheadID": "16852",
-      "slot": "",
-      "cost": 250
-    },
-    {
-      "name": "Dragonstalker's Legguards",
-      "wowheadID": "16938",
-      "slot": "",
-      "cost": -100
-    },
-    {
-      "name": "Felheart Pants",
-      "wowheadID": "16810",
-      "slot": "",
-      "cost": 250
-    },
-    {
-      "name": "Giantstalker's Boots",
-      "wowheadID": "16849",
-      "slot": "",
-      "cost": 250
-    },
-    {
-      "name": "Pants of Prophecy",
-      "wowheadID": "16814",
-      "slot": "",
-      "cost": 250
-    },
-    {
-      "name": "Cenarion Gloves",
-      "wowheadID": "16831",
-      "slot": "",
-      "cost": 250
-    },
-    {
-      "name": "Lawbringer Legplates",
-      "wowheadID": "16855",
-      "slot": "",
-      "cost": -100
-    },
-    {
-      "name": "Lawbringer Boots",
-      "wowheadID": "16859",
-      "slot": "",
-      "cost": -100
-    },
-    {
-      "name": "Cenarion Leggings",
-      "wowheadID": "16835",
-      "slot": "",
-      "cost": 250
-    },
-    {
-      "name": "Lawbringer Gauntlets",
-      "wowheadID": "16860",
-      "slot": "",
-      "cost": -100
-    },
-    {
-      "name": "Felheart Slippers",
-      "wowheadID": "16803",
-      "slot": "",
-      "cost": 250
-    },
-    {
-      "name": "Girdle of Prophecy",
-      "wowheadID": "16817",
-      "slot": "waist",
-      "cost": 120
-    },
-    {
-      "name": "Belt of Might",
-      "wowheadID": "16864",
-      "slot": "waist",
-      "cost": 120
-    },
-    {
-      "name": "Vambraces of Prophecy",
-      "wowheadID": "16819",
-      "slot": "wrist",
-      "cost": 120
-    },
-    {
-      "name": "Nightslayer Belt",
-      "wowheadID": "16827",
-      "slot": "waist",
-      "cost": 120
-    },
-    {
-      "name": "Bracers of Might",
-      "wowheadID": "16861",
-      "slot": "wrist",
-      "cost": 120
-    },
-    {
-      "name": "Arcanist Bindings",
-      "wowheadID": "16799",
-      "slot": "wrist",
-      "cost": 120
-    },
-    {
-      "name": "Felheart Belt",
-      "wowheadID": "16806",
-      "slot": "waist",
-      "cost": 120
-    },
-    {
-      "name": "Arcanist Belt",
-      "wowheadID": "16802",
-      "slot": "waist",
-      "cost": 120
-    },
-    {
-      "name": "Giantstalker's Belt",
-      "wowheadID": "16851",
-      "slot": "waist",
-      "cost": 120
-    },
-    {
-      "name": "Lawbringer Belt",
-      "wowheadID": "16858",
-      "slot": "waist",
-      "cost": -100
-    },
-    {
-      "name": "Earthfury Belt",
-      "wowheadID": "16838",
-      "slot": "waist",
-      "cost": 120
-    },
-    {
-      "name": "Felheart Bracers",
-      "wowheadID": "16804",
-      "slot": "wrist",
-      "cost": 120
-    },
-    {
-      "name": "Cenarion Belt",
-      "wowheadID": "16828",
-      "slot": "waist",
-      "cost": 120
-    },
-    {
-      "name": "Giantstalker's Bracers",
-      "wowheadID": "16850",
-      "slot": "wrist",
-      "cost": 120
-    },
-    {
-      "name": "Nightslayer Bracelets",
-      "wowheadID": "16825",
-      "slot": "wrist",
-      "cost": 120
-    },
-    {
-      "name": "Cenarion Bracers",
-      "wowheadID": "16830",
-      "slot": "wrist",
-      "cost": 120
-    },
-    {
-      "name": "Earthfury Bracers",
-      "wowheadID": "16840",
-      "slot": "wrist",
-      "cost": 120
+      "slot": "two-hand",
+      "cost": 300,
+      "tags": [],
+      "source": "molten core"
     },
     {
       "name": "Lawbringer Bracers",
       "wowheadID": "16857",
       "slot": "wrist",
-      "cost": -100
+      "cost": 120,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Robe of Volatile Power",
+      "wowheadID": "19145",
+      "slot": "chest",
+      "cost": 350,
+      "tags": [
+        "bis"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Azuresong Mageblade",
+      "wowheadID": "17103",
+      "slot": "main hand",
+      "cost": 500,
+      "tags": [
+        "bis"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Spinal Reaper",
+      "wowheadID": "17104",
+      "slot": "two-hand",
+      "cost": 600,
+      "tags": [
+        "bis"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Perdition's Blade",
+      "wowheadID": "18816",
+      "slot": "one-hand",
+      "cost": 500,
+      "tags": [
+        "bis"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Ring of Spell Power",
+      "wowheadID": "19147",
+      "slot": "finger",
+      "cost": 300,
+      "tags": [
+        "bis"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "The Eye of Divinity",
+      "wowheadID": "18646",
+      "slot": "trinket",
+      "cost": 500,
+      "tags": [],
+      "source": "molten core"
+    },
+    {
+      "name": "Talisman of Ephemeral Power",
+      "wowheadID": "18820",
+      "slot": "trinket",
+      "cost": 500,
+      "tags": [
+        "bis"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Ancient Petrified Leaf",
+      "wowheadID": "18703",
+      "slot": "",
+      "cost": 250,
+      "tags": [],
+      "source": "molten core"
+    },
+    {
+      "name": "Onslaught Girdle",
+      "wowheadID": "19137",
+      "slot": "waist",
+      "cost": 200,
+      "tags": [
+        "bis"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Brutality Blade",
+      "wowheadID": "18832",
+      "slot": "one-hand",
+      "cost": 500,
+      "tags": [
+        "bis"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Cauterizing Band",
+      "wowheadID": "19140",
+      "slot": "finger",
+      "cost": 300,
+      "tags": [
+        "bis"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Core Hound Tooth",
+      "wowheadID": "18805",
+      "slot": "one-hand",
+      "cost": 500,
+      "tags": [
+        "bis"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Aged Core Leather Gloves",
+      "wowheadID": "18823",
+      "slot": "hands",
+      "cost": 250,
+      "tags": [
+        "bis"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Mana Igniting Cord",
+      "wowheadID": "19136",
+      "slot": "waist",
+      "cost": 200,
+      "tags": [
+        "bis"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Sulfuron Ingot",
+      "wowheadID": "17203",
+      "slot": "",
+      "cost": -1,
+      "tags": [],
+      "source": "molten core"
+    },
+    {
+      "name": "Striker's Mark",
+      "wowheadID": "17069",
+      "slot": "ranged",
+      "cost": 200,
+      "tags": [
+        "bis"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Choker of the Fire Lord",
+      "wowheadID": "18814",
+      "slot": "neck",
+      "cost": 300,
+      "tags": [
+        "bis"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Wild Growth Spaulders",
+      "wowheadID": "18810",
+      "slot": "shoulder",
+      "cost": 350,
+      "tags": [
+        "bis"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Drillborer Disk",
+      "wowheadID": "17066",
+      "slot": "shield",
+      "cost": 200,
+      "tags": [
+        "bis"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Quick Strike Ring",
+      "wowheadID": "18821",
+      "slot": "finger",
+      "cost": 300,
+      "tags": [
+        "bis"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Aurastone Hammer",
+      "wowheadID": "17105",
+      "slot": "one-hand",
+      "cost": 500,
+      "tags": [
+        "bis"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Band of Accuria",
+      "wowheadID": "17063",
+      "slot": "finger",
+      "cost": 300,
+      "tags": [
+        "bis"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Eskhandar's Right Claw",
+      "wowheadID": "18203",
+      "slot": "main hand",
+      "cost": 500,
+      "tags": [
+        "bis"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Salamander Scale Pants",
+      "wowheadID": "18875",
+      "slot": "legs",
+      "cost": 350,
+      "tags": [
+        "bis"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Wristguards of Stability",
+      "wowheadID": "19146",
+      "slot": "wrist",
+      "cost": 200,
+      "tags": [
+        "bis"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Sash of Whispered Secrets",
+      "wowheadID": "18809",
+      "slot": "waist",
+      "cost": 200,
+      "tags": [
+        "bis"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Heavy Dark Iron Ring",
+      "wowheadID": "18879",
+      "slot": "finger",
+      "cost": 300,
+      "tags": [
+        "bis"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Flameguard Gauntlets",
+      "wowheadID": "19143",
+      "slot": "hands",
+      "cost": 100,
+      "tags": [],
+      "source": "molten core"
+    },
+    {
+      "name": "Staff of Dominance",
+      "wowheadID": "18842",
+      "slot": "two-hand",
+      "cost": 600,
+      "tags": [
+        "bis"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Choker of Enlightenment",
+      "wowheadID": "17109",
+      "slot": "neck",
+      "cost": 200,
+      "tags": [],
+      "source": "molten core"
+    },
+    {
+      "name": "Earthshaker",
+      "wowheadID": "17073",
+      "slot": "two-hand",
+      "cost": 300,
+      "tags": [],
+      "source": "molten core"
+    },
+    {
+      "name": "Malistar's Defender",
+      "wowheadID": "17106",
+      "slot": "shield",
+      "cost": 150,
+      "tags": [],
+      "source": "molten core"
+    },
+    {
+      "name": "Crimson Shocker",
+      "wowheadID": "17077",
+      "slot": "ranged",
+      "cost": 150,
+      "tags": [],
+      "source": "molten core"
+    },
+    {
+      "name": "Gutgore Ripper",
+      "wowheadID": "17071",
+      "slot": "one-hand",
+      "cost": 200,
+      "tags": [],
+      "source": "molten core"
+    },
+    {
+      "name": "Sorcerous Dagger",
+      "wowheadID": "18878",
+      "slot": "main hand",
+      "cost": 200,
+      "tags": [],
+      "source": "molten core"
+    },
+    {
+      "name": "Netherwind Pants",
+      "wowheadID": "16915",
+      "slot": "legs",
+      "cost": 350,
+      "tags": [
+        "t2"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Crown of Destruction",
+      "wowheadID": "18817",
+      "slot": "head",
+      "cost": 350,
+      "tags": [
+        "bis"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Shadowstrike",
+      "wowheadID": "17074",
+      "slot": "two-hand",
+      "cost": 80,
+      "tags": [],
+      "source": "molten core"
+    },
+    {
+      "name": "Finkle's Lava Dredger",
+      "wowheadID": "18803",
+      "slot": "two-hand",
+      "cost": 300,
+      "tags": [],
+      "source": "molten core"
+    },
+    {
+      "name": "Medallion of Steadfast Might",
+      "wowheadID": "17065",
+      "slot": "neck",
+      "cost": 300,
+      "tags": [
+        "bis"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Arcanist Crown",
+      "wowheadID": "16795",
+      "slot": "head",
+      "cost": 250,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Dragon's Blood Cape",
+      "wowheadID": "17107",
+      "slot": "back",
+      "cost": 300,
+      "tags": [
+        "bis"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Fire Runed Grimoire",
+      "wowheadID": "19142",
+      "slot": "held in off-hand",
+      "cost": 150,
+      "tags": [],
+      "source": "molten core"
+    },
+    {
+      "name": "Deep Earth Spaulders",
+      "wowheadID": "18829",
+      "slot": "shoulder",
+      "cost": 350,
+      "tags": [
+        "bis"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Shard of the Flame",
+      "wowheadID": "17082",
+      "slot": "trinket",
+      "cost": 200,
+      "tags": [],
+      "source": "molten core"
+    },
+    {
+      "name": "Cloak of the Shrouded Mists",
+      "wowheadID": "17102",
+      "slot": "back",
+      "cost": 300,
+      "tags": [
+        "bis"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Blastershot Launcher",
+      "wowheadID": "17072",
+      "slot": "ranged",
+      "cost": 150,
+      "tags": [],
+      "source": "molten core"
+    },
+    {
+      "name": "Giantstalker's Helmet",
+      "wowheadID": "16846",
+      "slot": "head",
+      "cost": 250,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Essence of the Pure Flame",
+      "wowheadID": "18815",
+      "slot": "trinket",
+      "cost": 200,
+      "tags": [],
+      "source": "molten core"
+    },
+    {
+      "name": "Fireguard Shoulders",
+      "wowheadID": "19139",
+      "slot": "shoulder",
+      "cost": 350,
+      "tags": [
+        "bis"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Earthfury Helmet",
+      "wowheadID": "16842",
+      "slot": "head",
+      "cost": 250,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Nightslayer Shoulder Pads",
+      "wowheadID": "16823",
+      "slot": "shoulder",
+      "cost": 250,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Mantle of Prophecy",
+      "wowheadID": "16816",
+      "slot": "shoulder",
+      "cost": 250,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Gauntlets of Might",
+      "wowheadID": "16863",
+      "slot": "hands",
+      "cost": 150,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Pauldrons of Might",
+      "wowheadID": "16868",
+      "slot": "shoulder",
+      "cost": 250,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Leggings of Transcendence",
+      "wowheadID": "16922",
+      "slot": "legs",
+      "cost": 350,
+      "tags": [
+        "t2"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Manastorm Leggings",
+      "wowheadID": "18872",
+      "slot": "legs",
+      "cost": 200,
+      "tags": [],
+      "source": "molten core"
+    },
+    {
+      "name": "Flamewaker Legplates",
+      "wowheadID": "18861",
+      "slot": "legs",
+      "cost": 200,
+      "tags": [],
+      "source": "molten core"
+    },
+    {
+      "name": "Legplates of Wrath",
+      "wowheadID": "16962",
+      "slot": "legs",
+      "cost": 350,
+      "tags": [
+        "t2"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Arcanist Boots",
+      "wowheadID": "16800",
+      "slot": "feet",
+      "cost": 150,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Helm of Might",
+      "wowheadID": "16866",
+      "slot": "head",
+      "cost": 250,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Circlet of Prophecy",
+      "wowheadID": "16813",
+      "slot": "head",
+      "cost": 250,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Band of Sulfuras",
+      "wowheadID": "19138",
+      "slot": "finger",
+      "cost": 200,
+      "tags": [],
+      "source": "molten core"
+    },
+    {
+      "name": "Nemesis Leggings",
+      "wowheadID": "16930",
+      "slot": "legs",
+      "cost": 350,
+      "tags": [
+        "t2"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Bloodfang Pants",
+      "wowheadID": "16909",
+      "slot": "legs",
+      "cost": 350,
+      "tags": [
+        "t2"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Breastplate of Might",
+      "wowheadID": "16865",
+      "slot": "chest",
+      "cost": 250,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Seal of the Archmagus",
+      "wowheadID": "17110",
+      "slot": "finger",
+      "cost": 200,
+      "tags": [],
+      "source": "molten core"
+    },
+    {
+      "name": "Robes of Prophecy",
+      "wowheadID": "16815",
+      "slot": "chest",
+      "cost": 250,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Obsidian Edged Blade",
+      "wowheadID": "18822",
+      "slot": "two-hand",
+      "cost": 600,
+      "tags": [
+        "bis"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Arcanist Robes",
+      "wowheadID": "16798",
+      "slot": "chest",
+      "cost": 250,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Nightslayer Chestpiece",
+      "wowheadID": "16820",
+      "slot": "chest",
+      "cost": 250,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Felheart Horns",
+      "wowheadID": "16808",
+      "slot": "head",
+      "cost": 250,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Boots of Prophecy",
+      "wowheadID": "16811",
+      "slot": "feet",
+      "cost": 150,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Nightslayer Gloves",
+      "wowheadID": "16826",
+      "slot": "hands",
+      "cost": 150,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Judgement Legplates",
+      "wowheadID": "16954",
+      "slot": "legs",
+      "cost": 350,
+      "tags": [
+        "t2"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Gloves of the Hypnotic Flame",
+      "wowheadID": "18808",
+      "slot": "hands",
+      "cost": 100,
+      "tags": [],
+      "source": "molten core"
+    },
+    {
+      "name": "Fireproof Cloak",
+      "wowheadID": "18811",
+      "slot": "back",
+      "cost": 200,
+      "tags": [],
+      "source": "molten core"
+    },
+    {
+      "name": "Felheart Robes",
+      "wowheadID": "16809",
+      "slot": "chest",
+      "cost": 250,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Sabatons of the Flamewalker",
+      "wowheadID": "19144",
+      "slot": "feet",
+      "cost": 100,
+      "tags": [],
+      "source": "molten core"
+    },
+    {
+      "name": "Giantstalker's Epaulets",
+      "wowheadID": "16848",
+      "slot": "shoulder",
+      "cost": 250,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Nightslayer Cover",
+      "wowheadID": "16821",
+      "slot": "head",
+      "cost": 250,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Lawbringer Helm",
+      "wowheadID": "16854",
+      "slot": "head",
+      "cost": 250,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Core Forged Greaves",
+      "wowheadID": "18806",
+      "slot": "feet",
+      "cost": 100,
+      "tags": [],
+      "source": "molten core"
+    },
+    {
+      "name": "Cenarion Spaulders",
+      "wowheadID": "16836",
+      "slot": "shoulder",
+      "cost": 250,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Sabatons of Might",
+      "wowheadID": "16862",
+      "slot": "feet",
+      "cost": 150,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Cenarion Boots",
+      "wowheadID": "16829",
+      "slot": "feet",
+      "cost": 150,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Arcanist Leggings",
+      "wowheadID": "16796",
+      "slot": "legs",
+      "cost": 250,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Stormrage Legguards",
+      "wowheadID": "16901",
+      "slot": "legs",
+      "cost": 350,
+      "tags": [
+        "t2"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Cenarion Helm",
+      "wowheadID": "16834",
+      "slot": "head",
+      "cost": 250,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Gloves of Prophecy",
+      "wowheadID": "16812",
+      "slot": "hands",
+      "cost": 150,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Nightslayer Boots",
+      "wowheadID": "16824",
+      "slot": "feet",
+      "cost": 150,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Magma Tempered Boots",
+      "wowheadID": "18824",
+      "slot": "feet",
+      "cost": 100,
+      "tags": [],
+      "source": "molten core"
+    },
+    {
+      "name": "Felheart Gloves",
+      "wowheadID": "16805",
+      "slot": "hands",
+      "cost": 150,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Giantstalker's Breastplate",
+      "wowheadID": "16845",
+      "slot": "chest",
+      "cost": 250,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Arcanist Mantle",
+      "wowheadID": "16797",
+      "slot": "shoulder",
+      "cost": 250,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Earthfury Epaulets",
+      "wowheadID": "16844",
+      "slot": "shoulder",
+      "cost": 250,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Earthfury Gauntlets",
+      "wowheadID": "16839",
+      "slot": "hands",
+      "cost": 150,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Earthfury Vestments",
+      "wowheadID": "16841",
+      "slot": "chest",
+      "cost": 250,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Legplates of Ten Storms",
+      "wowheadID": "16946",
+      "slot": "legs",
+      "cost": 350,
+      "tags": [
+        "t2"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Nightslayer Pants",
+      "wowheadID": "16822",
+      "slot": "legs",
+      "cost": 250,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Giantstalker's Leggings",
+      "wowheadID": "16847",
+      "slot": "legs",
+      "cost": 250,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Cenarion Vestments",
+      "wowheadID": "16833",
+      "slot": "chest",
+      "cost": 250,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Felheart Shoulder Pads",
+      "wowheadID": "16807",
+      "slot": "shoulder",
+      "cost": 250,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Lawbringer Chestguard",
+      "wowheadID": "16853",
+      "slot": "chest",
+      "cost": 250,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Arcanist Gloves",
+      "wowheadID": "16801",
+      "slot": "hands",
+      "cost": 150,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Lawbringer Spaulders",
+      "wowheadID": "16856",
+      "slot": "shoulder",
+      "cost": 250,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Legplates of Might",
+      "wowheadID": "16867",
+      "slot": "legs",
+      "cost": 250,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Earthfury Boots",
+      "wowheadID": "16837",
+      "slot": "feet",
+      "cost": 150,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Earthfury Legguards",
+      "wowheadID": "16843",
+      "slot": "legs",
+      "cost": 250,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Giantstalker's Gloves",
+      "wowheadID": "16852",
+      "slot": "hands",
+      "cost": 150,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Dragonstalker's Legguards",
+      "wowheadID": "16938",
+      "slot": "legs",
+      "cost": 350,
+      "tags": [
+        "t2"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Felheart Pants",
+      "wowheadID": "16810",
+      "slot": "legs",
+      "cost": 250,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Giantstalker's Boots",
+      "wowheadID": "16849",
+      "slot": "feet",
+      "cost": 150,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Pants of Prophecy",
+      "wowheadID": "16814",
+      "slot": "legs",
+      "cost": 250,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Cenarion Gloves",
+      "wowheadID": "16831",
+      "slot": "hands",
+      "cost": 150,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Lawbringer Legplates",
+      "wowheadID": "16855",
+      "slot": "legs",
+      "cost": 250,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Lawbringer Boots",
+      "wowheadID": "16859",
+      "slot": "feet",
+      "cost": 150,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Cenarion Leggings",
+      "wowheadID": "16835",
+      "slot": "legs",
+      "cost": 250,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Lawbringer Gauntlets",
+      "wowheadID": "16860",
+      "slot": "hands",
+      "cost": 150,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Felheart Slippers",
+      "wowheadID": "16803",
+      "slot": "feet",
+      "cost": 150,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Girdle of Prophecy",
+      "wowheadID": "16817",
+      "slot": "waist",
+      "cost": 120,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Belt of Might",
+      "wowheadID": "16864",
+      "slot": "waist",
+      "cost": 120,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Vambraces of Prophecy",
+      "wowheadID": "16819",
+      "slot": "wrist",
+      "cost": 120,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Nightslayer Belt",
+      "wowheadID": "16827",
+      "slot": "waist",
+      "cost": 120,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Bracers of Might",
+      "wowheadID": "16861",
+      "slot": "wrist",
+      "cost": 120,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Arcanist Bindings",
+      "wowheadID": "16799",
+      "slot": "wrist",
+      "cost": 120,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Felheart Belt",
+      "wowheadID": "16806",
+      "slot": "waist",
+      "cost": 120,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Arcanist Belt",
+      "wowheadID": "16802",
+      "slot": "waist",
+      "cost": 120,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Giantstalker's Belt",
+      "wowheadID": "16851",
+      "slot": "waist",
+      "cost": 120,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Lawbringer Belt",
+      "wowheadID": "16858",
+      "slot": "waist",
+      "cost": 120,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Earthfury Belt",
+      "wowheadID": "16838",
+      "slot": "waist",
+      "cost": 120,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Felheart Bracers",
+      "wowheadID": "16804",
+      "slot": "wrist",
+      "cost": 120,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Cenarion Belt",
+      "wowheadID": "16828",
+      "slot": "waist",
+      "cost": 120,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Giantstalker's Bracers",
+      "wowheadID": "16850",
+      "slot": "wrist",
+      "cost": 120,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Nightslayer Bracelets",
+      "wowheadID": "16825",
+      "slot": "wrist",
+      "cost": 120,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Cenarion Bracers",
+      "wowheadID": "16830",
+      "slot": "wrist",
+      "cost": 120,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Earthfury Bracers",
+      "wowheadID": "16840",
+      "slot": "wrist",
+      "cost": 120,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core"
+    },
+    {
+      "name": "Wristguards of True Flight",
+      "wowheadID": "18812",
+      "slot": "wrist",
+      "cost": 80,
+      "tags": [],
+      "source": "molten core"
     },
     {
       "name": "Vis'kag the Bloodletter",
       "wowheadID": "17075",
-      "slot": "",
-      "cost": -100
+      "slot": "one-hand",
+      "cost": 500,
+      "tags": [
+        "bis"
+      ],
+      "source": "onyxia"
     },
     {
-      "name": "Deathbringer",
-      "wowheadID": "17068",
-      "slot": "",
-      "cost": -100
+      "name": "Dragonstalker's Helm",
+      "wowheadID": "16939",
+      "slot": "head",
+      "cost": 350,
+      "tags": [
+        "t2"
+      ],
+      "source": "onyxia"
     },
     {
       "name": "Head of Onyxia",
       "wowheadID": "18423",
       "slot": "",
-      "cost": -100
+      "cost": 300,
+      "tags": [],
+      "source": "onyxia"
     },
     {
       "name": "Shard of the Scale",
       "wowheadID": "17064",
-      "slot": "",
-      "cost": -100
+      "slot": "trinket",
+      "cost": 500,
+      "tags": [
+        "bis"
+      ],
+      "source": "onyxia"
     },
     {
       "name": "Sapphiron Drape",
       "wowheadID": "17078",
-      "slot": "",
-      "cost": -100
+      "slot": "back",
+      "cost": 200,
+      "tags": [],
+      "source": "onyxia"
     },
     {
       "name": "Mature Black Dragon Sinew",
       "wowheadID": "18705",
       "slot": "",
-      "cost": -100
+      "cost": 250,
+      "tags": [],
+      "source": "onyxia"
     },
     {
       "name": "Bloodfang Hood",
       "wowheadID": "16908",
-      "slot": "",
-      "cost": -100
+      "slot": "head",
+      "cost": 350,
+      "tags": [
+        "t2"
+      ],
+      "source": "onyxia"
     },
     {
       "name": "Netherwind Crown",
       "wowheadID": "16914",
-      "slot": "",
-      "cost": -100
+      "slot": "head",
+      "cost": 350,
+      "tags": [
+        "t2"
+      ],
+      "source": "onyxia"
     },
     {
-      "name": "Helm of Wrath",
-      "wowheadID": "16963",
-      "slot": "",
-      "cost": -100
+      "name": "Deathbringer",
+      "wowheadID": "17068",
+      "slot": "one-hand",
+      "cost": 500,
+      "tags": [
+        "bis"
+      ],
+      "source": "onyxia"
     },
     {
       "name": "Ancient Cornerstone Grimoire",
       "wowheadID": "17067",
-      "slot": "",
-      "cost": -100
+      "slot": "held in off-hand",
+      "cost": 150,
+      "tags": [],
+      "source": "onyxia"
     },
     {
       "name": "Halo of Transcendence",
       "wowheadID": "16921",
-      "slot": "",
-      "cost": -100
+      "slot": "head",
+      "cost": 350,
+      "tags": [
+        "t2"
+      ],
+      "source": "onyxia"
     },
     {
       "name": "Nemesis Skullcap",
       "wowheadID": "16929",
-      "slot": "",
-      "cost": -100
+      "slot": "head",
+      "cost": 350,
+      "tags": [
+        "t2"
+      ],
+      "source": "onyxia"
     },
     {
       "name": "Stormrage Cover",
       "wowheadID": "16900",
-      "slot": "",
-      "cost": -100
+      "slot": "head",
+      "cost": 350,
+      "tags": [
+        "t2"
+      ],
+      "source": "onyxia"
     },
     {
       "name": "Eskhandar's Collar",
       "wowheadID": "18205",
-      "slot": "",
-      "cost": -100
+      "slot": "neck",
+      "cost": 200,
+      "tags": [],
+      "source": "onyxia"
     },
     {
       "name": "Judgement Crown",
       "wowheadID": "16955",
-      "slot": "",
-      "cost": -100
+      "slot": "head",
+      "cost": 350,
+      "tags": [
+        "t2"
+      ],
+      "source": "onyxia"
     },
     {
       "name": "Helmet of Ten Storms",
       "wowheadID": "16947",
-      "slot": "",
-      "cost": -100
+      "slot": "head",
+      "cost": 350,
+      "tags": [
+        "t2"
+      ],
+      "source": "onyxia"
     },
     {
       "name": "Ring of Binding",
       "wowheadID": "18813",
-      "slot": "",
-      "cost": -100
+      "slot": "finger",
+      "cost": 200,
+      "tags": [],
+      "source": "onyxia"
     },
     {
-      "name": "Felheart Robes",
-      "wowheadID": "16809",
-      "slot": "",
-      "cost": 250
+      "name": "Helm of Wrath",
+      "wowheadID": "16963",
+      "slot": "head",
+      "cost": 350,
+      "tags": [
+        "t2"
+      ],
+      "source": "onyxia"
     }
   ]
 }
