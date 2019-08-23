@@ -2,7 +2,8 @@
 //
 // For example https://classic.wowhead.com/item=10399/blackened-defias-armor becomes https://items.classicmaps.xyz/17109.png.
 const Discord = require('discord.js')
-const {items, reactionTagName} = require('../config.json');
+const {reactionTagName} = require('../config.json');
+const {items} = require('../items.json');
 const item = require('../util/item.js');
 
 

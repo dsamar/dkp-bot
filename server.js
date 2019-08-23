@@ -139,7 +139,7 @@ function reactionHandler(reaction, user) {
     const runCommand = () => {
       return reactionCommand.execute(reaction, user)
         .catch((error) => {
-          return handleError(error, null, user);
+          return handleError(error, user, null);
         })
     };
     logger.log('info', "acquire: " + commandLocks);
@@ -147,7 +147,7 @@ function reactionHandler(reaction, user) {
       logger.log('info', "release: " + commandLocks);
     });
   } catch (error) {
-    return handleError(error, null, user);
+    return handleError(error, user, null);
   }
 }
 
