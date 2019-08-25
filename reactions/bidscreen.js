@@ -8,6 +8,15 @@ function getField(message, fieldName) {
   return field;
 }
 
+function newUser(username) {
+  const dkpUser = {};
+  dkpUser.username = username;
+  dkpUser.value = 0;
+  dkpUser.attended = 0;
+  dkpUser.missed = 0;
+  return dkpUser;
+}
+
 module.exports = {
   name: 'bidscreen',
   locks: ['dkp'],
@@ -18,6 +27,7 @@ module.exports = {
       return user.send("Sorry, the item is no longer accepting bids!");
     }
     
+    // Technically, it's possible for someone not in the raid roster to bid on an item. We can allow this, in case officers forgot to add them to the raid.
     const dkpUsername = sanitize.getNickname(user, reaction.message.guild);
     // Get user dkp value
     return dkp.all(reaction.message.guild).then((all) => {
@@ -25,7 +35,9 @@ module.exports = {
         return el.username === dkpUsername;
       });
       if (!dkpUser) {
-        throw new Error("dkp user not found: " + dkpUsername);
+        // If the user does not exist, make a new one.
+        // This can happen if someone just got added to the raid, and was not awarded any points yet.
+        dkpUser = newUser(dkpUsername);
       }
       const message = reaction.message;
       let allBids = tableview.parse(message.embeds[0].description  || "", []);
