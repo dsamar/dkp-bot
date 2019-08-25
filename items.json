@@ -9,10 +9,10 @@
       "source": "molten core"
     },
     {
-      "name": "Eye of Sulfuras",
-      "wowheadID": "17204",
+      "name": "Bindings of the Windseeker",
+      "wowheadID": "18564",
       "slot": "",
-      "cost": 600,
+      "cost": 1000,
       "tags": [],
       "source": "molten core"
     },
@@ -657,22 +657,20 @@
       "source": "molten core"
     },
     {
+      "name": "Wristguards of True Flight",
+      "wowheadID": "18812",
+      "slot": "wrist",
+      "cost": 80,
+      "tags": [],
+      "source": "molten core"
+    },
+    {
       "name": "Obsidian Edged Blade",
       "wowheadID": "18822",
       "slot": "two-hand",
       "cost": 600,
       "tags": [
         "bis"
-      ],
-      "source": "molten core"
-    },
-    {
-      "name": "Arcanist Robes",
-      "wowheadID": "16798",
-      "slot": "chest",
-      "cost": 250,
-      "tags": [
-        "t1"
       ],
       "source": "molten core"
     },
@@ -1347,11 +1345,21 @@
       "source": "molten core"
     },
     {
-      "name": "Wristguards of True Flight",
-      "wowheadID": "18812",
-      "slot": "wrist",
-      "cost": 80,
+      "name": "Eye of Sulfuras",
+      "wowheadID": "17204",
+      "slot": "",
+      "cost": 1000,
       "tags": [],
+      "source": "molten core"
+    },
+    {
+      "name": "Arcanist Robes",
+      "wowheadID": "16798",
+      "slot": "chest",
+      "cost": 250,
+      "tags": [
+        "t1"
+      ],
       "source": "molten core"
     },
     {
