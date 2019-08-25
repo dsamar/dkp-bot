@@ -31,7 +31,7 @@ module.exports = {
     const dkpUsername = sanitize.getNickname(user, reaction.message.guild);
     // Get user dkp value
     return dkp.all(reaction.message.guild).then((all) => {
-      const dkpUser = all.find((el) => {
+      let dkpUser = all.find((el) => {
         return el.username === dkpUsername;
       });
       if (!dkpUser) {
