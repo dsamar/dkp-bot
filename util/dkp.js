@@ -120,6 +120,15 @@ module.exports = {
       return splitToMessages(channel, messages, serialized);
     });
   },
+  addRoster: function(guild, roster) {
+    const channel = guild.channels.find(ch => ch.name === leaderboardName);
+    // This channel should only have 1 message.
+    return channel.fetchPinnedMessages().then(messages => {
+      const all = tableview.parse(contentFromMessages(messages), roster);
+      const serialized = tableview.serializeRegular(all);
+      return splitToMessages(channel, messages, serialized);
+    });
+  },
   incrementAttendance: function(guild, roster) {
     const channel = guild.channels.find(ch => ch.name === leaderboardName);
     // This channel should only have 1 message.
