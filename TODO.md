@@ -7,6 +7,7 @@
 
 - set the bot up on a cloud machine, and have it run 24/7 (auto-restart)
 - import script from wowhead, to pull in all items
+- add member by officer to bid
 
 
 ## To scale this to a multi-server bot:

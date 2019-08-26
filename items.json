@@ -4,8 +4,10 @@
       "name": "Bonereaver's Edge",
       "wowheadID": "17076",
       "slot": "two-hand",
-      "cost": 300,
-      "tags": [],
+      "cost": 800,
+      "tags": [
+        "bis"
+      ],
       "source": "molten core"
     },
     {
@@ -40,10 +42,8 @@
       "name": "Spinal Reaper",
       "wowheadID": "17104",
       "slot": "two-hand",
-      "cost": 600,
-      "tags": [
-        "bis"
-      ],
+      "cost": 400,
+      "tags": [],
       "source": "molten core"
     },
     {
@@ -70,7 +70,7 @@
       "name": "The Eye of Divinity",
       "wowheadID": "18646",
       "slot": "trinket",
-      "cost": 500,
+      "cost": 800,
       "tags": [],
       "source": "molten core"
     },
@@ -88,7 +88,7 @@
       "name": "Ancient Petrified Leaf",
       "wowheadID": "18703",
       "slot": "",
-      "cost": 250,
+      "cost": 400,
       "tags": [],
       "source": "molten core"
     },
@@ -106,10 +106,8 @@
       "name": "Brutality Blade",
       "wowheadID": "18832",
       "slot": "one-hand",
-      "cost": 500,
-      "tags": [
-        "bis"
-      ],
+      "cost": 400,
+      "tags": [],
       "source": "molten core"
     },
     {
@@ -126,10 +124,8 @@
       "name": "Core Hound Tooth",
       "wowheadID": "18805",
       "slot": "one-hand",
-      "cost": 500,
-      "tags": [
-        "bis"
-      ],
+      "cost": 300,
+      "tags": [],
       "source": "molten core"
     },
     {
@@ -194,10 +190,8 @@
       "name": "Drillborer Disk",
       "wowheadID": "17066",
       "slot": "shield",
-      "cost": 200,
-      "tags": [
-        "bis"
-      ],
+      "cost": 150,
+      "tags": [],
       "source": "molten core"
     },
     {
@@ -234,10 +228,8 @@
       "name": "Eskhandar's Right Claw",
       "wowheadID": "18203",
       "slot": "main hand",
-      "cost": 500,
-      "tags": [
-        "bis"
-      ],
+      "cost": 300,
+      "tags": [],
       "source": "molten core"
     },
     {
@@ -274,10 +266,8 @@
       "name": "Heavy Dark Iron Ring",
       "wowheadID": "18879",
       "slot": "finger",
-      "cost": 300,
-      "tags": [
-        "bis"
-      ],
+      "cost": 100,
+      "tags": [],
       "source": "molten core"
     },
     {
@@ -292,10 +282,8 @@
       "name": "Staff of Dominance",
       "wowheadID": "18842",
       "slot": "two-hand",
-      "cost": 600,
-      "tags": [
-        "bis"
-      ],
+      "cost": 300,
+      "tags": [],
       "source": "molten core"
     },
     {
@@ -310,7 +298,7 @@
       "name": "Earthshaker",
       "wowheadID": "17073",
       "slot": "two-hand",
-      "cost": 300,
+      "cost": 200,
       "tags": [],
       "source": "molten core"
     },
@@ -334,7 +322,7 @@
       "name": "Gutgore Ripper",
       "wowheadID": "17071",
       "slot": "one-hand",
-      "cost": 200,
+      "cost": 300,
       "tags": [],
       "source": "molten core"
     },
@@ -342,7 +330,7 @@
       "name": "Sorcerous Dagger",
       "wowheadID": "18878",
       "slot": "main hand",
-      "cost": 200,
+      "cost": 300,
       "tags": [],
       "source": "molten core"
     },
@@ -360,17 +348,15 @@
       "name": "Crown of Destruction",
       "wowheadID": "18817",
       "slot": "head",
-      "cost": 350,
-      "tags": [
-        "bis"
-      ],
+      "cost": 200,
+      "tags": [],
       "source": "molten core"
     },
     {
       "name": "Shadowstrike",
       "wowheadID": "17074",
       "slot": "two-hand",
-      "cost": 80,
+      "cost": 75,
       "tags": [],
       "source": "molten core"
     },
@@ -378,7 +364,7 @@
       "name": "Finkle's Lava Dredger",
       "wowheadID": "18803",
       "slot": "two-hand",
-      "cost": 300,
+      "cost": 400,
       "tags": [],
       "source": "molten core"
     },
@@ -386,10 +372,8 @@
       "name": "Medallion of Steadfast Might",
       "wowheadID": "17065",
       "slot": "neck",
-      "cost": 300,
-      "tags": [
-        "bis"
-      ],
+      "cost": 100,
+      "tags": [],
       "source": "molten core"
     },
     {
@@ -406,10 +390,8 @@
       "name": "Dragon's Blood Cape",
       "wowheadID": "17107",
       "slot": "back",
-      "cost": 300,
-      "tags": [
-        "bis"
-      ],
+      "cost": 200,
+      "tags": [],
       "source": "molten core"
     },
     {
@@ -424,17 +406,15 @@
       "name": "Deep Earth Spaulders",
       "wowheadID": "18829",
       "slot": "shoulder",
-      "cost": 350,
-      "tags": [
-        "bis"
-      ],
+      "cost": 150,
+      "tags": [],
       "source": "molten core"
     },
     {
       "name": "Shard of the Flame",
       "wowheadID": "17082",
       "slot": "trinket",
-      "cost": 200,
+      "cost": 100,
       "tags": [],
       "source": "molten core"
     },
@@ -470,7 +450,7 @@
       "name": "Essence of the Pure Flame",
       "wowheadID": "18815",
       "slot": "trinket",
-      "cost": 200,
+      "cost": 50,
       "tags": [],
       "source": "molten core"
     },
@@ -478,10 +458,8 @@
       "name": "Fireguard Shoulders",
       "wowheadID": "19139",
       "slot": "shoulder",
-      "cost": 350,
-      "tags": [
-        "bis"
-      ],
+      "cost": 50,
+      "tags": [],
       "source": "molten core"
     },
     {
@@ -498,7 +476,7 @@
       "name": "Nightslayer Shoulder Pads",
       "wowheadID": "16823",
       "slot": "shoulder",
-      "cost": 250,
+      "cost": 150,
       "tags": [
         "t1"
       ],
@@ -508,7 +486,7 @@
       "name": "Mantle of Prophecy",
       "wowheadID": "16816",
       "slot": "shoulder",
-      "cost": 250,
+      "cost": 150,
       "tags": [
         "t1"
       ],
@@ -528,7 +506,7 @@
       "name": "Pauldrons of Might",
       "wowheadID": "16868",
       "slot": "shoulder",
-      "cost": 250,
+      "cost": 150,
       "tags": [
         "t1"
       ],
@@ -556,7 +534,7 @@
       "name": "Flamewaker Legplates",
       "wowheadID": "18861",
       "slot": "legs",
-      "cost": 200,
+      "cost": 100,
       "tags": [],
       "source": "molten core"
     },
@@ -668,10 +646,8 @@
       "name": "Obsidian Edged Blade",
       "wowheadID": "18822",
       "slot": "two-hand",
-      "cost": 600,
-      "tags": [
-        "bis"
-      ],
+      "cost": 400,
+      "tags": [],
       "source": "molten core"
     },
     {
@@ -762,7 +738,7 @@
       "name": "Giantstalker's Epaulets",
       "wowheadID": "16848",
       "slot": "shoulder",
-      "cost": 250,
+      "cost": 150,
       "tags": [
         "t1"
       ],
@@ -800,7 +776,7 @@
       "name": "Cenarion Spaulders",
       "wowheadID": "16836",
       "slot": "shoulder",
-      "cost": 250,
+      "cost": 150,
       "tags": [
         "t1"
       ],
@@ -908,7 +884,7 @@
       "name": "Arcanist Mantle",
       "wowheadID": "16797",
       "slot": "shoulder",
-      "cost": 250,
+      "cost": 150,
       "tags": [
         "t1"
       ],
@@ -918,7 +894,7 @@
       "name": "Earthfury Epaulets",
       "wowheadID": "16844",
       "slot": "shoulder",
-      "cost": 250,
+      "cost": 150,
       "tags": [
         "t1"
       ],
@@ -988,7 +964,7 @@
       "name": "Felheart Shoulder Pads",
       "wowheadID": "16807",
       "slot": "shoulder",
-      "cost": 250,
+      "cost": 150,
       "tags": [
         "t1"
       ],
@@ -1018,7 +994,7 @@
       "name": "Lawbringer Spaulders",
       "wowheadID": "16856",
       "slot": "shoulder",
-      "cost": 250,
+      "cost": 150,
       "tags": [
         "t1"
       ],
@@ -1412,7 +1388,7 @@
       "name": "Mature Black Dragon Sinew",
       "wowheadID": "18705",
       "slot": "",
-      "cost": 250,
+      "cost": 400,
       "tags": [],
       "source": "onyxia"
     },
