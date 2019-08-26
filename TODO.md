@@ -7,7 +7,8 @@
 
 - set the bot up on a cloud machine, and have it run 24/7 (auto-restart)
 - import script from wowhead, to pull in all items
-- add member by officer to bid
+- command to add members to a bid
+- somehow track attendance over last N raids.
 
 
 ## To scale this to a multi-server bot:
