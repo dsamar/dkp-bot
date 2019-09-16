@@ -866,3 +866,27 @@ message_id: Value "irioth" is not snowflake.
 [INFO] - acquire: dkp616801985072726026
 [INFO] - release: dkp616801985072726026
 [INFO] - Logged in as loot-master-prod#2573!
+[INFO] - Logged in as test-loot-master#2859!
+[INFO] - Logged in as test-loot-master#2859!
+[INFO] - Logged in as loot-master-prod#2573!
+[INFO] - acquire: raid616801985072726026
+[ERROR] - this function takes two arguments
+[INFO] - release: raid616801985072726026
+[INFO] - acquire: raid616801985072726026
+[ERROR] - Unknown Message
+[INFO] - release: raid616801985072726026
+[INFO] - Logged in as loot-master-prod#2573!
+[INFO] - acquire: raid616801985072726026
+[ERROR] - Unknown Message
+[INFO] - release: raid616801985072726026
+[INFO] - Logged in as loot-master-prod#2573!
+[INFO] - acquire: raid616801985072726026
+[ERROR] - Unknown Message
+[INFO] - release: raid616801985072726026
+[INFO] - acquire: raid616801985072726026
+[ERROR] - Unknown Message
+[INFO] - release: raid616801985072726026
+[INFO] - Logged in as loot-master-prod#2573!
+[INFO] - acquire: raid616801985072726026
+[INFO] - release: raid616801985072726026
+[INFO] - Logged in as loot-master-prod#2573!

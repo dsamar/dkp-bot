@@ -17,7 +17,7 @@ module.exports = {
       throw new Error("this function takes two arguments");
     }
     const channel = message.guild.channels.find(ch => ch.name === config.raidAnnounceChannel);
-    return message.channel.fetchMessage(args[0])
+    return channel.fetchMessage(args[0])
       .then(message => {
         return raid.update("cancel", message, sanitize.name(args[1]));
       })
