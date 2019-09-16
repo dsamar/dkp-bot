@@ -1,9 +1,36 @@
 const Discord = require('discord.js')
 const {table} = require('table')
 
+function attendanceStringToList(str) {
+  attendance = [];
+  if (str)
+  [...str].forEach(c => {
+    // console.log(c);
+    if (c == 'A') {
+      attendance.push(true);
+    } else {
+      attendance.push(false);
+    }
+  });
+  return attendance;
+}
+
+function attendanceListToString(list) {
+  str = [];
+  list.forEach(c => {
+    if (c) {
+      str.push('A');
+    } else {
+      str.push('_');
+    }
+  });
+  return str.join("");
+}
+
 function userToString(dkpUser) {
-  const attendancePercentage = dkpUser.attended / (dkpUser.attended + dkpUser.missed) * 100;
-  return [ dkpUser.username, parseFloat(dkpUser.value).toFixed(2), attendancePercentage.toFixed(2) + " %", dkpUser.attended, dkpUser.missed];
+  console.log(dkpUser.attendance);
+  const attendancePercentage = dkpUser.attendance.filter(c => c).length / (dkpUser.attendance.length) * 100;
+  return [ dkpUser.username, parseFloat(dkpUser.value).toFixed(2), attendancePercentage.toFixed(2) + " %", attendanceListToString(dkpUser.attendance)];
 }
 
 function stringToUser(string) {
@@ -14,8 +41,7 @@ function stringToUser(string) {
   });
   dkpUser.username = list[0];
   dkpUser.value = parseFloat(list[1]);
-  dkpUser.attended = parseInt(list[3]);
-  dkpUser.missed = parseInt(list[4]);
+  dkpUser.attendance = attendanceStringToList(list[3]);
   return dkpUser;
 }
 
@@ -23,8 +49,7 @@ function newUser(username) {
   const dkpUser = {};
   dkpUser.username = username;
   dkpUser.value = 0;
-  dkpUser.attended = 0;
-  dkpUser.missed = 0;
+  dkpUser.attendance = [];
   return dkpUser;
 }
 
@@ -56,10 +81,21 @@ function serialize(all) {
     return userToString(member);
   });
   // add header
-  data.unshift(['username', 'dkp', 'attendance', '#', 'X'])
+  data.unshift(['username', 'dkp', 'attendance', 'history'])
   const config = {
     drawHorizontalLine: (index, size) => {
       return index === 0 || index === 1 || index === size;
+    },
+    border: {
+      topBody: `-`,
+      bottomBody: `-`,
+      joinBody: `-`,
+    },
+    columns: {
+      3: {
+        width: 10,
+        alignment: 'right'
+      },
     }
   };
   return table(data, config).trim();
@@ -81,9 +117,21 @@ function removeDupes(dkpUserList) {
     });
 }
 
+function addAttendance(member) {
+  member.attendance = member.attendance.slice(-7);
+  member.attendance.push(true);
+}
+
+function markMissedAttendance(member) {
+  member.attendance = member.attendance.slice(-7);
+  member.attendance.push(false);
+}
+
 module.exports = {
   parse: parseLeaderBoard,
   serializeEmbedded: serializeEmbedded,
   serializeRegular: serialize,
   removeDupes: removeDupes,
+  addAttendance: addAttendance,
+  markMissedAttendance: markMissedAttendance,
 }

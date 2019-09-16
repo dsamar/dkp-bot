@@ -2,13 +2,10 @@
 
 - add commands to edit user's attendance numbers?
 - don't allow a raid to be started more than once
-
 - make usernames have first letter capitalized
 
-- set the bot up on a cloud machine, and have it run 24/7 (auto-restart)
-- import script from wowhead, to pull in all items
-- command to add members to a bid
 - somehow track attendance over last N raids.
+- command to trade dkp from one member to another.
 
 
 ## To scale this to a multi-server bot:
