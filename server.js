@@ -173,7 +173,7 @@ client.on('raw', packet => {
 });
 
 client.on('messageReactionAdd', (reaction, user) => {
-  if (reaction.message.channel.parent.name !== botCategory || user.bot) {
+  if (reaction.message.channel.parent.name.toLowerCase() !== botCategory.toLowerCase() || user.bot) {
     return;
   }
   
