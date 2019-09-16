@@ -22,12 +22,12 @@ module.exports = {
   locks: [],
 	execute(message, args) {
     // args[0] date-time
-    const datetime = args.join(" ");
+    const userInput = args.join(" ");
 		const channel = message.guild.channels.find(ch => ch.name === raidAnnounceChannel);
     const content = new Discord.RichEmbed();
     content.setTitle(raidTemplate.title);
     content.setDescription(raidTemplate.description);
-    content.addField("date-time", datetime);
+    content.addField("details", userInput);
     content.addField("signup-list", "<empty>");
     content.addField("total-players", 0);
     content.addField(reactionTagName, "raidsignup", true);
