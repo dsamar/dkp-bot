@@ -138,9 +138,9 @@ module.exports = {
       // Apply valueFn
       all.forEach((member) => {
         if (roster.includes(member.username)) {
-          member.attended += 1;
+          tableview.addAttendance(member);
         } else {
-          member.missed += 1;
+          tableview.markMissedAttendance(member);
         }          
       });
       

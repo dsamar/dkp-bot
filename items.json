@@ -14,7 +14,7 @@
       "name": "Bindings of the Windseeker",
       "wowheadID": "18564",
       "slot": "",
-      "cost": 1000,
+      "cost": 250,
       "tags": [],
       "source": "molten core"
     },
@@ -266,7 +266,7 @@
       "name": "Heavy Dark Iron Ring",
       "wowheadID": "18879",
       "slot": "finger",
-      "cost": 100,
+      "cost": 50,
       "tags": [],
       "source": "molten core"
     },
@@ -380,7 +380,7 @@
       "name": "Arcanist Crown",
       "wowheadID": "16795",
       "slot": "head",
-      "cost": 250,
+      "cost": 170,
       "tags": [
         "t1"
       ],
@@ -440,7 +440,7 @@
       "name": "Giantstalker's Helmet",
       "wowheadID": "16846",
       "slot": "head",
-      "cost": 250,
+      "cost": 170,
       "tags": [
         "t1"
       ],
@@ -466,7 +466,7 @@
       "name": "Earthfury Helmet",
       "wowheadID": "16842",
       "slot": "head",
-      "cost": 250,
+      "cost": 170,
       "tags": [
         "t1"
       ],
@@ -476,7 +476,7 @@
       "name": "Nightslayer Shoulder Pads",
       "wowheadID": "16823",
       "slot": "shoulder",
-      "cost": 150,
+      "cost": 200,
       "tags": [
         "t1"
       ],
@@ -486,7 +486,7 @@
       "name": "Mantle of Prophecy",
       "wowheadID": "16816",
       "slot": "shoulder",
-      "cost": 150,
+      "cost": 200,
       "tags": [
         "t1"
       ],
@@ -506,7 +506,7 @@
       "name": "Pauldrons of Might",
       "wowheadID": "16868",
       "slot": "shoulder",
-      "cost": 150,
+      "cost": 200,
       "tags": [
         "t1"
       ],
@@ -562,7 +562,7 @@
       "name": "Helm of Might",
       "wowheadID": "16866",
       "slot": "head",
-      "cost": 250,
+      "cost": 170,
       "tags": [
         "t1"
       ],
@@ -572,7 +572,7 @@
       "name": "Circlet of Prophecy",
       "wowheadID": "16813",
       "slot": "head",
-      "cost": 250,
+      "cost": 170,
       "tags": [
         "t1"
       ],
@@ -664,7 +664,7 @@
       "name": "Felheart Horns",
       "wowheadID": "16808",
       "slot": "head",
-      "cost": 250,
+      "cost": 170,
       "tags": [
         "t1"
       ],
@@ -738,7 +738,7 @@
       "name": "Giantstalker's Epaulets",
       "wowheadID": "16848",
       "slot": "shoulder",
-      "cost": 150,
+      "cost": 200,
       "tags": [
         "t1"
       ],
@@ -748,7 +748,7 @@
       "name": "Nightslayer Cover",
       "wowheadID": "16821",
       "slot": "head",
-      "cost": 250,
+      "cost": 170,
       "tags": [
         "t1"
       ],
@@ -758,7 +758,7 @@
       "name": "Lawbringer Helm",
       "wowheadID": "16854",
       "slot": "head",
-      "cost": 250,
+      "cost": 170,
       "tags": [
         "t1"
       ],
@@ -776,7 +776,7 @@
       "name": "Cenarion Spaulders",
       "wowheadID": "16836",
       "slot": "shoulder",
-      "cost": 150,
+      "cost": 200,
       "tags": [
         "t1"
       ],
@@ -806,7 +806,7 @@
       "name": "Arcanist Leggings",
       "wowheadID": "16796",
       "slot": "legs",
-      "cost": 250,
+      "cost": 170,
       "tags": [
         "t1"
       ],
@@ -826,7 +826,7 @@
       "name": "Cenarion Helm",
       "wowheadID": "16834",
       "slot": "head",
-      "cost": 250,
+      "cost": 170,
       "tags": [
         "t1"
       ],
@@ -884,7 +884,7 @@
       "name": "Arcanist Mantle",
       "wowheadID": "16797",
       "slot": "shoulder",
-      "cost": 150,
+      "cost": 200,
       "tags": [
         "t1"
       ],
@@ -894,7 +894,7 @@
       "name": "Earthfury Epaulets",
       "wowheadID": "16844",
       "slot": "shoulder",
-      "cost": 150,
+      "cost": 200,
       "tags": [
         "t1"
       ],
@@ -934,7 +934,7 @@
       "name": "Nightslayer Pants",
       "wowheadID": "16822",
       "slot": "legs",
-      "cost": 250,
+      "cost": 170,
       "tags": [
         "t1"
       ],
@@ -944,7 +944,7 @@
       "name": "Giantstalker's Leggings",
       "wowheadID": "16847",
       "slot": "legs",
-      "cost": 250,
+      "cost": 170,
       "tags": [
         "t1"
       ],
@@ -964,7 +964,7 @@
       "name": "Felheart Shoulder Pads",
       "wowheadID": "16807",
       "slot": "shoulder",
-      "cost": 150,
+      "cost": 200,
       "tags": [
         "t1"
       ],
@@ -994,7 +994,7 @@
       "name": "Lawbringer Spaulders",
       "wowheadID": "16856",
       "slot": "shoulder",
-      "cost": 150,
+      "cost": 200,
       "tags": [
         "t1"
       ],
@@ -1004,7 +1004,7 @@
       "name": "Legplates of Might",
       "wowheadID": "16867",
       "slot": "legs",
-      "cost": 250,
+      "cost": 170,
       "tags": [
         "t1"
       ],
@@ -1024,7 +1024,7 @@
       "name": "Earthfury Legguards",
       "wowheadID": "16843",
       "slot": "legs",
-      "cost": 250,
+      "cost": 170,
       "tags": [
         "t1"
       ],
@@ -1054,7 +1054,7 @@
       "name": "Felheart Pants",
       "wowheadID": "16810",
       "slot": "legs",
-      "cost": 250,
+      "cost": 170,
       "tags": [
         "t1"
       ],
@@ -1074,7 +1074,7 @@
       "name": "Pants of Prophecy",
       "wowheadID": "16814",
       "slot": "legs",
-      "cost": 250,
+      "cost": 170,
       "tags": [
         "t1"
       ],
@@ -1094,7 +1094,7 @@
       "name": "Lawbringer Legplates",
       "wowheadID": "16855",
       "slot": "legs",
-      "cost": 250,
+      "cost": 170,
       "tags": [
         "t1"
       ],
@@ -1114,7 +1114,7 @@
       "name": "Cenarion Leggings",
       "wowheadID": "16835",
       "slot": "legs",
-      "cost": 250,
+      "cost": 170,
       "tags": [
         "t1"
       ],
@@ -1324,7 +1324,7 @@
       "name": "Eye of Sulfuras",
       "wowheadID": "17204",
       "slot": "",
-      "cost": 1000,
+      "cost": 800,
       "tags": [],
       "source": "molten core"
     },

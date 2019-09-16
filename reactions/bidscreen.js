@@ -8,15 +8,6 @@ function getField(message, fieldName) {
   return field;
 }
 
-function newUser(username) {
-  const dkpUser = {};
-  dkpUser.username = username;
-  dkpUser.value = 0;
-  dkpUser.attended = 0;
-  dkpUser.missed = 0;
-  return dkpUser;
-}
-
 module.exports = {
   name: 'bidscreen',
   locks: ['dkp'],

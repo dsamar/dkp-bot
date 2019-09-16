@@ -66,3 +66,13 @@ forever start server.js
 crontab -u <USERNAME> -e
   > @reboot /usr/local/bin/forever start /home/<USERNAME>/dkp-bot/server.js
 ```
+
+Update Commands:
+
+```
+cd dkp-bot
+git reset --hard
+git pull --rebase origin master
+forever restartall
+
+```
