@@ -3,13 +3,19 @@ const {raidAnnounceChannel, reactionTagName, raidTemplate} = require('../config.
 const sanitize = require('../util/sanitize.js');
 
 function addRaidSignups (message) {
-  // Add other classes/specs
-  const bid = message.guild.emojis.find(em => em.name === 'bid');
+  // Add the classes
+  const warrior = message.react(message.guild.emojis.find(em => em.name === 'warrior'));
+  const priest = message.react(message.guild.emojis.find(em => em.name === 'priest'));
+  const shaman = message.react(message.guild.emojis.find(em => em.name === 'shaman'));
+  const druid = message.react(message.guild.emojis.find(em => em.name === 'druid'));
+  const rogue = message.react(message.guild.emojis.find(em => em.name === 'rogue'));
+  const hunter = message.react(message.guild.emojis.find(em => em.name === 'hunter'));
+  const mage = message.react(message.guild.emojis.find(em => em.name === 'mage'));
+  const warlock = message.react(message.guild.emojis.find(em => em.name === 'warlock'));
+  const paladin = message.react(message.guild.emojis.find(em => em.name === 'paladin'));
+  
   const cancel = message.guild.emojis.find(em => em.name === 'cancel');
-  return message.react(bid)
-    .then(() => {
-      return message.react(cancel)
-    });
+  return Promise.all([warrior, priest, shaman, druid, rogue, hunter, warlock, paladin]).then(() => message.react(cancel));
 }
 
 module.exports = {
@@ -28,9 +34,8 @@ module.exports = {
     content.setTitle(raidTemplate.title);
     content.setDescription(raidTemplate.description);
     content.addField("details", userInput);
-    content.addField("signup-list", "<empty>");
     content.addField("total-players", 0);
-    content.addField(reactionTagName, "raidsignup", true);
+    content.addField(reactionTagName, "raidsignup");
     return channel.send(content)
       .then(raidMessage => {
         const receivedEmbed = raidMessage.embeds[0];
