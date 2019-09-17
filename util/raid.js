@@ -1,36 +1,89 @@
 const Discord = require('discord.js')
 const {reactionTagName, raidAnnounceChannel} = require('../config.json');
 const sanitize = require('./sanitize.js');
+const CLASS_LIST = ["warrior", "mage", "hunter", "warlock", "rogue", "druid", "shaman", "paladin", "priest"];
 
-function addUser(field, user) {
-  let lines = [];
-  if (field.value) {
-    lines = field.value.split("\n");
-  }  
-  if (!lines.find(el => el.startsWith(user))) {
-    lines.push(user);
-  }
-  field.value = lines.join("\n");
+function getClassField(type, embed, guild) {
+  const emoji = guild.emojis.find(em => em.name === type).toString();
+  return embed.fields.find(field => field.name === emoji) || embed.fields.find(field => field.name === type);
 }
 
-function removeUser(field, user) {
-  let lines = [];
-  if (field.value) {
-    lines = field.value.split("\n");
+function removeField(embed, fieldName, guild) {
+  let fieldLine = -1;
+  const emoji = guild.emojis.find(em => em.name === fieldName).toString();
+  for(let i = 0; i < embed.fields.length; i++) {
+    if (embed.fields[i].name === fieldName || embed.fields[i].name === emoji) {
+      fieldLine = i;
+    }
   }
+  if (fieldLine != -1) {
+    embed.fields.splice(fieldLine , 1);
+  }
+}
+
+function unserialize(embed, guild) {
+  let signups = [];
+  CLASS_LIST.forEach(cl => {
+    const field = getClassField(cl, embed, guild);
+    if (field) {
+      const classSignups = field.value.split("\n").map((str) => {
+        return {"user": str.trim(), "type": cl};
+      });
+      signups = signups.concat(classSignups);
+    }
+  });
+  signups = signups.filter((item, index) => {
+    return signups.map(el => el.user).indexOf(item.user) === index;
+  });
+  return signups;
+}
+
+function serialize(signups, guild, embed) {
+  // const emoji = guild.emojis.find(em => em.name === el.type).toString();
+  let ret = "";
+  if (!signups.length) {
+    return;
+  }
+  
+  // remove all existing class fields from message.
+  CLASS_LIST.forEach(cl => {
+    removeField(embed, cl, guild);
+  });
+  
+  // add them all back.
+  signups.forEach(user => {
+    let field = getClassField(user.type, embed, guild);
+    if (!field) {
+      const emoji = guild.emojis.find(em => em.name === user.type).toString();
+      embed.addField(emoji, user.user, /*inline=*/true);
+    } else {
+      const list = field.value.split("\n");
+      list.push(user.user);
+      list.sort();
+      field.value = list.join("\n");
+    }
+  });
+}
+
+function addUser(signups, user, type) {
+  const signedupUser = signups.find(el => el.user === user);
+  if (!signedupUser) {
+    signups.push({"user": user, "type": type});
+  } else {
+    signedupUser.type = type;
+  }
+}
+
+function removeUser(signups, user) {
   let userLine = -1;
-  for(let i = 0; i < lines.length; i++) {
-    if (lines[i].startsWith(user)) {
+  for(let i = 0; i < signups.length; i++) {
+    if (signups[i].user === user) {
       userLine = i;
     }
   }
   if (userLine != -1) {
-    lines.splice(userLine , 1);
+    signups.splice(userLine , 1);
   }
-  if (lines.length == 0) {
-    lines.push('<empty>');
-  }
-  field.value = lines.join("\n");
 }
 
 function getField(message, fieldName) {
@@ -47,18 +100,25 @@ module.exports = {
     username = username.toLowerCase();
     const raidMessage = message.embeds[0];
     const newEmbed = new Discord.RichEmbed(raidMessage);
-    const signupList = getField(newEmbed, "signup-list");
+    let signups = unserialize(newEmbed, message.guild);
     
     if (type === 'cancel') {
-      removeUser(signupList, username);
+      removeUser(signups, username);
+    } else if (CLASS_LIST.includes(type)) {
+      addUser(signups, username, type);
     } else {
-      // TODO: Add other classes and specs.
-      addUser(signupList, username);
-      removeUser(signupList, '<empty>');
+      return; // not a registered class or reaction.
     }
     
+    // Sort by name.
+    signups.sort((a,b) => {
+      return a.type.localeCompare(b.type); 
+    });
+    
+    serialize(signups, message.guild, newEmbed);
+    
     const totalPlayers = getField(newEmbed, "total-players");
-    totalPlayers.value = signupList.value.split("\n").length;
+    totalPlayers.value = signups.length;
     return message.edit("", newEmbed);
   },
   clearCurrentRaids: function(guild) {
@@ -82,11 +142,8 @@ module.exports = {
     if (tag.value !== 'raidsignup') {
       return [];
     }
-    const signupList = getField(message.embeds[0], "signup-list");
-    let lines = signupList.value.split("\n");
-    lines.filter(user => user === '<empty>');
-    lines = lines.map(sanitize.name);
-    return lines;
+    let signups = unserialize(message.embeds[0], message.guild);
+    return signups.map(el => el.user).map(sanitize.name);
   },
   getCurrentRaidRoster: function(guild) {
     // returns a promise with a list of members in current raid
@@ -98,12 +155,8 @@ module.exports = {
         messages.forEach((message) => {
           const tag = message.embeds[0].fields.find(field => field.name === reactionTagName);
           if (tag.value == 'raidsignup') {
-            const signupList = getField(message.embeds[0], "signup-list");
-            let lines = signupList.value.split("\n");
-            lines.filter(user => user === '<empty>');
-            // sanitize roster, trim any names over 12 characters down.
-            lines = lines.map(sanitize.name);
-            roster = lines;
+            let signups = unserialize(message.embeds[0], message.guild);
+            roster = signups.map(el => el.user).map(sanitize.name);
           }
         });
         return roster;

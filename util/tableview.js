@@ -2,10 +2,9 @@ const Discord = require('discord.js')
 const {table} = require('table')
 
 function attendanceStringToList(str) {
-  attendance = [];
+  let attendance = [];
   if (str)
   [...str].forEach(c => {
-    // console.log(c);
     if (c == 'A') {
       attendance.push(true);
     } else {
@@ -16,7 +15,7 @@ function attendanceStringToList(str) {
 }
 
 function attendanceListToString(list) {
-  str = [];
+  let str = [];
   list.forEach(c => {
     if (c) {
       str.push('A');
@@ -28,7 +27,6 @@ function attendanceListToString(list) {
 }
 
 function userToString(dkpUser) {
-  console.log(dkpUser.attendance);
   const attendancePercentage = dkpUser.attendance.filter(c => c).length / (dkpUser.attendance.length) * 100;
   return [ dkpUser.username, parseFloat(dkpUser.value).toFixed(2), attendancePercentage.toFixed(2) + " %", attendanceListToString(dkpUser.attendance)];
 }
