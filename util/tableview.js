@@ -62,6 +62,7 @@ function parseLeaderBoard(text, roster) {
   all = removeDupes(all);
   
   // Add any new users from roster.
+  roster.push("guild-bank");
   roster.forEach((user) => {
     if (!all.find((member) => { return member.username === user; })) {
       all.push(newUser(user));

@@ -5,7 +5,7 @@ const tableview = require('./tableview.js');
 const MESSAGE_LIMIT = 1500;
 
 function contentFromMessages(messages) {
-  const messageArray = messages.array().sort((a, b) => a.id - b.id);
+  const messageArray = messages.sort((a, b) => a.id - b.id);
   return messageArray
     .filter((m) => m.content !== "PLACEHOLDER")
     .map((m) => {
@@ -16,7 +16,7 @@ function contentFromMessages(messages) {
 }
 
 function splitToMessages(channel, messages, serialized) {
-  const messageArray = messages.array().sort((a, b) => a.id - b.id);
+  const messageArray = messages.sort((a, b) => a.id - b.id);
   const serializedLines = serialized.split("\n");
   const numMessages = Math.ceil(serialized.length / MESSAGE_LIMIT);
   const chunkSize = Math.floor(serializedLines.length / numMessages);
@@ -54,14 +54,14 @@ module.exports = {
     // Returns a promise with the dkpUser object.
     const channel = guild.channels.find(ch => ch.name === leaderboardName);
     return channel.fetchPinnedMessages().then(messages => {
-      return tableview.parse(contentFromMessages(messages), []);
+      return tableview.parse(contentFromMessages(messages.array()), []);
     });
   },
   query: function(guild, user) {
     // Returns a promise with the dkpUser object.
     const channel = guild.channels.find(ch => ch.name === leaderboardName);
     return channel.fetchPinnedMessages().then(messages => {
-      const all = tableview.parse(contentFromMessages(messages), []);
+      const all = tableview.parse(contentFromMessages(messages.array()), []);
       
       return all.find((el) => {
         return el.username === user;
@@ -78,7 +78,7 @@ module.exports = {
     if (isNaN(value)) throw new Error('unable to spend dkp, value to spend is not a number: ' + value);
     const channel = guild.channels.find(ch => ch.name === leaderboardName);
     return channel.fetchPinnedMessages().then(messages => {
-      const all = tableview.parse(contentFromMessages(messages), roster);
+      const all = tableview.parse(contentFromMessages(messages.array()), roster);
 
       // decrement spend user, increment roster
       all.forEach((member) => {
@@ -91,14 +91,14 @@ module.exports = {
       });
       
       const serialized = tableview.serializeRegular(all);
-      return splitToMessages(channel, messages, serialized);
+      return splitToMessages(channel, messages.array(), serialized);
     });
   },
   adjust: function(guild, username, value) {
     if (isNaN(value)) throw new Error('unable to adjust dkp, value is not a number: ' + value);
     const channel = guild.channels.find(ch => ch.name === leaderboardName);
     return channel.fetchPinnedMessages().then(messages => {
-      const all = tableview.parse(contentFromMessages(messages), []);
+      const all = tableview.parse(contentFromMessages(messages.array()), []);
       if (all.length === 1 || all.length === 0) {
         throw new Error("unable to adjust DKP, leaderboard needs to be set up and have at least 2 members present");
       }
@@ -117,23 +117,45 @@ module.exports = {
       });
       
       const serialized = tableview.serializeRegular(all);
-      return splitToMessages(channel, messages, serialized);
+      return splitToMessages(channel, messages.array(), serialized);
+    });
+  },
+  trade: function(guild, source, destination, value) {
+    if (isNaN(value)) throw new Error('unable to adjust dkp, value is not a number: ' + value);
+    const channel = guild.channels.find(ch => ch.name === leaderboardName);
+    return channel.fetchPinnedMessages().then(messages => {
+      const all = tableview.parse(contentFromMessages(messages.array()), []);
+      if (all.length === 1 || all.length === 0) {
+        throw new Error("unable to trade DKP, leaderboard needs to be set up and have at least 2 members present");
+      }
+      
+      let source_user = all.find((el) => el.username === source);
+      let dest_user = all.find((el) => el.username === destination);
+      if (!source_user) {
+        throw new Error("source user not found: " + source);
+      }
+      if (!dest_user) {
+        throw new Error("source user not found: " + destination);
+      }
+      source_user.value -= value;
+      dest_user.value += value;
+      
+      const serialized = tableview.serializeRegular(all);
+      return splitToMessages(channel, messages.array(), serialized);
     });
   },
   addRoster: function(guild, roster) {
     const channel = guild.channels.find(ch => ch.name === leaderboardName);
-    // This channel should only have 1 message.
     return channel.fetchPinnedMessages().then(messages => {
-      const all = tableview.parse(contentFromMessages(messages), roster);
+      const all = tableview.parse(contentFromMessages(messages.array()), roster);
       const serialized = tableview.serializeRegular(all);
-      return splitToMessages(channel, messages, serialized);
+      return splitToMessages(channel, messages.array(), serialized);
     });
   },
   incrementAttendance: function(guild, roster) {
     const channel = guild.channels.find(ch => ch.name === leaderboardName);
-    // This channel should only have 1 message.
     return channel.fetchPinnedMessages().then(messages => {
-      const all = tableview.parse(contentFromMessages(messages), roster);
+      const all = tableview.parse(contentFromMessages(messages.array()), roster);
       
       // Apply valueFn
       all.forEach((member) => {
@@ -145,14 +167,13 @@ module.exports = {
       });
       
       const serialized = tableview.serializeRegular(all);
-      return splitToMessages(channel, messages, serialized);
+      return splitToMessages(channel, messages.array(), serialized);
     });
   },
   updateDkp: function(guild, roster, valueFn) {
     const channel = guild.channels.find(ch => ch.name === leaderboardName);
-    // This channel should only have 1 message.
     return channel.fetchPinnedMessages().then(messages => {
-      const all = tableview.parse(contentFromMessages(messages), roster);
+      const all = tableview.parse(contentFromMessages(messages.array()), roster);
       
       // Apply valueFn
       all.forEach((member) => {
@@ -162,7 +183,16 @@ module.exports = {
       });
       
       const serialized = tableview.serializeRegular(all);
-      return splitToMessages(channel, messages, serialized);
+      return splitToMessages(channel, messages.array(), serialized);
+    });
+  },
+  importDkp: function(guild, importMessages) {
+    const channel = guild.channels.find(ch => ch.name === leaderboardName);
+    const content = contentFromMessages(importMessages);
+    const all = tableview.parse(content, []);
+    const serialized = tableview.serializeRegular(all);
+    return channel.fetchPinnedMessages().then(messages => {      
+      return splitToMessages(channel, messages.array(), serialized);
     });
   }
 }

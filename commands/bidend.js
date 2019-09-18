@@ -36,7 +36,7 @@ module.exports = {
       const username = sanitize.name(args[1]);      
       return raid.getCurrentRaidRoster(message.channel.guild).then(roster => {
         // Check that username is in the current roster
-        if (!roster.includes(username)) {
+        if (!roster.includes(username) && username !== 'guild-bank') {
           throw new Error(username + " not in the current roster: " + roster);
         }
         
