@@ -1,5 +1,5 @@
-const raid = require('../util/raid.js')
-const dkp = require('../util/dkp.js')
+const raid = require('../util/raid.js');
+const dkp = require('../util/dkp.js');
 const sanitize = require('../util/sanitize.js');
 
 module.exports = {
