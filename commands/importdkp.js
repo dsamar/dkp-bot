@@ -6,6 +6,7 @@ module.exports = {
 	description: 'NOT QUITE WORKING: imports a dkp list from the message id, sets it as the current leaderboard',
   usage: '<num_messages> [message_id_1-N...]',
   args: true,
+  aliases: ['importdkp'],
   officer: true,
   locks: [],
 	execute(message, args) {
