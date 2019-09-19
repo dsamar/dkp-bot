@@ -4,7 +4,7 @@
       "name": "Bonereaver's Edge",
       "wowheadID": "17076",
       "slot": "two-hand",
-      "cost": 800,
+      "cost": 600,
       "tags": [
         "bis"
       ],
@@ -22,7 +22,7 @@
       "name": "Robe of Volatile Power",
       "wowheadID": "19145",
       "slot": "chest",
-      "cost": 350,
+      "cost": 300,
       "tags": [
         "bis"
       ],
@@ -32,7 +32,7 @@
       "name": "Azuresong Mageblade",
       "wowheadID": "17103",
       "slot": "main hand",
-      "cost": 500,
+      "cost": 400,
       "tags": [
         "bis"
       ],
@@ -42,7 +42,7 @@
       "name": "Spinal Reaper",
       "wowheadID": "17104",
       "slot": "two-hand",
-      "cost": 400,
+      "cost": 300,
       "tags": [],
       "source": "molten core"
     },
@@ -50,7 +50,7 @@
       "name": "Perdition's Blade",
       "wowheadID": "18816",
       "slot": "one-hand",
-      "cost": 500,
+      "cost": 400,
       "tags": [
         "bis"
       ],
@@ -70,7 +70,7 @@
       "name": "The Eye of Divinity",
       "wowheadID": "18646",
       "slot": "trinket",
-      "cost": 800,
+      "cost": 600,
       "tags": [],
       "source": "molten core"
     },
@@ -78,7 +78,7 @@
       "name": "Talisman of Ephemeral Power",
       "wowheadID": "18820",
       "slot": "trinket",
-      "cost": 500,
+      "cost": 400,
       "tags": [
         "bis"
       ],
@@ -88,7 +88,7 @@
       "name": "Ancient Petrified Leaf",
       "wowheadID": "18703",
       "slot": "",
-      "cost": 400,
+      "cost": 300,
       "tags": [],
       "source": "molten core"
     },
@@ -106,7 +106,7 @@
       "name": "Brutality Blade",
       "wowheadID": "18832",
       "slot": "one-hand",
-      "cost": 400,
+      "cost": 300,
       "tags": [],
       "source": "molten core"
     },
@@ -124,7 +124,7 @@
       "name": "Core Hound Tooth",
       "wowheadID": "18805",
       "slot": "one-hand",
-      "cost": 300,
+      "cost": 200,
       "tags": [],
       "source": "molten core"
     },
@@ -180,7 +180,7 @@
       "name": "Wild Growth Spaulders",
       "wowheadID": "18810",
       "slot": "shoulder",
-      "cost": 350,
+      "cost": 300,
       "tags": [
         "bis"
       ],
@@ -208,7 +208,7 @@
       "name": "Aurastone Hammer",
       "wowheadID": "17105",
       "slot": "one-hand",
-      "cost": 500,
+      "cost": 400,
       "tags": [
         "bis"
       ],
@@ -228,7 +228,7 @@
       "name": "Eskhandar's Right Claw",
       "wowheadID": "18203",
       "slot": "main hand",
-      "cost": 300,
+      "cost": 200,
       "tags": [],
       "source": "molten core"
     },
@@ -236,7 +236,7 @@
       "name": "Salamander Scale Pants",
       "wowheadID": "18875",
       "slot": "legs",
-      "cost": 350,
+      "cost": 300,
       "tags": [
         "bis"
       ],
@@ -298,7 +298,7 @@
       "name": "Earthshaker",
       "wowheadID": "17073",
       "slot": "two-hand",
-      "cost": 200,
+      "cost": 75,
       "tags": [],
       "source": "molten core"
     },
@@ -322,7 +322,7 @@
       "name": "Gutgore Ripper",
       "wowheadID": "17071",
       "slot": "one-hand",
-      "cost": 300,
+      "cost": 200,
       "tags": [],
       "source": "molten core"
     },
@@ -330,7 +330,7 @@
       "name": "Sorcerous Dagger",
       "wowheadID": "18878",
       "slot": "main hand",
-      "cost": 300,
+      "cost": 50,
       "tags": [],
       "source": "molten core"
     },
@@ -364,7 +364,7 @@
       "name": "Finkle's Lava Dredger",
       "wowheadID": "18803",
       "slot": "two-hand",
-      "cost": 400,
+      "cost": 300,
       "tags": [],
       "source": "molten core"
     },
@@ -646,7 +646,7 @@
       "name": "Obsidian Edged Blade",
       "wowheadID": "18822",
       "slot": "two-hand",
-      "cost": 400,
+      "cost": 300,
       "tags": [],
       "source": "molten core"
     },
@@ -1342,7 +1342,7 @@
       "name": "Vis'kag the Bloodletter",
       "wowheadID": "17075",
       "slot": "one-hand",
-      "cost": 500,
+      "cost": 400,
       "tags": [
         "bis"
       ],
@@ -1370,7 +1370,7 @@
       "name": "Shard of the Scale",
       "wowheadID": "17064",
       "slot": "trinket",
-      "cost": 500,
+      "cost": 400,
       "tags": [
         "bis"
       ],
@@ -1388,7 +1388,7 @@
       "name": "Mature Black Dragon Sinew",
       "wowheadID": "18705",
       "slot": "",
-      "cost": 400,
+      "cost": 300,
       "tags": [],
       "source": "onyxia"
     },
@@ -1416,7 +1416,7 @@
       "name": "Deathbringer",
       "wowheadID": "17068",
       "slot": "one-hand",
-      "cost": 500,
+      "cost": 400,
       "tags": [
         "bis"
       ],
