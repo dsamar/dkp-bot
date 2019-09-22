@@ -1,6 +1,8 @@
 const Discord = require('discord.js')
 const {table} = require('table')
 
+const NUM_RAIDS_ATTENDANCE = 14;
+
 function attendanceStringToList(str) {
   let attendance = [];
   if (str)
@@ -92,7 +94,7 @@ function serialize(all) {
     },
     columns: {
       3: {
-        width: 10,
+        width: 14,
         alignment: 'right'
       },
     }
@@ -117,12 +119,12 @@ function removeDupes(dkpUserList) {
 }
 
 function addAttendance(member) {
-  member.attendance = member.attendance.slice(-7);
+  member.attendance = member.attendance.slice(-(NUM_RAIDS_ATTENDANCE-1));
   member.attendance.push(true);
 }
 
 function markMissedAttendance(member) {
-  member.attendance = member.attendance.slice(-7);
+  member.attendance = member.attendance.slice(-(NUM_RAIDS_ATTENDANCE-1));
   member.attendance.push(false);
 }
 
