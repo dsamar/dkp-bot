@@ -8,7 +8,8 @@
       "tags": [
         "bis"
       ],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Bindings of the Windseeker",
@@ -16,7 +17,8 @@
       "slot": "",
       "cost": 250,
       "tags": [],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Robe of Volatile Power",
@@ -26,7 +28,8 @@
       "tags": [
         "bis"
       ],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Azuresong Mageblade",
@@ -36,7 +39,8 @@
       "tags": [
         "bis"
       ],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Spinal Reaper",
@@ -44,7 +48,8 @@
       "slot": "two-hand",
       "cost": 300,
       "tags": [],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Perdition's Blade",
@@ -54,7 +59,8 @@
       "tags": [
         "bis"
       ],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Ring of Spell Power",
@@ -64,7 +70,8 @@
       "tags": [
         "bis"
       ],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "The Eye of Divinity",
@@ -72,7 +79,8 @@
       "slot": "trinket",
       "cost": 600,
       "tags": [],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Talisman of Ephemeral Power",
@@ -82,7 +90,8 @@
       "tags": [
         "bis"
       ],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": "Mage/Warlock Priority"
     },
     {
       "name": "Ancient Petrified Leaf",
@@ -90,7 +99,8 @@
       "slot": "",
       "cost": 300,
       "tags": [],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Onslaught Girdle",
@@ -100,7 +110,8 @@
       "tags": [
         "bis"
       ],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Brutality Blade",
@@ -108,7 +119,8 @@
       "slot": "one-hand",
       "cost": 300,
       "tags": [],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Cauterizing Band",
@@ -118,7 +130,8 @@
       "tags": [
         "bis"
       ],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Core Hound Tooth",
@@ -126,7 +139,8 @@
       "slot": "one-hand",
       "cost": 200,
       "tags": [],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Aged Core Leather Gloves",
@@ -136,7 +150,8 @@
       "tags": [
         "bis"
       ],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Mana Igniting Cord",
@@ -146,7 +161,8 @@
       "tags": [
         "bis"
       ],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": "Mage, then Warlock"
     },
     {
       "name": "Sulfuron Ingot",
@@ -154,7 +170,8 @@
       "slot": "",
       "cost": 0,
       "tags": [],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Striker's Mark",
@@ -164,7 +181,8 @@
       "tags": [
         "bis"
       ],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": "Rogue/Warrior Priority"
     },
     {
       "name": "Choker of the Fire Lord",
@@ -174,7 +192,8 @@
       "tags": [
         "bis"
       ],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Wild Growth Spaulders",
@@ -184,7 +203,8 @@
       "tags": [
         "bis"
       ],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Drillborer Disk",
@@ -192,7 +212,8 @@
       "slot": "shield",
       "cost": 150,
       "tags": [],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": "Off-tanks charged to guild-bank"
     },
     {
       "name": "Quick Strike Ring",
@@ -202,7 +223,8 @@
       "tags": [
         "bis"
       ],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Aurastone Hammer",
@@ -212,7 +234,8 @@
       "tags": [
         "bis"
       ],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": "Druid/Shaman Priority"
     },
     {
       "name": "Band of Accuria",
@@ -222,7 +245,8 @@
       "tags": [
         "bis"
       ],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Eskhandar's Right Claw",
@@ -230,7 +254,8 @@
       "slot": "main hand",
       "cost": 200,
       "tags": [],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Salamander Scale Pants",
@@ -240,7 +265,8 @@
       "tags": [
         "bis"
       ],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Wristguards of Stability",
@@ -250,7 +276,8 @@
       "tags": [
         "bis"
       ],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Sash of Whispered Secrets",
@@ -260,7 +287,8 @@
       "tags": [
         "bis"
       ],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Heavy Dark Iron Ring",
@@ -268,7 +296,8 @@
       "slot": "finger",
       "cost": 50,
       "tags": [],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": "Off-tanks charged to guild-bank"
     },
     {
       "name": "Flameguard Gauntlets",
@@ -276,7 +305,8 @@
       "slot": "hands",
       "cost": 100,
       "tags": [],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Staff of Dominance",
@@ -284,7 +314,8 @@
       "slot": "two-hand",
       "cost": 300,
       "tags": [],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Choker of Enlightenment",
@@ -292,7 +323,8 @@
       "slot": "neck",
       "cost": 200,
       "tags": [],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Earthshaker",
@@ -300,7 +332,8 @@
       "slot": "two-hand",
       "cost": 75,
       "tags": [],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Malistar's Defender",
@@ -308,7 +341,8 @@
       "slot": "shield",
       "cost": 150,
       "tags": [],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Crimson Shocker",
@@ -316,7 +350,8 @@
       "slot": "ranged",
       "cost": 150,
       "tags": [],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Gutgore Ripper",
@@ -324,7 +359,8 @@
       "slot": "one-hand",
       "cost": 200,
       "tags": [],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Sorcerous Dagger",
@@ -332,7 +368,8 @@
       "slot": "main hand",
       "cost": 50,
       "tags": [],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Netherwind Pants",
@@ -342,7 +379,8 @@
       "tags": [
         "t2"
       ],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Crown of Destruction",
@@ -350,7 +388,8 @@
       "slot": "head",
       "cost": 200,
       "tags": [],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Shadowstrike",
@@ -358,7 +397,8 @@
       "slot": "two-hand",
       "cost": 75,
       "tags": [],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Finkle's Lava Dredger",
@@ -366,7 +406,8 @@
       "slot": "two-hand",
       "cost": 300,
       "tags": [],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Medallion of Steadfast Might",
@@ -374,7 +415,8 @@
       "slot": "neck",
       "cost": 100,
       "tags": [],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": "Off-tanks charged to guild-bank"
     },
     {
       "name": "Arcanist Crown",
@@ -384,7 +426,8 @@
       "tags": [
         "t1"
       ],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Dragon's Blood Cape",
@@ -392,7 +435,8 @@
       "slot": "back",
       "cost": 200,
       "tags": [],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Fire Runed Grimoire",
@@ -400,7 +444,8 @@
       "slot": "held in off-hand",
       "cost": 150,
       "tags": [],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Deep Earth Spaulders",
@@ -408,7 +453,8 @@
       "slot": "shoulder",
       "cost": 150,
       "tags": [],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Shard of the Flame",
@@ -416,7 +462,8 @@
       "slot": "trinket",
       "cost": 100,
       "tags": [],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Cloak of the Shrouded Mists",
@@ -426,7 +473,8 @@
       "tags": [
         "bis"
       ],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Blastershot Launcher",
@@ -434,7 +482,8 @@
       "slot": "ranged",
       "cost": 150,
       "tags": [],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Giantstalker's Helmet",
@@ -444,7 +493,8 @@
       "tags": [
         "t1"
       ],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Essence of the Pure Flame",
@@ -452,7 +502,8 @@
       "slot": "trinket",
       "cost": 50,
       "tags": [],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Fireguard Shoulders",
@@ -460,7 +511,8 @@
       "slot": "shoulder",
       "cost": 50,
       "tags": [],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Earthfury Helmet",
@@ -470,7 +522,8 @@
       "tags": [
         "t1"
       ],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Nightslayer Shoulder Pads",
@@ -480,7 +533,8 @@
       "tags": [
         "t1"
       ],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Mantle of Prophecy",
@@ -490,7 +544,8 @@
       "tags": [
         "t1"
       ],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Gauntlets of Might",
@@ -500,7 +555,8 @@
       "tags": [
         "t1"
       ],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Pauldrons of Might",
@@ -510,7 +566,8 @@
       "tags": [
         "t1"
       ],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Leggings of Transcendence",
@@ -520,7 +577,8 @@
       "tags": [
         "t2"
       ],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Manastorm Leggings",
@@ -528,7 +586,8 @@
       "slot": "legs",
       "cost": 200,
       "tags": [],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Flamewaker Legplates",
@@ -536,7 +595,8 @@
       "slot": "legs",
       "cost": 100,
       "tags": [],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Legplates of Wrath",
@@ -546,7 +606,8 @@
       "tags": [
         "t2"
       ],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Arcanist Boots",
@@ -556,7 +617,8 @@
       "tags": [
         "t1"
       ],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Helm of Might",
@@ -566,7 +628,8 @@
       "tags": [
         "t1"
       ],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Circlet of Prophecy",
@@ -576,7 +639,8 @@
       "tags": [
         "t1"
       ],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Band of Sulfuras",
@@ -584,7 +648,8 @@
       "slot": "finger",
       "cost": 200,
       "tags": [],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Nemesis Leggings",
@@ -594,7 +659,8 @@
       "tags": [
         "t2"
       ],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Bloodfang Pants",
@@ -604,7 +670,8 @@
       "tags": [
         "t2"
       ],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Breastplate of Might",
@@ -614,7 +681,8 @@
       "tags": [
         "t1"
       ],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Seal of the Archmagus",
@@ -622,7 +690,8 @@
       "slot": "finger",
       "cost": 200,
       "tags": [],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Robes of Prophecy",
@@ -632,7 +701,8 @@
       "tags": [
         "t1"
       ],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Wristguards of True Flight",
@@ -640,7 +710,8 @@
       "slot": "wrist",
       "cost": 80,
       "tags": [],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Obsidian Edged Blade",
@@ -648,7 +719,8 @@
       "slot": "two-hand",
       "cost": 300,
       "tags": [],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Nightslayer Chestpiece",
@@ -658,7 +730,8 @@
       "tags": [
         "t1"
       ],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Felheart Horns",
@@ -668,7 +741,8 @@
       "tags": [
         "t1"
       ],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Boots of Prophecy",
@@ -678,7 +752,8 @@
       "tags": [
         "t1"
       ],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Nightslayer Gloves",
@@ -688,7 +763,8 @@
       "tags": [
         "t1"
       ],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Judgement Legplates",
@@ -698,7 +774,8 @@
       "tags": [
         "t2"
       ],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Gloves of the Hypnotic Flame",
@@ -706,7 +783,8 @@
       "slot": "hands",
       "cost": 100,
       "tags": [],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Fireproof Cloak",
@@ -714,7 +792,8 @@
       "slot": "back",
       "cost": 200,
       "tags": [],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Felheart Robes",
@@ -724,7 +803,8 @@
       "tags": [
         "t1"
       ],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Sabatons of the Flamewalker",
@@ -732,7 +812,8 @@
       "slot": "feet",
       "cost": 100,
       "tags": [],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Giantstalker's Epaulets",
@@ -742,7 +823,8 @@
       "tags": [
         "t1"
       ],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Nightslayer Cover",
@@ -752,7 +834,8 @@
       "tags": [
         "t1"
       ],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Lawbringer Helm",
@@ -762,7 +845,8 @@
       "tags": [
         "t1"
       ],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Core Forged Greaves",
@@ -770,7 +854,8 @@
       "slot": "feet",
       "cost": 100,
       "tags": [],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Cenarion Spaulders",
@@ -780,7 +865,8 @@
       "tags": [
         "t1"
       ],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Sabatons of Might",
@@ -790,7 +876,8 @@
       "tags": [
         "t1"
       ],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Cenarion Boots",
@@ -800,7 +887,8 @@
       "tags": [
         "t1"
       ],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Arcanist Leggings",
@@ -810,7 +898,8 @@
       "tags": [
         "t1"
       ],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Stormrage Legguards",
@@ -820,7 +909,8 @@
       "tags": [
         "t2"
       ],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Cenarion Helm",
@@ -830,7 +920,8 @@
       "tags": [
         "t1"
       ],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Gloves of Prophecy",
@@ -840,7 +931,8 @@
       "tags": [
         "t1"
       ],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Nightslayer Boots",
@@ -850,7 +942,8 @@
       "tags": [
         "t1"
       ],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Magma Tempered Boots",
@@ -858,7 +951,8 @@
       "slot": "feet",
       "cost": 100,
       "tags": [],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Felheart Gloves",
@@ -868,7 +962,8 @@
       "tags": [
         "t1"
       ],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Giantstalker's Breastplate",
@@ -878,7 +973,8 @@
       "tags": [
         "t1"
       ],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Arcanist Mantle",
@@ -888,7 +984,8 @@
       "tags": [
         "t1"
       ],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Earthfury Epaulets",
@@ -898,7 +995,8 @@
       "tags": [
         "t1"
       ],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Earthfury Gauntlets",
@@ -908,7 +1006,8 @@
       "tags": [
         "t1"
       ],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Earthfury Vestments",
@@ -918,7 +1017,8 @@
       "tags": [
         "t1"
       ],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Legplates of Ten Storms",
@@ -928,7 +1028,8 @@
       "tags": [
         "t2"
       ],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Nightslayer Pants",
@@ -938,7 +1039,8 @@
       "tags": [
         "t1"
       ],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Giantstalker's Leggings",
@@ -948,7 +1050,8 @@
       "tags": [
         "t1"
       ],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Cenarion Vestments",
@@ -958,7 +1061,8 @@
       "tags": [
         "t1"
       ],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Felheart Shoulder Pads",
@@ -968,7 +1072,8 @@
       "tags": [
         "t1"
       ],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Lawbringer Chestguard",
@@ -978,7 +1083,8 @@
       "tags": [
         "t1"
       ],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Arcanist Gloves",
@@ -988,7 +1094,8 @@
       "tags": [
         "t1"
       ],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Lawbringer Spaulders",
@@ -998,7 +1105,8 @@
       "tags": [
         "t1"
       ],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Legplates of Might",
@@ -1008,7 +1116,8 @@
       "tags": [
         "t1"
       ],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Earthfury Boots",
@@ -1018,7 +1127,8 @@
       "tags": [
         "t1"
       ],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Earthfury Legguards",
@@ -1028,7 +1138,8 @@
       "tags": [
         "t1"
       ],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Giantstalker's Gloves",
@@ -1038,7 +1149,8 @@
       "tags": [
         "t1"
       ],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Dragonstalker's Legguards",
@@ -1048,7 +1160,8 @@
       "tags": [
         "t2"
       ],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Felheart Pants",
@@ -1058,7 +1171,8 @@
       "tags": [
         "t1"
       ],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Giantstalker's Boots",
@@ -1068,7 +1182,8 @@
       "tags": [
         "t1"
       ],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Pants of Prophecy",
@@ -1078,7 +1193,8 @@
       "tags": [
         "t1"
       ],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Cenarion Gloves",
@@ -1088,7 +1204,8 @@
       "tags": [
         "t1"
       ],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Lawbringer Legplates",
@@ -1098,7 +1215,8 @@
       "tags": [
         "t1"
       ],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Lawbringer Boots",
@@ -1108,7 +1226,8 @@
       "tags": [
         "t1"
       ],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Cenarion Leggings",
@@ -1118,7 +1237,8 @@
       "tags": [
         "t1"
       ],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Lawbringer Gauntlets",
@@ -1128,7 +1248,8 @@
       "tags": [
         "t1"
       ],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Felheart Slippers",
@@ -1138,7 +1259,8 @@
       "tags": [
         "t1"
       ],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Girdle of Prophecy",
@@ -1148,7 +1270,8 @@
       "tags": [
         "t1"
       ],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Belt of Might",
@@ -1158,7 +1281,8 @@
       "tags": [
         "t1"
       ],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Vambraces of Prophecy",
@@ -1168,7 +1292,8 @@
       "tags": [
         "t1"
       ],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Nightslayer Belt",
@@ -1178,7 +1303,8 @@
       "tags": [
         "t1"
       ],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Bracers of Might",
@@ -1188,7 +1314,8 @@
       "tags": [
         "t1"
       ],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Arcanist Bindings",
@@ -1198,7 +1325,8 @@
       "tags": [
         "t1"
       ],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Felheart Belt",
@@ -1208,7 +1336,8 @@
       "tags": [
         "t1"
       ],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Arcanist Belt",
@@ -1218,7 +1347,8 @@
       "tags": [
         "t1"
       ],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Giantstalker's Belt",
@@ -1228,7 +1358,8 @@
       "tags": [
         "t1"
       ],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Lawbringer Belt",
@@ -1238,7 +1369,8 @@
       "tags": [
         "t1"
       ],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Earthfury Belt",
@@ -1248,7 +1380,8 @@
       "tags": [
         "t1"
       ],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Felheart Bracers",
@@ -1258,7 +1391,8 @@
       "tags": [
         "t1"
       ],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Cenarion Belt",
@@ -1268,7 +1402,8 @@
       "tags": [
         "t1"
       ],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Giantstalker's Bracers",
@@ -1278,7 +1413,8 @@
       "tags": [
         "t1"
       ],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Nightslayer Bracelets",
@@ -1288,7 +1424,8 @@
       "tags": [
         "t1"
       ],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Cenarion Bracers",
@@ -1298,7 +1435,8 @@
       "tags": [
         "t1"
       ],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Earthfury Bracers",
@@ -1308,7 +1446,8 @@
       "tags": [
         "t1"
       ],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Lawbringer Bracers",
@@ -1318,7 +1457,8 @@
       "tags": [
         "t1"
       ],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Eye of Sulfuras",
@@ -1326,7 +1466,8 @@
       "slot": "",
       "cost": 800,
       "tags": [],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Arcanist Robes",
@@ -1336,7 +1477,8 @@
       "tags": [
         "t1"
       ],
-      "source": "molten core"
+      "source": "molten core",
+      "notes": ""
     },
     {
       "name": "Vis'kag the Bloodletter",
@@ -1346,7 +1488,8 @@
       "tags": [
         "bis"
       ],
-      "source": "onyxia"
+      "source": "onyxia",
+      "notes": ""
     },
     {
       "name": "Dragonstalker's Helm",
@@ -1356,7 +1499,8 @@
       "tags": [
         "t2"
       ],
-      "source": "onyxia"
+      "source": "onyxia",
+      "notes": ""
     },
     {
       "name": "Head of Onyxia",
@@ -1364,7 +1508,8 @@
       "slot": "",
       "cost": 300,
       "tags": [],
-      "source": "onyxia"
+      "source": "onyxia",
+      "notes": "Tanks, then Hunter/Rogue/Warrior"
     },
     {
       "name": "Shard of the Scale",
@@ -1374,7 +1519,8 @@
       "tags": [
         "bis"
       ],
-      "source": "onyxia"
+      "source": "onyxia",
+      "notes": ""
     },
     {
       "name": "Sapphiron Drape",
@@ -1382,7 +1528,8 @@
       "slot": "back",
       "cost": 200,
       "tags": [],
-      "source": "onyxia"
+      "source": "onyxia",
+      "notes": ""
     },
     {
       "name": "Mature Black Dragon Sinew",
@@ -1390,7 +1537,8 @@
       "slot": "",
       "cost": 300,
       "tags": [],
-      "source": "onyxia"
+      "source": "onyxia",
+      "notes": ""
     },
     {
       "name": "Bloodfang Hood",
@@ -1400,7 +1548,8 @@
       "tags": [
         "t2"
       ],
-      "source": "onyxia"
+      "source": "onyxia",
+      "notes": ""
     },
     {
       "name": "Netherwind Crown",
@@ -1410,7 +1559,8 @@
       "tags": [
         "t2"
       ],
-      "source": "onyxia"
+      "source": "onyxia",
+      "notes": ""
     },
     {
       "name": "Deathbringer",
@@ -1420,15 +1570,17 @@
       "tags": [
         "bis"
       ],
-      "source": "onyxia"
+      "source": "onyxia",
+      "notes": ""
     },
     {
       "name": "Ancient Cornerstone Grimoire",
       "wowheadID": "17067",
       "slot": "held in off-hand",
-      "cost": 150,
+      "cost": 50,
       "tags": [],
-      "source": "onyxia"
+      "source": "onyxia",
+      "notes": ""
     },
     {
       "name": "Halo of Transcendence",
@@ -1438,7 +1590,8 @@
       "tags": [
         "t2"
       ],
-      "source": "onyxia"
+      "source": "onyxia",
+      "notes": ""
     },
     {
       "name": "Nemesis Skullcap",
@@ -1448,7 +1601,8 @@
       "tags": [
         "t2"
       ],
-      "source": "onyxia"
+      "source": "onyxia",
+      "notes": ""
     },
     {
       "name": "Stormrage Cover",
@@ -1458,7 +1612,8 @@
       "tags": [
         "t2"
       ],
-      "source": "onyxia"
+      "source": "onyxia",
+      "notes": ""
     },
     {
       "name": "Eskhandar's Collar",
@@ -1466,7 +1621,8 @@
       "slot": "neck",
       "cost": 200,
       "tags": [],
-      "source": "onyxia"
+      "source": "onyxia",
+      "notes": ""
     },
     {
       "name": "Judgement Crown",
@@ -1476,7 +1632,8 @@
       "tags": [
         "t2"
       ],
-      "source": "onyxia"
+      "source": "onyxia",
+      "notes": ""
     },
     {
       "name": "Helmet of Ten Storms",
@@ -1486,7 +1643,8 @@
       "tags": [
         "t2"
       ],
-      "source": "onyxia"
+      "source": "onyxia",
+      "notes": ""
     },
     {
       "name": "Ring of Binding",
@@ -1494,7 +1652,8 @@
       "slot": "finger",
       "cost": 200,
       "tags": [],
-      "source": "onyxia"
+      "source": "onyxia",
+      "notes": ""
     },
     {
       "name": "Helm of Wrath",
@@ -1504,7 +1663,8 @@
       "tags": [
         "t2"
       ],
-      "source": "onyxia"
+      "source": "onyxia",
+      "notes": ""
     }
   ]
 }

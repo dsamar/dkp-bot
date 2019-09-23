@@ -43,6 +43,9 @@ module.exports = {
     content.setImage(item.image(itemObj));
     content.setDescription("");
     content.addField("cost", itemObj.cost, false);
+    if (itemObj.notes) {
+      content.addField("notes", itemObj.notes, false);
+    }
     
     content.addField(reactionTagName, "bidscreen", true);
     return message.channel.send(content)

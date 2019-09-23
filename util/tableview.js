@@ -1,7 +1,7 @@
 const Discord = require('discord.js')
 const {table} = require('table')
 
-const NUM_RAIDS_ATTENDANCE = 14;
+const NUM_RAIDS_ATTENDANCE = 13;
 
 function attendanceStringToList(str) {
   let attendance = [];
@@ -30,7 +30,7 @@ function attendanceListToString(list) {
 
 function userToString(dkpUser) {
   const attendancePercentage = dkpUser.attendance.filter(c => c).length / (dkpUser.attendance.length) * 100;
-  return [ dkpUser.username, parseFloat(dkpUser.value).toFixed(2), attendancePercentage.toFixed(2) + " %", attendanceListToString(dkpUser.attendance)];
+  return [ dkpUser.username, parseFloat(dkpUser.value).toFixed(2), attendancePercentage.toFixed(0) + "%", attendanceListToString(dkpUser.attendance)];
 }
 
 function stringToUser(string) {
@@ -76,13 +76,20 @@ function parseLeaderBoard(text, roster) {
 
 function serialize(all) {
   // Sort by value, descending.
-  all.sort((a,b) => { return b.value-a.value; });
+  all.sort((a,b) => {
+    if (a.value === b.value) {
+      const a_attendance = a.attendance.filter(c => c).length / (a.attendance.length) * 100;
+      const b_attendance = b.attendance.filter(c => c).length / (b.attendance.length) * 100;
+      return b_attendance - a_attendance;
+    }
+    return b.value - a.value;
+  });
   // Turn back into a string.
   const data = all.map((member) => {
     return userToString(member);
   });
   // add header
-  data.unshift(['username', 'dkp', 'attendance', 'history'])
+  data.unshift(['username', 'dkp', 'atn%', 'history'])
   const config = {
     drawHorizontalLine: (index, size) => {
       return index === 0 || index === 1 || index === size;
@@ -93,8 +100,14 @@ function serialize(all) {
       joinBody: `-`,
     },
     columns: {
+      1: {
+        alignment: 'right'
+      },
+      2: {
+        alignment: 'right'
+      },
       3: {
-        width: 14,
+        width: NUM_RAIDS_ATTENDANCE,
         alignment: 'right'
       },
     }

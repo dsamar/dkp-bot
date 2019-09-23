@@ -20,7 +20,6 @@ module.exports = {
     const channel = message.guild.channels.find(ch => ch.name === config.raidAnnounceChannel);
     return channel.fetchMessage(args[0])
       .then(message => {
-        // If the raid already started, increment attendance, or maybe mark as late somehow.
         return raid.update(args[2], message, sanitize.name(args[1]));
       })
   }

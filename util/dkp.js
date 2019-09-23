@@ -90,6 +90,13 @@ module.exports = {
         }
       });
       
+      // set attendance if this is a brand new member
+      all.forEach((member) => {
+        if (member.attendance.length === 0) {
+          member.attendance = [true];
+        }       
+      });
+      
       const serialized = tableview.serializeRegular(all);
       return splitToMessages(channel, messages.array(), serialized);
     });
@@ -107,7 +114,7 @@ module.exports = {
         throw new Error("user not found: " + username);
       }
       
-      // decrement spend user, increment everyone else
+      // decrement spend user, increment everyone else on the leaderboard
       all.forEach((member) => {
         if (username === member.username) {
           member.value += value;
@@ -148,6 +155,12 @@ module.exports = {
     const channel = guild.channels.find(ch => ch.name === leaderboardName);
     return channel.fetchPinnedMessages().then(messages => {
       const all = tableview.parse(contentFromMessages(messages.array()), roster);
+      // For new members, mark them as attended. Everyone gets a pass the first time.
+      all.forEach(dkpUser => {
+        if (dkpUser.attendance.length === 0) {
+          dkpUser.attendance = [true];
+        }
+      });
       const serialized = tableview.serializeRegular(all);
       return splitToMessages(channel, messages.array(), serialized);
     });
