@@ -15,7 +15,7 @@ function getField(message, fieldName) {
 module.exports = {
 	name: 'bidend',
 	description: 'ends bidding on an item, spends dkp from one member, while awarding dkp to rest of roster',
-  usage: '<bid_id> <username>',
+  usage: '<bid_id> <username> [price_override]',
   args: true,
   aliases: ['dkpspend', 'winner'],
   officer: true,
@@ -23,16 +23,20 @@ module.exports = {
 	execute(message, args) {
     // args[0] == bidID
     // args[1] == username
+    // args[2] == price_override
     
     // todo: check if bid already ended
     return message.channel.fetchMessage(args[0]).then(fetched => {
       if (getField(new Discord.RichEmbed(fetched.embeds[0]), "locked").value === 'true') {
         throw new Error("the item was already awarded, start a new bid with !bidstart");
       }
-      if (args.length != 2) {
+      if (args.length < 2) {
         throw new Error("usage: !bidend BID_ID USERNAME");
       }
-      const cost = parseFloat(getField(fetched.embeds[0], "cost").value);
+      let cost = parseFloat(getField(fetched.embeds[0], "cost").value);
+      if (args.length === 3) {
+        cost = parseFloat(args[2]);
+      }
       const username = sanitize.name(args[1]);      
       return raid.getCurrentRaidRoster(message.channel.guild).then(roster => {
         // Check that username is in the current roster
