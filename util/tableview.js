@@ -1,7 +1,7 @@
 const Discord = require('discord.js')
 const {table} = require('table')
 
-const NUM_RAIDS_ATTENDANCE = 13;
+const NUM_RAIDS_ATTENDANCE = 14;
 
 function attendanceStringToList(str) {
   let attendance = [];
@@ -22,7 +22,7 @@ function attendanceListToString(list) {
     if (c) {
       str.push('A');
     } else {
-      str.push('_');
+      str.push('.');
     }
   });
   return str.join("");
@@ -107,7 +107,7 @@ function serialize(all) {
         alignment: 'right'
       },
       3: {
-        width: NUM_RAIDS_ATTENDANCE,
+        width: NUM_RAIDS_ATTENDANCE - 1,
         alignment: 'right'
       },
     }
@@ -141,6 +141,13 @@ function markMissedAttendance(member) {
   member.attendance.push(false);
 }
 
+function setAttendance(member, history) {
+  console.log(history);
+  member.attendance = attendanceStringToList(history);
+  member.attendance = member.attendance.slice(-(NUM_RAIDS_ATTENDANCE-1));
+  console.log(member.attendance);
+}
+
 module.exports = {
   parse: parseLeaderBoard,
   serializeEmbedded: serializeEmbedded,
@@ -148,4 +155,5 @@ module.exports = {
   removeDupes: removeDupes,
   addAttendance: addAttendance,
   markMissedAttendance: markMissedAttendance,
+  setAttendance: setAttendance,
 }

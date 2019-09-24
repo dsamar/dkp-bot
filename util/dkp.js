@@ -207,5 +207,21 @@ module.exports = {
     return channel.fetchPinnedMessages().then(messages => {      
       return splitToMessages(channel, messages.array(), serialized);
     });
+  },
+  setAttendance: function(guild, username, history) {
+    const channel = guild.channels.find(ch => ch.name === leaderboardName);
+    return channel.fetchPinnedMessages().then(messages => {
+      const all = tableview.parse(contentFromMessages(messages.array()), [username]);
+      
+      // Set the history.
+      all.forEach((member) => {
+        if (username === member.username) {
+          tableview.setAttendance(member, history);
+        }
+      });
+      
+      const serialized = tableview.serializeRegular(all);
+      return splitToMessages(channel, messages.array(), serialized);
+    });
   }
 }
