@@ -93,7 +93,7 @@ module.exports = {
       // set attendance if this is a brand new member
       all.forEach((member) => {
         if (member.attendance.length === 0) {
-          member.attendance = [true];
+          member.attendance = [false];
         }       
       });
       
@@ -155,10 +155,9 @@ module.exports = {
     const channel = guild.channels.find(ch => ch.name === leaderboardName);
     return channel.fetchPinnedMessages().then(messages => {
       const all = tableview.parse(contentFromMessages(messages.array()), roster);
-      // For new members, mark them as attended. Everyone gets a pass the first time.
       all.forEach(dkpUser => {
         if (dkpUser.attendance.length === 0) {
-          dkpUser.attendance = [true];
+          dkpUser.attendance = [false];
         }
       });
       const serialized = tableview.serializeRegular(all);

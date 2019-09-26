@@ -12,10 +12,10 @@
       "notes": ""
     },
     {
-      "name": "Bindings of the Windseeker",
-      "wowheadID": "18564",
-      "slot": "",
-      "cost": 250,
+      "name": "Helm of the Lifegiver",
+      "wowheadID": "18870",
+      "slot": "head",
+      "cost": 200,
       "tags": [],
       "source": "molten core",
       "notes": ""
@@ -714,22 +714,22 @@
       "notes": ""
     },
     {
-      "name": "Obsidian Edged Blade",
-      "wowheadID": "18822",
-      "slot": "two-hand",
-      "cost": 300,
-      "tags": [],
-      "source": "molten core",
-      "notes": ""
-    },
-    {
-      "name": "Nightslayer Chestpiece",
-      "wowheadID": "16820",
+      "name": "Arcanist Robes",
+      "wowheadID": "16798",
       "slot": "chest",
       "cost": 250,
       "tags": [
         "t1"
       ],
+      "source": "molten core",
+      "notes": ""
+    },
+    {
+      "name": "Obsidian Edged Blade",
+      "wowheadID": "18822",
+      "slot": "two-hand",
+      "cost": 300,
+      "tags": [],
       "source": "molten core",
       "notes": ""
     },
@@ -1470,8 +1470,17 @@
       "notes": ""
     },
     {
-      "name": "Arcanist Robes",
-      "wowheadID": "16798",
+      "name": "Bindings of the Windseeker",
+      "wowheadID": "18564",
+      "slot": "",
+      "cost": 250,
+      "tags": [],
+      "source": "molten core",
+      "notes": ""
+    },
+    {
+      "name": "Nightslayer Chestpiece",
+      "wowheadID": "16820",
       "slot": "chest",
       "cost": 250,
       "tags": [
