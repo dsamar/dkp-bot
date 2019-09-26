@@ -86,8 +86,9 @@ module.exports = {
           member.value -= value;
         }
         // Always increment value for members in roster, even if the member spent dkp on the item.
-        if (roster.includes(member.username))
-        member.value += value / (roster.length);
+        if (roster.includes(member.username)) {
+          member.value += value / (roster.length);
+        }
       });
       
       // set attendance if this is a brand new member
