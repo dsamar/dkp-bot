@@ -17,6 +17,6 @@ module.exports = {
     if (lockState && lockState.value == "true") {
       return user.send("Sorry, the raid is no longer accepting signups!");
     }
-    return raid.update(reaction.emoji.name, reaction.message, dkpUsername);
+    return raid.update(reaction.emoji.name, reaction.message, [dkpUsername]);
   }
 }

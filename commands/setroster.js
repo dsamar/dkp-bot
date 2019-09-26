@@ -5,24 +5,21 @@ const sanitize = require('../util/sanitize.js');
 
 module.exports = {
 	name: 'setroster',
-	description: 'sets the currently active raid, without incrementing attendance',
+	description: 'mass-set people to a roster',
   args: true,
-  usage: '<raid_id>',
-  aliases: ['currentraid'],
+  usage: '<raid_id> <space_separated_list_of_names>',
+  aliases: [],
   officer: true,
   locks: ['raid', 'dkp'],
 	execute(message, args) {
     // args[0] == raid ID
-    return raid.clearCurrentRaids(message.channel.guild).then(() => {
-      const channel = message.guild.channels.find(ch => ch.name === raidAnnounceChannel);
-      return channel.fetchMessage(args[0]).then(fetched => {
-        const roster = raid.getRoster(fetched);
-        const promise1 = fetched.pin();
-        const promise2 = dkp.addRoster(message.guild, roster);
-        return Promise.all([promise1, promise2]).then(() => {
-           return message.channel.send(sanitize.makeMessageLink(fetched) + " ```updated raid roster:\n" + roster.join("\n") + "```");
-        });
-      });
-    });
+    // args[1-n] = player names
+    let num_players = args.length - 1
+    const channel = message.guild.channels.find(ch => ch.name === raidAnnounceChannel);
+    return channel.fetchMessage(args[0])
+      .then(message => {
+        // Make everyone a warrior, we don't really care here.
+        return raid.update('warrior', message, args.slice(1));
+      })
   }
 };

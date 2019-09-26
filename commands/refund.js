@@ -23,10 +23,6 @@ module.exports = {
       throw new Error("refund value provided is not a number");
     }      
     return raid.getCurrentRaidRoster(message.channel.guild).then(roster => {
-      // Check that username is in the current roster
-      if (!roster.includes(username)) {
-        throw new Error(username + " not in the current roster: " + roster);
-      }
       return dkp.spendDkp(message.guild, roster, username, cost*-1)
     }).then(() => {
       return message.channel.send(username + " had their DKP refunded by: " + cost + " DKP\n");
