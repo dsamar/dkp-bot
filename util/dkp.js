@@ -80,20 +80,19 @@ module.exports = {
     return channel.fetchPinnedMessages().then(messages => {
       const all = tableview.parse(contentFromMessages(messages.array()), roster);
 
-      // decrement spend user, increment roster
+      // decrement spend user, increment roster, IMPORTANT: spend user gets rewarded too.
       all.forEach((member) => {
         if (username === member.username) {
           member.value -= value;
         }
-        if (roster.includes(member.username) && username !== member.username) {
-          member.value += value / (roster.length - 1);
-        }
+        // Always increment value, even if the member spent dkp on the item.
+        member.value += value / (roster.length);
       });
       
       // set attendance if this is a brand new member
       all.forEach((member) => {
         if (member.attendance.length === 0) {
-          member.attendance = [true];
+          member.attendance = [false];
         }       
       });
       
@@ -155,10 +154,9 @@ module.exports = {
     const channel = guild.channels.find(ch => ch.name === leaderboardName);
     return channel.fetchPinnedMessages().then(messages => {
       const all = tableview.parse(contentFromMessages(messages.array()), roster);
-      // For new members, mark them as attended. Everyone gets a pass the first time.
       all.forEach(dkpUser => {
         if (dkpUser.attendance.length === 0) {
-          dkpUser.attendance = [true];
+          dkpUser.attendance = [false];
         }
       });
       const serialized = tableview.serializeRegular(all);

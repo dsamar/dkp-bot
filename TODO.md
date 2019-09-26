@@ -1,12 +1,7 @@
 ## OUTSTANDING ISSUES
 
-- add commands to edit user's attendance numbers?
 - don't allow a raid to be started more than once
 - make usernames have first letter capitalized
-
-- somehow track attendance over last N raids.
-- command to trade dkp from one member to another.
-
 
 ## To scale this to a multi-server bot:
 
@@ -20,10 +15,6 @@
   - items need tags, so you can assign prices by tag, making setup easier (eg: 't1-gloves' 't2-pants')
 
 ## OPTIONAL
-
-- make command that lets you give points to on-time members by subtracting it from whole raid?
-- add rest of classes to raid signups?
-- make the raid screen look nicer, show stats of dps/melee/healers?
 
 - command to end a raid !raidend, removing it from pinned
 - allow for rolling to break ties, or just use in-game rolling
