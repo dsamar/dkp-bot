@@ -80,14 +80,13 @@ module.exports = {
     return channel.fetchPinnedMessages().then(messages => {
       const all = tableview.parse(contentFromMessages(messages.array()), roster);
 
-      // decrement spend user, increment roster
+      // decrement spend user, increment roster, IMPORTANT: spend user gets rewarded too.
       all.forEach((member) => {
         if (username === member.username) {
           member.value -= value;
         }
-        if (roster.includes(member.username) && username !== member.username) {
-          member.value += value / (roster.length - 1);
-        }
+        // Always increment value, even if the member spent dkp on the item.
+        member.value += value / (roster.length);
       });
       
       // set attendance if this is a brand new member
