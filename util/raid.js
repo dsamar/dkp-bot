@@ -96,19 +96,20 @@ function getField(message, fieldName) {
 }
 
 module.exports = {
-  update: function(type, message, username) {
-    username = username.toLowerCase();
+  update: function(type, message, usernameList) {
     const raidMessage = message.embeds[0];
     const newEmbed = new Discord.RichEmbed(raidMessage);
     let signups = unserialize(newEmbed, message.guild);
     
-    if (type === 'cancel') {
-      removeUser(signups, username);
-    } else if (CLASS_LIST.includes(type)) {
-      addUser(signups, username, type);
-    } else {
-      return; // not a registered class or reaction.
-    }
+    usernameList.forEach((username) => {
+      if (type === 'cancel') {
+        removeUser(signups, username.toLowerCase());
+      } else if (CLASS_LIST.includes(type)) {
+        addUser(signups, username.toLowerCase(), type);
+      } else {
+        return; // not a registered class or reaction.
+      }
+    });
     
     // Sort by name.
     signups.sort((a,b) => {

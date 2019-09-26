@@ -85,7 +85,8 @@ module.exports = {
         if (username === member.username) {
           member.value -= value;
         }
-        // Always increment value, even if the member spent dkp on the item.
+        // Always increment value for members in roster, even if the member spent dkp on the item.
+        if (roster.includes(member.username))
         member.value += value / (roster.length);
       });
       

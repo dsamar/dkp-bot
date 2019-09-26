@@ -80,6 +80,9 @@ function serialize(all) {
     if (a.value === b.value) {
       const a_attendance = a.attendance.filter(c => c).length / (a.attendance.length) * 100;
       const b_attendance = b.attendance.filter(c => c).length / (b.attendance.length) * 100;
+      if (a_attendance === b_attendance) {
+        return a.username.localeCompare(b.username);
+      }
       return b_attendance - a_attendance;
     }
     return b.value - a.value;
