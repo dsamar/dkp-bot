@@ -28,7 +28,7 @@ module.exports = {
         throw new Error("dkp user not found: " + dkpUsername);
       }
       const message = reaction.message;
-      let allBids = tableview.parse(message.embeds[0].description  || "", []);
+      let allBids = tableview.parse(message.content  || "", []);
       if (reaction.emoji.name === 'bid' && !allBids.find((el) => el.username === dkpUser.username)) {
         allBids.push(dkpUser);
       } else if (reaction.emoji.name === 'cancel') {

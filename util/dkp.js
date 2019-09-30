@@ -223,5 +223,21 @@ module.exports = {
       const serialized = tableview.serializeRegular(all);
       return splitToMessages(channel, messages.array(), serialized);
     });
+  },
+  setClass: function(guild, username, className) {
+    const channel = guild.channels.find(ch => ch.name === leaderboardName);
+    return channel.fetchPinnedMessages().then(messages => {
+      const all = tableview.parse(contentFromMessages(messages.array()), [username]);
+      
+      // Set the className.
+      all.forEach((member) => {
+        if (username === member.username) {
+          member.class = className;
+        }
+      });
+      
+      const serialized = tableview.serializeRegular(all);
+      return splitToMessages(channel, messages.array(), serialized);
+    });
   }
 }
