@@ -43,7 +43,7 @@ module.exports = {
           throw new Error("dkp user not found: " + username);
         }
         const message = fetched;
-        let allBids = tableview.parse(message.embeds[0].description  || "", []);
+        let allBids = tableview.parse(message.content  || "", []);
         allBids.push(dkpUser);
 
         // Refresh all names from source

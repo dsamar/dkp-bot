@@ -30,7 +30,11 @@ function attendanceListToString(list) {
 
 function userToString(dkpUser) {
   const attendancePercentage = dkpUser.attendance.filter(c => c).length / (dkpUser.attendance.length) * 100;
-  return [ dkpUser.username, parseFloat(dkpUser.value).toFixed(2), attendancePercentage.toFixed(0) + "%", attendanceListToString(dkpUser.attendance)];
+  return [dkpUser.username, 
+          parseFloat(dkpUser.value).toFixed(2), 
+          attendancePercentage.toFixed(0) + "%",
+          attendanceListToString(dkpUser.attendance),
+          dkpUser.class];
 }
 
 function stringToUser(string) {
@@ -42,6 +46,7 @@ function stringToUser(string) {
   dkpUser.username = list[0];
   dkpUser.value = parseFloat(list[1]);
   dkpUser.attendance = attendanceStringToList(list[3]);
+  dkpUser.class = list[4] || '?';
   return dkpUser;
 }
 
@@ -50,6 +55,7 @@ function newUser(username) {
   dkpUser.username = username;
   dkpUser.value = 0;
   dkpUser.attendance = [];
+  dkpUser.class = '?';
   return dkpUser;
 }
 
@@ -81,7 +87,10 @@ function serialize(all) {
       const a_attendance = a.attendance.filter(c => c).length / (a.attendance.length) * 100;
       const b_attendance = b.attendance.filter(c => c).length / (b.attendance.length) * 100;
       if (a_attendance === b_attendance) {
-        return a.username.localeCompare(b.username);
+        if (a.class === b.class) {
+          return a.username.localeCompare(b.username);
+        }
+        return a.class.localeCompare(b.class);
       }
       return b_attendance - a_attendance;
     }
@@ -92,7 +101,7 @@ function serialize(all) {
     return userToString(member);
   });
   // add header
-  data.unshift(['username', 'dkp', 'atn%', 'history'])
+  data.unshift(['username', 'dkp', 'atn%', 'history', 'class'])
   const config = {
     drawHorizontalLine: (index, size) => {
       return index === 0 || index === 1 || index === size;
@@ -120,10 +129,7 @@ function serialize(all) {
 
 function serializeEmbedded(message, all) {
   const output = serialize(all);
-  const updatedMessage = new Discord.RichEmbed(message.embeds[0]);
-  updatedMessage.setDescription("```" + output + "```");
-  updatedMessage.setTimestamp();
-  return message.edit(updatedMessage);
+  return message.edit("```" + output + "```");
 }
 
 function removeDupes(dkpUserList) {
@@ -145,10 +151,8 @@ function markMissedAttendance(member) {
 }
 
 function setAttendance(member, history) {
-  console.log(history);
   member.attendance = attendanceStringToList(history);
   member.attendance = member.attendance.slice(-(NUM_RAIDS_ATTENDANCE-1));
-  console.log(member.attendance);
 }
 
 module.exports = {
