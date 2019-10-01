@@ -348,7 +348,7 @@
       "name": "Crimson Shocker",
       "wowheadID": "17077",
       "slot": "ranged",
-      "cost": 150,
+      "cost": 50,
       "tags": [],
       "source": "molten core",
       "notes": ""
@@ -357,7 +357,7 @@
       "name": "Gutgore Ripper",
       "wowheadID": "17071",
       "slot": "one-hand",
-      "cost": 200,
+      "cost": 90,
       "tags": [],
       "source": "molten core",
       "notes": ""
@@ -404,7 +404,7 @@
       "name": "Finkle's Lava Dredger",
       "wowheadID": "18803",
       "slot": "two-hand",
-      "cost": 300,
+      "cost": 200,
       "tags": [],
       "source": "molten core",
       "notes": ""
@@ -460,7 +460,7 @@
       "name": "Shard of the Flame",
       "wowheadID": "17082",
       "slot": "trinket",
-      "cost": 100,
+      "cost": 90,
       "tags": [],
       "source": "molten core",
       "notes": ""
@@ -646,7 +646,7 @@
       "name": "Band of Sulfuras",
       "wowheadID": "19138",
       "slot": "finger",
-      "cost": 200,
+      "cost": 120,
       "tags": [],
       "source": "molten core",
       "notes": ""
@@ -688,7 +688,7 @@
       "name": "Seal of the Archmagus",
       "wowheadID": "17110",
       "slot": "finger",
-      "cost": 200,
+      "cost": 50,
       "tags": [],
       "source": "molten core",
       "notes": ""
@@ -790,7 +790,7 @@
       "name": "Fireproof Cloak",
       "wowheadID": "18811",
       "slot": "back",
-      "cost": 200,
+      "cost": 50,
       "tags": [],
       "source": "molten core",
       "notes": ""
@@ -810,7 +810,7 @@
       "name": "Sabatons of the Flamewalker",
       "wowheadID": "19144",
       "slot": "feet",
-      "cost": 100,
+      "cost": 50,
       "tags": [],
       "source": "molten core",
       "notes": ""
@@ -1659,7 +1659,7 @@
       "name": "Ring of Binding",
       "wowheadID": "18813",
       "slot": "finger",
-      "cost": 200,
+      "cost": 50,
       "tags": [],
       "source": "onyxia",
       "notes": ""
