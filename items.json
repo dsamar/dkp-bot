@@ -404,7 +404,7 @@
       "name": "Finkle's Lava Dredger",
       "wowheadID": "18803",
       "slot": "two-hand",
-      "cost": 300,
+      "cost": 200,
       "tags": [],
       "source": "molten core",
       "notes": ""
@@ -1659,7 +1659,7 @@
       "name": "Ring of Binding",
       "wowheadID": "18813",
       "slot": "finger",
-      "cost": 200,
+      "cost": 50,
       "tags": [],
       "source": "onyxia",
       "notes": ""
