@@ -5,9 +5,7 @@
       "wowheadID": "17076",
       "slot": "two-hand",
       "cost": 600,
-      "tags": [
-        "bis"
-      ],
+      "tags": ["bis"],
       "source": "molten core",
       "notes": ""
     },
@@ -15,7 +13,7 @@
       "name": "Helm of the Lifegiver",
       "wowheadID": "18870",
       "slot": "head",
-      "cost": 125,
+      "cost": 75,
       "tags": [],
       "source": "molten core",
       "notes": ""
@@ -25,9 +23,7 @@
       "wowheadID": "19145",
       "slot": "chest",
       "cost": 300,
-      "tags": [
-        "bis"
-      ],
+      "tags": ["bis"],
       "source": "molten core",
       "notes": ""
     },
@@ -36,9 +32,7 @@
       "wowheadID": "17103",
       "slot": "main hand",
       "cost": 400,
-      "tags": [
-        "bis"
-      ],
+      "tags": ["bis"],
       "source": "molten core",
       "notes": ""
     },
@@ -56,9 +50,7 @@
       "wowheadID": "18816",
       "slot": "one-hand",
       "cost": 400,
-      "tags": [
-        "bis"
-      ],
+      "tags": ["bis"],
       "source": "molten core",
       "notes": ""
     },
@@ -67,9 +59,7 @@
       "wowheadID": "19147",
       "slot": "finger",
       "cost": 300,
-      "tags": [
-        "bis"
-      ],
+      "tags": ["bis"],
       "source": "molten core",
       "notes": ""
     },
@@ -87,9 +77,7 @@
       "wowheadID": "18820",
       "slot": "trinket",
       "cost": 400,
-      "tags": [
-        "bis"
-      ],
+      "tags": ["bis"],
       "source": "molten core",
       "notes": "Mage/Warlock Priority"
     },
@@ -107,9 +95,7 @@
       "wowheadID": "19137",
       "slot": "waist",
       "cost": 200,
-      "tags": [
-        "bis"
-      ],
+      "tags": ["bis"],
       "source": "molten core",
       "notes": ""
     },
@@ -127,9 +113,7 @@
       "wowheadID": "19140",
       "slot": "finger",
       "cost": 300,
-      "tags": [
-        "bis"
-      ],
+      "tags": ["bis"],
       "source": "molten core",
       "notes": ""
     },
@@ -147,9 +131,7 @@
       "wowheadID": "18823",
       "slot": "hands",
       "cost": 250,
-      "tags": [
-        "bis"
-      ],
+      "tags": ["bis"],
       "source": "molten core",
       "notes": ""
     },
@@ -158,9 +140,7 @@
       "wowheadID": "19136",
       "slot": "waist",
       "cost": 200,
-      "tags": [
-        "bis"
-      ],
+      "tags": ["bis"],
       "source": "molten core",
       "notes": "Mage, then Warlock"
     },
@@ -178,9 +158,7 @@
       "wowheadID": "17069",
       "slot": "ranged",
       "cost": 200,
-      "tags": [
-        "bis"
-      ],
+      "tags": ["bis"],
       "source": "molten core",
       "notes": "Rogue/Warrior Priority"
     },
@@ -189,9 +167,7 @@
       "wowheadID": "18814",
       "slot": "neck",
       "cost": 300,
-      "tags": [
-        "bis"
-      ],
+      "tags": ["bis"],
       "source": "molten core",
       "notes": ""
     },
@@ -200,9 +176,7 @@
       "wowheadID": "18810",
       "slot": "shoulder",
       "cost": 300,
-      "tags": [
-        "bis"
-      ],
+      "tags": ["bis"],
       "source": "molten core",
       "notes": ""
     },
@@ -220,9 +194,7 @@
       "wowheadID": "18821",
       "slot": "finger",
       "cost": 300,
-      "tags": [
-        "bis"
-      ],
+      "tags": ["bis"],
       "source": "molten core",
       "notes": ""
     },
@@ -231,9 +203,7 @@
       "wowheadID": "17105",
       "slot": "one-hand",
       "cost": 400,
-      "tags": [
-        "bis"
-      ],
+      "tags": ["bis"],
       "source": "molten core",
       "notes": "Druid/Shaman Priority"
     },
@@ -242,9 +212,7 @@
       "wowheadID": "17063",
       "slot": "finger",
       "cost": 300,
-      "tags": [
-        "bis"
-      ],
+      "tags": ["bis"],
       "source": "molten core",
       "notes": ""
     },
@@ -262,9 +230,7 @@
       "wowheadID": "18875",
       "slot": "legs",
       "cost": 300,
-      "tags": [
-        "bis"
-      ],
+      "tags": ["bis"],
       "source": "molten core",
       "notes": ""
     },
@@ -273,9 +239,7 @@
       "wowheadID": "19146",
       "slot": "wrist",
       "cost": 200,
-      "tags": [
-        "bis"
-      ],
+      "tags": ["bis"],
       "source": "molten core",
       "notes": ""
     },
@@ -284,9 +248,7 @@
       "wowheadID": "18809",
       "slot": "waist",
       "cost": 200,
-      "tags": [
-        "bis"
-      ],
+      "tags": ["bis"],
       "source": "molten core",
       "notes": ""
     },
@@ -376,9 +338,7 @@
       "wowheadID": "16915",
       "slot": "legs",
       "cost": 350,
-      "tags": [
-        "t2"
-      ],
+      "tags": ["t2"],
       "source": "molten core",
       "notes": ""
     },
@@ -423,9 +383,7 @@
       "wowheadID": "16795",
       "slot": "head",
       "cost": 170,
-      "tags": [
-        "t1"
-      ],
+      "tags": ["t1"],
       "source": "molten core",
       "notes": ""
     },
@@ -470,9 +428,7 @@
       "wowheadID": "17102",
       "slot": "back",
       "cost": 300,
-      "tags": [
-        "bis"
-      ],
+      "tags": ["bis"],
       "source": "molten core",
       "notes": ""
     },
@@ -490,9 +446,7 @@
       "wowheadID": "16846",
       "slot": "head",
       "cost": 170,
-      "tags": [
-        "t1"
-      ],
+      "tags": ["t1"],
       "source": "molten core",
       "notes": ""
     },
@@ -519,9 +473,7 @@
       "wowheadID": "16842",
       "slot": "head",
       "cost": 170,
-      "tags": [
-        "t1"
-      ],
+      "tags": ["t1"],
       "source": "molten core",
       "notes": ""
     },
@@ -530,9 +482,7 @@
       "wowheadID": "16823",
       "slot": "shoulder",
       "cost": 200,
-      "tags": [
-        "t1"
-      ],
+      "tags": ["t1"],
       "source": "molten core",
       "notes": ""
     },
@@ -541,9 +491,7 @@
       "wowheadID": "16816",
       "slot": "shoulder",
       "cost": 200,
-      "tags": [
-        "t1"
-      ],
+      "tags": ["t1"],
       "source": "molten core",
       "notes": ""
     },
@@ -552,9 +500,7 @@
       "wowheadID": "16863",
       "slot": "hands",
       "cost": 150,
-      "tags": [
-        "t1"
-      ],
+      "tags": ["t1"],
       "source": "molten core",
       "notes": ""
     },
@@ -563,9 +509,7 @@
       "wowheadID": "16868",
       "slot": "shoulder",
       "cost": 200,
-      "tags": [
-        "t1"
-      ],
+      "tags": ["t1"],
       "source": "molten core",
       "notes": ""
     },
@@ -574,9 +518,7 @@
       "wowheadID": "16922",
       "slot": "legs",
       "cost": 350,
-      "tags": [
-        "t2"
-      ],
+      "tags": ["t2"],
       "source": "molten core",
       "notes": ""
     },
@@ -603,9 +545,7 @@
       "wowheadID": "16962",
       "slot": "legs",
       "cost": 350,
-      "tags": [
-        "t2"
-      ],
+      "tags": ["t2"],
       "source": "molten core",
       "notes": ""
     },
@@ -614,9 +554,7 @@
       "wowheadID": "16800",
       "slot": "feet",
       "cost": 150,
-      "tags": [
-        "t1"
-      ],
+      "tags": ["t1"],
       "source": "molten core",
       "notes": ""
     },
@@ -625,9 +563,7 @@
       "wowheadID": "16866",
       "slot": "head",
       "cost": 170,
-      "tags": [
-        "t1"
-      ],
+      "tags": ["t1"],
       "source": "molten core",
       "notes": ""
     },
@@ -636,9 +572,7 @@
       "wowheadID": "16813",
       "slot": "head",
       "cost": 170,
-      "tags": [
-        "t1"
-      ],
+      "tags": ["t1"],
       "source": "molten core",
       "notes": ""
     },
@@ -656,9 +590,7 @@
       "wowheadID": "16930",
       "slot": "legs",
       "cost": 350,
-      "tags": [
-        "t2"
-      ],
+      "tags": ["t2"],
       "source": "molten core",
       "notes": ""
     },
@@ -667,9 +599,7 @@
       "wowheadID": "16909",
       "slot": "legs",
       "cost": 350,
-      "tags": [
-        "t2"
-      ],
+      "tags": ["t2"],
       "source": "molten core",
       "notes": ""
     },
@@ -678,9 +608,7 @@
       "wowheadID": "16865",
       "slot": "chest",
       "cost": 250,
-      "tags": [
-        "t1"
-      ],
+      "tags": ["t1"],
       "source": "molten core",
       "notes": ""
     },
@@ -698,9 +626,7 @@
       "wowheadID": "16815",
       "slot": "chest",
       "cost": 250,
-      "tags": [
-        "t1"
-      ],
+      "tags": ["t1"],
       "source": "molten core",
       "notes": ""
     },
@@ -718,9 +644,7 @@
       "wowheadID": "16798",
       "slot": "chest",
       "cost": 250,
-      "tags": [
-        "t1"
-      ],
+      "tags": ["t1"],
       "source": "molten core",
       "notes": ""
     },
@@ -738,9 +662,7 @@
       "wowheadID": "16808",
       "slot": "head",
       "cost": 170,
-      "tags": [
-        "t1"
-      ],
+      "tags": ["t1"],
       "source": "molten core",
       "notes": ""
     },
@@ -749,9 +671,7 @@
       "wowheadID": "16811",
       "slot": "feet",
       "cost": 150,
-      "tags": [
-        "t1"
-      ],
+      "tags": ["t1"],
       "source": "molten core",
       "notes": ""
     },
@@ -760,9 +680,7 @@
       "wowheadID": "16826",
       "slot": "hands",
       "cost": 150,
-      "tags": [
-        "t1"
-      ],
+      "tags": ["t1"],
       "source": "molten core",
       "notes": ""
     },
@@ -771,9 +689,7 @@
       "wowheadID": "16954",
       "slot": "legs",
       "cost": 350,
-      "tags": [
-        "t2"
-      ],
+      "tags": ["t2"],
       "source": "molten core",
       "notes": ""
     },
@@ -800,9 +716,7 @@
       "wowheadID": "16809",
       "slot": "chest",
       "cost": 250,
-      "tags": [
-        "t1"
-      ],
+      "tags": ["t1"],
       "source": "molten core",
       "notes": ""
     },
@@ -820,9 +734,7 @@
       "wowheadID": "16848",
       "slot": "shoulder",
       "cost": 200,
-      "tags": [
-        "t1"
-      ],
+      "tags": ["t1"],
       "source": "molten core",
       "notes": ""
     },
@@ -831,9 +743,7 @@
       "wowheadID": "16821",
       "slot": "head",
       "cost": 170,
-      "tags": [
-        "t1"
-      ],
+      "tags": ["t1"],
       "source": "molten core",
       "notes": ""
     },
@@ -842,9 +752,7 @@
       "wowheadID": "16854",
       "slot": "head",
       "cost": 170,
-      "tags": [
-        "t1"
-      ],
+      "tags": ["t1"],
       "source": "molten core",
       "notes": ""
     },
@@ -862,9 +770,7 @@
       "wowheadID": "16836",
       "slot": "shoulder",
       "cost": 200,
-      "tags": [
-        "t1"
-      ],
+      "tags": ["t1"],
       "source": "molten core",
       "notes": ""
     },
@@ -873,9 +779,7 @@
       "wowheadID": "16862",
       "slot": "feet",
       "cost": 150,
-      "tags": [
-        "t1"
-      ],
+      "tags": ["t1"],
       "source": "molten core",
       "notes": ""
     },
@@ -884,9 +788,7 @@
       "wowheadID": "16829",
       "slot": "feet",
       "cost": 150,
-      "tags": [
-        "t1"
-      ],
+      "tags": ["t1"],
       "source": "molten core",
       "notes": ""
     },
@@ -895,9 +797,7 @@
       "wowheadID": "16796",
       "slot": "legs",
       "cost": 170,
-      "tags": [
-        "t1"
-      ],
+      "tags": ["t1"],
       "source": "molten core",
       "notes": ""
     },
@@ -906,9 +806,7 @@
       "wowheadID": "16901",
       "slot": "legs",
       "cost": 350,
-      "tags": [
-        "t2"
-      ],
+      "tags": ["t2"],
       "source": "molten core",
       "notes": ""
     },
@@ -917,9 +815,7 @@
       "wowheadID": "16834",
       "slot": "head",
       "cost": 170,
-      "tags": [
-        "t1"
-      ],
+      "tags": ["t1"],
       "source": "molten core",
       "notes": ""
     },
@@ -928,9 +824,7 @@
       "wowheadID": "16812",
       "slot": "hands",
       "cost": 150,
-      "tags": [
-        "t1"
-      ],
+      "tags": ["t1"],
       "source": "molten core",
       "notes": ""
     },
@@ -939,9 +833,7 @@
       "wowheadID": "16824",
       "slot": "feet",
       "cost": 150,
-      "tags": [
-        "t1"
-      ],
+      "tags": ["t1"],
       "source": "molten core",
       "notes": ""
     },
@@ -959,9 +851,7 @@
       "wowheadID": "16805",
       "slot": "hands",
       "cost": 150,
-      "tags": [
-        "t1"
-      ],
+      "tags": ["t1"],
       "source": "molten core",
       "notes": ""
     },
@@ -970,9 +860,7 @@
       "wowheadID": "16845",
       "slot": "chest",
       "cost": 250,
-      "tags": [
-        "t1"
-      ],
+      "tags": ["t1"],
       "source": "molten core",
       "notes": ""
     },
@@ -981,9 +869,7 @@
       "wowheadID": "16797",
       "slot": "shoulder",
       "cost": 200,
-      "tags": [
-        "t1"
-      ],
+      "tags": ["t1"],
       "source": "molten core",
       "notes": ""
     },
@@ -992,9 +878,7 @@
       "wowheadID": "16844",
       "slot": "shoulder",
       "cost": 200,
-      "tags": [
-        "t1"
-      ],
+      "tags": ["t1"],
       "source": "molten core",
       "notes": ""
     },
@@ -1003,9 +887,7 @@
       "wowheadID": "16839",
       "slot": "hands",
       "cost": 150,
-      "tags": [
-        "t1"
-      ],
+      "tags": ["t1"],
       "source": "molten core",
       "notes": ""
     },
@@ -1014,9 +896,7 @@
       "wowheadID": "16841",
       "slot": "chest",
       "cost": 250,
-      "tags": [
-        "t1"
-      ],
+      "tags": ["t1"],
       "source": "molten core",
       "notes": ""
     },
@@ -1025,9 +905,7 @@
       "wowheadID": "16946",
       "slot": "legs",
       "cost": 350,
-      "tags": [
-        "t2"
-      ],
+      "tags": ["t2"],
       "source": "molten core",
       "notes": ""
     },
@@ -1036,9 +914,7 @@
       "wowheadID": "16822",
       "slot": "legs",
       "cost": 170,
-      "tags": [
-        "t1"
-      ],
+      "tags": ["t1"],
       "source": "molten core",
       "notes": ""
     },
@@ -1047,9 +923,7 @@
       "wowheadID": "16847",
       "slot": "legs",
       "cost": 170,
-      "tags": [
-        "t1"
-      ],
+      "tags": ["t1"],
       "source": "molten core",
       "notes": ""
     },
@@ -1058,9 +932,7 @@
       "wowheadID": "16833",
       "slot": "chest",
       "cost": 250,
-      "tags": [
-        "t1"
-      ],
+      "tags": ["t1"],
       "source": "molten core",
       "notes": ""
     },
@@ -1069,9 +941,7 @@
       "wowheadID": "16807",
       "slot": "shoulder",
       "cost": 200,
-      "tags": [
-        "t1"
-      ],
+      "tags": ["t1"],
       "source": "molten core",
       "notes": ""
     },
@@ -1080,9 +950,7 @@
       "wowheadID": "16853",
       "slot": "chest",
       "cost": 250,
-      "tags": [
-        "t1"
-      ],
+      "tags": ["t1"],
       "source": "molten core",
       "notes": ""
     },
@@ -1091,9 +959,7 @@
       "wowheadID": "16801",
       "slot": "hands",
       "cost": 150,
-      "tags": [
-        "t1"
-      ],
+      "tags": ["t1"],
       "source": "molten core",
       "notes": ""
     },
@@ -1102,9 +968,7 @@
       "wowheadID": "16856",
       "slot": "shoulder",
       "cost": 200,
-      "tags": [
-        "t1"
-      ],
+      "tags": ["t1"],
       "source": "molten core",
       "notes": ""
     },
@@ -1113,9 +977,7 @@
       "wowheadID": "16867",
       "slot": "legs",
       "cost": 170,
-      "tags": [
-        "t1"
-      ],
+      "tags": ["t1"],
       "source": "molten core",
       "notes": ""
     },
@@ -1124,9 +986,7 @@
       "wowheadID": "16837",
       "slot": "feet",
       "cost": 150,
-      "tags": [
-        "t1"
-      ],
+      "tags": ["t1"],
       "source": "molten core",
       "notes": ""
     },
@@ -1135,9 +995,7 @@
       "wowheadID": "16843",
       "slot": "legs",
       "cost": 170,
-      "tags": [
-        "t1"
-      ],
+      "tags": ["t1"],
       "source": "molten core",
       "notes": ""
     },
@@ -1146,9 +1004,7 @@
       "wowheadID": "16852",
       "slot": "hands",
       "cost": 150,
-      "tags": [
-        "t1"
-      ],
+      "tags": ["t1"],
       "source": "molten core",
       "notes": ""
     },
@@ -1157,9 +1013,7 @@
       "wowheadID": "16938",
       "slot": "legs",
       "cost": 350,
-      "tags": [
-        "t2"
-      ],
+      "tags": ["t2"],
       "source": "molten core",
       "notes": ""
     },
@@ -1168,9 +1022,7 @@
       "wowheadID": "16810",
       "slot": "legs",
       "cost": 170,
-      "tags": [
-        "t1"
-      ],
+      "tags": ["t1"],
       "source": "molten core",
       "notes": ""
     },
@@ -1179,9 +1031,7 @@
       "wowheadID": "16849",
       "slot": "feet",
       "cost": 150,
-      "tags": [
-        "t1"
-      ],
+      "tags": ["t1"],
       "source": "molten core",
       "notes": ""
     },
@@ -1190,9 +1040,7 @@
       "wowheadID": "16814",
       "slot": "legs",
       "cost": 170,
-      "tags": [
-        "t1"
-      ],
+      "tags": ["t1"],
       "source": "molten core",
       "notes": ""
     },
@@ -1201,9 +1049,7 @@
       "wowheadID": "16831",
       "slot": "hands",
       "cost": 150,
-      "tags": [
-        "t1"
-      ],
+      "tags": ["t1"],
       "source": "molten core",
       "notes": ""
     },
@@ -1212,9 +1058,7 @@
       "wowheadID": "16855",
       "slot": "legs",
       "cost": 170,
-      "tags": [
-        "t1"
-      ],
+      "tags": ["t1"],
       "source": "molten core",
       "notes": ""
     },
@@ -1223,9 +1067,7 @@
       "wowheadID": "16859",
       "slot": "feet",
       "cost": 150,
-      "tags": [
-        "t1"
-      ],
+      "tags": ["t1"],
       "source": "molten core",
       "notes": ""
     },
@@ -1234,9 +1076,7 @@
       "wowheadID": "16835",
       "slot": "legs",
       "cost": 170,
-      "tags": [
-        "t1"
-      ],
+      "tags": ["t1"],
       "source": "molten core",
       "notes": ""
     },
@@ -1245,9 +1085,7 @@
       "wowheadID": "16860",
       "slot": "hands",
       "cost": 150,
-      "tags": [
-        "t1"
-      ],
+      "tags": ["t1"],
       "source": "molten core",
       "notes": ""
     },
@@ -1256,9 +1094,7 @@
       "wowheadID": "16803",
       "slot": "feet",
       "cost": 150,
-      "tags": [
-        "t1"
-      ],
+      "tags": ["t1"],
       "source": "molten core",
       "notes": ""
     },
@@ -1267,9 +1103,7 @@
       "wowheadID": "16817",
       "slot": "waist",
       "cost": 120,
-      "tags": [
-        "t1"
-      ],
+      "tags": ["t1"],
       "source": "molten core",
       "notes": ""
     },
@@ -1278,9 +1112,7 @@
       "wowheadID": "16864",
       "slot": "waist",
       "cost": 120,
-      "tags": [
-        "t1"
-      ],
+      "tags": ["t1"],
       "source": "molten core",
       "notes": ""
     },
@@ -1289,9 +1121,7 @@
       "wowheadID": "16819",
       "slot": "wrist",
       "cost": 120,
-      "tags": [
-        "t1"
-      ],
+      "tags": ["t1"],
       "source": "molten core",
       "notes": ""
     },
@@ -1300,9 +1130,7 @@
       "wowheadID": "16827",
       "slot": "waist",
       "cost": 120,
-      "tags": [
-        "t1"
-      ],
+      "tags": ["t1"],
       "source": "molten core",
       "notes": ""
     },
@@ -1311,9 +1139,7 @@
       "wowheadID": "16861",
       "slot": "wrist",
       "cost": 120,
-      "tags": [
-        "t1"
-      ],
+      "tags": ["t1"],
       "source": "molten core",
       "notes": ""
     },
@@ -1322,9 +1148,7 @@
       "wowheadID": "16799",
       "slot": "wrist",
       "cost": 120,
-      "tags": [
-        "t1"
-      ],
+      "tags": ["t1"],
       "source": "molten core",
       "notes": ""
     },
@@ -1333,9 +1157,7 @@
       "wowheadID": "16806",
       "slot": "waist",
       "cost": 120,
-      "tags": [
-        "t1"
-      ],
+      "tags": ["t1"],
       "source": "molten core",
       "notes": ""
     },
@@ -1344,9 +1166,7 @@
       "wowheadID": "16802",
       "slot": "waist",
       "cost": 120,
-      "tags": [
-        "t1"
-      ],
+      "tags": ["t1"],
       "source": "molten core",
       "notes": ""
     },
@@ -1355,9 +1175,7 @@
       "wowheadID": "16851",
       "slot": "waist",
       "cost": 120,
-      "tags": [
-        "t1"
-      ],
+      "tags": ["t1"],
       "source": "molten core",
       "notes": ""
     },
@@ -1366,9 +1184,7 @@
       "wowheadID": "16858",
       "slot": "waist",
       "cost": 120,
-      "tags": [
-        "t1"
-      ],
+      "tags": ["t1"],
       "source": "molten core",
       "notes": ""
     },
@@ -1377,9 +1193,7 @@
       "wowheadID": "16838",
       "slot": "waist",
       "cost": 120,
-      "tags": [
-        "t1"
-      ],
+      "tags": ["t1"],
       "source": "molten core",
       "notes": ""
     },
@@ -1388,9 +1202,7 @@
       "wowheadID": "16804",
       "slot": "wrist",
       "cost": 120,
-      "tags": [
-        "t1"
-      ],
+      "tags": ["t1"],
       "source": "molten core",
       "notes": ""
     },
@@ -1399,9 +1211,7 @@
       "wowheadID": "16828",
       "slot": "waist",
       "cost": 120,
-      "tags": [
-        "t1"
-      ],
+      "tags": ["t1"],
       "source": "molten core",
       "notes": ""
     },
@@ -1410,9 +1220,7 @@
       "wowheadID": "16850",
       "slot": "wrist",
       "cost": 120,
-      "tags": [
-        "t1"
-      ],
+      "tags": ["t1"],
       "source": "molten core",
       "notes": ""
     },
@@ -1421,9 +1229,7 @@
       "wowheadID": "16825",
       "slot": "wrist",
       "cost": 120,
-      "tags": [
-        "t1"
-      ],
+      "tags": ["t1"],
       "source": "molten core",
       "notes": ""
     },
@@ -1432,9 +1238,7 @@
       "wowheadID": "16830",
       "slot": "wrist",
       "cost": 120,
-      "tags": [
-        "t1"
-      ],
+      "tags": ["t1"],
       "source": "molten core",
       "notes": ""
     },
@@ -1443,9 +1247,7 @@
       "wowheadID": "16840",
       "slot": "wrist",
       "cost": 120,
-      "tags": [
-        "t1"
-      ],
+      "tags": ["t1"],
       "source": "molten core",
       "notes": ""
     },
@@ -1454,9 +1256,7 @@
       "wowheadID": "16857",
       "slot": "wrist",
       "cost": 120,
-      "tags": [
-        "t1"
-      ],
+      "tags": ["t1"],
       "source": "molten core",
       "notes": ""
     },
@@ -1483,9 +1283,7 @@
       "wowheadID": "16820",
       "slot": "chest",
       "cost": 250,
-      "tags": [
-        "t1"
-      ],
+      "tags": ["t1"],
       "source": "molten core",
       "notes": ""
     },
@@ -1494,9 +1292,7 @@
       "wowheadID": "17075",
       "slot": "one-hand",
       "cost": 400,
-      "tags": [
-        "bis"
-      ],
+      "tags": ["bis"],
       "source": "onyxia",
       "notes": ""
     },
@@ -1505,9 +1301,7 @@
       "wowheadID": "16939",
       "slot": "head",
       "cost": 350,
-      "tags": [
-        "t2"
-      ],
+      "tags": ["t2"],
       "source": "onyxia",
       "notes": ""
     },
@@ -1525,9 +1319,7 @@
       "wowheadID": "17064",
       "slot": "trinket",
       "cost": 400,
-      "tags": [
-        "bis"
-      ],
+      "tags": ["bis"],
       "source": "onyxia",
       "notes": ""
     },
@@ -1554,9 +1346,7 @@
       "wowheadID": "16908",
       "slot": "head",
       "cost": 350,
-      "tags": [
-        "t2"
-      ],
+      "tags": ["t2"],
       "source": "onyxia",
       "notes": ""
     },
@@ -1565,9 +1355,7 @@
       "wowheadID": "16914",
       "slot": "head",
       "cost": 350,
-      "tags": [
-        "t2"
-      ],
+      "tags": ["t2"],
       "source": "onyxia",
       "notes": ""
     },
@@ -1576,9 +1364,7 @@
       "wowheadID": "17068",
       "slot": "one-hand",
       "cost": 400,
-      "tags": [
-        "bis"
-      ],
+      "tags": ["bis"],
       "source": "onyxia",
       "notes": ""
     },
@@ -1596,9 +1382,7 @@
       "wowheadID": "16921",
       "slot": "head",
       "cost": 350,
-      "tags": [
-        "t2"
-      ],
+      "tags": ["t2"],
       "source": "onyxia",
       "notes": ""
     },
@@ -1607,9 +1391,7 @@
       "wowheadID": "16929",
       "slot": "head",
       "cost": 350,
-      "tags": [
-        "t2"
-      ],
+      "tags": ["t2"],
       "source": "onyxia",
       "notes": ""
     },
@@ -1618,9 +1400,7 @@
       "wowheadID": "16900",
       "slot": "head",
       "cost": 350,
-      "tags": [
-        "t2"
-      ],
+      "tags": ["t2"],
       "source": "onyxia",
       "notes": ""
     },
@@ -1638,9 +1418,7 @@
       "wowheadID": "16955",
       "slot": "head",
       "cost": 350,
-      "tags": [
-        "t2"
-      ],
+      "tags": ["t2"],
       "source": "onyxia",
       "notes": ""
     },
@@ -1649,9 +1427,7 @@
       "wowheadID": "16947",
       "slot": "head",
       "cost": 350,
-      "tags": [
-        "t2"
-      ],
+      "tags": ["t2"],
       "source": "onyxia",
       "notes": ""
     },
@@ -1669,9 +1445,7 @@
       "wowheadID": "16963",
       "slot": "head",
       "cost": 350,
-      "tags": [
-        "t2"
-      ],
+      "tags": ["t2"],
       "source": "onyxia",
       "notes": ""
     }
