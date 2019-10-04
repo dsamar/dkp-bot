@@ -25,18 +25,16 @@ module.exports = {
       ch => ch.name === config.raidAnnounceChannel
     );
     return channel.fetchMessage(args[0]).then(fetched => {
-      return fetched.clearReactions().then(() => {
-        const raidMessage = fetched.embeds[0];
-        const newEmbed = new Discord.RichEmbed(raidMessage);
-        const details = getField(newEmbed, "details");
-        details.value = args.slice(1).join(" ");
-        return Promise.all([
-          fetched.edit("", newEmbed),
-          message.channel.send(
-            "updated raid signup message " + sanitize.makeMessageLink(fetched)
-          )
-        ]);
-      });
+      const raidMessage = fetched.embeds[0];
+      const newEmbed = new Discord.RichEmbed(raidMessage);
+      const details = getField(newEmbed, "details");
+      details.value = args.slice(1).join(" ");
+      return Promise.all([
+        fetched.edit("", newEmbed),
+        message.channel.send(
+          "updated raid signup message " + sanitize.makeMessageLink(fetched)
+        )
+      ]);
     });
   }
 };
