@@ -4,7 +4,7 @@ const sanitize = require('../util/sanitize.js');
 
 module.exports = {
 	name: 'decay',
-	description: 'decay the dkp of all members by multiplying each member dkp value by the multiplier',
+	description: 'decay the dkp of all members by the percentage provided. eg: !decay 2.5 will decay the leaderboard by 2.5%',
   usage: '<numeric_value>',
   args: true,
   officer: true,
@@ -17,9 +17,13 @@ module.exports = {
       if (isNaN(number)) {
         throw new Error("invalid argument: " + args[0])
       }
-      const valueFn = (prev) => { return prev * number; };
+      
+      const decayMultiplier = 1.0 - (number/100.0)
+      console.log(decayMultiplier)
+      
+      const valueFn = (prev) => { return prev * decayMultiplier; };
       return dkp.updateDkp(message.guild, roster, valueFn).then(() => {
-        message.channel.send("decayed leaderboard dkp values with multiplier: " + args[0]);
+        message.channel.send("decayed leaderboard dkp values by: " + args[0] + "%");
       });
     });
   }
