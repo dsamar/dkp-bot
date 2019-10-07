@@ -1,6 +1,5 @@
 ## OUTSTANDING ISSUES
 
-- don't allow a raid to be started more than once
 - make usernames have first letter capitalized
 
 ## To scale this to a multi-server bot:
