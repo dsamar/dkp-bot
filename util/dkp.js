@@ -165,6 +165,24 @@ module.exports = {
       return splitToMessages(channel, messages.array(), serialized);
     });
   },
+  dkpRemove: function(guild, username) {
+    const channel = guild.channels.find(ch => ch.name === leaderboardName);
+    return channel.fetchPinnedMessages().then(messages => {
+      let all = tableview.parse(contentFromMessages(messages.array()), []);
+      
+      const removalUser = all.find(dkpUser => dkpUser.username === username);
+      if (!removalUser) {
+        throw new Error("user " + username + " not found");
+      }
+      
+      // Give the value of the user we are removing to the guild-bank.
+      all.find(dkpUser => dkpUser.username === "guild-bank").value += removalUser.value;
+      
+      all = all.filter(dkpUser => dkpUser.username !== username);
+      const serialized = tableview.serializeRegular(all);
+      return splitToMessages(channel, messages.array(), serialized);
+    });
+  },
   incrementAttendance: function(guild, roster) {
     const channel = guild.channels.find(ch => ch.name === leaderboardName);
     return channel.fetchPinnedMessages().then(messages => {
