@@ -32,7 +32,6 @@ function unserialize(embed, guild) {
       signups = signups.concat(classSignups);
     }
   });
-  console.log(signups);
   signups = signups.filter((item, index) => {
     return signups.map(el => el.user).indexOf(item.user) === index;
   });
