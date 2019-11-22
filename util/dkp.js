@@ -325,5 +325,18 @@ module.exports = {
       const serialized = tableview.serializeRegular(all);
       return splitToMessages(channel, messages.array(), serialized);
     });
+  },
+  getallsum: function(guild) {
+    const channel = guild.channels.find(ch => ch.name === leaderboardName);
+    return channel.fetchPinnedMessages().then(messages => {
+      const all = tableview.parse(contentFromMessages(messages.array()), []);
+
+      let sum = 0;
+      // decrement spend user, increment everyone else on the leaderboard
+      all.forEach(member => {
+        sum += member.value;
+      });
+      return sum;
+    });
   }
 };

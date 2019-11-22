@@ -119,7 +119,7 @@ function serialize(all) {
         alignment: 'right'
       },
       3: {
-        width: NUM_RAIDS_ATTENDANCE - 1,
+        width: NUM_RAIDS_ATTENDANCE,
         alignment: 'right'
       },
     }
