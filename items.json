@@ -1721,7 +1721,7 @@
       "name": "Lifegiving Gem",
       "wowheadID": "19341",
       "slot": "trinket",
-      "cost": 200,
+      "cost": 300,
       "tags": [],
       "source": "blackwing lair",
       "notes": ""
@@ -1827,7 +1827,7 @@
       "name": "Mind Quickening Gem",
       "wowheadID": "19339",
       "slot": "trinket",
-      "cost": 300,
+      "cost": 200,
       "tags": [],
       "source": "blackwing lair",
       "notes": ""
@@ -1950,7 +1950,7 @@
       "name": "Robes of Transcendence",
       "wowheadID": "16923",
       "slot": "chest",
-      "cost": 400,
+      "cost": 375,
       "tags": [
         "t2"
       ],
@@ -2177,7 +2177,7 @@
       "name": "Netherwind Gloves",
       "wowheadID": "16913",
       "slot": "hands",
-      "cost": 250,
+      "cost": 225,
       "tags": [
         "t2"
       ],
@@ -2188,7 +2188,7 @@
       "name": "Handguards of Transcendence",
       "wowheadID": "16920",
       "slot": "hands",
-      "cost": 250,
+      "cost": 225,
       "tags": [
         "t2"
       ],
@@ -2199,7 +2199,7 @@
       "name": "Nemesis Robes",
       "wowheadID": "16931",
       "slot": "chest",
-      "cost": 400,
+      "cost": 375,
       "tags": [
         "t2"
       ],
@@ -2239,7 +2239,7 @@
       "name": "Bloodfang Gloves",
       "wowheadID": "16907",
       "slot": "hands",
-      "cost": 250,
+      "cost": 225,
       "tags": [
         "t2"
       ],
@@ -2259,7 +2259,7 @@
       "name": "Belt of Transcendence",
       "wowheadID": "16925",
       "slot": "waist",
-      "cost": 200,
+      "cost": 180,
       "tags": [
         "t2"
       ],
@@ -2279,7 +2279,7 @@
       "name": "Judgement Breastplate",
       "wowheadID": "16958",
       "slot": "chest",
-      "cost": 400,
+      "cost": 375,
       "tags": [
         "t2"
       ],
@@ -2312,7 +2312,7 @@
       "name": "Nemesis Belt",
       "wowheadID": "16933",
       "slot": "waist",
-      "cost": 200,
+      "cost": 180,
       "tags": [
         "t2"
       ],
@@ -2334,7 +2334,7 @@
       "name": "Bloodfang Chestpiece",
       "wowheadID": "16905",
       "slot": "chest",
-      "cost": 400,
+      "cost": 375,
       "tags": [
         "t2"
       ],
@@ -2345,7 +2345,7 @@
       "name": "Netherwind Robes",
       "wowheadID": "16916",
       "slot": "chest",
-      "cost": 400,
+      "cost": 375,
       "tags": [
         "t2"
       ],
@@ -2365,7 +2365,7 @@
       "name": "Stormrage Chestguard",
       "wowheadID": "16897",
       "slot": "chest",
-      "cost": 400,
+      "cost": 375,
       "tags": [
         "t2"
       ],
@@ -2376,7 +2376,7 @@
       "name": "Stormrage Belt",
       "wowheadID": "16903",
       "slot": "waist",
-      "cost": 200,
+      "cost": 180,
       "tags": [
         "t2"
       ],
@@ -2387,7 +2387,7 @@
       "name": "Bloodfang Belt",
       "wowheadID": "16910",
       "slot": "waist",
-      "cost": 200,
+      "cost": 180,
       "tags": [
         "t2"
       ],
@@ -2447,7 +2447,7 @@
       "name": "Bindings of Transcendence",
       "wowheadID": "16926",
       "slot": "wrist",
-      "cost": 200,
+      "cost": 180,
       "tags": [
         "t2"
       ],
@@ -2458,7 +2458,7 @@
       "name": "Breastplate of Wrath",
       "wowheadID": "16966",
       "slot": "chest",
-      "cost": 400,
+      "cost": 375,
       "tags": [
         "t2"
       ],
@@ -2469,7 +2469,7 @@
       "name": "Dragonstalker's Breastplate",
       "wowheadID": "16942",
       "slot": "chest",
-      "cost": 400,
+      "cost": 375,
       "tags": [
         "t2"
       ],
@@ -2480,7 +2480,7 @@
       "name": "Nemesis Boots",
       "wowheadID": "16927",
       "slot": "feet",
-      "cost": 250,
+      "cost": 225,
       "tags": [
         "t2"
       ],
@@ -2500,7 +2500,7 @@
       "name": "Bracelets of Wrath",
       "wowheadID": "16959",
       "slot": "wrist",
-      "cost": 200,
+      "cost": 180,
       "tags": [
         "t2"
       ],
@@ -2511,7 +2511,7 @@
       "name": "Bloodfang Boots",
       "wowheadID": "16906",
       "slot": "feet",
-      "cost": 250,
+      "cost": 225,
       "tags": [
         "t2"
       ],
@@ -2531,7 +2531,7 @@
       "name": "Nemesis Bracers",
       "wowheadID": "16934",
       "slot": "wrist",
-      "cost": 200,
+      "cost": 180,
       "tags": [
         "t2"
       ],
@@ -2542,7 +2542,7 @@
       "name": "Belt of Ten Storms",
       "wowheadID": "16944",
       "slot": "waist",
-      "cost": 200,
+      "cost": 180,
       "tags": [
         "t2"
       ],
@@ -2573,7 +2573,7 @@
       "name": "Bloodfang Bracers",
       "wowheadID": "16911",
       "slot": "wrist",
-      "cost": 200,
+      "cost": 180,
       "tags": [
         "t2"
       ],
@@ -2595,7 +2595,7 @@
       "name": "Gauntlets of Ten Storms",
       "wowheadID": "16948",
       "slot": "hands",
-      "cost": 250,
+      "cost": 225,
       "tags": [
         "t2"
       ],
@@ -2617,7 +2617,7 @@
       "name": "Nemesis Gloves",
       "wowheadID": "16928",
       "slot": "hands",
-      "cost": 250,
+      "cost": 225,
       "tags": [
         "t2"
       ],
@@ -2648,7 +2648,7 @@
       "name": "Breastplate of Ten Storms",
       "wowheadID": "16950",
       "slot": "chest",
-      "cost": 400,
+      "cost": 375,
       "tags": [
         "t2"
       ],
@@ -2659,7 +2659,7 @@
       "name": "Gauntlets of Wrath",
       "wowheadID": "16964",
       "slot": "hands",
-      "cost": 250,
+      "cost": 225,
       "tags": [
         "t2"
       ],
@@ -2670,7 +2670,7 @@
       "name": "Judgement Belt",
       "wowheadID": "16952",
       "slot": "waist",
-      "cost": 200,
+      "cost": 180,
       "tags": [
         "t2"
       ],
@@ -2708,7 +2708,7 @@
       "name": "Stormrage Boots",
       "wowheadID": "16898",
       "slot": "feet",
-      "cost": 250,
+      "cost": 225,
       "tags": [
         "t2"
       ],
@@ -2719,7 +2719,7 @@
       "name": "Judgement Gauntlets",
       "wowheadID": "16956",
       "slot": "hands",
-      "cost": 250,
+      "cost": 225,
       "tags": [
         "t2"
       ],
@@ -2730,7 +2730,7 @@
       "name": "Netherwind Bindings",
       "wowheadID": "16918",
       "slot": "wrist",
-      "cost": 200,
+      "cost": 180,
       "tags": [
         "t2"
       ],
@@ -2741,7 +2741,7 @@
       "name": "Bracers of Ten Storms",
       "wowheadID": "16943",
       "slot": "wrist",
-      "cost": 200,
+      "cost": 180,
       "tags": [
         "t2"
       ],
@@ -2752,7 +2752,7 @@
       "name": "Judgement Bindings",
       "wowheadID": "16951",
       "slot": "wrist",
-      "cost": 200,
+      "cost": 180,
       "tags": [
         "t2"
       ],
@@ -2772,7 +2772,7 @@
       "name": "Stormrage Bracers",
       "wowheadID": "16904",
       "slot": "wrist",
-      "cost": 200,
+      "cost": 180,
       "tags": [
         "t2"
       ],
@@ -2783,7 +2783,7 @@
       "name": "Netherwind Belt",
       "wowheadID": "16818",
       "slot": "waist",
-      "cost": 200,
+      "cost": 180,
       "tags": [
         "t2"
       ],
@@ -2794,7 +2794,7 @@
       "name": "Stormrage Handguards",
       "wowheadID": "16899",
       "slot": "hands",
-      "cost": 250,
+      "cost": 225,
       "tags": [
         "t2"
       ],
@@ -2805,7 +2805,7 @@
       "name": "Netherwind Boots",
       "wowheadID": "16912",
       "slot": "feet",
-      "cost": 250,
+      "cost": 225,
       "tags": [
         "t2"
       ],
@@ -2816,7 +2816,7 @@
       "name": "Sabatons of Wrath",
       "wowheadID": "16965",
       "slot": "feet",
-      "cost": 250,
+      "cost": 225,
       "tags": [
         "t2"
       ],
@@ -2827,7 +2827,7 @@
       "name": "Dragonstalker's Belt",
       "wowheadID": "16936",
       "slot": "waist",
-      "cost": 200,
+      "cost": 180,
       "tags": [
         "t2"
       ],
@@ -2838,7 +2838,7 @@
       "name": "Dragonstalker's Gauntlets",
       "wowheadID": "16940",
       "slot": "hands",
-      "cost": 250,
+      "cost": 225,
       "tags": [
         "t2"
       ],
@@ -2849,7 +2849,7 @@
       "name": "Boots of Transcendence",
       "wowheadID": "16919",
       "slot": "feet",
-      "cost": 250,
+      "cost": 225,
       "tags": [
         "t2"
       ],
@@ -2880,7 +2880,7 @@
       "name": "Waistband of Wrath",
       "wowheadID": "16960",
       "slot": "waist",
-      "cost": 200,
+      "cost": 180,
       "tags": [
         "t2"
       ],
@@ -2900,7 +2900,7 @@
       "name": "Greaves of Ten Storms",
       "wowheadID": "16949",
       "slot": "feet",
-      "cost": 250,
+      "cost": 225,
       "tags": [
         "t2"
       ],
@@ -2929,7 +2929,7 @@
       "name": "Dragonstalker's Bracers",
       "wowheadID": "16935",
       "slot": "wrist",
-      "cost": 200,
+      "cost": 180,
       "tags": [
         "t2"
       ],
@@ -2940,7 +2940,7 @@
       "name": "Judgement Sabatons",
       "wowheadID": "16957",
       "slot": "feet",
-      "cost": 250,
+      "cost": 225,
       "tags": [
         "t2"
       ],
@@ -2960,7 +2960,7 @@
       "name": "Dragonstalker's Greaves",
       "wowheadID": "16941",
       "slot": "feet",
-      "cost": 250,
+      "cost": 225,
       "tags": [
         "t2"
       ],
@@ -2993,7 +2993,7 @@
       "name": "Scrolls of Blinding Light",
       "wowheadID": "19343",
       "slot": "trinket",
-      "cost": 300,
+      "cost": 100,
       "tags": [],
       "source": "blackwing lair",
       "notes": ""

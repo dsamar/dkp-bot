@@ -1,7 +1,9 @@
 const Discord = require("discord.js");
 const { reactionTagName, leaderboardName } = require("../config.json");
-const tableview = require("./tableview.js");
+const messagedb = require("./messagedb.js");
+const attendance = require("./attendance.js");
 
+const DATABASE_INTERFACE = messagedb;
 const MESSAGE_LIMIT = 1500;
 
 // This controls how much of a weight the attendance plays in dkp awarded.
@@ -51,15 +53,7 @@ function splitToMessages(channel, messages, serialized) {
   return Promise.all(promiseList);
 }
 
-function getAttPercent(member) {
-  let attendancePercentage =
-    (member.attendance.filter(c => c).length / member.attendance.length) *
-    100.0;
-  if (isNaN(attendancePercentage)) {
-    attendancePercentage = 0;
-  }
-  return attendancePercentage;
-}
+
 
 module.exports = {
   setup: function(guild) {
@@ -70,18 +64,11 @@ module.exports = {
     });
   },
   all: function(guild) {
-    // Returns a promise with the dkpUser object.
-    const channel = guild.channels.find(ch => ch.name === leaderboardName);
-    return channel.fetchPinnedMessages().then(messages => {
-      return tableview.parse(contentFromMessages(messages.array()), []);
-    });
+    return DATABASE_INTERFACE.getAll(guild, []);
   },
   query: function(guild, user) {
     // Returns a promise with the dkpUser object.
-    const channel = guild.channels.find(ch => ch.name === leaderboardName);
-    return channel.fetchPinnedMessages().then(messages => {
-      const all = tableview.parse(contentFromMessages(messages.array()), []);
-
+    return DATABASE_INTERFACE.getAll(guild, []).then(all => {
       return all.find(el => {
         return el.username === user;
       });
@@ -102,13 +89,7 @@ module.exports = {
       throw new Error(
         "unable to spend dkp, value to spend is not a number: " + value
       );
-    const channel = guild.channels.find(ch => ch.name === leaderboardName);
-    return channel.fetchPinnedMessages().then(messages => {
-      const all = tableview.parse(
-        contentFromMessages(messages.array()),
-        roster
-      );
-
+    return DATABASE_INTERFACE.getAll(guild, roster).then(all => {
       // calculate member attendanceModifier
       let attendanceTotal = 0.0;
       all.forEach(member => {
@@ -116,13 +97,13 @@ module.exports = {
         if (!roster.includes(member.username)) {
           return;
         }
-        attendanceTotal += getAttPercent(member);
+        attendanceTotal += attendance.getAttPercent(member);
       });
 
       // decrement spend user, increment roster, IMPORTANT: spend user gets rewarded too.
       let runningTotal = 0;
       all.forEach(member => {
-        const attendancePercentage = getAttPercent(member);
+        const attendancePercentage = attendance.getAttPercent(member);
         const attendanceModifier = attendancePercentage / attendanceTotal;
         const baseShare = 1 / roster.length;
         const gainValue =
@@ -145,23 +126,14 @@ module.exports = {
           member.attendance = [false];
         }
       });
-
-      const serialized = tableview.serializeRegular(all);
-      return splitToMessages(channel, messages.array(), serialized);
+      
+      return DATABASE_INTERFACE.writeAll(guild, all);
     });
   },
   adjust: function(guild, username, value) {
     if (isNaN(value))
       throw new Error("unable to adjust dkp, value is not a number: " + value);
-    const channel = guild.channels.find(ch => ch.name === leaderboardName);
-    return channel.fetchPinnedMessages().then(messages => {
-      const all = tableview.parse(contentFromMessages(messages.array()), []);
-      if (all.length === 1 || all.length === 0) {
-        throw new Error(
-          "unable to adjust DKP, leaderboard needs to be set up and have at least 2 members present"
-        );
-      }
-
+    return DATABASE_INTERFACE.getAll(guild, []).then(all => {
       if (!all.find(el => el.username === username)) {
         throw new Error("user not found: " + username);
       }
@@ -175,16 +147,13 @@ module.exports = {
         }
       });
 
-      const serialized = tableview.serializeRegular(all);
-      return splitToMessages(channel, messages.array(), serialized);
+      return DATABASE_INTERFACE.writeAll(guild, all);
     });
   },
   trade: function(guild, source, destination, value) {
     if (isNaN(value))
       throw new Error("unable to adjust dkp, value is not a number: " + value);
-    const channel = guild.channels.find(ch => ch.name === leaderboardName);
-    return channel.fetchPinnedMessages().then(messages => {
-      const all = tableview.parse(contentFromMessages(messages.array()), []);
+    return DATABASE_INTERFACE.getAll(guild, []).then(all => {
       if (all.length === 1 || all.length === 0) {
         throw new Error(
           "unable to trade DKP, leaderboard needs to be set up and have at least 2 members present"
@@ -202,31 +171,21 @@ module.exports = {
       source_user.value -= value;
       dest_user.value += value;
 
-      const serialized = tableview.serializeRegular(all);
-      return splitToMessages(channel, messages.array(), serialized);
+      return DATABASE_INTERFACE.writeAll(guild, all);
     });
   },
   addRoster: function(guild, roster) {
-    const channel = guild.channels.find(ch => ch.name === leaderboardName);
-    return channel.fetchPinnedMessages().then(messages => {
-      const all = tableview.parse(
-        contentFromMessages(messages.array()),
-        roster
-      );
+    return DATABASE_INTERFACE.getAll(guild, roster).then(all => {
       all.forEach(dkpUser => {
         if (dkpUser.attendance.length === 0) {
           dkpUser.attendance = [false];
         }
       });
-      const serialized = tableview.serializeRegular(all);
-      return splitToMessages(channel, messages.array(), serialized);
+      return DATABASE_INTERFACE.writeAll(guild, all);
     });
   },
   dkpRemove: function(guild, username) {
-    const channel = guild.channels.find(ch => ch.name === leaderboardName);
-    return channel.fetchPinnedMessages().then(messages => {
-      let all = tableview.parse(contentFromMessages(messages.array()), []);
-
+    return DATABASE_INTERFACE.getAll(guild, []).then(all => {
       const removalUser = all.find(dkpUser => dkpUser.username === username);
       if (!removalUser) {
         throw new Error("user " + username + " not found");
@@ -237,39 +196,25 @@ module.exports = {
         removalUser.value;
 
       all = all.filter(dkpUser => dkpUser.username !== username);
-      const serialized = tableview.serializeRegular(all);
-      return splitToMessages(channel, messages.array(), serialized);
+      return DATABASE_INTERFACE.writeAll(guild, all);
     });
   },
   incrementAttendance: function(guild, roster) {
-    const channel = guild.channels.find(ch => ch.name === leaderboardName);
-    return channel.fetchPinnedMessages().then(messages => {
-      const all = tableview.parse(
-        contentFromMessages(messages.array()),
-        roster
-      );
-
+    return DATABASE_INTERFACE.getAll(guild, roster).then(all => {
       // Apply valueFn
       all.forEach(member => {
         if (roster.includes(member.username)) {
-          tableview.addAttendance(member);
+          attendance.addAttendance(member);
         } else {
-          tableview.markMissedAttendance(member);
+          attendance.markMissedAttendance(member);
         }
       });
 
-      const serialized = tableview.serializeRegular(all);
-      return splitToMessages(channel, messages.array(), serialized);
+      return DATABASE_INTERFACE.writeAll(guild, all);
     });
   },
   updateDkp: function(guild, roster, valueFn) {
-    const channel = guild.channels.find(ch => ch.name === leaderboardName);
-    return channel.fetchPinnedMessages().then(messages => {
-      const all = tableview.parse(
-        contentFromMessages(messages.array()),
-        roster
-      );
-
+    return DATABASE_INTERFACE.getAll(guild, roster).then(all => {
       // Apply valueFn
       all.forEach(member => {
         if (roster.includes(member.username)) {
@@ -277,44 +222,26 @@ module.exports = {
         }
       });
 
-      const serialized = tableview.serializeRegular(all);
-      return splitToMessages(channel, messages.array(), serialized);
+      return DATABASE_INTERFACE.writeAll(guild, all);
     });
   },
   importDkp: function(guild, importMessages) {
-    const channel = guild.channels.find(ch => ch.name === leaderboardName);
-    const content = contentFromMessages(importMessages);
-    const all = tableview.parse(content, []);
-    const serialized = tableview.serializeRegular(all);
-    return channel.fetchPinnedMessages().then(messages => {
-      return splitToMessages(channel, messages.array(), serialized);
-    });
+    return DATABASE_INTERFACE.importDkp(guild, importMessages);
   },
   setAttendance: function(guild, username, history) {
-    const channel = guild.channels.find(ch => ch.name === leaderboardName);
-    return channel.fetchPinnedMessages().then(messages => {
-      const all = tableview.parse(contentFromMessages(messages.array()), [
-        username
-      ]);
-
+    return DATABASE_INTERFACE.getAll(guild, [username]).then(all => {
       // Set the history.
       all.forEach(member => {
         if (username === member.username) {
-          tableview.setAttendance(member, history);
+          attendance.setAttendance(member, history);
         }
       });
 
-      const serialized = tableview.serializeRegular(all);
-      return splitToMessages(channel, messages.array(), serialized);
+      return DATABASE_INTERFACE.writeAll(guild, all);
     });
   },
   setClass: function(guild, username, className) {
-    const channel = guild.channels.find(ch => ch.name === leaderboardName);
-    return channel.fetchPinnedMessages().then(messages => {
-      const all = tableview.parse(contentFromMessages(messages.array()), [
-        username
-      ]);
-
+    return DATABASE_INTERFACE.getAll(guild, [username]).then(all => {
       // Set the className.
       all.forEach(member => {
         if (username === member.username) {
@@ -322,15 +249,11 @@ module.exports = {
         }
       });
 
-      const serialized = tableview.serializeRegular(all);
-      return splitToMessages(channel, messages.array(), serialized);
+      return DATABASE_INTERFACE.writeAll(guild, all);
     });
   },
   getallsum: function(guild) {
-    const channel = guild.channels.find(ch => ch.name === leaderboardName);
-    return channel.fetchPinnedMessages().then(messages => {
-      const all = tableview.parse(contentFromMessages(messages.array()), []);
-
+    return DATABASE_INTERFACE.getAll(guild, []).then(all => {
       let sum = 0;
       // decrement spend user, increment everyone else on the leaderboard
       all.forEach(member => {
