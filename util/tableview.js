@@ -1,39 +1,13 @@
 const Discord = require('discord.js')
 const {table} = require('table')
-
-const NUM_RAIDS_ATTENDANCE = 14;
-
-function attendanceStringToList(str) {
-  let attendance = [];
-  if (str)
-  [...str].forEach(c => {
-    if (c == 'A') {
-      attendance.push(true);
-    } else {
-      attendance.push(false);
-    }
-  });
-  return attendance;
-}
-
-function attendanceListToString(list) {
-  let str = [];
-  list.forEach(c => {
-    if (c) {
-      str.push('A');
-    } else {
-      str.push('.');
-    }
-  });
-  return str.join("");
-}
+const attendance = require("./attendance.js");
 
 function userToString(dkpUser) {
   const attendancePercentage = dkpUser.attendance.filter(c => c).length / (dkpUser.attendance.length) * 100;
   return [dkpUser.username, 
           parseFloat(dkpUser.value).toFixed(2), 
           attendancePercentage.toFixed(0) + "%",
-          attendanceListToString(dkpUser.attendance),
+          attendance.attendanceListToString(dkpUser.attendance),
           dkpUser.class];
 }
 
@@ -45,7 +19,7 @@ function stringToUser(string) {
   });
   dkpUser.username = list[0];
   dkpUser.value = parseFloat(list[1]);
-  dkpUser.attendance = attendanceStringToList(list[3]);
+  dkpUser.attendance = attendance.attendanceStringToList(list[3]);
   dkpUser.class = list[4] || '?';
   return dkpUser;
 }
@@ -119,7 +93,7 @@ function serialize(all) {
         alignment: 'right'
       },
       3: {
-        width: NUM_RAIDS_ATTENDANCE,
+        width: attendance.NUM_RAIDS_ATTENDANCE,
         alignment: 'right'
       },
     }
@@ -140,27 +114,9 @@ function removeDupes(dkpUserList) {
     });
 }
 
-function addAttendance(member) {
-  member.attendance = member.attendance.slice(-(NUM_RAIDS_ATTENDANCE-1));
-  member.attendance.push(true);
-}
-
-function markMissedAttendance(member) {
-  member.attendance = member.attendance.slice(-(NUM_RAIDS_ATTENDANCE-1));
-  member.attendance.push(false);
-}
-
-function setAttendance(member, history) {
-  member.attendance = attendanceStringToList(history);
-  member.attendance = member.attendance.slice(-(NUM_RAIDS_ATTENDANCE-1));
-}
-
 module.exports = {
   parse: parseLeaderBoard,
   serializeEmbedded: serializeEmbedded,
   serializeRegular: serialize,
   removeDupes: removeDupes,
-  addAttendance: addAttendance,
-  markMissedAttendance: markMissedAttendance,
-  setAttendance: setAttendance,
 }
