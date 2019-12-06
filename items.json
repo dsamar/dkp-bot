@@ -474,7 +474,7 @@
         "bis"
       ],
       "source": "molten core",
-      "notes": ""
+      "notes": "Hunter Prio"
     },
     {
       "name": "Blastershot Launcher",
@@ -584,7 +584,7 @@
       "name": "Manastorm Leggings",
       "wowheadID": "18872",
       "slot": "legs",
-      "cost": 200,
+      "cost": 50,
       "tags": [],
       "source": "molten core",
       "notes": ""
@@ -1690,10 +1690,8 @@
       "name": "Essence Gatherer",
       "wowheadID": "19435",
       "slot": "ranged",
-      "cost": 300,
-      "tags": [
-        "bis"
-      ],
+      "cost": 225,
+      "tags": [],
       "source": "blackwing lair",
       "notes": ""
     },
@@ -1730,7 +1728,7 @@
       "name": "Ashjre'thul, Crossbow of Smiting",
       "wowheadID": "19361",
       "slot": "ranged",
-      "cost": 300,
+      "cost": 750,
       "tags": [
         "bis"
       ],
@@ -2126,8 +2124,10 @@
       "name": "Empowered Leggings",
       "wowheadID": "19385",
       "slot": "legs",
-      "cost": 300,
-      "tags": [],
+      "cost": 450,
+      "tags": [
+        "bis"
+      ],
       "source": "blackwing lair",
       "notes": ""
     },
@@ -2491,7 +2491,7 @@
       "name": "Angelista's Grasp",
       "wowheadID": "19388",
       "slot": "waist",
-      "cost": 120,
+      "cost": 100,
       "tags": [],
       "source": "blackwing lair",
       "notes": ""
@@ -2562,12 +2562,10 @@
       "name": "Pendant of the Fallen Dragon",
       "wowheadID": "19371",
       "slot": "neck",
-      "cost": 450,
-      "tags": [
-        "bis"
-      ],
+      "cost": 200,
+      "tags": [],
       "source": "blackwing lair",
-      "notes": ""
+      "notes": "Healer Prio"
     },
     {
       "name": "Bloodfang Bracers",
@@ -2860,7 +2858,7 @@
       "name": "Gloves of Rapid Evolution",
       "wowheadID": "19369",
       "slot": "hands",
-      "cost": 170,
+      "cost": 100,
       "tags": [],
       "source": "blackwing lair",
       "notes": ""
@@ -2869,10 +2867,8 @@
       "name": "Shimmering Geta",
       "wowheadID": "19391",
       "slot": "feet",
-      "cost": 375,
-      "tags": [
-        "bis"
-      ],
+      "cost": 100,
+      "tags": [],
       "source": "blackwing lair",
       "notes": ""
     },
