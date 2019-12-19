@@ -119,7 +119,6 @@ module.exports = {
           runningTotal += gainValue;
         }
       });
-      console.log(runningTotal);
 
       // set attendance if this is a brand new member
       all.forEach(member => {
