@@ -1,9 +1,10 @@
 const Discord = require("discord.js");
 const { reactionTagName, leaderboardName } = require("../config.json");
 const messagedb = require("./messagedb.js");
+const leveldb = require("./leveldb.js");
 const attendance = require("./attendance.js");
 
-const DATABASE_INTERFACE = messagedb;
+const DATABASE_INTERFACE = leveldb;
 const MESSAGE_LIMIT = 1500;
 
 // This controls how much of a weight the attendance plays in dkp awarded.
