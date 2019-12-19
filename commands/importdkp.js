@@ -3,12 +3,12 @@ const dkp = require('../util/dkp.js');
 
 module.exports = {
 	name: 'import',
-	description: 'NOT QUITE WORKING: imports a dkp list from the message id, sets it as the current leaderboard',
+	description: 'imports a dkp list from the message id, sets it as the current leaderboard',
   usage: '<num_messages> [message_id_1-N...]',
   args: true,
   aliases: ['importdkp'],
   officer: true,
-  locks: [],
+  locks: ['dkp'],
 	execute(message, args) {
     const numMessages = parseInt(args[0]);
     if (args.length !== numMessages + 1) {
@@ -19,7 +19,11 @@ module.exports = {
       messagePromises.push(message.channel.fetchMessage(args[i+1]))
     }
     return Promise.all(messagePromises).then(values => {
-      return dkp.importDkp(message.guild, values);
+      return dkp.importDkp(message.guild, values).then(() => {
+        message.channel.send(
+          "imported dkp values!"
+        );
+      });
     });
   }
 };

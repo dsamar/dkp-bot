@@ -5,6 +5,7 @@ dependencies:
   express: 4.16.4
   google-spreadsheet: 2.0.7
   googleapis: 42.0.0
+  level: 6.0.0
   readline: 1.3.0
   table: 5.4.6
   winston: 3.2.1
@@ -17,6 +18,16 @@ packages:
       node: '>=6.5'
     resolution:
       integrity: sha512-h8lQ8tacZYnR3vNQTgibj+tODHI5/+l06Au2Pcriv/Gmet0eaj4TwWH41sO9wnHDiQsEj19q0drzdWdeAHtweg==
+  /abstract-leveldown/6.2.2:
+    dependencies:
+      level-concat-iterator: 2.0.1
+      level-supports: 1.0.1
+      xtend: 4.0.2
+    dev: false
+    engines:
+      node: '>=6'
+    resolution:
+      integrity: sha512-/a+Iwj0rn//CX0EJOasNyZJd2o8xur8Ce9C57Sznti/Ilt/cb6Qd8/k98A4ZOklXgTG+iAYYUs1OTG0s1eH+zQ==
   /accepts/1.3.5:
     dependencies:
       mime-types: 2.1.21
@@ -259,6 +270,15 @@ packages:
     dev: false
     resolution:
       integrity: sha512-mel+jf7nrtEl5Pn1Qx46zARXKDpBbvzezse7p7LqINmdoIk8PYP5SySaxEmYv6TZ0JyEKA1hsCId6DIhgITtWQ==
+  /deferred-leveldown/5.3.0:
+    dependencies:
+      abstract-leveldown: 6.2.2
+      inherits: 2.0.4
+    dev: false
+    engines:
+      node: '>=6'
+    resolution:
+      integrity: sha512-a59VOT+oDy7vtAbLRCZwWgxu2BaCfd5Hk7wxJd48ei7I+nsg8Orlb9CLG0PMZienk9BSUKgeAqkO2+Lw+1+Ukw==
   /delayed-stream/1.0.0:
     dev: false
     engines:
@@ -342,10 +362,28 @@ packages:
       node: '>= 0.8'
     resolution:
       integrity: sha1-rT/0yG7C0CkyL1oCw6mmBslbP1k=
+  /encoding-down/6.3.0:
+    dependencies:
+      abstract-leveldown: 6.2.2
+      inherits: 2.0.4
+      level-codec: 9.0.1
+      level-errors: 2.0.1
+    dev: false
+    engines:
+      node: '>=6'
+    resolution:
+      integrity: sha512-QKrV0iKR6MZVJV08QY0wp1e7vF6QbhnbQhb07bwpEyuz4uZiZgPlEGdkCROuFkUwdxlFaiPIhjyarH1ee/3vhw==
   /env-variable/0.0.5:
     dev: false
     resolution:
       integrity: sha512-zoB603vQReOFvTg5xMl9I1P2PnHsHQQKTEowsKKD7nseUfJq6UWzK+4YtlWUO1nhiQUxe6XMkk+JleSZD1NZFA==
+  /errno/0.1.7:
+    dependencies:
+      prr: 1.0.1
+    dev: false
+    hasBin: true
+    resolution:
+      integrity: sha512-MfrRBDWzIWifgq6tJj60gkAwtLNb6sQPlcFrSOflcP1aFmmruKQ2wRnze/8V6kgyz7H3FF8Npzv78mZ7XLLflg==
   /es6-promise/4.2.8:
     dev: false
     resolution:
@@ -661,6 +699,10 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha512-neyTUVFtahjf0mB3dZT77u+8O0QB89jFdnBkd5P1JgYPbPaia3gXXOVL2fq8VyU2gMMD7SaN7QukTB/pmXYvDA==
+  /immediate/3.2.3:
+    dev: false
+    resolution:
+      integrity: sha1-0UD6j2FGWb1lQSMwl92qwlzdmRw=
   /inherits/2.0.3:
     dev: false
     resolution:
@@ -757,6 +799,97 @@ packages:
     dev: false
     resolution:
       integrity: sha512-J9nVUucG1p/skKul6DU3PUZrhs0LPulNaeUOox0IyXDi8S4CztTHs1gQphhuZmzXG7VOQSf6NJfKuzteQLv9gQ==
+  /level-codec/9.0.1:
+    dev: false
+    engines:
+      node: '>=6'
+    resolution:
+      integrity: sha512-ajFP0kJ+nyq4i6kptSM+mAvJKLOg1X5FiFPtLG9M5gCEZyBmgDi3FkDrvlMkEzrUn1cWxtvVmrvoS4ASyO/q+Q==
+  /level-concat-iterator/2.0.1:
+    dev: false
+    engines:
+      node: '>=6'
+    resolution:
+      integrity: sha512-OTKKOqeav2QWcERMJR7IS9CUo1sHnke2C0gkSmcR7QuEtFNLLzHQAvnMw8ykvEcv0Qtkg0p7FOwP1v9e5Smdcw==
+  /level-errors/2.0.1:
+    dependencies:
+      errno: 0.1.7
+    dev: false
+    engines:
+      node: '>=6'
+    resolution:
+      integrity: sha512-UVprBJXite4gPS+3VznfgDSU8PTRuVX0NXwoWW50KLxd2yw4Y1t2JUR5In1itQnudZqRMT9DlAM3Q//9NCjCFw==
+  /level-iterator-stream/4.0.2:
+    dependencies:
+      inherits: 2.0.4
+      readable-stream: 3.4.0
+      xtend: 4.0.2
+    dev: false
+    engines:
+      node: '>=6'
+    resolution:
+      integrity: sha512-ZSthfEqzGSOMWoUGhTXdX9jv26d32XJuHz/5YnuHZzH6wldfWMOVwI9TBtKcya4BKTyTt3XVA0A3cF3q5CY30Q==
+  /level-js/5.0.1:
+    dependencies:
+      abstract-leveldown: 6.2.2
+      immediate: 3.2.3
+      inherits: 2.0.4
+      ltgt: 2.2.1
+    dev: false
+    resolution:
+      integrity: sha512-Jse0/UP2qFl2YN8HISnxwQIRHNM3vJLafkTKjw4tZs9Vi8VGUFVmGvg/WMn5To/6KHyYJTXZvUzuouoaZuPGXA==
+  /level-packager/5.1.1:
+    dependencies:
+      encoding-down: 6.3.0
+      levelup: 4.3.2
+    dev: false
+    engines:
+      node: '>=6'
+    resolution:
+      integrity: sha512-HMwMaQPlTC1IlcwT3+swhqf/NUO+ZhXVz6TY1zZIIZlIR0YSn8GtAAWmIvKjNY16ZkEg/JcpAuQskxsXqC0yOQ==
+  /level-supports/1.0.1:
+    dependencies:
+      xtend: 4.0.2
+    dev: false
+    engines:
+      node: '>=6'
+    resolution:
+      integrity: sha512-rXM7GYnW8gsl1vedTJIbzOrRv85c/2uCMpiiCzO2fndd06U/kUXEEU9evYn4zFggBOg36IsBW8LzqIpETwwQzg==
+  /level/6.0.0:
+    dependencies:
+      level-js: 5.0.1
+      level-packager: 5.1.1
+      leveldown: 5.4.1
+      opencollective-postinstall: 2.0.2
+    dev: false
+    engines:
+      node: '>=8.6.0'
+    requiresBuild: true
+    resolution:
+      integrity: sha512-3oAi7gXLLNr7pHj8c4vbI6lHkXf35m8qb7zWMrNTrOax6CXBVggQAwL1xnC/1CszyYrW3BsLXsY5TMgTxtKfFA==
+  /leveldown/5.4.1:
+    dependencies:
+      abstract-leveldown: 6.2.2
+      napi-macros: 2.0.0
+      node-gyp-build: 4.1.1
+    dev: false
+    engines:
+      node: '>=8.6.0'
+    requiresBuild: true
+    resolution:
+      integrity: sha512-3lMPc7eU3yj5g+qF1qlALInzIYnkySIosR1AsUKFjL9D8fYbTLuENBAeDRZXIG4qeWOAyqRItOoLu2v2avWiMA==
+  /levelup/4.3.2:
+    dependencies:
+      deferred-leveldown: 5.3.0
+      level-errors: 2.0.1
+      level-iterator-stream: 4.0.2
+      level-supports: 1.0.1
+      xtend: 4.0.2
+    dev: false
+    engines:
+      node: '>=6'
+    resolution:
+      integrity: sha512-cRTjU4ktWo59wf13PHEiOayHC3n0dOh4i5+FHr4tv4MX9+l7mqETicNq3Aj07HKlLdk0z5muVoDL2RD+ovgiyA==
   /lodash.noop/3.0.1:
     dev: false
     resolution:
@@ -785,6 +918,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-KpNARQA3Iwv+jTA0utUVVbrh+Jlrr1Fv0e56GGzAFOXN7dk/FviaDW8LHmK52DlcH4WP2n6gI8vN1aesBFgo9w==
+  /ltgt/2.2.1:
+    dev: false
+    resolution:
+      integrity: sha1-81ypHEk/e3PaDgdJUwTxezH4fuU=
   /media-typer/0.3.0:
     dev: false
     engines:
@@ -856,6 +993,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==
+  /napi-macros/2.0.0:
+    dev: false
+    resolution:
+      integrity: sha512-A0xLykHtARfueITVDernsAWdtIMbOJgKgcluwENp3AlsKN/PloyO10HtmoqnFAQAcxPkgZN7wdfPfEd0zNGxbg==
   /negotiator/0.6.1:
     dev: false
     engines:
@@ -878,6 +1019,11 @@ packages:
       node: '>= 4.5.0'
     resolution:
       integrity: sha512-vFMQIWt+J/7FLNyKouZ9TazT74PRV3wgv9UT4cRjC8BffxFbKXkgIWR42URCPSnHm/QDz6BOlb2Q0U4+VQT67Q==
+  /node-gyp-build/4.1.1:
+    dev: false
+    hasBin: true
+    resolution:
+      integrity: sha512-dSq1xmcPDKPZ2EED2S6zw/b9NKsqzXRE6dVr8TVQnI3FJOTteUMuqF3Qqs6LZg+mLGYJWqQzMbIjMtJqTv87nQ==
   /oauth-sign/0.9.0:
     dev: false
     resolution:
@@ -894,6 +1040,11 @@ packages:
     dev: false
     resolution:
       integrity: sha1-+M33eISCb+Tf+T46nMN7HkSAdC4=
+  /opencollective-postinstall/2.0.2:
+    dev: false
+    hasBin: true
+    resolution:
+      integrity: sha512-pVOEP16TrAO2/fjej1IdOyupJY8KDUM1CvsaScRbw6oddvpQoOfGk4ywha0HKKVAD6RkW4x6Q+tNBwhf3Bgpuw==
   /parseurl/1.3.2:
     dev: false
     engines:
@@ -925,6 +1076,10 @@ packages:
       node: '>= 0.10'
     resolution:
       integrity: sha512-5erio2h9jp5CHGwcybmxmVqHmnCBZeewlfJ0pex+UW7Qny7OOZXTtH56TGNyBizkgiOwhJtMKrVzDTeKcySZwA==
+  /prr/1.0.1:
+    dev: false
+    resolution:
+      integrity: sha1-0/wRS6BplaRexok/SEzrHXj19HY=
   /psl/1.3.0:
     dev: false
     resolution:
@@ -1298,6 +1453,12 @@ packages:
       node: '>=4.0'
     resolution:
       integrity: sha1-Ey7mPS7FVlxVfiD0wi35rKaGsQ0=
+  /xtend/4.0.2:
+    dev: false
+    engines:
+      node: '>=0.4'
+    resolution:
+      integrity: sha512-LKYU1iAXJXUgAXn9URjiu+MWhyUXHsvfp7mcuYm9dSUKK0/CjtrUwFAxD82/mCWbtLsGjFIad0wIsod4zrTAEQ==
   /yallist/3.0.3:
     dev: false
     resolution:
@@ -1312,6 +1473,7 @@ specifiers:
   express: ^4.16.4
   google-spreadsheet: ^2.0.7
   googleapis: ^42.0.0
+  level: ^6.0.0
   readline: ^1.3.0
   table: ^5.4.6
   winston: ^3.2.1

@@ -11,6 +11,7 @@ const {
 } = require("./config.json");
 const AsyncLock = require("async-lock");
 const winston = require("winston");
+const leveldb = require('./util/leveldb.js');
 const lock = new AsyncLock();
 require("dotenv").config();
 
@@ -47,6 +48,9 @@ for (const file of reactionFiles) {
 
 client.on("ready", () => {
   logger.log("info", `Logged in as ${client.user.tag}!`);
+  client.guilds.array().forEach((guild) => {
+    leveldb.setup(guild);
+  });
 });
 
 function handleError(error, user, message) {
@@ -115,6 +119,10 @@ function handleMessage(message) {
     logger.log("info", "acquire: " + commandLocks);
     return lock.acquire(commandLocks, runCommand).then(() => {
       logger.log("info", "release: " + commandLocks);
+    }).then(() => {
+      if (command.locks.includes("dkp")) {
+        leveldb.refresh(message.guild);
+      }
     });
   } catch (error) {
     return handleError(error, message.author, message);
