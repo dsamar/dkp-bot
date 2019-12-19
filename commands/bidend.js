@@ -1,6 +1,7 @@
 const Discord = require('discord.js')
 const raid = require('../util/raid.js')
 const dkp = require('../util/dkp.js')
+const loot = require('../util/loot.js')
 const sanitize = require('../util/sanitize.js');
 
 function getField(message, fieldName) {
@@ -54,6 +55,8 @@ module.exports = {
         const promise2 = dkp.spendDkp(message.guild, roster, username, cost)
         const promise3 = fetched.clearReactions();
         return Promise.all([promise1, promise2, promise3]);
+      }).then(() => {
+        return loot.lootEntry(message.guild.id, fetched.embeds[0].title, cost, username);
       }).then(() => {
         return message.channel.send(username + 
                                     " was awarded winning bid on **" + 

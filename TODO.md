@@ -11,7 +11,6 @@
   - move leaderboard storage to enmap.
 - Allow guilds to set their own item prices
   - command for setting item price
-  - items need tags, so you can assign prices by tag, making setup easier (eg: 't1-gloves' 't2-pants')
 
 ## OPTIONAL
 
