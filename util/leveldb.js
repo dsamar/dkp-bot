@@ -36,7 +36,7 @@ function removeDupes(dkpUserList) {
 }
 
 module.exports = {
-  // This returns promise to a list of users.
+  // DKP FUNCTIONS
   getAll: function(guild, currentRoster) {
     // 3) Fetch by key
     return db.get(guild.id).then((value) => {      
@@ -70,5 +70,38 @@ module.exports = {
     return this.getAll(guild, []).then((all) => {
       return messagedb.writeAll(guild, all);
     });
+  },
+  // LOOT FUNCTIONS
+  lootAdd: function(guildID, raidID, lootEntry) {
+    const raidKey = guildID + "-" + raidID;
+    return db.get(raidKey + '-lootlog').then((lootList) => {
+      if (!lootList) {
+        lootList = [];
+      }
+      lootList.push(lootEntry);
+      return db.put(raidKey + '-lootlog', lootList);
+    }).catch((error) => {
+      // First item in the log.
+      return db.put(raidKey + '-lootlog', [lootEntry]);
+    });
+  },
+  lootList: function(guildID, raidID) {
+    const raidKey = guildID + "-" + raidID;
+    return db.get(raidKey + '-lootlog');
+  },
+  // ROSTER/RAID FUNCTIONS
+  setCurrentRaidID: function(guildID, raidID) {
+    return db.put(guildID + '-currentraid', raidID);
+  },
+  getCurrentRaidID: function(guildID) {
+    return db.get(guildID + '-currentraid');
+  },
+  setRoster: function(guildID, raidID, roster) {
+    const raidKey = guildID + "-" + raidID;
+    return db.put(raidKey + '-roster', roster);
+  },
+  getRoster: function(guildID, raidID) {
+    const raidKey = guildID + "-" + raidID;
+    return db.get(raidKey + '-roster');
   }
 }

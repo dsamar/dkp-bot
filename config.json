@@ -3,6 +3,7 @@
   "commandChannel": "dkp-commands",
   "raidAnnounceChannel": "dkp-raid-announce",
   "leaderboardName": "dkp-leaderboard",
+  "lootLogChannel": "dkp-loot-log",
   "officerRole": "officer",
   "reactionTagName": "internal-tag",
   "prefix": "!",

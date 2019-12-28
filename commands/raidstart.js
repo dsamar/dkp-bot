@@ -16,18 +16,18 @@ module.exports = {
     return raid.clearCurrentRaids(message.channel.guild).then(() => {
       const channel = message.guild.channels.find(ch => ch.name === raidAnnounceChannel);
       return channel.fetchMessage(args[0]).then(fetched => {
-        const roster = raid.getRoster(fetched);
-        // Set field on raid that shows this raid is was already started
-        // Don't allow starting a raid more than once
-        
-        const promise1 = fetched.pin();
-        const promise2 = dkp.incrementAttendance(message.guild, roster);
-        return Promise.all([promise1, promise2]).then(() => {
-           return message.channel
-             .send(sanitize.makeMessageLink(fetched) + 
-                   "\n```raid started, attendance marked for:\n" + 
-                   roster.join("\n") + "```");
-        });
+        return raid.getRoster(fetched).then((roster) => {
+          // Set field on raid that shows this raid is was already started
+          // Don't allow starting a raid more than once
+          const promise1 = raid.setCurrentRaid(fetched);
+          const promise2 = dkp.incrementAttendance(message.guild, roster);
+          return promise1.then(() => promise2).then(() => {
+             return message.channel
+               .send(sanitize.makeMessageLink(fetched) + 
+                     "\n```raid started, attendance marked for:\n" + 
+                     roster.join("\n") + "```");
+          });
+        });        
       });
     });
   }

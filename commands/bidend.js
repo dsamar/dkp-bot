@@ -1,6 +1,7 @@
 const Discord = require('discord.js')
 const raid = require('../util/raid.js')
 const dkp = require('../util/dkp.js')
+const loot = require('../util/loot.js')
 const sanitize = require('../util/sanitize.js');
 
 function getField(message, fieldName) {
@@ -25,7 +26,6 @@ module.exports = {
     // args[1] == username
     // args[2] == price_override
     
-    // todo: check if bid already ended
     return message.channel.fetchMessage(args[0]).then(fetched => {
       if (getField(new Discord.RichEmbed(fetched.embeds[0]), "locked").value === 'true') {
         throw new Error("the item was already awarded, start a new bid with !bidstart");
@@ -54,6 +54,8 @@ module.exports = {
         const promise2 = dkp.spendDkp(message.guild, roster, username, cost)
         const promise3 = fetched.clearReactions();
         return Promise.all([promise1, promise2, promise3]);
+      }).then(() => {
+        return loot.lootEntry(message.guild.id, fetched.embeds[0].title.replace(/\*/g, ''), cost, username);
       }).then(() => {
         return message.channel.send(username + 
                                     " was awarded winning bid on **" + 

@@ -1,6 +1,7 @@
 const Discord = require('discord.js')
 const {reactionTagName, raidAnnounceChannel} = require('../config.json');
 const sanitize = require('./sanitize.js');
+const leveldb = require('./leveldb.js');
 const CLASS_LIST = ["warrior", "mage", "hunter", "warlock", "rogue", "druid", "shaman", "paladin", "priest"];
 
 function getClassField(type, embed, guild) {
@@ -111,16 +112,19 @@ module.exports = {
       }
     });
     
-    // Sort by name.
+    // Sort by class.
     signups.sort((a,b) => {
       return a.type.localeCompare(b.type); 
     });
+    
+    // update the roster in the raid database.
+    const databaseUpdate = leveldb.setRoster(message.guild.id, message.id, signups.map((el) => el.user));
     
     serialize(signups, message.guild, newEmbed);
     
     const totalPlayers = getField(newEmbed, "total-players");
     totalPlayers.value = signups.length;
-    return message.edit("", newEmbed);
+    return Promise.all([message.edit("", newEmbed), databaseUpdate]);
   },
   clearCurrentRaids: function(guild) {
     // Returns a promise that finished when all messages are unpinned.
@@ -136,32 +140,25 @@ module.exports = {
       });
   },
   getRoster: function(message) {
-    // message should be a raidsignup message
-    // returns a list
-    // todo: deduplicate with function below.
-    const tag = message.embeds[0].fields.find(field => field.name === reactionTagName);
-    if (tag.value !== 'raidsignup') {
-      return [];
-    }
-    let signups = unserialize(message.embeds[0], message.guild);
-    return signups.map(el => el.user).map(sanitize.name);
+    return leveldb.getRoster(message.guild.id, message.id);
+  },
+  setCurrentRaid(message) {
+    const raidMessage = message.embeds[0];
+    const newEmbed = new Discord.RichEmbed(raidMessage);
+    let signups = unserialize(newEmbed, message.guild);
+    return leveldb.setRoster(message.guild.id, message.id, signups.map((el) => el.user)).then(() => {
+      const promise1 = message.pin();
+      const promise2 = leveldb.setCurrentRaidID(message.guild.id, message.id);
+      return Promise.all([promise1, promise2]);
+    });
   },
   getCurrentRaidRoster: function(guild) {
-    // returns a promise with a list of members in current raid
-    const channel = guild.channels.find(ch => ch.name === raidAnnounceChannel);
-    return channel.fetchPinnedMessages()
-      .then(messages => {
-        let roster = [];
-        // There should only be one pinned raid at a time.
-        messages.forEach((message) => {
-          const tag = message.embeds[0].fields.find(field => field.name === reactionTagName);
-          if (tag.value == 'raidsignup') {
-            let signups = unserialize(message.embeds[0], message.guild);
-            roster = signups.map(el => el.user).map(sanitize.name);
-          }
-        });
-        return roster;
-      });
+    return leveldb.getCurrentRaidID(guild.id).then((raidID) => {
+      return leveldb.getRoster(guild.id, raidID);
+    });
+  },
+  getCurrentRaidID: function(guild) {
+    return leveldb.getCurrentRaidID(guild.id);
   }
 }
 
