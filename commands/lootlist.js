@@ -5,7 +5,10 @@ const loot = require('../util/loot.js');
 const {table} = require('table')
 
 function serialize(lootEntryList) {
-  return "stuff"  
+  const data = lootEntryList.map((item) => {
+    return item.itemName + ', ' + item.cost + ', ' + item.user;
+  });
+  return '```' + data.join('\n') + '```';
 }
 
 module.exports = {
