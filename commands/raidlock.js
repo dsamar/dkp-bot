@@ -35,7 +35,7 @@ module.exports = {
           newEmbed.setColor("RED");
           return Promise.all([
             fetched.edit("", newEmbed),
-            message.channel.send("raid signups are now locked for " + sanitize.makeMessageLink(fetched) + ". Invites are starting soon, message an officer if we missed you in the roster.")
+            message.channel.send("raid signups are now locked for " + sanitize.makeMessageLink(fetched) + ". Message an officer if we missed you in the roster.")
           ]);
         });
       });
