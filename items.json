@@ -4,7 +4,7 @@
       "name": "Bonereaver's Edge",
       "wowheadID": "17076",
       "slot": "two-hand",
-      "cost": 600,
+      "cost": 300,
       "tags": [
         "bis"
       ],
@@ -1713,7 +1713,7 @@
       "cost": 450,
       "tags": [],
       "source": "blackwing lair",
-      "notes": ""
+      "notes": "Rogue Priority"
     },
     {
       "name": "Lifegiving Gem",
@@ -1761,7 +1761,7 @@
       "name": "The Untamed Blade",
       "wowheadID": "19334",
       "slot": "two-hand",
-      "cost": 600,
+      "cost": 300,
       "tags": [],
       "source": "blackwing lair",
       "notes": ""
@@ -1834,7 +1834,7 @@
       "name": "Drake Talon Cleaver",
       "wowheadID": "19353",
       "slot": "two-hand",
-      "cost": 600,
+      "cost": 0,
       "tags": [],
       "source": "blackwing lair",
       "notes": ""
