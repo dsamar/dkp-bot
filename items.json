@@ -137,7 +137,7 @@
       "name": "Core Hound Tooth",
       "wowheadID": "18805",
       "slot": "one-hand",
-      "cost": 300,
+      "cost": 200,
       "tags": [],
       "source": "molten core",
       "notes": ""
@@ -451,7 +451,7 @@
       "name": "Deep Earth Spaulders",
       "wowheadID": "18829",
       "slot": "shoulder",
-      "cost": 150,
+      "cost": 0,
       "tags": [],
       "source": "molten core",
       "notes": ""
@@ -2104,7 +2104,7 @@
       "name": "Taut Dragonhide Shoulderpads",
       "wowheadID": "19389",
       "slot": "shoulder",
-      "cost": 200,
+      "cost": 0,
       "tags": [],
       "source": "blackwing lair",
       "notes": ""
@@ -2423,7 +2423,7 @@
       "name": "Taut Dragonhide Belt",
       "wowheadID": "19396",
       "slot": "waist",
-      "cost": 90,
+      "cost": 0,
       "tags": [],
       "source": "blackwing lair",
       "notes": ""

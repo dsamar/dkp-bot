@@ -6,8 +6,8 @@ const tableview = require('../util/tableview.js');
 const item = require('../util/item.js');
 
 module.exports = {
-	name: 'bidadd',
-	description: 'adds a member to a bidscreen',
+	name: 'rolladd',
+	description: 'adds a member to a bidscreen for rolling',
   usage: '<bid_id> <username>',
   args: true,
   officer: true,
@@ -22,7 +22,7 @@ module.exports = {
     const user = sanitize.name(args[1]);
     return message.channel.fetchMessage(args[0]).then(fetched => {
       // Find username and get user object for it.
-      return item.bidReact(fetched, user, "bid", false);
+      return item.bidReact(fetched, user, "dice", false);
     });
   }
 };

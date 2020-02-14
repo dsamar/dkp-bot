@@ -14,7 +14,7 @@ module.exports = {
       factoryReset = true;
     }
     const guild = message.channel.guild;
-    const emojiNames = ['bid', 'cancel', 'refresh'];
+    const emojiNames = ['bid', 'dice', 'cancel', 'refresh', 'winner', 'warrior','warlock','shaman','rogue','priest','paladin','mage','hunter','druid'];
     const setup1 = Promise.all(guild.emojis.filter((emoji) => emojiNames.includes(emoji.name)).map(emoji => {
       return guild.deleteEmoji(emoji);
     })).then(() => {
@@ -28,9 +28,11 @@ module.exports = {
       guild.createEmoji('https://gamepedia.cursecdn.com/wowpedia/thumb/a/a6/ClassIcon_hunter.png/26px-ClassIcon_hunter.png', 'hunter');
       guild.createEmoji('https://gamepedia.cursecdn.com/wowpedia/thumb/6/67/ClassIcon_druid.png/26px-ClassIcon_druid.png', 'druid');
             
-      guild.createEmoji('https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/microsoft/74/heavy-check-mark_2714.png', 'bid');
+      guild.createEmoji('https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/htc/37/money-bag_1f4b0.png', 'bid');
+      guild.createEmoji('https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/lg/57/game-die_1f3b2.png', 'dice');
       guild.createEmoji('https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/209/cross-mark_274c.png', 'cancel');
       guild.createEmoji('https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/209/anticlockwise-downwards-and-upwards-open-circle-arrows_1f504.png', 'refresh');
+      guild.createEmoji('https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/google/223/trophy_1f3c6.png', 'winner');
     });
     let setup2 = Promise.resolve();
     if (factoryReset) {

@@ -11,16 +11,28 @@ function getItem(searchQuery) {
   return items.find(q => q.name.toLowerCase().search(searchQuery.toLowerCase()) != -1);
 }
 
-function addReactions(message) {
+function addReactions(message, cost) {
   const bid = message.guild.emojis.find(em => em.name === 'bid');
+  const dice = message.guild.emojis.find(em => em.name === 'dice');
   const cancel = message.guild.emojis.find(em => em.name === 'cancel');
   const refresh = message.guild.emojis.find(em => em.name === 'refresh');
+  const winner = message.guild.emojis.find(em => em.name === 'winner');
   return message.react(bid)
+    .then(() => {
+      if (cost == 0) {
+        return message.react(dice)
+      } else {
+        return Promise.resolve();
+      }
+    })
     .then(() => {
       return message.react(cancel)
     })
     .then(() => {
       return message.react(refresh);
+    })
+    .then(() => {
+      return message.react(winner);
     });
 }
 
@@ -53,7 +65,7 @@ module.exports = {
         const receivedEmbed = bidMessage.embeds[0];
         const newEmbed = new Discord.RichEmbed(receivedEmbed).setFooter("Bid ID: " + bidMessage.id);
         return bidMessage.edit("", newEmbed).then(() => {
-          return addReactions(bidMessage);
+          return addReactions(bidMessage, itemObj.cost);
         });
       });
   }
