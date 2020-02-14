@@ -2,9 +2,26 @@ const Discord = require('discord.js')
 const sanitize = require('../util/sanitize.js');
 const dkp = require('../util/dkp.js');
 const tableview = require('../util/tableview.js');
+const {items} = require('../items.json');
+const item = require('../util/item.js');
+const { officerRole } = require("../config.json");
+
+
+function getItem(searchQuery) {
+  return items.find(q => q.name.toLowerCase().search(searchQuery.toLowerCase()) != -1);
+}
 
 function getField(message, fieldName) {
   let field = message.fields.find(field => field.name === fieldName);
+  return field;
+}
+
+function getOrAddField(message, fieldName) {
+  let field = message.fields.find(field => field.name === fieldName);
+  if (!field) {
+    message.addField(fieldName, '``````');
+    field = message.fields.find(field => field.name === fieldName);
+  };
   return field;
 }
 
@@ -12,31 +29,9 @@ module.exports = {
   name: 'bidscreen',
   locks: ['dkp'],
   execute: function(reaction, user) {
-    const bidMessage = reaction.message.embeds[0];
-    const lockState = getField(bidMessage, "locked");
-    if (lockState && lockState.value == "true") {
-      return user.send("Sorry, the item is no longer accepting bids!");
-    }
-    
-    const dkpUsername = sanitize.getNickname(user, reaction.message.guild);
-    // Get user dkp value
-    return dkp.all(reaction.message.guild).then((all) => {
-      const dkpUser = all.find((el) => {
-        return el.username === dkpUsername;
-      });
-      if (!dkpUser) {
-        throw new Error("dkp user not found: " + dkpUsername);
-      }
-      const message = reaction.message;
-      let allBids = tableview.parse(message.content  || "", []);
-      if (reaction.emoji.name === 'bid' && !allBids.find((el) => el.username === dkpUser.username)) {
-        allBids.push(dkpUser);
-      } else if (reaction.emoji.name === 'cancel') {
-        allBids = allBids.filter(item => item.username !== dkpUser.username)
-      }
-      // Refresh all names from source
-      allBids = allBids.map((el) => all.find((allEl) => allEl.username === el.username));
-      return tableview.serializeEmbedded(message, allBids);
-    });
+    let isOfficer = 
+      reaction.message.guild.member(user).roles.some(role => role.name === officerRole);
+    const dkpUsername = sanitize.name(user.username);
+    return item.bidReact(reaction.message, dkpUsername, reaction.emoji.name, isOfficer);
   }
 }

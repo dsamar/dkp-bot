@@ -6,11 +6,12 @@ const tableview = require('../util/tableview.js');
 const item = require('../util/item.js');
 
 module.exports = {
-	name: 'bidadd',
-	description: 'adds a member to a bidscreen',
+	name: 'bidremove',
+	description: 'removes a member from a bidscreen',
   usage: '<bid_id> <username>',
   args: true,
   officer: true,
+  aliases: ['rollremove'],
   locks: ['dkp'],
 	execute(message, args) {
     // args[0] == bidID
@@ -22,7 +23,7 @@ module.exports = {
     const user = sanitize.name(args[1]);
     return message.channel.fetchMessage(args[0]).then(fetched => {
       // Find username and get user object for it.
-      return item.bidReact(fetched, user, "bid", false);
+      return item.bidReact(fetched, user, "cancel", false);
     });
   }
 };

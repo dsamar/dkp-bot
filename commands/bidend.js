@@ -50,7 +50,7 @@ module.exports = {
         newEmbed.addField("winner", username);
         getField(newEmbed, "locked").value = 'true';
         newEmbed.setColor("RED");
-        const promise1 = fetched.edit("", newEmbed);
+        const promise1 = fetched.edit(fetched.content, newEmbed);
         const promise2 = dkp.spendDkp(message.guild, roster, username, cost)
         const promise3 = fetched.clearReactions();
         return Promise.all([promise1, promise2, promise3]);

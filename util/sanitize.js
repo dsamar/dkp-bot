@@ -7,6 +7,13 @@ function sanitizeName(name) {
 
 module.exports = {
   name: sanitizeName,
+  findUser: function(username, guild) {
+    const members = guild.members;
+    const guildUser = members.find((gm) => {
+      return gm.user.username === username;
+    });
+    return guildUser;
+  },
   getNickname: function(user,guild) {
     let dkpUsername = user.username;
     const members = guild.members;
