@@ -31,7 +31,7 @@ module.exports = {
   execute: function(reaction, user) {
     let isOfficer = 
       reaction.message.guild.member(user).roles.some(role => role.name === officerRole);
-    const dkpUsername = sanitize.name(user.username);
+    const dkpUsername = sanitize.name(reaction.message.guild.member(user).nickname);
     return item.bidReact(reaction.message, dkpUsername, reaction.emoji.name, isOfficer);
   }
 }
