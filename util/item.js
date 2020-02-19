@@ -200,6 +200,7 @@ function bidReact(message, dkpUsername, reactName, isOfficer) {
       });
 
       randomRollsField.value = "```" + serializeRolls(allRolls) + "```";
+      newEmbed.setColor("RED");
       return message.edit(message.content, newEmbed).then(() => {
         return winner(message, allRolls[0][0], null);
       });

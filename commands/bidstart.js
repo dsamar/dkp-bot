@@ -64,9 +64,10 @@ module.exports = {
       .then(bidMessage => {
         const receivedEmbed = bidMessage.embeds[0];
         const newEmbed = new Discord.RichEmbed(receivedEmbed).setFooter("Bid ID: " + bidMessage.id);
-        return bidMessage.edit("", newEmbed).then(() => {
-          return addReactions(bidMessage, itemObj.cost);
-        });
+        return bidMessage.edit(bidMessage.content, newEmbed);
+      })
+      .then(bidMessage => {
+        return addReactions(bidMessage, itemObj.cost);
       });
   }
 }
