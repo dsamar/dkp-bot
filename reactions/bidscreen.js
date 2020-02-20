@@ -15,6 +15,9 @@ module.exports = {
       reaction.message.guild.member(user).roles.some(role => role.name === officerRole);
     const dkpUsername = sanitize.getNickname(user, reaction.message.guild);
     return item.bidReact(reaction.message, dkpUsername, reaction.emoji.name, isOfficer).then(() => {
+      if (reaction.emoji.name !== 'winner') {
+        return Promise.resolve();
+      }
       return leveldb.refresh(reaction.message.guild);
     });
   }
