@@ -4,6 +4,7 @@ const dkp = require('../util/dkp.js');
 const tableview = require('../util/tableview.js');
 const {items} = require('../items.json');
 const item = require('../util/item.js');
+const leveldb = require('../util/leveldb.js');
 const { officerRole } = require("../config.json");
 
 module.exports = {
@@ -13,6 +14,8 @@ module.exports = {
     let isOfficer = 
       reaction.message.guild.member(user).roles.some(role => role.name === officerRole);
     const dkpUsername = sanitize.getNickname(user, reaction.message.guild);
-    return item.bidReact(reaction.message, dkpUsername, reaction.emoji.name, isOfficer);
+    return item.bidReact(reaction.message, dkpUsername, reaction.emoji.name, isOfficer).then(() => {
+      return leveldb.refresh(reaction.message.guild);
+    });
   }
 }
