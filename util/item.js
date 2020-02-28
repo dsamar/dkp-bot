@@ -29,6 +29,10 @@ function getImage(item) {
   return "https://items.classicmaps.xyz/" + item.wowheadID + ".png";
 }
 
+function getWowheadLink(item) {
+  return "https://classic.wowhead.com/item=" + item.wowheadID;
+}
+
 function getItem(searchQuery) {
   return items.find(
     q => q.name.toLowerCase().search(searchQuery.toLowerCase()) != -1
@@ -261,6 +265,7 @@ function bidReact(message, dkpUsername, reactName, isOfficer) {
 module.exports = {
   get: getItem,
   image: getImage,
+  getWowheadLink: getWowheadLink,
   bidReact: bidReact,
   winner: winner
 };
