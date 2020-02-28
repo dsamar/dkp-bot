@@ -52,8 +52,8 @@ module.exports = {
       throw new Error("item not found: " + itemQuery);
     }
     content.setTitle("**" + itemObj.name + "**");
-    content.setImage(item.image(itemObj));
-    content.setDescription("");
+    // content.setImage(item.getWowheadLink(itemObj));
+    content.setDescription(item.getWowheadLink(itemObj));
     content.addField("cost", itemObj.cost, false);
     if (itemObj.notes) {
       content.addField("notes", itemObj.notes, false);
