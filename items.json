@@ -1687,10 +1687,10 @@
       "notes": "Warrior Priority"
     },
     {
-      "name": "Interlaced Shadow Jerkin",
-      "wowheadID": "19439",
-      "slot": "chest",
-      "cost": 0,
+      "name": "Band of Dark Dominion",
+      "wowheadID": "19434",
+      "slot": "",
+      "cost": 450,
       "tags": [],
       "source": "blackwing lair",
       "notes": ""
@@ -2164,7 +2164,7 @@
       "name": "Claw of the Black Drake",
       "wowheadID": "19365",
       "slot": "main hand",
-      "cost": 600,
+      "cost": 0,
       "tags": [
         "bis"
       ],
@@ -2336,15 +2336,15 @@
       "notes": ""
     },
     {
-      "name": "Mish'undare, Circlet of the Mind Flayer",
-      "wowheadID": "19375",
-      "slot": "head",
-      "cost": 450,
+      "name": "Netherwind Robes",
+      "wowheadID": "16916",
+      "slot": "chest",
+      "cost": 325,
       "tags": [
-        "bis"
+        "t2"
       ],
       "source": "blackwing lair",
-      "notes": "Spell DPS"
+      "notes": ""
     },
     {
       "name": "Rune of Metamorphosis",
@@ -2356,15 +2356,15 @@
       "notes": ""
     },
     {
-      "name": "Stormrage Chestguard",
-      "wowheadID": "16897",
-      "slot": "chest",
-      "cost": 325,
+      "name": "Mish'undare, Circlet of the Mind Flayer",
+      "wowheadID": "19375",
+      "slot": "head",
+      "cost": 450,
       "tags": [
-        "t2"
+        "bis"
       ],
       "source": "blackwing lair",
-      "notes": ""
+      "notes": "Spell DPS"
     },
     {
       "name": "Stormrage Belt",
@@ -3018,8 +3018,35 @@
       "notes": ""
     },
     {
-      "name": "Netherwind Robes",
-      "wowheadID": "16916",
+      "name": "Interlaced Shadow Jerkin",
+      "wowheadID": "19439",
+      "slot": "chest",
+      "cost": 0,
+      "tags": [],
+      "source": "blackwing lair",
+      "notes": ""
+    },
+    {
+      "name": "Essence Gatherer",
+      "wowheadID": "19435",
+      "slot": "",
+      "cost": 0,
+      "tags": [],
+      "source": "blackwing lair",
+      "notes": ""
+    },
+    {
+      "name": "Doom's Edge",
+      "wowheadID": "19362",
+      "slot": "",
+      "cost": 200,
+      "tags": [],
+      "source": "blackwing lair",
+      "notes": ""
+    },
+    {
+      "name": "Stormrage Chestguard",
+      "wowheadID": "16897",
       "slot": "chest",
       "cost": 325,
       "tags": [
