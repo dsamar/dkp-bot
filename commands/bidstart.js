@@ -58,6 +58,15 @@ module.exports = {
     if (itemObj.notes) {
       content.addField("notes", itemObj.notes, false);
     }
+    if (itemObj.tags.includes("t2")) {
+      content.addField("type", "t2", false);
+    }
+    if (itemObj.tags.includes("t3")) {
+      content.addField("type", "t3", false);
+    }
+    if (itemObj.tags.includes("t2.5")) {
+      content.addField("type", "t2.5", false);
+    }
     
     content.addField(reactionTagName, "bidscreen", true);
     return message.channel.send(content)

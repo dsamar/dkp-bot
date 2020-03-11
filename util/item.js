@@ -160,6 +160,7 @@ function bidReact(message, dkpUsername, reactName, isOfficer) {
   }
 
   let cost = parseFloat(getField(embed, "cost").value);
+  let typeField = getField(embed, "type");
 
   // Get user dkp value
   return dkp.all(message.guild).then(all => {
@@ -187,7 +188,15 @@ function bidReact(message, dkpUsername, reactName, isOfficer) {
         let winnerUser = allBids[0].username;
         let costOverride = null;
         if (cost === 0) {
-          costOverride = 50;
+          if (typeField && typeField.value == "t2") {
+            costOverride = 100;
+          } else if (typeField && typeField.value == "t2.5") {
+            costOverride = 200;
+          } else if (typeField && typeField.value == "t3") {
+            costOverride = 300;
+          } else {
+            costOverride = 50;
+          }
         }
         return winner(message, winnerUser, costOverride);
       }
