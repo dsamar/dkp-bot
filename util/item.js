@@ -160,6 +160,8 @@ function bidReact(message, dkpUsername, reactName, isOfficer) {
   }
 
   let cost = parseFloat(getField(embed, "cost").value);
+  let dkpPrioCost = parseFloat(getField(embed, "dkp-prio-cost").value);
+  let typeField = getField(embed, "type");
 
   // Get user dkp value
   return dkp.all(message.guild).then(all => {
@@ -181,15 +183,11 @@ function bidReact(message, dkpUsername, reactName, isOfficer) {
     if (
       reactName === "winner" && isOfficer
     ) {
-      // If there are DKP bids, those take priority.
+      // If there are DKP bids, those take priority, and the override == dkpPrioCost
       if (allBids.length > 0) {
         allBids = sortBids(allBids);
         let winnerUser = allBids[0].username;
-        let costOverride = null;
-        if (cost === 0) {
-          costOverride = 50;
-        }
-        return winner(message, winnerUser, costOverride);
+        return winner(message, winnerUser, dkpPrioCost);
       }
 
       // Finalizing Random Rolls, if they exist

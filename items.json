@@ -1,28 +1,6 @@
 {
   "items": [
     {
-      "name": "Ashkandi, Greatsword of the Brotherhood",
-      "wowheadID": "19364",
-      "slot": "two-hand",
-      "cost": 900,
-      "tags": [
-        "bis"
-      ],
-      "source": "blackwing lair",
-      "notes": "Warrior Priority"
-    },
-    {
-      "name": "Aged Core Leather Gloves",
-      "wowheadID": "18823",
-      "slot": "hands",
-      "cost": 0,
-      "tags": [
-        "bis"
-      ],
-      "source": "molten core",
-      "notes": ""
-    },
-    {
       "name": "Aegis of Preservation",
       "wowheadID": "19345",
       "slot": "trinket",
@@ -32,12 +10,88 @@
       "notes": ""
     },
     {
-      "name": "Band of Accuria",
-      "wowheadID": "17063",
-      "slot": "finger",
+      "name": "Aged Core Leather Gloves",
+      "wowheadID": "18823",
+      "slot": "hands",
+      "cost": 0,
+      "tags": [],
+      "source": "molten core",
+      "notes": ""
+    },
+    {
+      "name": "Amberseal Keeper",
+      "wowheadID": "17113",
+      "slot": "two-hand",
+      "cost": 0,
+      "tags": [],
+      "source": "world",
+      "notes": ""
+    },
+    {
+      "name": "Ancient Cornerstone Grimoire",
+      "wowheadID": "17067",
+      "slot": "held in off-hand",
+      "cost": 0,
+      "tags": [],
+      "source": "onyxia",
+      "notes": ""
+    },
+    {
+      "name": "Ancient Petrified Leaf",
+      "wowheadID": "18703",
+      "slot": "",
       "cost": 300,
+      "tags": [],
+      "source": "molten core",
+      "notes": ""
+    },
+    {
+      "name": "Angelista's Grasp",
+      "wowheadID": "19388",
+      "slot": "waist",
+      "cost": 0,
+      "tags": [],
+      "source": "blackwing lair",
+      "notes": ""
+    },
+    {
+      "name": "Arcane Infused Gem",
+      "wowheadID": "19336",
+      "slot": "trinket",
+      "cost": 0,
+      "tags": [],
+      "source": "blackwing lair",
+      "notes": ""
+    },
+    {
+      "name": "Arcanist Belt",
+      "wowheadID": "16802",
+      "slot": "waist",
+      "cost": 0,
       "tags": [
-        "bis"
+        "t1"
+      ],
+      "source": "molten core",
+      "notes": ""
+    },
+    {
+      "name": "Arcanist Bindings",
+      "wowheadID": "16799",
+      "slot": "wrist",
+      "cost": 0,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core",
+      "notes": ""
+    },
+    {
+      "name": "Arcanist Boots",
+      "wowheadID": "16800",
+      "slot": "feet",
+      "cost": 0,
+      "tags": [
+        "t1"
       ],
       "source": "molten core",
       "notes": ""
@@ -54,49 +108,9 @@
       "notes": ""
     },
     {
-      "name": "Blastershot Launcher",
-      "wowheadID": "17072",
-      "slot": "ranged",
-      "cost": 150,
-      "tags": [],
-      "source": "molten core",
-      "notes": ""
-    },
-    {
-      "name": "Arcanist Boots",
-      "wowheadID": "16800",
-      "slot": "feet",
-      "cost": 0,
-      "tags": [
-        "t1"
-      ],
-      "source": "molten core",
-      "notes": ""
-    },
-    {
-      "name": "Band of Sulfuras",
-      "wowheadID": "19138",
-      "slot": "finger",
-      "cost": 0,
-      "tags": [],
-      "source": "molten core",
-      "notes": ""
-    },
-    {
-      "name": "Bloodfang Pants",
-      "wowheadID": "16909",
-      "slot": "legs",
-      "cost": 350,
-      "tags": [
-        "t2"
-      ],
-      "source": "molten core",
-      "notes": ""
-    },
-    {
-      "name": "Arcanist Robes",
-      "wowheadID": "16798",
-      "slot": "chest",
+      "name": "Arcanist Gloves",
+      "wowheadID": "16801",
+      "slot": "hands",
       "cost": 0,
       "tags": [
         "t1"
@@ -127,13 +141,94 @@
       "notes": ""
     },
     {
-      "name": "Arcanist Gloves",
-      "wowheadID": "16801",
-      "slot": "hands",
+      "name": "Arcanist Robes",
+      "wowheadID": "16798",
+      "slot": "chest",
       "cost": 0,
       "tags": [
         "t1"
       ],
+      "source": "molten core",
+      "notes": ""
+    },
+    {
+      "name": "Archimtiros' Ring of Reckoning",
+      "wowheadID": "19376",
+      "slot": "finger",
+      "cost": 50,
+      "tags": [],
+      "source": "blackwing lair",
+      "notes": ""
+    },
+    {
+      "name": "Ashjre'thul, Crossbow of Smiting",
+      "wowheadID": "19361",
+      "slot": "ranged",
+      "cost": 900,
+      "tags": [],
+      "source": "blackwing lair",
+      "notes": "Hunter Priority"
+    },
+    {
+      "name": "Ashkandi, Greatsword of the Brotherhood",
+      "wowheadID": "19364",
+      "slot": "two-hand",
+      "cost": 900,
+      "tags": [],
+      "source": "blackwing lair",
+      "notes": "Warrior Priority"
+    },
+    {
+      "name": "Aurastone Hammer",
+      "wowheadID": "17105",
+      "slot": "one-hand",
+      "cost": 0,
+      "tags": [],
+      "source": "molten core",
+      "notes": ""
+    },
+    {
+      "name": "Azuresong Mageblade",
+      "wowheadID": "17103",
+      "slot": "main hand",
+      "cost": 400,
+      "tags": [],
+      "source": "molten core",
+      "notes": ""
+    },
+    {
+      "name": "Band of Accuria",
+      "wowheadID": "17063",
+      "slot": "finger",
+      "cost": 300,
+      "tags": [],
+      "source": "molten core",
+      "notes": ""
+    },
+    {
+      "name": "Band of Dark Dominion",
+      "wowheadID": "19434",
+      "slot": "",
+      "cost": 450,
+      "tags": [],
+      "source": "blackwing lair",
+      "notes": ""
+    },
+    {
+      "name": "Band of Forced Concentration",
+      "wowheadID": "19403",
+      "slot": "finger",
+      "cost": 450,
+      "tags": [],
+      "source": "blackwing lair",
+      "notes": ""
+    },
+    {
+      "name": "Band of Sulfuras",
+      "wowheadID": "19138",
+      "slot": "finger",
+      "cost": 0,
+      "tags": [],
       "source": "molten core",
       "notes": ""
     },
@@ -149,132 +244,10 @@
       "notes": ""
     },
     {
-      "name": "Arcanist Bindings",
-      "wowheadID": "16799",
-      "slot": "wrist",
-      "cost": 0,
-      "tags": [
-        "t1"
-      ],
-      "source": "molten core",
-      "notes": ""
-    },
-    {
-      "name": "Arcanist Belt",
-      "wowheadID": "16802",
+      "name": "Belt of Ten Storms",
+      "wowheadID": "16944",
       "slot": "waist",
       "cost": 0,
-      "tags": [
-        "t1"
-      ],
-      "source": "molten core",
-      "notes": ""
-    },
-    {
-      "name": "Bindings of the Windseeker",
-      "wowheadID": "18564",
-      "slot": "",
-      "cost": 0,
-      "tags": [],
-      "source": "molten core",
-      "notes": ""
-    },
-    {
-      "name": "Bloodfang Hood",
-      "wowheadID": "16908",
-      "slot": "head",
-      "cost": 350,
-      "tags": [
-        "t2"
-      ],
-      "source": "onyxia",
-      "notes": ""
-    },
-    {
-      "name": "Ancient Cornerstone Grimoire",
-      "wowheadID": "17067",
-      "slot": "held in off-hand",
-      "cost": 0,
-      "tags": [],
-      "source": "onyxia",
-      "notes": ""
-    },
-    {
-      "name": "Azuresong Mageblade",
-      "wowheadID": "17103",
-      "slot": "main hand",
-      "cost": 400,
-      "tags": [
-        "bis"
-      ],
-      "source": "molten core",
-      "notes": ""
-    },
-    {
-      "name": "Amberseal Keeper",
-      "wowheadID": "17113",
-      "slot": "two-hand",
-      "cost": 0,
-      "tags": [],
-      "source": "world",
-      "notes": ""
-    },
-    {
-      "name": "Ashjre'thul, Crossbow of Smiting",
-      "wowheadID": "19361",
-      "slot": "ranged",
-      "cost": 900,
-      "tags": [
-        "bis"
-      ],
-      "source": "blackwing lair",
-      "notes": "Hunter Priority"
-    },
-    {
-      "name": "Ancient Petrified Leaf",
-      "wowheadID": "18703",
-      "slot": "",
-      "cost": 300,
-      "tags": [],
-      "source": "molten core",
-      "notes": ""
-    },
-    {
-      "name": "Band of Forced Concentration",
-      "wowheadID": "19403",
-      "slot": "finger",
-      "cost": 450,
-      "tags": [
-        "bis"
-      ],
-      "source": "blackwing lair",
-      "notes": ""
-    },
-    {
-      "name": "Archimtiros' Ring of Reckoning",
-      "wowheadID": "19376",
-      "slot": "finger",
-      "cost": 50,
-      "tags": [],
-      "source": "blackwing lair",
-      "notes": ""
-    },
-    {
-      "name": "Bloodfang Spaulders",
-      "wowheadID": "16832",
-      "slot": "shoulder",
-      "cost": 300,
-      "tags": [
-        "t2"
-      ],
-      "source": "blackwing lair",
-      "notes": ""
-    },
-    {
-      "name": "Bloodfang Gloves",
-      "wowheadID": "16907",
-      "slot": "hands",
-      "cost": 225,
       "tags": [
         "t2"
       ],
@@ -285,43 +258,30 @@
       "name": "Belt of Transcendence",
       "wowheadID": "16925",
       "slot": "waist",
-      "cost": 180,
-      "tags": [
-        "t2"
-      ],
-      "source": "blackwing lair",
-      "notes": ""
-    },
-    {
-      "name": "Bloodfang Chestpiece",
-      "wowheadID": "16905",
-      "slot": "chest",
-      "cost": 325,
-      "tags": [
-        "t2"
-      ],
-      "source": "blackwing lair",
-      "notes": ""
-    },
-    {
-      "name": "Bloodfang Belt",
-      "wowheadID": "16910",
-      "slot": "waist",
-      "cost": 180,
-      "tags": [
-        "t2"
-      ],
-      "source": "blackwing lair",
-      "notes": ""
-    },
-    {
-      "name": "Aurastone Hammer",
-      "wowheadID": "17105",
-      "slot": "one-hand",
       "cost": 0,
       "tags": [
-        "bis"
+        "t2"
       ],
+      "source": "blackwing lair",
+      "notes": ""
+    },
+    {
+      "name": "Bindings of Transcendence",
+      "wowheadID": "16926",
+      "slot": "wrist",
+      "cost": 0,
+      "tags": [
+        "t2"
+      ],
+      "source": "blackwing lair",
+      "notes": ""
+    },
+    {
+      "name": "Bindings of the Windseeker",
+      "wowheadID": "18564",
+      "slot": "",
+      "cost": 0,
+      "tags": [],
       "source": "molten core",
       "notes": ""
     },
@@ -335,22 +295,40 @@
       "notes": ""
     },
     {
-      "name": "Bindings of Transcendence",
-      "wowheadID": "16926",
-      "slot": "wrist",
-      "cost": 180,
-      "tags": [
-        "t2"
-      ],
+      "name": "Black Brood Pauldrons",
+      "wowheadID": "19373",
+      "slot": "shoulder",
+      "cost": 0,
+      "tags": [],
       "source": "blackwing lair",
       "notes": ""
     },
     {
-      "name": "Angelista's Grasp",
-      "wowheadID": "19388",
-      "slot": "waist",
+      "name": "Blastershot Launcher",
+      "wowheadID": "17072",
+      "slot": "ranged",
+      "cost": 150,
+      "tags": [],
+      "source": "molten core",
+      "notes": ""
+    },
+    {
+      "name": "Blazefury Medallion",
+      "wowheadID": "17111",
+      "slot": "neck",
       "cost": 0,
       "tags": [],
+      "source": "world",
+      "notes": ""
+    },
+    {
+      "name": "Bloodfang Belt",
+      "wowheadID": "16910",
+      "slot": "waist",
+      "cost": 0,
+      "tags": [
+        "t2"
+      ],
       "source": "blackwing lair",
       "notes": ""
     },
@@ -358,27 +336,7 @@
       "name": "Bloodfang Boots",
       "wowheadID": "16906",
       "slot": "feet",
-      "cost": 225,
-      "tags": [
-        "t2"
-      ],
-      "source": "blackwing lair",
-      "notes": ""
-    },
-    {
-      "name": "Arcane Infused Gem",
-      "wowheadID": "19336",
-      "slot": "trinket",
       "cost": 0,
-      "tags": [],
-      "source": "blackwing lair",
-      "notes": ""
-    },
-    {
-      "name": "Belt of Ten Storms",
-      "wowheadID": "16944",
-      "slot": "waist",
-      "cost": 180,
       "tags": [
         "t2"
       ],
@@ -389,7 +347,7 @@
       "name": "Bloodfang Bracers",
       "wowheadID": "16911",
       "slot": "wrist",
-      "cost": 180,
+      "cost": 0,
       "tags": [
         "t2"
       ],
@@ -397,20 +355,57 @@
       "notes": ""
     },
     {
-      "name": "Black Brood Pauldrons",
-      "wowheadID": "19373",
-      "slot": "shoulder",
+      "name": "Bloodfang Chestpiece",
+      "wowheadID": "16905",
+      "slot": "chest",
       "cost": 0,
-      "tags": [],
+      "tags": [
+        "t2"
+      ],
       "source": "blackwing lair",
       "notes": ""
     },
     {
-      "name": "Band of Dark Dominion",
-      "wowheadID": "19434",
-      "slot": "",
-      "cost": 450,
-      "tags": [],
+      "name": "Bloodfang Gloves",
+      "wowheadID": "16907",
+      "slot": "hands",
+      "cost": 0,
+      "tags": [
+        "t2"
+      ],
+      "source": "blackwing lair",
+      "notes": ""
+    },
+    {
+      "name": "Bloodfang Hood",
+      "wowheadID": "16908",
+      "slot": "head",
+      "cost": 0,
+      "tags": [
+        "t2"
+      ],
+      "source": "onyxia",
+      "notes": ""
+    },
+    {
+      "name": "Bloodfang Pants",
+      "wowheadID": "16909",
+      "slot": "legs",
+      "cost": 0,
+      "tags": [
+        "t2"
+      ],
+      "source": "molten core",
+      "notes": ""
+    },
+    {
+      "name": "Bloodfang Spaulders",
+      "wowheadID": "16832",
+      "slot": "shoulder",
+      "cost": 0,
+      "tags": [
+        "t2"
+      ],
       "source": "blackwing lair",
       "notes": ""
     },
@@ -419,224 +414,8 @@
       "wowheadID": "17076",
       "slot": "two-hand",
       "cost": 300,
-      "tags": [
-        "bis"
-      ],
-      "source": "molten core",
-      "notes": ""
-    },
-    {
-      "name": "Cenarion Vestments",
-      "wowheadID": "16833",
-      "slot": "chest",
-      "cost": 0,
-      "tags": [
-        "t1"
-      ],
-      "source": "molten core",
-      "notes": ""
-    },
-    {
-      "name": "Claw of Chromaggus",
-      "wowheadID": "19347",
-      "slot": "one-hand",
-      "cost": 500,
-      "tags": [
-        "bis"
-      ],
-      "source": "blackwing lair",
-      "notes": ""
-    },
-    {
-      "name": "Chromatic Boots",
-      "wowheadID": "19387",
-      "slot": "feet",
-      "cost": 450,
-      "tags": [],
-      "source": "blackwing lair",
-      "notes": ""
-    },
-    {
-      "name": "Bracers of Arcane Accuracy",
-      "wowheadID": "19374",
-      "slot": "wrist",
-      "cost": 250,
-      "tags": [
-        "bis"
-      ],
-      "source": "blackwing lair",
-      "notes": "Mage/Warlock Priority"
-    },
-    {
-      "name": "Cloak of the Brood Lord",
-      "wowheadID": "19378",
-      "slot": "back",
-      "cost": 300,
-      "tags": [
-        "bis"
-      ],
-      "source": "blackwing lair",
-      "notes": ""
-    },
-    {
-      "name": "Boots of the Shadow Flame",
-      "wowheadID": "19381",
-      "slot": "feet",
-      "cost": 400,
-      "tags": [
-        "bis"
-      ],
-      "source": "blackwing lair",
-      "notes": "Rogue/E-Shaman Priority"
-    },
-    {
-      "name": "Circlet of Prophecy",
-      "wowheadID": "16813",
-      "slot": "head",
-      "cost": 0,
-      "tags": [
-        "t1"
-      ],
-      "source": "molten core",
-      "notes": ""
-    },
-    {
-      "name": "Cenarion Gloves",
-      "wowheadID": "16831",
-      "slot": "hands",
-      "cost": 0,
-      "tags": [
-        "t1"
-      ],
-      "source": "molten core",
-      "notes": ""
-    },
-    {
-      "name": "Claw of the Black Drake",
-      "wowheadID": "19365",
-      "slot": "main hand",
-      "cost": 0,
-      "tags": [
-        "bis"
-      ],
-      "source": "blackwing lair",
-      "notes": ""
-    },
-    {
-      "name": "Cenarion Leggings",
-      "wowheadID": "16835",
-      "slot": "legs",
-      "cost": 0,
-      "tags": [
-        "t1"
-      ],
-      "source": "molten core",
-      "notes": ""
-    },
-    {
-      "name": "Choker of Enlightenment",
-      "wowheadID": "17109",
-      "slot": "neck",
-      "cost": 0,
       "tags": [],
       "source": "molten core",
-      "notes": ""
-    },
-    {
-      "name": "Cloak of Firemaw",
-      "wowheadID": "19398",
-      "slot": "back",
-      "cost": 300,
-      "tags": [],
-      "source": "blackwing lair",
-      "notes": ""
-    },
-    {
-      "name": "Bracers of Might",
-      "wowheadID": "16861",
-      "slot": "wrist",
-      "cost": 0,
-      "tags": [
-        "t1"
-      ],
-      "source": "molten core",
-      "notes": ""
-    },
-    {
-      "name": "Choker of the Fire Lord",
-      "wowheadID": "18814",
-      "slot": "neck",
-      "cost": 300,
-      "tags": [
-        "bis"
-      ],
-      "source": "molten core",
-      "notes": ""
-    },
-    {
-      "name": "Breastplate of Might",
-      "wowheadID": "16865",
-      "slot": "chest",
-      "cost": 0,
-      "tags": [
-        "t1"
-      ],
-      "source": "molten core",
-      "notes": ""
-    },
-    {
-      "name": "Cenarion Belt",
-      "wowheadID": "16828",
-      "slot": "waist",
-      "cost": 0,
-      "tags": [
-        "t1"
-      ],
-      "source": "molten core",
-      "notes": ""
-    },
-    {
-      "name": "Cenarion Bracers",
-      "wowheadID": "16830",
-      "slot": "wrist",
-      "cost": 0,
-      "tags": [
-        "t1"
-      ],
-      "source": "molten core",
-      "notes": ""
-    },
-    {
-      "name": "Breastplate of Wrath",
-      "wowheadID": "16966",
-      "slot": "chest",
-      "cost": 325,
-      "tags": [
-        "t2"
-      ],
-      "source": "blackwing lair",
-      "notes": ""
-    },
-    {
-      "name": "Cloak of the Shrouded Mists",
-      "wowheadID": "17102",
-      "slot": "back",
-      "cost": 300,
-      "tags": [
-        "bis"
-      ],
-      "source": "molten core",
-      "notes": ""
-    },
-    {
-      "name": "Bracelets of Wrath",
-      "wowheadID": "16959",
-      "slot": "wrist",
-      "cost": 180,
-      "tags": [
-        "t2"
-      ],
-      "source": "blackwing lair",
       "notes": ""
     },
     {
@@ -651,9 +430,131 @@
       "notes": ""
     },
     {
-      "name": "Cenarion Spaulders",
-      "wowheadID": "16836",
-      "slot": "shoulder",
+      "name": "Boots of Pure Thought",
+      "wowheadID": "19437",
+      "slot": "feet",
+      "cost": 400,
+      "tags": [],
+      "source": "blackwing lair",
+      "notes": ""
+    },
+    {
+      "name": "Boots of Transcendence",
+      "wowheadID": "16919",
+      "slot": "feet",
+      "cost": 0,
+      "tags": [
+        "t2"
+      ],
+      "source": "blackwing lair",
+      "notes": ""
+    },
+    {
+      "name": "Boots of the Shadow Flame",
+      "wowheadID": "19381",
+      "slot": "feet",
+      "cost": 400,
+      "tags": [],
+      "source": "blackwing lair",
+      "notes": "Rogue/E-Shaman Priority"
+    },
+    {
+      "name": "Bracelets of Wrath",
+      "wowheadID": "16959",
+      "slot": "wrist",
+      "cost": 0,
+      "tags": [
+        "t2"
+      ],
+      "source": "blackwing lair",
+      "notes": ""
+    },
+    {
+      "name": "Bracers of Arcane Accuracy",
+      "wowheadID": "19374",
+      "slot": "wrist",
+      "cost": 250,
+      "tags": [],
+      "source": "blackwing lair",
+      "notes": "Mage/Warlock Priority"
+    },
+    {
+      "name": "Bracers of Might",
+      "wowheadID": "16861",
+      "slot": "wrist",
+      "cost": 0,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core",
+      "notes": ""
+    },
+    {
+      "name": "Bracers of Ten Storms",
+      "wowheadID": "16943",
+      "slot": "wrist",
+      "cost": 0,
+      "tags": [
+        "t2"
+      ],
+      "source": "blackwing lair",
+      "notes": ""
+    },
+    {
+      "name": "Breastplate of Might",
+      "wowheadID": "16865",
+      "slot": "chest",
+      "cost": 0,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core",
+      "notes": ""
+    },
+    {
+      "name": "Breastplate of Ten Storms",
+      "wowheadID": "16950",
+      "slot": "chest",
+      "cost": 0,
+      "tags": [
+        "t2"
+      ],
+      "source": "blackwing lair",
+      "notes": ""
+    },
+    {
+      "name": "Breastplate of Wrath",
+      "wowheadID": "16966",
+      "slot": "chest",
+      "cost": 0,
+      "tags": [
+        "t2"
+      ],
+      "source": "blackwing lair",
+      "notes": ""
+    },
+    {
+      "name": "Brutality Blade",
+      "wowheadID": "18832",
+      "slot": "one-hand",
+      "cost": 300,
+      "tags": [],
+      "source": "molten core",
+      "notes": ""
+    },
+    {
+      "name": "Cauterizing Band",
+      "wowheadID": "19140",
+      "slot": "finger",
+      "cost": 300,
+      "tags": [],
+      "source": "molten core",
+      "notes": ""
+    },
+    {
+      "name": "Cenarion Belt",
+      "wowheadID": "16828",
+      "slot": "waist",
       "cost": 0,
       "tags": [
         "t1"
@@ -673,97 +574,26 @@
       "notes": ""
     },
     {
-      "name": "Brutality Blade",
-      "wowheadID": "18832",
-      "slot": "one-hand",
-      "cost": 300,
-      "tags": [],
-      "source": "molten core",
-      "notes": ""
-    },
-    {
-      "name": "Breastplate of Ten Storms",
-      "wowheadID": "16950",
-      "slot": "chest",
-      "cost": 325,
-      "tags": [
-        "t2"
-      ],
-      "source": "blackwing lair",
-      "notes": ""
-    },
-    {
-      "name": "Cauterizing Band",
-      "wowheadID": "19140",
-      "slot": "finger",
-      "cost": 300,
-      "tags": [
-        "bis"
-      ],
-      "source": "molten core",
-      "notes": ""
-    },
-    {
-      "name": "Circle of Applied Force",
-      "wowheadID": "19432",
-      "slot": "finger",
-      "cost": 300,
-      "tags": [],
-      "source": "blackwing lair",
-      "notes": ""
-    },
-    {
-      "name": "Bracers of Ten Storms",
-      "wowheadID": "16943",
+      "name": "Cenarion Bracers",
+      "wowheadID": "16830",
       "slot": "wrist",
-      "cost": 180,
+      "cost": 0,
       "tags": [
-        "t2"
+        "t1"
       ],
-      "source": "blackwing lair",
+      "source": "molten core",
       "notes": ""
     },
     {
-      "name": "Boots of Transcendence",
-      "wowheadID": "16919",
-      "slot": "feet",
-      "cost": 225,
+      "name": "Cenarion Gloves",
+      "wowheadID": "16831",
+      "slot": "hands",
+      "cost": 0,
       "tags": [
-        "t2"
+        "t1"
       ],
-      "source": "blackwing lair",
+      "source": "molten core",
       "notes": ""
-    },
-    {
-      "name": "Boots of Pure Thought",
-      "wowheadID": "19437",
-      "slot": "feet",
-      "cost": 400,
-      "tags": [
-        "bis"
-      ],
-      "source": "blackwing lair",
-      "notes": ""
-    },
-    {
-      "name": "Boots of Pure Thought",
-      "wowheadID": "19437",
-      "slot": "feet",
-      "cost": 400,
-      "tags": [
-        "bis"
-      ],
-      "source": "blackwing lair",
-      "notes": ""
-    },
-    {
-      "name": "Cloak of Draconic Might",
-      "wowheadID": "19436",
-      "slot": "back",
-      "cost": 300,
-      "tags": [],
-      "source": "blackwing lair",
-      "notes": "Warrior/E-Shaman Priority"
     },
     {
       "name": "Cenarion Helm",
@@ -777,59 +607,144 @@
       "notes": ""
     },
     {
-      "name": "Blazefury Medallion",
-      "wowheadID": "17111",
-      "slot": "neck",
+      "name": "Cenarion Leggings",
+      "wowheadID": "16835",
+      "slot": "legs",
       "cost": 0,
-      "tags": [],
-      "source": "world",
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core",
       "notes": ""
     },
     {
-      "name": "Dragon's Blood Cape",
-      "wowheadID": "17107",
-      "slot": "back",
+      "name": "Cenarion Spaulders",
+      "wowheadID": "16836",
+      "slot": "shoulder",
+      "cost": 0,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core",
+      "notes": ""
+    },
+    {
+      "name": "Cenarion Vestments",
+      "wowheadID": "16833",
+      "slot": "chest",
+      "cost": 0,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core",
+      "notes": ""
+    },
+    {
+      "name": "Choker of Enlightenment",
+      "wowheadID": "17109",
+      "slot": "neck",
       "cost": 0,
       "tags": [],
       "source": "molten core",
       "notes": ""
     },
     {
-      "name": "Dragonstalker's Breastplate",
-      "wowheadID": "16942",
-      "slot": "chest",
-      "cost": 325,
-      "tags": [
-        "t2"
-      ],
-      "source": "blackwing lair",
+      "name": "Choker of the Fire Lord",
+      "wowheadID": "18814",
+      "slot": "neck",
+      "cost": 300,
+      "tags": [],
+      "source": "molten core",
       "notes": ""
     },
     {
-      "name": "Deathbringer",
-      "wowheadID": "17068",
-      "slot": "one-hand",
-      "cost": 400,
-      "tags": [
-        "bis"
-      ],
-      "source": "onyxia",
-      "notes": ""
-    },
-    {
-      "name": "Dragonfang Blade",
-      "wowheadID": "19346",
-      "slot": "one-hand",
-      "cost": 200,
+      "name": "Chromatic Boots",
+      "wowheadID": "19387",
+      "slot": "feet",
+      "cost": 450,
       "tags": [],
       "source": "blackwing lair",
       "notes": ""
     },
     {
-      "name": "Deep Earth Spaulders",
-      "wowheadID": "18829",
-      "slot": "shoulder",
+      "name": "Chromatically Tempered Sword",
+      "wowheadID": "19352",
+      "slot": "one-hand",
+      "cost": 600,
+      "tags": [],
+      "source": "blackwing lair",
+      "notes": ""
+    },
+    {
+      "name": "Circle of Applied Force",
+      "wowheadID": "19432",
+      "slot": "finger",
+      "cost": 300,
+      "tags": [],
+      "source": "blackwing lair",
+      "notes": ""
+    },
+    {
+      "name": "Circlet of Prophecy",
+      "wowheadID": "16813",
+      "slot": "head",
       "cost": 0,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core",
+      "notes": ""
+    },
+    {
+      "name": "Claw of Chromaggus",
+      "wowheadID": "19347",
+      "slot": "one-hand",
+      "cost": 500,
+      "tags": [],
+      "source": "blackwing lair",
+      "notes": ""
+    },
+    {
+      "name": "Claw of the Black Drake",
+      "wowheadID": "19365",
+      "slot": "main hand",
+      "cost": 0,
+      "tags": [],
+      "source": "blackwing lair",
+      "notes": ""
+    },
+    {
+      "name": "Cloak of Draconic Might",
+      "wowheadID": "19436",
+      "slot": "back",
+      "cost": 300,
+      "tags": [],
+      "source": "blackwing lair",
+      "notes": "Warrior/E-Shaman Priority"
+    },
+    {
+      "name": "Cloak of Firemaw",
+      "wowheadID": "19398",
+      "slot": "back",
+      "cost": 300,
+      "tags": [],
+      "source": "blackwing lair",
+      "notes": ""
+    },
+    {
+      "name": "Cloak of the Brood Lord",
+      "wowheadID": "19378",
+      "slot": "back",
+      "cost": 300,
+      "tags": [],
+      "source": "blackwing lair",
+      "notes": ""
+    },
+    {
+      "name": "Cloak of the Shrouded Mists",
+      "wowheadID": "17102",
+      "slot": "back",
+      "cost": 300,
       "tags": [],
       "source": "molten core",
       "notes": ""
@@ -839,10 +754,26 @@
       "wowheadID": "19130",
       "slot": "ranged",
       "cost": 0,
-      "tags": [
-        "bis"
-      ],
+      "tags": [],
       "source": "world",
+      "notes": ""
+    },
+    {
+      "name": "Core Forged Greaves",
+      "wowheadID": "18806",
+      "slot": "feet",
+      "cost": 0,
+      "tags": [],
+      "source": "molten core",
+      "notes": ""
+    },
+    {
+      "name": "Core Hound Tooth",
+      "wowheadID": "18805",
+      "slot": "one-hand",
+      "cost": 200,
+      "tags": [],
+      "source": "molten core",
       "notes": ""
     },
     {
@@ -864,20 +795,81 @@
       "notes": ""
     },
     {
-      "name": "Dragonstalker's Spaulders",
-      "wowheadID": "16937",
-      "slot": "shoulder",
-      "cost": 300,
-      "tags": [
-        "t2"
-      ],
+      "name": "Crul'shorukh, Edge of Chaos",
+      "wowheadID": "19363",
+      "slot": "one-hand",
+      "cost": 600,
+      "tags": [],
       "source": "blackwing lair",
       "notes": ""
     },
     {
-      "name": "Core Forged Greaves",
-      "wowheadID": "18806",
-      "slot": "feet",
+      "name": "Crystal Adorned Crown",
+      "wowheadID": "19132",
+      "slot": "head",
+      "cost": 0,
+      "tags": [],
+      "source": "world",
+      "notes": ""
+    },
+    {
+      "name": "Deathbringer",
+      "wowheadID": "17068",
+      "slot": "one-hand",
+      "cost": 400,
+      "tags": [],
+      "source": "onyxia",
+      "notes": ""
+    },
+    {
+      "name": "Deep Earth Spaulders",
+      "wowheadID": "18829",
+      "slot": "shoulder",
+      "cost": 0,
+      "tags": [],
+      "source": "molten core",
+      "notes": ""
+    },
+    {
+      "name": "Doom's Edge",
+      "wowheadID": "19362",
+      "slot": "",
+      "cost": 200,
+      "tags": [],
+      "source": "blackwing lair",
+      "notes": ""
+    },
+    {
+      "name": "Doomhide Gauntlets",
+      "wowheadID": "18544",
+      "slot": "hands",
+      "cost": 0,
+      "tags": [],
+      "source": "world",
+      "notes": ""
+    },
+    {
+      "name": "Draconic Avenger",
+      "wowheadID": "19354",
+      "slot": "",
+      "cost": 0,
+      "tags": [],
+      "source": "blackwing lair",
+      "notes": ""
+    },
+    {
+      "name": "Draconic Maul",
+      "wowheadID": "19358",
+      "slot": "two-hand",
+      "cost": 0,
+      "tags": [],
+      "source": "blackwing lair",
+      "notes": ""
+    },
+    {
+      "name": "Dragon's Blood Cape",
+      "wowheadID": "17107",
+      "slot": "back",
       "cost": 0,
       "tags": [],
       "source": "molten core",
@@ -893,32 +885,50 @@
       "notes": ""
     },
     {
-      "name": "Drake Fang Talisman",
-      "wowheadID": "19406",
-      "slot": "trinket",
-      "cost": 750,
-      "tags": [
-        "bis"
-      ],
+      "name": "Dragonbreath Hand Cannon",
+      "wowheadID": "19368",
+      "slot": "ranged",
+      "cost": 150,
+      "tags": [],
       "source": "blackwing lair",
-      "notes": "Rogue/Warrior Priority"
+      "notes": ""
     },
     {
-      "name": "Dragonstalker's Legguards",
-      "wowheadID": "16938",
-      "slot": "legs",
-      "cost": 350,
-      "tags": [
-        "t2"
-      ],
-      "source": "molten core",
+      "name": "Dragonfang Blade",
+      "wowheadID": "19346",
+      "slot": "one-hand",
+      "cost": 200,
+      "tags": [],
+      "source": "blackwing lair",
       "notes": ""
     },
     {
       "name": "Dragonstalker's Belt",
       "wowheadID": "16936",
       "slot": "waist",
-      "cost": 180,
+      "cost": 0,
+      "tags": [
+        "t2"
+      ],
+      "source": "blackwing lair",
+      "notes": ""
+    },
+    {
+      "name": "Dragonstalker's Bracers",
+      "wowheadID": "16935",
+      "slot": "wrist",
+      "cost": 0,
+      "tags": [
+        "t2"
+      ],
+      "source": "blackwing lair",
+      "notes": ""
+    },
+    {
+      "name": "Dragonstalker's Breastplate",
+      "wowheadID": "16942",
+      "slot": "chest",
+      "cost": 0,
       "tags": [
         "t2"
       ],
@@ -929,29 +939,7 @@
       "name": "Dragonstalker's Gauntlets",
       "wowheadID": "16940",
       "slot": "hands",
-      "cost": 225,
-      "tags": [
-        "t2"
-      ],
-      "source": "blackwing lair",
-      "notes": ""
-    },
-    {
-      "name": "Crul'shorukh, Edge of Chaos",
-      "wowheadID": "19363",
-      "slot": "one-hand",
-      "cost": 600,
-      "tags": [
-        "bis"
-      ],
-      "source": "blackwing lair",
-      "notes": ""
-    },
-    {
-      "name": "Dragonstalker's Bracers",
-      "wowheadID": "16935",
-      "slot": "wrist",
-      "cost": 180,
+      "cost": 0,
       "tags": [
         "t2"
       ],
@@ -962,12 +950,54 @@
       "name": "Dragonstalker's Greaves",
       "wowheadID": "16941",
       "slot": "feet",
-      "cost": 225,
+      "cost": 0,
       "tags": [
         "t2"
       ],
       "source": "blackwing lair",
       "notes": ""
+    },
+    {
+      "name": "Dragonstalker's Helm",
+      "wowheadID": "16939",
+      "slot": "head",
+      "cost": 0,
+      "tags": [
+        "t2"
+      ],
+      "source": "onyxia",
+      "notes": ""
+    },
+    {
+      "name": "Dragonstalker's Legguards",
+      "wowheadID": "16938",
+      "slot": "legs",
+      "cost": 0,
+      "tags": [
+        "t2"
+      ],
+      "source": "molten core",
+      "notes": ""
+    },
+    {
+      "name": "Dragonstalker's Spaulders",
+      "wowheadID": "16937",
+      "slot": "shoulder",
+      "cost": 0,
+      "tags": [
+        "t2"
+      ],
+      "source": "blackwing lair",
+      "notes": ""
+    },
+    {
+      "name": "Drake Fang Talisman",
+      "wowheadID": "19406",
+      "slot": "trinket",
+      "cost": 750,
+      "tags": [],
+      "source": "blackwing lair",
+      "notes": "Rogue/Warrior Priority"
     },
     {
       "name": "Drake Talon Cleaver",
@@ -988,135 +1018,20 @@
       "notes": ""
     },
     {
-      "name": "Dragonbreath Hand Cannon",
-      "wowheadID": "19368",
-      "slot": "ranged",
-      "cost": 150,
-      "tags": [],
-      "source": "blackwing lair",
-      "notes": ""
-    },
-    {
-      "name": "Draconic Maul",
-      "wowheadID": "19358",
-      "slot": "two-hand",
-      "cost": 0,
-      "tags": [],
-      "source": "blackwing lair",
-      "notes": ""
-    },
-    {
-      "name": "Doom's Edge",
-      "wowheadID": "19362",
-      "slot": "",
-      "cost": 200,
-      "tags": [],
-      "source": "blackwing lair",
-      "notes": ""
-    },
-    {
-      "name": "Core Hound Tooth",
-      "wowheadID": "18805",
-      "slot": "one-hand",
-      "cost": 200,
-      "tags": [],
-      "source": "molten core",
-      "notes": ""
-    },
-    {
-      "name": "Dragonstalker's Helm",
-      "wowheadID": "16939",
-      "slot": "head",
-      "cost": 350,
-      "tags": [
-        "t2"
-      ],
-      "source": "onyxia",
-      "notes": ""
-    },
-    {
-      "name": "Doomhide Gauntlets",
-      "wowheadID": "18544",
-      "slot": "hands",
+      "name": "Drape of Benediction",
+      "wowheadID": "18208",
+      "slot": "back",
       "cost": 0,
       "tags": [],
       "source": "world",
       "notes": ""
     },
     {
-      "name": "Crystal Adorned Crown",
-      "wowheadID": "19132",
-      "slot": "head",
+      "name": "Drillborer Disk",
+      "wowheadID": "17066",
+      "slot": "shield",
       "cost": 0,
-      "tags": [
-        "bis"
-      ],
-      "source": "world",
-      "notes": ""
-    },
-    {
-      "name": "Chromatically Tempered Sword",
-      "wowheadID": "19352",
-      "slot": "one-hand",
-      "cost": 600,
-      "tags": [
-        "bis"
-      ],
-      "source": "blackwing lair",
-      "notes": ""
-    },
-    {
-      "name": "Mantle of Prophecy",
-      "wowheadID": "16816",
-      "slot": "shoulder",
-      "cost": 0,
-      "tags": [
-        "t1"
-      ],
-      "source": "molten core",
-      "notes": ""
-    },
-    {
-      "name": "Felheart Belt",
-      "wowheadID": "16806",
-      "slot": "waist",
-      "cost": 0,
-      "tags": [
-        "t1"
-      ],
-      "source": "molten core",
-      "notes": ""
-    },
-    {
-      "name": "Gauntlets of Might",
-      "wowheadID": "16863",
-      "slot": "hands",
-      "cost": 0,
-      "tags": [
-        "t1"
-      ],
-      "source": "molten core",
-      "notes": ""
-    },
-    {
-      "name": "Giantstalker's Belt",
-      "wowheadID": "16851",
-      "slot": "waist",
-      "cost": 0,
-      "tags": [
-        "t1"
-      ],
-      "source": "molten core",
-      "notes": ""
-    },
-    {
-      "name": "Lawbringer Belt",
-      "wowheadID": "16858",
-      "slot": "waist",
-      "cost": 0,
-      "tags": [
-        "t1"
-      ],
+      "tags": [],
       "source": "molten core",
       "notes": ""
     },
@@ -1132,56 +1047,12 @@
       "notes": ""
     },
     {
-      "name": "Felheart Bracers",
-      "wowheadID": "16804",
-      "slot": "wrist",
+      "name": "Earthfury Boots",
+      "wowheadID": "16837",
+      "slot": "feet",
       "cost": 0,
       "tags": [
         "t1"
-      ],
-      "source": "molten core",
-      "notes": ""
-    },
-    {
-      "name": "Pauldrons of Might",
-      "wowheadID": "16868",
-      "slot": "shoulder",
-      "cost": 0,
-      "tags": [
-        "t1"
-      ],
-      "source": "molten core",
-      "notes": ""
-    },
-    {
-      "name": "Giantstalker's Bracers",
-      "wowheadID": "16850",
-      "slot": "wrist",
-      "cost": 0,
-      "tags": [
-        "t1"
-      ],
-      "source": "molten core",
-      "notes": ""
-    },
-    {
-      "name": "Nightslayer Bracelets",
-      "wowheadID": "16825",
-      "slot": "wrist",
-      "cost": 0,
-      "tags": [
-        "t1"
-      ],
-      "source": "molten core",
-      "notes": ""
-    },
-    {
-      "name": "Leggings of Transcendence",
-      "wowheadID": "16922",
-      "slot": "legs",
-      "cost": 350,
-      "tags": [
-        "t2"
       ],
       "source": "molten core",
       "notes": ""
@@ -1194,774 +1065,6 @@
       "tags": [
         "t1"
       ],
-      "source": "molten core",
-      "notes": ""
-    },
-    {
-      "name": "Lawbringer Bracers",
-      "wowheadID": "16857",
-      "slot": "wrist",
-      "cost": 0,
-      "tags": [
-        "t1"
-      ],
-      "source": "molten core",
-      "notes": ""
-    },
-    {
-      "name": "Eye of Sulfuras",
-      "wowheadID": "17204",
-      "slot": "",
-      "cost": 0,
-      "tags": [],
-      "source": "molten core",
-      "notes": ""
-    },
-    {
-      "name": "Manastorm Leggings",
-      "wowheadID": "18872",
-      "slot": "legs",
-      "cost": 0,
-      "tags": [],
-      "source": "molten core",
-      "notes": ""
-    },
-    {
-      "name": "Nightslayer Chestpiece",
-      "wowheadID": "16820",
-      "slot": "chest",
-      "cost": 0,
-      "tags": [
-        "t1"
-      ],
-      "source": "molten core",
-      "notes": ""
-    },
-    {
-      "name": "Flamewaker Legplates",
-      "wowheadID": "18861",
-      "slot": "legs",
-      "cost": 0,
-      "tags": [],
-      "source": "molten core",
-      "notes": ""
-    },
-    {
-      "name": "Head of Onyxia",
-      "wowheadID": "18423",
-      "slot": "",
-      "cost": 0,
-      "tags": [],
-      "source": "onyxia",
-      "notes": ""
-    },
-    {
-      "name": "Mature Black Dragon Sinew",
-      "wowheadID": "18705",
-      "slot": "",
-      "cost": 300,
-      "tags": [],
-      "source": "onyxia",
-      "notes": ""
-    },
-    {
-      "name": "Legplates of Wrath",
-      "wowheadID": "16962",
-      "slot": "legs",
-      "cost": 350,
-      "tags": [
-        "t2"
-      ],
-      "source": "molten core",
-      "notes": ""
-    },
-    {
-      "name": "Netherwind Crown",
-      "wowheadID": "16914",
-      "slot": "head",
-      "cost": 350,
-      "tags": [
-        "t2"
-      ],
-      "source": "onyxia",
-      "notes": ""
-    },
-    {
-      "name": "Mana Igniting Cord",
-      "wowheadID": "19136",
-      "slot": "waist",
-      "cost": 200,
-      "tags": [
-        "bis"
-      ],
-      "source": "molten core",
-      "notes": ""
-    },
-    {
-      "name": "Helm of Might",
-      "wowheadID": "16866",
-      "slot": "head",
-      "cost": 0,
-      "tags": [
-        "t1"
-      ],
-      "source": "molten core",
-      "notes": ""
-    },
-    {
-      "name": "Earthshaker",
-      "wowheadID": "17073",
-      "slot": "two-hand",
-      "cost": 0,
-      "tags": [],
-      "source": "molten core",
-      "notes": ""
-    },
-    {
-      "name": "Nemesis Skullcap",
-      "wowheadID": "16929",
-      "slot": "head",
-      "cost": 350,
-      "tags": [
-        "t2"
-      ],
-      "source": "onyxia",
-      "notes": ""
-    },
-    {
-      "name": "Eskhandar's Collar",
-      "wowheadID": "18205",
-      "slot": "neck",
-      "cost": 0,
-      "tags": [],
-      "source": "onyxia",
-      "notes": ""
-    },
-    {
-      "name": "Judgement Crown",
-      "wowheadID": "16955",
-      "slot": "head",
-      "cost": 350,
-      "tags": [
-        "t2"
-      ],
-      "source": "onyxia",
-      "notes": ""
-    },
-    {
-      "name": "Helm of the Lifegiver",
-      "wowheadID": "18870",
-      "slot": "head",
-      "cost": 0,
-      "tags": [],
-      "source": "molten core",
-      "notes": ""
-    },
-    {
-      "name": "Helm of Wrath",
-      "wowheadID": "16963",
-      "slot": "head",
-      "cost": 350,
-      "tags": [
-        "t2"
-      ],
-      "source": "onyxia",
-      "notes": ""
-    },
-    {
-      "name": "Malistar's Defender",
-      "wowheadID": "17106",
-      "slot": "shield",
-      "cost": 150,
-      "tags": [],
-      "source": "molten core",
-      "notes": ""
-    },
-    {
-      "name": "Nemesis Leggings",
-      "wowheadID": "16930",
-      "slot": "legs",
-      "cost": 350,
-      "tags": [
-        "t2"
-      ],
-      "source": "molten core",
-      "notes": ""
-    },
-    {
-      "name": "Maladath, Runed Blade of the Black Flight",
-      "wowheadID": "19351",
-      "slot": "one-hand",
-      "cost": 450,
-      "tags": [],
-      "source": "blackwing lair",
-      "notes": "Rogue Priority"
-    },
-    {
-      "name": "Lifegiving Gem",
-      "wowheadID": "19341",
-      "slot": "trinket",
-      "cost": 450,
-      "tags": [],
-      "source": "blackwing lair",
-      "notes": ""
-    },
-    {
-      "name": "Drape of Benediction",
-      "wowheadID": "18208",
-      "slot": "back",
-      "cost": 0,
-      "tags": [],
-      "source": "world",
-      "notes": ""
-    },
-    {
-      "name": "Gutgore Ripper",
-      "wowheadID": "17071",
-      "slot": "one-hand",
-      "cost": 0,
-      "tags": [],
-      "source": "molten core",
-      "notes": ""
-    },
-    {
-      "name": "Lok'amir il Romathis",
-      "wowheadID": "19360",
-      "slot": "main hand",
-      "cost": 600,
-      "tags": [
-        "bis"
-      ],
-      "source": "blackwing lair",
-      "notes": "Shaman/Druid Priority"
-    },
-    {
-      "name": "Netherwind Pants",
-      "wowheadID": "16915",
-      "slot": "legs",
-      "cost": 350,
-      "tags": [
-        "t2"
-      ],
-      "source": "molten core",
-      "notes": ""
-    },
-    {
-      "name": "Neltharion's Tear",
-      "wowheadID": "19379",
-      "slot": "trinket",
-      "cost": 750,
-      "tags": [
-        "bis"
-      ],
-      "source": "blackwing lair",
-      "notes": "Mage/Warlock Priority"
-    },
-    {
-      "name": "Obsidian Edged Blade",
-      "wowheadID": "18822",
-      "slot": "two-hand",
-      "cost": 0,
-      "tags": [],
-      "source": "molten core",
-      "notes": ""
-    },
-    {
-      "name": "Mantle of the Blackwing Cabal",
-      "wowheadID": "19370",
-      "slot": "shoulder",
-      "cost": 450,
-      "tags": [
-        "bis"
-      ],
-      "source": "blackwing lair",
-      "notes": "Mage/Warlock Priority"
-    },
-    {
-      "name": "Mind Quickening Gem",
-      "wowheadID": "19339",
-      "slot": "trinket",
-      "cost": 450,
-      "tags": [],
-      "source": "blackwing lair",
-      "notes": ""
-    },
-    {
-      "name": "Felheart Horns",
-      "wowheadID": "16808",
-      "slot": "head",
-      "cost": 0,
-      "tags": [
-        "t1"
-      ],
-      "source": "molten core",
-      "notes": ""
-    },
-    {
-      "name": "Elementium Reinforced Bulwark",
-      "wowheadID": "19349",
-      "slot": "shield",
-      "cost": 150,
-      "tags": [],
-      "source": "blackwing lair",
-      "notes": ""
-    },
-    {
-      "name": "Drillborer Disk",
-      "wowheadID": "17066",
-      "slot": "shield",
-      "cost": 0,
-      "tags": [],
-      "source": "molten core",
-      "notes": ""
-    },
-    {
-      "name": "Prestor's Talisman of Connivery",
-      "wowheadID": "19377",
-      "slot": "neck",
-      "cost": 450,
-      "tags": [
-        "bis"
-      ],
-      "source": "blackwing lair",
-      "notes": "Rogue/E-Shaman/Hunter Priority"
-    },
-    {
-      "name": "Nightslayer Gloves",
-      "wowheadID": "16826",
-      "slot": "hands",
-      "cost": 0,
-      "tags": [
-        "t1"
-      ],
-      "source": "molten core",
-      "notes": ""
-    },
-    {
-      "name": "Judgement Legplates",
-      "wowheadID": "16954",
-      "slot": "legs",
-      "cost": 350,
-      "tags": [
-        "t2"
-      ],
-      "source": "molten core",
-      "notes": ""
-    },
-    {
-      "name": "Head of Nefarian",
-      "wowheadID": "19002",
-      "slot": "",
-      "cost": 450,
-      "tags": [],
-      "source": "blackwing lair",
-      "notes": "Physical DPS"
-    },
-    {
-      "name": "Gloves of the Hypnotic Flame",
-      "wowheadID": "18808",
-      "slot": "hands",
-      "cost": 0,
-      "tags": [],
-      "source": "molten core",
-      "notes": ""
-    },
-    {
-      "name": "Fireproof Cloak",
-      "wowheadID": "18811",
-      "slot": "back",
-      "cost": 0,
-      "tags": [],
-      "source": "molten core",
-      "notes": ""
-    },
-    {
-      "name": "Herald of Woe",
-      "wowheadID": "19357",
-      "slot": "two-hand",
-      "cost": 0,
-      "tags": [],
-      "source": "blackwing lair",
-      "notes": ""
-    },
-    {
-      "name": "Felheart Robes",
-      "wowheadID": "16809",
-      "slot": "chest",
-      "cost": 0,
-      "tags": [
-        "t1"
-      ],
-      "source": "molten core",
-      "notes": ""
-    },
-    {
-      "name": "Giantstalker's Epaulets",
-      "wowheadID": "16848",
-      "slot": "shoulder",
-      "cost": 0,
-      "tags": [
-        "t1"
-      ],
-      "source": "molten core",
-      "notes": ""
-    },
-    {
-      "name": "Heartstriker",
-      "wowheadID": "19350",
-      "slot": "ranged",
-      "cost": 0,
-      "tags": [],
-      "source": "blackwing lair",
-      "notes": ""
-    },
-    {
-      "name": "Malfurion's Blessed Bulwark",
-      "wowheadID": "19405",
-      "slot": "chest",
-      "cost": 325,
-      "tags": [],
-      "source": "blackwing lair",
-      "notes": ""
-    },
-    {
-      "name": "Nightslayer Cover",
-      "wowheadID": "16821",
-      "slot": "head",
-      "cost": 0,
-      "tags": [
-        "t1"
-      ],
-      "source": "molten core",
-      "notes": ""
-    },
-    {
-      "name": "Legguards of the Fallen Crusader",
-      "wowheadID": "19402",
-      "slot": "legs",
-      "cost": 400,
-      "tags": [
-        "bis"
-      ],
-      "source": "blackwing lair",
-      "notes": ""
-    },
-    {
-      "name": "Helm of Endless Rage",
-      "wowheadID": "19372",
-      "slot": "head",
-      "cost": 350,
-      "tags": [],
-      "source": "blackwing lair",
-      "notes": ""
-    },
-    {
-      "name": "Ebony Flame Gloves",
-      "wowheadID": "19407",
-      "slot": "hands",
-      "cost": 350,
-      "tags": [],
-      "source": "blackwing lair",
-      "notes": ""
-    },
-    {
-      "name": "Firemaw's Clutch",
-      "wowheadID": "19400",
-      "slot": "waist",
-      "cost": 200,
-      "tags": [],
-      "source": "blackwing lair",
-      "notes": ""
-    },
-    {
-      "name": "Lawbringer Helm",
-      "wowheadID": "16854",
-      "slot": "head",
-      "cost": 0,
-      "tags": [
-        "t1"
-      ],
-      "source": "molten core",
-      "notes": ""
-    },
-    {
-      "name": "Finkle's Lava Dredger",
-      "wowheadID": "18803",
-      "slot": "two-hand",
-      "cost": 0,
-      "tags": [],
-      "source": "molten core",
-      "notes": ""
-    },
-    {
-      "name": "Empowered Leggings",
-      "wowheadID": "19385",
-      "slot": "legs",
-      "cost": 400,
-      "tags": [
-        "bis"
-      ],
-      "source": "blackwing lair",
-      "notes": ""
-    },
-    {
-      "name": "Head of the Broodlord Lashlayer",
-      "wowheadID": "20383",
-      "slot": "",
-      "cost": 0,
-      "tags": [],
-      "source": "blackwing lair",
-      "notes": ""
-    },
-    {
-      "name": "Medallion of Steadfast Might",
-      "wowheadID": "17065",
-      "slot": "neck",
-      "cost": 0,
-      "tags": [],
-      "source": "molten core",
-      "notes": ""
-    },
-    {
-      "name": "Pauldrons of Transcendence",
-      "wowheadID": "16924",
-      "slot": "shoulder",
-      "cost": 300,
-      "tags": [
-        "t2"
-      ],
-      "source": "blackwing lair",
-      "notes": ""
-    },
-    {
-      "name": "Onslaught Girdle",
-      "wowheadID": "19137",
-      "slot": "waist",
-      "cost": 200,
-      "tags": [
-        "bis"
-      ],
-      "source": "molten core",
-      "notes": ""
-    },
-    {
-      "name": "Netherwind Gloves",
-      "wowheadID": "16913",
-      "slot": "hands",
-      "cost": 225,
-      "tags": [
-        "t2"
-      ],
-      "source": "blackwing lair",
-      "notes": ""
-    },
-    {
-      "name": "Handguards of Transcendence",
-      "wowheadID": "16920",
-      "slot": "hands",
-      "cost": 225,
-      "tags": [
-        "t2"
-      ],
-      "source": "blackwing lair",
-      "notes": ""
-    },
-    {
-      "name": "Nemesis Robes",
-      "wowheadID": "16931",
-      "slot": "chest",
-      "cost": 325,
-      "tags": [
-        "t2"
-      ],
-      "source": "blackwing lair",
-      "notes": ""
-    },
-    {
-      "name": "Natural Alignment Crystal",
-      "wowheadID": "19344",
-      "slot": "trinket",
-      "cost": 225,
-      "tags": [],
-      "source": "blackwing lair",
-      "notes": ""
-    },
-    {
-      "name": "Perdition's Blade",
-      "wowheadID": "18816",
-      "slot": "one-hand",
-      "cost": 400,
-      "tags": [
-        "bis"
-      ],
-      "source": "molten core",
-      "notes": ""
-    },
-    {
-      "name": "Fire Runed Grimoire",
-      "wowheadID": "19142",
-      "slot": "held in off-hand",
-      "cost": 0,
-      "tags": [],
-      "source": "molten core",
-      "notes": ""
-    },
-    {
-      "name": "Head of Nefarian",
-      "wowheadID": "19003",
-      "slot": "",
-      "cost": 450,
-      "tags": [],
-      "source": "blackwing lair",
-      "notes": "Physical DPS"
-    },
-    {
-      "name": "Gloves of Prophecy",
-      "wowheadID": "16812",
-      "slot": "hands",
-      "cost": 0,
-      "tags": [
-        "t1"
-      ],
-      "source": "molten core",
-      "notes": ""
-    },
-    {
-      "name": "Nightslayer Boots",
-      "wowheadID": "16824",
-      "slot": "feet",
-      "cost": 0,
-      "tags": [
-        "t1"
-      ],
-      "source": "molten core",
-      "notes": ""
-    },
-    {
-      "name": "Judgement Breastplate",
-      "wowheadID": "16958",
-      "slot": "chest",
-      "cost": 325,
-      "tags": [
-        "t2"
-      ],
-      "source": "blackwing lair",
-      "notes": ""
-    },
-    {
-      "name": "Nemesis Spaulders",
-      "wowheadID": "16932",
-      "slot": "shoulder",
-      "cost": 300,
-      "tags": [
-        "t2"
-      ],
-      "source": "blackwing lair",
-      "notes": ""
-    },
-    {
-      "name": "Pauldrons of Wrath",
-      "wowheadID": "16961",
-      "slot": "shoulder",
-      "cost": 300,
-      "tags": [
-        "t2"
-      ],
-      "source": "blackwing lair",
-      "notes": ""
-    },
-    {
-      "name": "Nemesis Belt",
-      "wowheadID": "16933",
-      "slot": "waist",
-      "cost": 180,
-      "tags": [
-        "t2"
-      ],
-      "source": "blackwing lair",
-      "notes": ""
-    },
-    {
-      "name": "Magma Tempered Boots",
-      "wowheadID": "18824",
-      "slot": "feet",
-      "cost": 0,
-      "tags": [],
-      "source": "molten core",
-      "notes": ""
-    },
-    {
-      "name": "Netherwind Robes",
-      "wowheadID": "16916",
-      "slot": "chest",
-      "cost": 325,
-      "tags": [
-        "t2"
-      ],
-      "source": "blackwing lair",
-      "notes": ""
-    },
-    {
-      "name": "Mish'undare, Circlet of the Mind Flayer",
-      "wowheadID": "19375",
-      "slot": "head",
-      "cost": 450,
-      "tags": [
-        "bis"
-      ],
-      "source": "blackwing lair",
-      "notes": "Spell DPS"
-    },
-    {
-      "name": "Felheart Gloves",
-      "wowheadID": "16805",
-      "slot": "hands",
-      "cost": 0,
-      "tags": [
-        "t1"
-      ],
-      "source": "molten core",
-      "notes": ""
-    },
-    {
-      "name": "Judgement Spaulders",
-      "wowheadID": "16953",
-      "slot": "shoulder",
-      "cost": 300,
-      "tags": [
-        "t2"
-      ],
-      "source": "blackwing lair",
-      "notes": ""
-    },
-    {
-      "name": "Giantstalker's Breastplate",
-      "wowheadID": "16845",
-      "slot": "chest",
-      "cost": 0,
-      "tags": [
-        "t1"
-      ],
-      "source": "molten core",
-      "notes": ""
-    },
-    {
-      "name": "Netherwind Mantle",
-      "wowheadID": "16917",
-      "slot": "shoulder",
-      "cost": 300,
-      "tags": [
-        "t2"
-      ],
-      "source": "blackwing lair",
-      "notes": ""
-    },
-    {
-      "name": "Eskhandar's Right Claw",
-      "wowheadID": "18203",
-      "slot": "main hand",
-      "cost": 0,
-      "tags": [],
       "source": "molten core",
       "notes": ""
     },
@@ -1988,237 +1091,14 @@
       "notes": ""
     },
     {
-      "name": "Earthfury Vestments",
-      "wowheadID": "16841",
-      "slot": "chest",
+      "name": "Earthfury Helmet",
+      "wowheadID": "16842",
+      "slot": "head",
       "cost": 0,
       "tags": [
         "t1"
       ],
       "source": "molten core",
-      "notes": ""
-    },
-    {
-      "name": "Nemesis Boots",
-      "wowheadID": "16927",
-      "slot": "feet",
-      "cost": 225,
-      "tags": [
-        "t2"
-      ],
-      "source": "blackwing lair",
-      "notes": ""
-    },
-    {
-      "name": "Legplates of Ten Storms",
-      "wowheadID": "16946",
-      "slot": "legs",
-      "cost": 350,
-      "tags": [
-        "t2"
-      ],
-      "source": "molten core",
-      "notes": ""
-    },
-    {
-      "name": "Nightslayer Pants",
-      "wowheadID": "16822",
-      "slot": "legs",
-      "cost": 0,
-      "tags": [
-        "t1"
-      ],
-      "source": "molten core",
-      "notes": ""
-    },
-    {
-      "name": "Giantstalker's Leggings",
-      "wowheadID": "16847",
-      "slot": "legs",
-      "cost": 0,
-      "tags": [
-        "t1"
-      ],
-      "source": "molten core",
-      "notes": ""
-    },
-    {
-      "name": "Heavy Dark Iron Ring",
-      "wowheadID": "18879",
-      "slot": "finger",
-      "cost": 0,
-      "tags": [],
-      "source": "molten core",
-      "notes": ""
-    },
-    {
-      "name": "Nemesis Bracers",
-      "wowheadID": "16934",
-      "slot": "wrist",
-      "cost": 180,
-      "tags": [
-        "t2"
-      ],
-      "source": "blackwing lair",
-      "notes": ""
-    },
-    {
-      "name": "Felheart Shoulder Pads",
-      "wowheadID": "16807",
-      "slot": "shoulder",
-      "cost": 0,
-      "tags": [
-        "t1"
-      ],
-      "source": "molten core",
-      "notes": ""
-    },
-    {
-      "name": "Elementium Threaded Cloak",
-      "wowheadID": "19386",
-      "slot": "back",
-      "cost": 0,
-      "tags": [],
-      "source": "blackwing lair",
-      "notes": ""
-    },
-    {
-      "name": "Pendant of the Fallen Dragon",
-      "wowheadID": "19371",
-      "slot": "neck",
-      "cost": 200,
-      "tags": [],
-      "source": "blackwing lair",
-      "notes": ""
-    },
-    {
-      "name": "Lawbringer Chestguard",
-      "wowheadID": "16853",
-      "slot": "chest",
-      "cost": 0,
-      "tags": [
-        "t1"
-      ],
-      "source": "molten core",
-      "notes": ""
-    },
-    {
-      "name": "Flameguard Gauntlets",
-      "wowheadID": "19143",
-      "slot": "hands",
-      "cost": 100,
-      "tags": [],
-      "source": "molten core",
-      "notes": ""
-    },
-    {
-      "name": "Gauntlets of Ten Storms",
-      "wowheadID": "16948",
-      "slot": "hands",
-      "cost": 225,
-      "tags": [
-        "t2"
-      ],
-      "source": "blackwing lair",
-      "notes": ""
-    },
-    {
-      "name": "Epaulets of Ten Storms",
-      "wowheadID": "16945",
-      "slot": "shoulder",
-      "cost": 300,
-      "tags": [
-        "t2"
-      ],
-      "source": "blackwing lair",
-      "notes": ""
-    },
-    {
-      "name": "Nemesis Gloves",
-      "wowheadID": "16928",
-      "slot": "hands",
-      "cost": 225,
-      "tags": [
-        "t2"
-      ],
-      "source": "blackwing lair",
-      "notes": ""
-    },
-    {
-      "name": "Lawbringer Spaulders",
-      "wowheadID": "16856",
-      "slot": "shoulder",
-      "cost": 0,
-      "tags": [
-        "t1"
-      ],
-      "source": "molten core",
-      "notes": ""
-    },
-    {
-      "name": "Gauntlets of Wrath",
-      "wowheadID": "16964",
-      "slot": "hands",
-      "cost": 225,
-      "tags": [
-        "t2"
-      ],
-      "source": "blackwing lair",
-      "notes": ""
-    },
-    {
-      "name": "Judgement Belt",
-      "wowheadID": "16952",
-      "slot": "waist",
-      "cost": 180,
-      "tags": [
-        "t2"
-      ],
-      "source": "blackwing lair",
-      "notes": ""
-    },
-    {
-      "name": "Legplates of Might",
-      "wowheadID": "16867",
-      "slot": "legs",
-      "cost": 0,
-      "tags": [
-        "t1"
-      ],
-      "source": "molten core",
-      "notes": ""
-    },
-    {
-      "name": "Earthfury Boots",
-      "wowheadID": "16837",
-      "slot": "feet",
-      "cost": 0,
-      "tags": [
-        "t1"
-      ],
-      "source": "molten core",
-      "notes": ""
-    },
-    {
-      "name": "Judgement Gauntlets",
-      "wowheadID": "16956",
-      "slot": "hands",
-      "cost": 225,
-      "tags": [
-        "t2"
-      ],
-      "source": "blackwing lair",
-      "notes": ""
-    },
-    {
-      "name": "Netherwind Bindings",
-      "wowheadID": "16918",
-      "slot": "wrist",
-      "cost": 180,
-      "tags": [
-        "t2"
-      ],
-      "source": "blackwing lair",
       "notes": ""
     },
     {
@@ -2233,10 +1113,84 @@
       "notes": ""
     },
     {
-      "name": "Judgement Bindings",
-      "wowheadID": "16951",
-      "slot": "wrist",
-      "cost": 180,
+      "name": "Earthfury Vestments",
+      "wowheadID": "16841",
+      "slot": "chest",
+      "cost": 0,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core",
+      "notes": ""
+    },
+    {
+      "name": "Earthshaker",
+      "wowheadID": "17073",
+      "slot": "two-hand",
+      "cost": 0,
+      "tags": [],
+      "source": "molten core",
+      "notes": ""
+    },
+    {
+      "name": "Ebony Flame Gloves",
+      "wowheadID": "19407",
+      "slot": "hands",
+      "cost": 350,
+      "tags": [],
+      "source": "blackwing lair",
+      "notes": ""
+    },
+    {
+      "name": "Elementium Reinforced Bulwark",
+      "wowheadID": "19349",
+      "slot": "shield",
+      "cost": 150,
+      "tags": [],
+      "source": "blackwing lair",
+      "notes": ""
+    },
+    {
+      "name": "Elementium Threaded Cloak",
+      "wowheadID": "19386",
+      "slot": "back",
+      "cost": 0,
+      "tags": [],
+      "source": "blackwing lair",
+      "notes": ""
+    },
+    {
+      "name": "Emberweave Leggings",
+      "wowheadID": "19433",
+      "slot": "legs",
+      "cost": 0,
+      "tags": [],
+      "source": "blackwing lair",
+      "notes": ""
+    },
+    {
+      "name": "Empowered Leggings",
+      "wowheadID": "19385",
+      "slot": "legs",
+      "cost": 400,
+      "tags": [],
+      "source": "blackwing lair",
+      "notes": ""
+    },
+    {
+      "name": "Empyrean Demolisher",
+      "wowheadID": "17112",
+      "slot": "main hand",
+      "cost": 0,
+      "tags": [],
+      "source": "world",
+      "notes": ""
+    },
+    {
+      "name": "Epaulets of Ten Storms",
+      "wowheadID": "16945",
+      "slot": "shoulder",
+      "cost": 0,
       "tags": [
         "t2"
       ],
@@ -2244,10 +1198,253 @@
       "notes": ""
     },
     {
-      "name": "Netherwind Belt",
-      "wowheadID": "16818",
+      "name": "Eskhandar's Collar",
+      "wowheadID": "18205",
+      "slot": "neck",
+      "cost": 0,
+      "tags": [],
+      "source": "onyxia",
+      "notes": ""
+    },
+    {
+      "name": "Eskhandar's Left Claw",
+      "wowheadID": "18202",
+      "slot": "off hand",
+      "cost": 0,
+      "tags": [],
+      "source": "world",
+      "notes": ""
+    },
+    {
+      "name": "Eskhandar's Pelt",
+      "wowheadID": "18204",
+      "slot": "back",
+      "cost": 0,
+      "tags": [],
+      "source": "world",
+      "notes": ""
+    },
+    {
+      "name": "Eskhandar's Right Claw",
+      "wowheadID": "18203",
+      "slot": "main hand",
+      "cost": 0,
+      "tags": [],
+      "source": "molten core",
+      "notes": ""
+    },
+    {
+      "name": "Essence Gatherer",
+      "wowheadID": "19435",
+      "slot": "",
+      "cost": 0,
+      "tags": [],
+      "source": "blackwing lair",
+      "notes": ""
+    },
+    {
+      "name": "Essence of the Pure Flame",
+      "wowheadID": "18815",
+      "slot": "trinket",
+      "cost": 0,
+      "tags": [],
+      "source": "molten core",
+      "notes": ""
+    },
+    {
+      "name": "Eye of Sulfuras",
+      "wowheadID": "17204",
+      "slot": "",
+      "cost": 0,
+      "tags": [],
+      "source": "molten core",
+      "notes": ""
+    },
+    {
+      "name": "Fang of the Mystics",
+      "wowheadID": "17070",
+      "slot": "one-hand",
+      "cost": 0,
+      "tags": [],
+      "source": "world",
+      "notes": ""
+    },
+    {
+      "name": "Felheart Belt",
+      "wowheadID": "16806",
       "slot": "waist",
-      "cost": 180,
+      "cost": 0,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core",
+      "notes": ""
+    },
+    {
+      "name": "Felheart Bracers",
+      "wowheadID": "16804",
+      "slot": "wrist",
+      "cost": 0,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core",
+      "notes": ""
+    },
+    {
+      "name": "Felheart Gloves",
+      "wowheadID": "16805",
+      "slot": "hands",
+      "cost": 0,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core",
+      "notes": ""
+    },
+    {
+      "name": "Felheart Horns",
+      "wowheadID": "16808",
+      "slot": "head",
+      "cost": 0,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core",
+      "notes": ""
+    },
+    {
+      "name": "Felheart Pants",
+      "wowheadID": "16810",
+      "slot": "legs",
+      "cost": 0,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core",
+      "notes": ""
+    },
+    {
+      "name": "Felheart Robes",
+      "wowheadID": "16809",
+      "slot": "chest",
+      "cost": 0,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core",
+      "notes": ""
+    },
+    {
+      "name": "Felheart Shoulder Pads",
+      "wowheadID": "16807",
+      "slot": "shoulder",
+      "cost": 0,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core",
+      "notes": ""
+    },
+    {
+      "name": "Felheart Slippers",
+      "wowheadID": "16803",
+      "slot": "feet",
+      "cost": 0,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core",
+      "notes": ""
+    },
+    {
+      "name": "Finkle's Lava Dredger",
+      "wowheadID": "18803",
+      "slot": "two-hand",
+      "cost": 0,
+      "tags": [],
+      "source": "molten core",
+      "notes": ""
+    },
+    {
+      "name": "Fire Runed Grimoire",
+      "wowheadID": "19142",
+      "slot": "held in off-hand",
+      "cost": 0,
+      "tags": [],
+      "source": "molten core",
+      "notes": ""
+    },
+    {
+      "name": "Fireguard Shoulders",
+      "wowheadID": "19139",
+      "slot": "shoulder",
+      "cost": 0,
+      "tags": [],
+      "source": "molten core",
+      "notes": ""
+    },
+    {
+      "name": "Firemaw's Clutch",
+      "wowheadID": "19400",
+      "slot": "waist",
+      "cost": 200,
+      "tags": [],
+      "source": "blackwing lair",
+      "notes": ""
+    },
+    {
+      "name": "Fireproof Cloak",
+      "wowheadID": "18811",
+      "slot": "back",
+      "cost": 0,
+      "tags": [],
+      "source": "molten core",
+      "notes": ""
+    },
+    {
+      "name": "Flameguard Gauntlets",
+      "wowheadID": "19143",
+      "slot": "hands",
+      "cost": 100,
+      "tags": [],
+      "source": "molten core",
+      "notes": ""
+    },
+    {
+      "name": "Flamewaker Legplates",
+      "wowheadID": "18861",
+      "slot": "legs",
+      "cost": 0,
+      "tags": [],
+      "source": "molten core",
+      "notes": ""
+    },
+    {
+      "name": "Flayed Doomguard Belt",
+      "wowheadID": "19134",
+      "slot": "waist",
+      "cost": 0,
+      "tags": [],
+      "source": "world",
+      "notes": ""
+    },
+    {
+      "name": "Gauntlets of Might",
+      "wowheadID": "16863",
+      "slot": "hands",
+      "cost": 0,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core",
+      "notes": ""
+    },
+    {
+      "name": "Gauntlets of Ten Storms",
+      "wowheadID": "16948",
+      "slot": "hands",
+      "cost": 0,
       "tags": [
         "t2"
       ],
@@ -2255,14 +1452,69 @@
       "notes": ""
     },
     {
-      "name": "Netherwind Boots",
-      "wowheadID": "16912",
-      "slot": "feet",
-      "cost": 225,
+      "name": "Gauntlets of Wrath",
+      "wowheadID": "16964",
+      "slot": "hands",
+      "cost": 0,
       "tags": [
         "t2"
       ],
       "source": "blackwing lair",
+      "notes": ""
+    },
+    {
+      "name": "Giantstalker's Belt",
+      "wowheadID": "16851",
+      "slot": "waist",
+      "cost": 0,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core",
+      "notes": ""
+    },
+    {
+      "name": "Giantstalker's Boots",
+      "wowheadID": "16849",
+      "slot": "feet",
+      "cost": 0,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core",
+      "notes": ""
+    },
+    {
+      "name": "Giantstalker's Bracers",
+      "wowheadID": "16850",
+      "slot": "wrist",
+      "cost": 0,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core",
+      "notes": ""
+    },
+    {
+      "name": "Giantstalker's Breastplate",
+      "wowheadID": "16845",
+      "slot": "chest",
+      "cost": 0,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core",
+      "notes": ""
+    },
+    {
+      "name": "Giantstalker's Epaulets",
+      "wowheadID": "16848",
+      "slot": "shoulder",
+      "cost": 0,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core",
       "notes": ""
     },
     {
@@ -2288,205 +1540,9 @@
       "notes": ""
     },
     {
-      "name": "Felheart Pants",
-      "wowheadID": "16810",
+      "name": "Giantstalker's Leggings",
+      "wowheadID": "16847",
       "slot": "legs",
-      "cost": 0,
-      "tags": [
-        "t1"
-      ],
-      "source": "molten core",
-      "notes": ""
-    },
-    {
-      "name": "Gloves of Rapid Evolution",
-      "wowheadID": "19369",
-      "slot": "hands",
-      "cost": 0,
-      "tags": [],
-      "source": "blackwing lair",
-      "notes": ""
-    },
-    {
-      "name": "Girdle of the Fallen Crusader",
-      "wowheadID": "19392",
-      "slot": "waist",
-      "cost": 0,
-      "tags": [],
-      "source": "blackwing lair",
-      "notes": ""
-    },
-    {
-      "name": "Greaves of Ten Storms",
-      "wowheadID": "16949",
-      "slot": "feet",
-      "cost": 225,
-      "tags": [
-        "t2"
-      ],
-      "source": "blackwing lair",
-      "notes": ""
-    },
-    {
-      "name": "Primalist's Linked Waistguard",
-      "wowheadID": "19393",
-      "slot": "waist",
-      "cost": 50,
-      "tags": [],
-      "source": "blackwing lair",
-      "notes": ""
-    },
-    {
-      "name": "Primalist's Linked Legguards",
-      "wowheadID": "19401",
-      "slot": "legs",
-      "cost": 0,
-      "tags": [],
-      "source": "blackwing lair",
-      "notes": ""
-    },
-    {
-      "name": "Giantstalker's Boots",
-      "wowheadID": "16849",
-      "slot": "feet",
-      "cost": 0,
-      "tags": [
-        "t1"
-      ],
-      "source": "molten core",
-      "notes": ""
-    },
-    {
-      "name": "Judgement Sabatons",
-      "wowheadID": "16957",
-      "slot": "feet",
-      "cost": 225,
-      "tags": [
-        "t2"
-      ],
-      "source": "blackwing lair",
-      "notes": ""
-    },
-    {
-      "name": "Emberweave Leggings",
-      "wowheadID": "19433",
-      "slot": "legs",
-      "cost": 0,
-      "tags": [],
-      "source": "blackwing lair",
-      "notes": ""
-    },
-    {
-      "name": "Pants of Prophecy",
-      "wowheadID": "16814",
-      "slot": "legs",
-      "cost": 0,
-      "tags": [
-        "t1"
-      ],
-      "source": "molten core",
-      "notes": ""
-    },
-    {
-      "name": "Essence of the Pure Flame",
-      "wowheadID": "18815",
-      "slot": "trinket",
-      "cost": 0,
-      "tags": [],
-      "source": "molten core",
-      "notes": ""
-    },
-    {
-      "name": "Essence Gatherer",
-      "wowheadID": "19435",
-      "slot": "ranged",
-      "cost": 0,
-      "tags": [],
-      "source": "blackwing lair",
-      "notes": ""
-    },
-    {
-      "name": "Lawbringer Legplates",
-      "wowheadID": "16855",
-      "slot": "legs",
-      "cost": 0,
-      "tags": [
-        "t1"
-      ],
-      "source": "molten core",
-      "notes": ""
-    },
-    {
-      "name": "Lawbringer Boots",
-      "wowheadID": "16859",
-      "slot": "feet",
-      "cost": 0,
-      "tags": [
-        "t1"
-      ],
-      "source": "molten core",
-      "notes": ""
-    },
-    {
-      "name": "Fireguard Shoulders",
-      "wowheadID": "19139",
-      "slot": "shoulder",
-      "cost": 0,
-      "tags": [],
-      "source": "molten core",
-      "notes": ""
-    },
-    {
-      "name": "Interlaced Shadow Jerkin",
-      "wowheadID": "19439",
-      "slot": "chest",
-      "cost": 0,
-      "tags": [],
-      "source": "blackwing lair",
-      "notes": ""
-    },
-    {
-      "name": "Essence Gatherer",
-      "wowheadID": "19435",
-      "slot": "",
-      "cost": 0,
-      "tags": [],
-      "source": "blackwing lair",
-      "notes": ""
-    },
-    {
-      "name": "Lawbringer Gauntlets",
-      "wowheadID": "16860",
-      "slot": "hands",
-      "cost": 0,
-      "tags": [
-        "t1"
-      ],
-      "source": "molten core",
-      "notes": ""
-    },
-    {
-      "name": "Empyrean Demolisher",
-      "wowheadID": "17112",
-      "slot": "main hand",
-      "cost": 0,
-      "tags": [],
-      "source": "world",
-      "notes": ""
-    },
-    {
-      "name": "Mature Blue Dragon Sinew",
-      "wowheadID": "18704",
-      "slot": "",
-      "cost": 0,
-      "tags": [],
-      "source": "world",
-      "notes": ""
-    },
-    {
-      "name": "Felheart Slippers",
-      "wowheadID": "16803",
-      "slot": "feet",
       "cost": 0,
       "tags": [
         "t1"
@@ -2506,8 +1562,142 @@
       "notes": ""
     },
     {
-      "name": "Earthfury Helmet",
-      "wowheadID": "16842",
+      "name": "Girdle of the Fallen Crusader",
+      "wowheadID": "19392",
+      "slot": "waist",
+      "cost": 0,
+      "tags": [],
+      "source": "blackwing lair",
+      "notes": ""
+    },
+    {
+      "name": "Gloves of Prophecy",
+      "wowheadID": "16812",
+      "slot": "hands",
+      "cost": 0,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core",
+      "notes": ""
+    },
+    {
+      "name": "Gloves of Rapid Evolution",
+      "wowheadID": "19369",
+      "slot": "hands",
+      "cost": 0,
+      "tags": [],
+      "source": "blackwing lair",
+      "notes": ""
+    },
+    {
+      "name": "Gloves of the Hypnotic Flame",
+      "wowheadID": "18808",
+      "slot": "hands",
+      "cost": 0,
+      "tags": [],
+      "source": "molten core",
+      "notes": ""
+    },
+    {
+      "name": "Greaves of Ten Storms",
+      "wowheadID": "16949",
+      "slot": "feet",
+      "cost": 0,
+      "tags": [
+        "t2"
+      ],
+      "source": "blackwing lair",
+      "notes": ""
+    },
+    {
+      "name": "Gutgore Ripper",
+      "wowheadID": "17071",
+      "slot": "one-hand",
+      "cost": 0,
+      "tags": [],
+      "source": "molten core",
+      "notes": ""
+    },
+    {
+      "name": "Halo of Transcendence",
+      "wowheadID": "16921",
+      "slot": "head",
+      "cost": 0,
+      "tags": [
+        "t2"
+      ],
+      "source": "onyxia",
+      "notes": ""
+    },
+    {
+      "name": "Handguards of Transcendence",
+      "wowheadID": "16920",
+      "slot": "hands",
+      "cost": 0,
+      "tags": [
+        "t2"
+      ],
+      "source": "blackwing lair",
+      "notes": ""
+    },
+    {
+      "name": "Head of Nefarian",
+      "wowheadID": "19003",
+      "slot": "",
+      "cost": 450,
+      "tags": [],
+      "source": "blackwing lair",
+      "notes": "Physical DPS"
+    },
+    {
+      "name": "Head of Onyxia",
+      "wowheadID": "18423",
+      "slot": "",
+      "cost": 0,
+      "tags": [],
+      "source": "onyxia",
+      "notes": ""
+    },
+    {
+      "name": "Head of the Broodlord Lashlayer",
+      "wowheadID": "20383",
+      "slot": "",
+      "cost": 0,
+      "tags": [],
+      "source": "blackwing lair",
+      "notes": ""
+    },
+    {
+      "name": "Heartstriker",
+      "wowheadID": "19350",
+      "slot": "ranged",
+      "cost": 0,
+      "tags": [],
+      "source": "blackwing lair",
+      "notes": ""
+    },
+    {
+      "name": "Heavy Dark Iron Ring",
+      "wowheadID": "18879",
+      "slot": "finger",
+      "cost": 0,
+      "tags": [],
+      "source": "molten core",
+      "notes": ""
+    },
+    {
+      "name": "Helm of Endless Rage",
+      "wowheadID": "19372",
+      "slot": "head",
+      "cost": 350,
+      "tags": [],
+      "source": "blackwing lair",
+      "notes": ""
+    },
+    {
+      "name": "Helm of Might",
+      "wowheadID": "16866",
       "slot": "head",
       "cost": 0,
       "tags": [
@@ -2517,12 +1707,43 @@
       "notes": ""
     },
     {
-      "name": "Flayed Doomguard Belt",
-      "wowheadID": "19134",
-      "slot": "waist",
+      "name": "Helm of Wrath",
+      "wowheadID": "16963",
+      "slot": "head",
+      "cost": 0,
+      "tags": [
+        "t2"
+      ],
+      "source": "onyxia",
+      "notes": ""
+    },
+    {
+      "name": "Helm of the Lifegiver",
+      "wowheadID": "18870",
+      "slot": "head",
       "cost": 0,
       "tags": [],
-      "source": "world",
+      "source": "molten core",
+      "notes": ""
+    },
+    {
+      "name": "Helmet of Ten Storms",
+      "wowheadID": "16947",
+      "slot": "head",
+      "cost": 0,
+      "tags": [
+        "t2"
+      ],
+      "source": "onyxia",
+      "notes": ""
+    },
+    {
+      "name": "Herald of Woe",
+      "wowheadID": "19357",
+      "slot": "two-hand",
+      "cost": 0,
+      "tags": [],
+      "source": "blackwing lair",
       "notes": ""
     },
     {
@@ -2535,36 +1756,653 @@
       "notes": ""
     },
     {
-      "name": "Fang of the Mystics",
-      "wowheadID": "17070",
+      "name": "Interlaced Shadow Jerkin",
+      "wowheadID": "19439",
+      "slot": "",
+      "cost": 0,
+      "tags": [],
+      "source": "blackwing lair",
+      "notes": ""
+    },
+    {
+      "name": "Judgement Belt",
+      "wowheadID": "16952",
+      "slot": "waist",
+      "cost": 0,
+      "tags": [
+        "t2"
+      ],
+      "source": "blackwing lair",
+      "notes": ""
+    },
+    {
+      "name": "Judgement Bindings",
+      "wowheadID": "16951",
+      "slot": "wrist",
+      "cost": 0,
+      "tags": [
+        "t2"
+      ],
+      "source": "blackwing lair",
+      "notes": ""
+    },
+    {
+      "name": "Judgement Breastplate",
+      "wowheadID": "16958",
+      "slot": "chest",
+      "cost": 0,
+      "tags": [
+        "t2"
+      ],
+      "source": "blackwing lair",
+      "notes": ""
+    },
+    {
+      "name": "Judgement Crown",
+      "wowheadID": "16955",
+      "slot": "head",
+      "cost": 0,
+      "tags": [
+        "t2"
+      ],
+      "source": "onyxia",
+      "notes": ""
+    },
+    {
+      "name": "Judgement Gauntlets",
+      "wowheadID": "16956",
+      "slot": "hands",
+      "cost": 0,
+      "tags": [
+        "t2"
+      ],
+      "source": "blackwing lair",
+      "notes": ""
+    },
+    {
+      "name": "Judgement Legplates",
+      "wowheadID": "16954",
+      "slot": "legs",
+      "cost": 0,
+      "tags": [
+        "t2"
+      ],
+      "source": "molten core",
+      "notes": ""
+    },
+    {
+      "name": "Judgement Sabatons",
+      "wowheadID": "16957",
+      "slot": "feet",
+      "cost": 0,
+      "tags": [
+        "t2"
+      ],
+      "source": "blackwing lair",
+      "notes": ""
+    },
+    {
+      "name": "Judgement Spaulders",
+      "wowheadID": "16953",
+      "slot": "shoulder",
+      "cost": 0,
+      "tags": [
+        "t2"
+      ],
+      "source": "blackwing lair",
+      "notes": ""
+    },
+    {
+      "name": "Lawbringer Belt",
+      "wowheadID": "16858",
+      "slot": "waist",
+      "cost": 0,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core",
+      "notes": ""
+    },
+    {
+      "name": "Lawbringer Boots",
+      "wowheadID": "16859",
+      "slot": "feet",
+      "cost": 0,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core",
+      "notes": ""
+    },
+    {
+      "name": "Lawbringer Bracers",
+      "wowheadID": "16857",
+      "slot": "wrist",
+      "cost": 0,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core",
+      "notes": ""
+    },
+    {
+      "name": "Lawbringer Chestguard",
+      "wowheadID": "16853",
+      "slot": "chest",
+      "cost": 0,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core",
+      "notes": ""
+    },
+    {
+      "name": "Lawbringer Gauntlets",
+      "wowheadID": "16860",
+      "slot": "hands",
+      "cost": 0,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core",
+      "notes": ""
+    },
+    {
+      "name": "Lawbringer Helm",
+      "wowheadID": "16854",
+      "slot": "head",
+      "cost": 0,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core",
+      "notes": ""
+    },
+    {
+      "name": "Lawbringer Legplates",
+      "wowheadID": "16855",
+      "slot": "legs",
+      "cost": 0,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core",
+      "notes": ""
+    },
+    {
+      "name": "Lawbringer Spaulders",
+      "wowheadID": "16856",
+      "slot": "shoulder",
+      "cost": 0,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core",
+      "notes": ""
+    },
+    {
+      "name": "Leggings of Arcane Supremacy",
+      "wowheadID": "18545",
+      "slot": "legs",
+      "cost": 0,
+      "tags": [],
+      "source": "world",
+      "notes": ""
+    },
+    {
+      "name": "Leggings of Transcendence",
+      "wowheadID": "16922",
+      "slot": "legs",
+      "cost": 0,
+      "tags": [
+        "t2"
+      ],
+      "source": "molten core",
+      "notes": ""
+    },
+    {
+      "name": "Legguards of the Fallen Crusader",
+      "wowheadID": "19402",
+      "slot": "legs",
+      "cost": 400,
+      "tags": [],
+      "source": "blackwing lair",
+      "notes": ""
+    },
+    {
+      "name": "Legplates of Might",
+      "wowheadID": "16867",
+      "slot": "legs",
+      "cost": 0,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core",
+      "notes": ""
+    },
+    {
+      "name": "Legplates of Ten Storms",
+      "wowheadID": "16946",
+      "slot": "legs",
+      "cost": 0,
+      "tags": [
+        "t2"
+      ],
+      "source": "molten core",
+      "notes": ""
+    },
+    {
+      "name": "Legplates of Wrath",
+      "wowheadID": "16962",
+      "slot": "legs",
+      "cost": 0,
+      "tags": [
+        "t2"
+      ],
+      "source": "molten core",
+      "notes": ""
+    },
+    {
+      "name": "Lifegiving Gem",
+      "wowheadID": "19341",
+      "slot": "trinket",
+      "cost": 450,
+      "tags": [],
+      "source": "blackwing lair",
+      "notes": ""
+    },
+    {
+      "name": "Lok'amir il Romathis",
+      "wowheadID": "19360",
+      "slot": "main hand",
+      "cost": 600,
+      "tags": [],
+      "source": "blackwing lair",
+      "notes": "Shaman/Druid Priority"
+    },
+    {
+      "name": "Magma Tempered Boots",
+      "wowheadID": "18824",
+      "slot": "feet",
+      "cost": 0,
+      "tags": [],
+      "source": "molten core",
+      "notes": ""
+    },
+    {
+      "name": "Maladath, Runed Blade of the Black Flight",
+      "wowheadID": "19351",
       "slot": "one-hand",
+      "cost": 450,
+      "tags": [],
+      "source": "blackwing lair",
+      "notes": "Rogue Priority"
+    },
+    {
+      "name": "Malfurion's Blessed Bulwark",
+      "wowheadID": "19405",
+      "slot": "chest",
+      "cost": 325,
+      "tags": [],
+      "source": "blackwing lair",
+      "notes": ""
+    },
+    {
+      "name": "Malistar's Defender",
+      "wowheadID": "17106",
+      "slot": "shield",
+      "cost": 150,
+      "tags": [],
+      "source": "molten core",
+      "notes": ""
+    },
+    {
+      "name": "Mana Igniting Cord",
+      "wowheadID": "19136",
+      "slot": "waist",
+      "cost": 200,
+      "tags": [],
+      "source": "molten core",
+      "notes": ""
+    },
+    {
+      "name": "Manastorm Leggings",
+      "wowheadID": "18872",
+      "slot": "legs",
+      "cost": 0,
+      "tags": [],
+      "source": "molten core",
+      "notes": ""
+    },
+    {
+      "name": "Mantle of Prophecy",
+      "wowheadID": "16816",
+      "slot": "shoulder",
+      "cost": 0,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core",
+      "notes": ""
+    },
+    {
+      "name": "Mantle of the Blackwing Cabal",
+      "wowheadID": "19370",
+      "slot": "shoulder",
+      "cost": 450,
+      "tags": [],
+      "source": "blackwing lair",
+      "notes": "Mage/Warlock Priority"
+    },
+    {
+      "name": "Mature Black Dragon Sinew",
+      "wowheadID": "18705",
+      "slot": "",
+      "cost": 300,
+      "tags": [],
+      "source": "onyxia",
+      "notes": ""
+    },
+    {
+      "name": "Mature Blue Dragon Sinew",
+      "wowheadID": "18704",
+      "slot": "",
       "cost": 0,
       "tags": [],
       "source": "world",
       "notes": ""
     },
     {
-      "name": "Eskhandar's Pelt",
-      "wowheadID": "18204",
-      "slot": "back",
+      "name": "Medallion of Steadfast Might",
+      "wowheadID": "17065",
+      "slot": "neck",
       "cost": 0,
       "tags": [],
-      "source": "world",
+      "source": "molten core",
       "notes": ""
     },
     {
-      "name": "Eskhandar's Left Claw",
-      "wowheadID": "18202",
-      "slot": "off hand",
-      "cost": 0,
+      "name": "Mind Quickening Gem",
+      "wowheadID": "19339",
+      "slot": "trinket",
+      "cost": 450,
       "tags": [],
-      "source": "world",
+      "source": "blackwing lair",
+      "notes": ""
+    },
+    {
+      "name": "Mish'undare, Circlet of the Mind Flayer",
+      "wowheadID": "19375",
+      "slot": "head",
+      "cost": 450,
+      "tags": [],
+      "source": "blackwing lair",
+      "notes": "Spell DPS"
+    },
+    {
+      "name": "Natural Alignment Crystal",
+      "wowheadID": "19344",
+      "slot": "trinket",
+      "cost": 225,
+      "tags": [],
+      "source": "blackwing lair",
+      "notes": ""
+    },
+    {
+      "name": "Neltharion's Tear",
+      "wowheadID": "19379",
+      "slot": "trinket",
+      "cost": 750,
+      "tags": [],
+      "source": "blackwing lair",
+      "notes": "Mage/Warlock Priority"
+    },
+    {
+      "name": "Nemesis Belt",
+      "wowheadID": "16933",
+      "slot": "waist",
+      "cost": 0,
+      "tags": [
+        "t2"
+      ],
+      "source": "blackwing lair",
+      "notes": ""
+    },
+    {
+      "name": "Nemesis Boots",
+      "wowheadID": "16927",
+      "slot": "feet",
+      "cost": 0,
+      "tags": [
+        "t2"
+      ],
+      "source": "blackwing lair",
+      "notes": ""
+    },
+    {
+      "name": "Nemesis Bracers",
+      "wowheadID": "16934",
+      "slot": "wrist",
+      "cost": 0,
+      "tags": [
+        "t2"
+      ],
+      "source": "blackwing lair",
+      "notes": ""
+    },
+    {
+      "name": "Nemesis Gloves",
+      "wowheadID": "16928",
+      "slot": "hands",
+      "cost": 0,
+      "tags": [
+        "t2"
+      ],
+      "source": "blackwing lair",
+      "notes": ""
+    },
+    {
+      "name": "Nemesis Leggings",
+      "wowheadID": "16930",
+      "slot": "legs",
+      "cost": 0,
+      "tags": [
+        "t2"
+      ],
+      "source": "molten core",
+      "notes": ""
+    },
+    {
+      "name": "Nemesis Robes",
+      "wowheadID": "16931",
+      "slot": "chest",
+      "cost": 0,
+      "tags": [
+        "t2"
+      ],
+      "source": "blackwing lair",
+      "notes": ""
+    },
+    {
+      "name": "Nemesis Skullcap",
+      "wowheadID": "16929",
+      "slot": "head",
+      "cost": 0,
+      "tags": [
+        "t2"
+      ],
+      "source": "onyxia",
+      "notes": ""
+    },
+    {
+      "name": "Nemesis Spaulders",
+      "wowheadID": "16932",
+      "slot": "shoulder",
+      "cost": 0,
+      "tags": [
+        "t2"
+      ],
+      "source": "blackwing lair",
+      "notes": ""
+    },
+    {
+      "name": "Netherwind Belt",
+      "wowheadID": "16818",
+      "slot": "waist",
+      "cost": 0,
+      "tags": [
+        "t2"
+      ],
+      "source": "blackwing lair",
+      "notes": ""
+    },
+    {
+      "name": "Netherwind Bindings",
+      "wowheadID": "16918",
+      "slot": "wrist",
+      "cost": 0,
+      "tags": [
+        "t2"
+      ],
+      "source": "blackwing lair",
+      "notes": ""
+    },
+    {
+      "name": "Netherwind Boots",
+      "wowheadID": "16912",
+      "slot": "feet",
+      "cost": 0,
+      "tags": [
+        "t2"
+      ],
+      "source": "blackwing lair",
+      "notes": ""
+    },
+    {
+      "name": "Netherwind Crown",
+      "wowheadID": "16914",
+      "slot": "head",
+      "cost": 0,
+      "tags": [
+        "t2"
+      ],
+      "source": "onyxia",
+      "notes": ""
+    },
+    {
+      "name": "Netherwind Gloves",
+      "wowheadID": "16913",
+      "slot": "hands",
+      "cost": 0,
+      "tags": [
+        "t2"
+      ],
+      "source": "blackwing lair",
+      "notes": ""
+    },
+    {
+      "name": "Netherwind Mantle",
+      "wowheadID": "16917",
+      "slot": "shoulder",
+      "cost": 0,
+      "tags": [
+        "t2"
+      ],
+      "source": "blackwing lair",
+      "notes": ""
+    },
+    {
+      "name": "Netherwind Pants",
+      "wowheadID": "16915",
+      "slot": "legs",
+      "cost": 0,
+      "tags": [
+        "t2"
+      ],
+      "source": "molten core",
+      "notes": ""
+    },
+    {
+      "name": "Netherwind Robes",
+      "wowheadID": "16916",
+      "slot": "chest",
+      "cost": 0,
+      "tags": [
+        "t2"
+      ],
+      "source": "blackwing lair",
       "notes": ""
     },
     {
       "name": "Nightslayer Belt",
       "wowheadID": "16827",
       "slot": "waist",
+      "cost": 0,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core",
+      "notes": ""
+    },
+    {
+      "name": "Nightslayer Boots",
+      "wowheadID": "16824",
+      "slot": "feet",
+      "cost": 0,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core",
+      "notes": ""
+    },
+    {
+      "name": "Nightslayer Bracelets",
+      "wowheadID": "16825",
+      "slot": "wrist",
+      "cost": 0,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core",
+      "notes": ""
+    },
+    {
+      "name": "Nightslayer Chestpiece",
+      "wowheadID": "16820",
+      "slot": "chest",
+      "cost": 0,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core",
+      "notes": ""
+    },
+    {
+      "name": "Nightslayer Cover",
+      "wowheadID": "16821",
+      "slot": "head",
+      "cost": 0,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core",
+      "notes": ""
+    },
+    {
+      "name": "Nightslayer Gloves",
+      "wowheadID": "16826",
+      "slot": "hands",
+      "cost": 0,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core",
+      "notes": ""
+    },
+    {
+      "name": "Nightslayer Pants",
+      "wowheadID": "16822",
+      "slot": "legs",
       "cost": 0,
       "tags": [
         "t1"
@@ -2584,83 +2422,209 @@
       "notes": ""
     },
     {
-      "name": "Leggings of Arcane Supremacy",
-      "wowheadID": "18545",
+      "name": "Obsidian Edged Blade",
+      "wowheadID": "18822",
+      "slot": "two-hand",
+      "cost": 0,
+      "tags": [],
+      "source": "molten core",
+      "notes": ""
+    },
+    {
+      "name": "Onslaught Girdle",
+      "wowheadID": "19137",
+      "slot": "waist",
+      "cost": 200,
+      "tags": [],
+      "source": "molten core",
+      "notes": ""
+    },
+    {
+      "name": "Pants of Prophecy",
+      "wowheadID": "16814",
       "slot": "legs",
+      "cost": 0,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core",
+      "notes": ""
+    },
+    {
+      "name": "Pauldrons of Might",
+      "wowheadID": "16868",
+      "slot": "shoulder",
+      "cost": 0,
+      "tags": [
+        "t1"
+      ],
+      "source": "molten core",
+      "notes": ""
+    },
+    {
+      "name": "Pauldrons of Transcendence",
+      "wowheadID": "16924",
+      "slot": "shoulder",
+      "cost": 0,
+      "tags": [
+        "t2"
+      ],
+      "source": "blackwing lair",
+      "notes": ""
+    },
+    {
+      "name": "Pauldrons of Wrath",
+      "wowheadID": "16961",
+      "slot": "shoulder",
+      "cost": 0,
+      "tags": [
+        "t2"
+      ],
+      "source": "blackwing lair",
+      "notes": ""
+    },
+    {
+      "name": "Pendant of the Fallen Dragon",
+      "wowheadID": "19371",
+      "slot": "neck",
+      "cost": 200,
+      "tags": [],
+      "source": "blackwing lair",
+      "notes": ""
+    },
+    {
+      "name": "Perdition's Blade",
+      "wowheadID": "18816",
+      "slot": "one-hand",
+      "cost": 400,
+      "tags": [],
+      "source": "molten core",
+      "notes": ""
+    },
+    {
+      "name": "Prestor's Talisman of Connivery",
+      "wowheadID": "19377",
+      "slot": "neck",
+      "cost": 450,
+      "tags": [],
+      "source": "blackwing lair",
+      "notes": "Rogue/E-Shaman/Hunter Priority"
+    },
+    {
+      "name": "Primalist's Linked Legguards",
+      "wowheadID": "19401",
+      "slot": "legs",
+      "cost": 0,
+      "tags": [],
+      "source": "blackwing lair",
+      "notes": ""
+    },
+    {
+      "name": "Primalist's Linked Waistguard",
+      "wowheadID": "19393",
+      "slot": "waist",
+      "cost": 50,
+      "tags": [],
+      "source": "blackwing lair",
+      "notes": ""
+    },
+    {
+      "name": "Puissant Cape",
+      "wowheadID": "18541",
+      "slot": "back",
       "cost": 0,
       "tags": [],
       "source": "world",
       "notes": ""
     },
     {
-      "name": "Halo of Transcendence",
-      "wowheadID": "16921",
-      "slot": "head",
-      "cost": 350,
-      "tags": [
-        "t2"
-      ],
+      "name": "Pure Elementium Band",
+      "wowheadID": "19382",
+      "slot": "finger",
+      "cost": 450,
+      "tags": [],
+      "source": "blackwing lair",
+      "notes": ""
+    },
+    {
+      "name": "Quick Strike Ring",
+      "wowheadID": "18821",
+      "slot": "finger",
+      "cost": 300,
+      "tags": [],
+      "source": "molten core",
+      "notes": ""
+    },
+    {
+      "name": "Red Dragonscale Protector",
+      "wowheadID": "19348",
+      "slot": "shield",
+      "cost": 200,
+      "tags": [],
+      "source": "blackwing lair",
+      "notes": ""
+    },
+    {
+      "name": "Rejuvenating Gem",
+      "wowheadID": "19395",
+      "slot": "trinket",
+      "cost": 750,
+      "tags": [],
+      "source": "blackwing lair",
+      "notes": ""
+    },
+    {
+      "name": "Ring of Binding",
+      "wowheadID": "18813",
+      "slot": "finger",
+      "cost": 0,
+      "tags": [],
       "source": "onyxia",
       "notes": ""
     },
     {
-      "name": "Stormrage Legguards",
-      "wowheadID": "16901",
-      "slot": "legs",
-      "cost": 350,
-      "tags": [
-        "t2"
-      ],
-      "source": "molten core",
-      "notes": ""
-    },
-    {
-      "name": "Stormrage Pauldrons",
-      "wowheadID": "16902",
-      "slot": "shoulder",
-      "cost": 300,
-      "tags": [
-        "t2"
-      ],
-      "source": "blackwing lair",
-      "notes": ""
-    },
-    {
-      "name": "Venomous Totem",
-      "wowheadID": "19342",
-      "slot": "trinket",
-      "cost": 0,
+      "name": "Ring of Blackrock",
+      "wowheadID": "19397",
+      "slot": "finger",
+      "cost": 100,
       "tags": [],
       "source": "blackwing lair",
       "notes": ""
     },
     {
-      "name": "Wild Growth Spaulders",
-      "wowheadID": "18810",
-      "slot": "shoulder",
-      "cost": 300,
-      "tags": [
-        "bis"
-      ],
-      "source": "molten core",
-      "notes": ""
-    },
-    {
-      "name": "Seal of the Archmagus",
-      "wowheadID": "17110",
+      "name": "Ring of Entropy",
+      "wowheadID": "18543",
       "slot": "finger",
       "cost": 0,
       "tags": [],
+      "source": "world",
+      "notes": ""
+    },
+    {
+      "name": "Ring of Spell Power",
+      "wowheadID": "19147",
+      "slot": "finger",
+      "cost": 300,
+      "tags": [],
       "source": "molten core",
       "notes": ""
     },
     {
-      "name": "The Untamed Blade",
-      "wowheadID": "19334",
-      "slot": "two-hand",
+      "name": "Ringo's Blizzard Boots",
+      "wowheadID": "19438",
+      "slot": "feet",
       "cost": 300,
       "tags": [],
       "source": "blackwing lair",
+      "notes": ""
+    },
+    {
+      "name": "Robe of Volatile Power",
+      "wowheadID": "19145",
+      "slot": "chest",
+      "cost": 300,
+      "tags": [],
+      "source": "molten core",
       "notes": ""
     },
     {
@@ -2675,124 +2639,33 @@
       "notes": ""
     },
     {
-      "name": "Therazane's Link",
-      "wowheadID": "19380",
-      "slot": "waist",
-      "cost": 200,
-      "tags": [],
-      "source": "blackwing lair",
-      "notes": ""
-    },
-    {
-      "name": "Wristguards of True Flight",
-      "wowheadID": "18812",
-      "slot": "wrist",
-      "cost": 80,
-      "tags": [],
-      "source": "molten core",
-      "notes": ""
-    },
-    {
-      "name": "Stormrage Boots",
-      "wowheadID": "16898",
-      "slot": "feet",
-      "cost": 225,
-      "tags": [
-        "t2"
-      ],
-      "source": "blackwing lair",
-      "notes": ""
-    },
-    {
-      "name": "Robe of Volatile Power",
-      "wowheadID": "19145",
+      "name": "Robes of Transcendence",
+      "wowheadID": "16923",
       "slot": "chest",
-      "cost": 300,
+      "cost": 0,
       "tags": [
-        "bis"
+        "t2"
       ],
-      "source": "molten core",
+      "source": "blackwing lair",
       "notes": ""
     },
     {
-      "name": "Quick Strike Ring",
-      "wowheadID": "18821",
-      "slot": "finger",
-      "cost": 300,
-      "tags": [
-        "bis"
-      ],
-      "source": "molten core",
-      "notes": ""
-    },
-    {
-      "name": "Rejuvenating Gem",
-      "wowheadID": "19395",
+      "name": "Rune of Metamorphosis",
+      "wowheadID": "19340",
       "slot": "trinket",
-      "cost": 750,
-      "tags": [
-        "bis"
-      ],
-      "source": "blackwing lair",
-      "notes": ""
-    },
-    {
-      "name": "Ring of Blackrock",
-      "wowheadID": "19397",
-      "slot": "finger",
-      "cost": 100,
+      "cost": 50,
       "tags": [],
       "source": "blackwing lair",
       "notes": ""
     },
     {
-      "name": "Taut Dragonhide Gloves",
-      "wowheadID": "19390",
-      "slot": "hands",
+      "name": "Sabatons of Might",
+      "wowheadID": "16862",
+      "slot": "feet",
       "cost": 0,
-      "tags": [],
-      "source": "blackwing lair",
-      "notes": ""
-    },
-    {
-      "name": "Stormrage Bracers",
-      "wowheadID": "16904",
-      "slot": "wrist",
-      "cost": 180,
       "tags": [
-        "t2"
+        "t1"
       ],
-      "source": "blackwing lair",
-      "notes": ""
-    },
-    {
-      "name": "Vis'kag the Bloodletter",
-      "wowheadID": "17075",
-      "slot": "one-hand",
-      "cost": 400,
-      "tags": [
-        "bis"
-      ],
-      "source": "onyxia",
-      "notes": ""
-    },
-    {
-      "name": "Stormrage Handguards",
-      "wowheadID": "16899",
-      "slot": "hands",
-      "cost": 225,
-      "tags": [
-        "t2"
-      ],
-      "source": "blackwing lair",
-      "notes": ""
-    },
-    {
-      "name": "Sorcerous Dagger",
-      "wowheadID": "18878",
-      "slot": "main hand",
-      "cost": 0,
-      "tags": [],
       "source": "molten core",
       "notes": ""
     },
@@ -2800,7 +2673,7 @@
       "name": "Sabatons of Wrath",
       "wowheadID": "16965",
       "slot": "feet",
-      "cost": 225,
+      "cost": 0,
       "tags": [
         "t2"
       ],
@@ -2808,25 +2681,21 @@
       "notes": ""
     },
     {
-      "name": "Ring of Spell Power",
-      "wowheadID": "19147",
-      "slot": "finger",
-      "cost": 300,
-      "tags": [
-        "bis"
-      ],
+      "name": "Sabatons of the Flamewalker",
+      "wowheadID": "19144",
+      "slot": "feet",
+      "cost": 0,
+      "tags": [],
       "source": "molten core",
       "notes": ""
     },
     {
-      "name": "Shard of the Scale",
-      "wowheadID": "17064",
-      "slot": "trinket",
-      "cost": 400,
-      "tags": [
-        "bis"
-      ],
-      "source": "onyxia",
+      "name": "Salamander Scale Pants",
+      "wowheadID": "18875",
+      "slot": "legs",
+      "cost": 0,
+      "tags": [],
+      "source": "molten core",
       "notes": ""
     },
     {
@@ -2839,56 +2708,36 @@
       "notes": ""
     },
     {
-      "name": "The Eye of Divinity",
-      "wowheadID": "18646",
-      "slot": "trinket",
-      "cost": 600,
+      "name": "Sash of Whispered Secrets",
+      "wowheadID": "18809",
+      "slot": "waist",
+      "cost": 0,
       "tags": [],
       "source": "molten core",
-      "notes": ""
-    },
-    {
-      "name": "Shimmering Geta",
-      "wowheadID": "19391",
-      "slot": "feet",
-      "cost": 0,
-      "tags": [],
-      "source": "blackwing lair",
-      "notes": ""
-    },
-    {
-      "name": "Waistband of Wrath",
-      "wowheadID": "16960",
-      "slot": "waist",
-      "cost": 180,
-      "tags": [
-        "t2"
-      ],
-      "source": "blackwing lair",
-      "notes": ""
-    },
-    {
-      "name": "Spineshatter",
-      "wowheadID": "19335",
-      "slot": "main hand",
-      "cost": 0,
-      "tags": [],
-      "source": "blackwing lair",
-      "notes": ""
-    },
-    {
-      "name": "Styleen's Impeding Scarab",
-      "wowheadID": "19431",
-      "slot": "trinket",
-      "cost": 0,
-      "tags": [],
-      "source": "blackwing lair",
       "notes": ""
     },
     {
       "name": "Scrolls of Blinding Light",
       "wowheadID": "19343",
       "slot": "trinket",
+      "cost": 0,
+      "tags": [],
+      "source": "blackwing lair",
+      "notes": ""
+    },
+    {
+      "name": "Seal of the Archmagus",
+      "wowheadID": "17110",
+      "slot": "finger",
+      "cost": 0,
+      "tags": [],
+      "source": "molten core",
+      "notes": ""
+    },
+    {
+      "name": "Shadow Wing Focus Staff",
+      "wowheadID": "19355",
+      "slot": "two-hand",
       "cost": 0,
       "tags": [],
       "source": "blackwing lair",
@@ -2904,219 +2753,6 @@
       "notes": ""
     },
     {
-      "name": "Talisman of Ephemeral Power",
-      "wowheadID": "18820",
-      "slot": "trinket",
-      "cost": 400,
-      "tags": [
-        "bis"
-      ],
-      "source": "molten core",
-      "notes": "Spell DPS"
-    },
-    {
-      "name": "Rune of Metamorphosis",
-      "wowheadID": "19340",
-      "slot": "trinket",
-      "cost": 50,
-      "tags": [],
-      "source": "blackwing lair",
-      "notes": ""
-    },
-    {
-      "name": "Vambraces of Prophecy",
-      "wowheadID": "16819",
-      "slot": "wrist",
-      "cost": 0,
-      "tags": [
-        "t1"
-      ],
-      "source": "molten core",
-      "notes": ""
-    },
-    {
-      "name": "Stormrage Belt",
-      "wowheadID": "16903",
-      "slot": "waist",
-      "cost": 180,
-      "tags": [
-        "t2"
-      ],
-      "source": "blackwing lair",
-      "notes": ""
-    },
-    {
-      "name": "Ringo's Blizzard Boots",
-      "wowheadID": "19438",
-      "slot": "feet",
-      "cost": 300,
-      "tags": [
-        "bis"
-      ],
-      "source": "blackwing lair",
-      "notes": ""
-    },
-    {
-      "name": "Red Dragonscale Protector",
-      "wowheadID": "19348",
-      "slot": "shield",
-      "cost": 200,
-      "tags": [],
-      "source": "blackwing lair",
-      "notes": ""
-    },
-    {
-      "name": "Salamander Scale Pants",
-      "wowheadID": "18875",
-      "slot": "legs",
-      "cost": 0,
-      "tags": [
-        "bis"
-      ],
-      "source": "molten core",
-      "notes": ""
-    },
-    {
-      "name": "Robes of Transcendence",
-      "wowheadID": "16923",
-      "slot": "chest",
-      "cost": 325,
-      "tags": [
-        "t2"
-      ],
-      "source": "blackwing lair",
-      "notes": ""
-    },
-    {
-      "name": "Wristguards of Stability",
-      "wowheadID": "19146",
-      "slot": "wrist",
-      "cost": 200,
-      "tags": [
-        "bis"
-      ],
-      "source": "molten core",
-      "notes": ""
-    },
-    {
-      "name": "Taut Dragonhide Belt",
-      "wowheadID": "19396",
-      "slot": "waist",
-      "cost": 0,
-      "tags": [],
-      "source": "blackwing lair",
-      "notes": ""
-    },
-    {
-      "name": "Sabatons of the Flamewalker",
-      "wowheadID": "19144",
-      "slot": "feet",
-      "cost": 0,
-      "tags": [],
-      "source": "molten core",
-      "notes": ""
-    },
-    {
-      "name": "Pure Elementium Band",
-      "wowheadID": "19382",
-      "slot": "finger",
-      "cost": 450,
-      "tags": [
-        "bis"
-      ],
-      "source": "blackwing lair",
-      "notes": ""
-    },
-    {
-      "name": "Stormrage Cover",
-      "wowheadID": "16900",
-      "slot": "head",
-      "cost": 350,
-      "tags": [
-        "t2"
-      ],
-      "source": "onyxia",
-      "notes": ""
-    },
-    {
-      "name": "Stormrage Chestguard",
-      "wowheadID": "16897",
-      "slot": "chest",
-      "cost": 325,
-      "tags": [
-        "t2"
-      ],
-      "source": "blackwing lair",
-      "notes": ""
-    },
-    {
-      "name": "Sash of Whispered Secrets",
-      "wowheadID": "18809",
-      "slot": "waist",
-      "cost": 0,
-      "tags": [
-        "bis"
-      ],
-      "source": "molten core",
-      "notes": ""
-    },
-    {
-      "name": "Shadow Wing Focus Staff",
-      "wowheadID": "19355",
-      "slot": "two-hand",
-      "cost": 0,
-      "tags": [],
-      "source": "blackwing lair",
-      "notes": ""
-    },
-    {
-      "name": "The Black Book",
-      "wowheadID": "19337",
-      "slot": "trinket",
-      "cost": 0,
-      "tags": [],
-      "source": "blackwing lair",
-      "notes": ""
-    },
-    {
-      "name": "Puissant Cape",
-      "wowheadID": "18541",
-      "slot": "back",
-      "cost": 0,
-      "tags": [
-        "bis"
-      ],
-      "source": "world",
-      "notes": ""
-    },
-    {
-      "name": "Sulfuron Ingot",
-      "wowheadID": "17203",
-      "slot": "",
-      "cost": 0,
-      "tags": [],
-      "source": "molten core",
-      "notes": ""
-    },
-    {
-      "name": "Ring of Entropy",
-      "wowheadID": "18543",
-      "slot": "finger",
-      "cost": 0,
-      "tags": [],
-      "source": "world",
-      "notes": ""
-    },
-    {
-      "name": "Ring of Binding",
-      "wowheadID": "18813",
-      "slot": "finger",
-      "cost": 0,
-      "tags": [],
-      "source": "onyxia",
-      "notes": ""
-    },
-    {
       "name": "Shard of the Flame",
       "wowheadID": "17082",
       "slot": "trinket",
@@ -3126,35 +2762,22 @@
       "notes": ""
     },
     {
-      "name": "Staff of Dominance",
-      "wowheadID": "18842",
-      "slot": "two-hand",
-      "cost": 0,
+      "name": "Shard of the Scale",
+      "wowheadID": "17064",
+      "slot": "trinket",
+      "cost": 400,
       "tags": [],
-      "source": "molten core",
+      "source": "onyxia",
       "notes": ""
     },
     {
-      "name": "Sabatons of Might",
-      "wowheadID": "16862",
+      "name": "Shimmering Geta",
+      "wowheadID": "19391",
       "slot": "feet",
       "cost": 0,
-      "tags": [
-        "t1"
-      ],
-      "source": "molten core",
-      "notes": ""
-    },
-    {
-      "name": "Staff of the Shadow Flame",
-      "wowheadID": "19356",
-      "slot": "two-hand",
-      "cost": 900,
-      "tags": [
-        "bis"
-      ],
+      "tags": [],
       "source": "blackwing lair",
-      "notes": "Mage/Warlock Priority"
+      "notes": ""
     },
     {
       "name": "Shroud of Pure Thought",
@@ -3170,19 +2793,195 @@
       "wowheadID": "19131",
       "slot": "feet",
       "cost": 0,
-      "tags": [
-        "bis"
-      ],
+      "tags": [],
       "source": "world",
       "notes": ""
     },
     {
-      "name": "Typhoon",
-      "wowheadID": "18542",
+      "name": "Sorcerous Dagger",
+      "wowheadID": "18878",
+      "slot": "main hand",
+      "cost": 0,
+      "tags": [],
+      "source": "molten core",
+      "notes": ""
+    },
+    {
+      "name": "Spinal Reaper",
+      "wowheadID": "17104",
       "slot": "two-hand",
       "cost": 0,
       "tags": [],
-      "source": "world",
+      "source": "molten core",
+      "notes": ""
+    },
+    {
+      "name": "Spineshatter",
+      "wowheadID": "19335",
+      "slot": "main hand",
+      "cost": 0,
+      "tags": [],
+      "source": "blackwing lair",
+      "notes": ""
+    },
+    {
+      "name": "Staff of Dominance",
+      "wowheadID": "18842",
+      "slot": "two-hand",
+      "cost": 0,
+      "tags": [],
+      "source": "molten core",
+      "notes": ""
+    },
+    {
+      "name": "Staff of the Shadow Flame",
+      "wowheadID": "19356",
+      "slot": "two-hand",
+      "cost": 900,
+      "tags": [],
+      "source": "blackwing lair",
+      "notes": "Mage/Warlock Priority"
+    },
+    {
+      "name": "Stormrage Belt",
+      "wowheadID": "16903",
+      "slot": "waist",
+      "cost": 0,
+      "tags": [
+        "t2"
+      ],
+      "source": "blackwing lair",
+      "notes": ""
+    },
+    {
+      "name": "Stormrage Boots",
+      "wowheadID": "16898",
+      "slot": "feet",
+      "cost": 0,
+      "tags": [
+        "t2"
+      ],
+      "source": "blackwing lair",
+      "notes": ""
+    },
+    {
+      "name": "Stormrage Bracers",
+      "wowheadID": "16904",
+      "slot": "wrist",
+      "cost": 0,
+      "tags": [
+        "t2"
+      ],
+      "source": "blackwing lair",
+      "notes": ""
+    },
+    {
+      "name": "Stormrage Chestguard",
+      "wowheadID": "16897",
+      "slot": "chest",
+      "cost": 0,
+      "tags": [
+        "t2"
+      ],
+      "source": "blackwing lair",
+      "notes": ""
+    },
+    {
+      "name": "Stormrage Cover",
+      "wowheadID": "16900",
+      "slot": "head",
+      "cost": 0,
+      "tags": [
+        "t2"
+      ],
+      "source": "onyxia",
+      "notes": ""
+    },
+    {
+      "name": "Stormrage Handguards",
+      "wowheadID": "16899",
+      "slot": "hands",
+      "cost": 0,
+      "tags": [
+        "t2"
+      ],
+      "source": "blackwing lair",
+      "notes": ""
+    },
+    {
+      "name": "Stormrage Legguards",
+      "wowheadID": "16901",
+      "slot": "legs",
+      "cost": 0,
+      "tags": [
+        "t2"
+      ],
+      "source": "molten core",
+      "notes": ""
+    },
+    {
+      "name": "Stormrage Pauldrons",
+      "wowheadID": "16902",
+      "slot": "shoulder",
+      "cost": 0,
+      "tags": [
+        "t2"
+      ],
+      "source": "blackwing lair",
+      "notes": ""
+    },
+    {
+      "name": "Striker's Mark",
+      "wowheadID": "17069",
+      "slot": "ranged",
+      "cost": 200,
+      "tags": [],
+      "source": "molten core",
+      "notes": "Rogue/Warrior Priority"
+    },
+    {
+      "name": "Styleen's Impeding Scarab",
+      "wowheadID": "19431",
+      "slot": "trinket",
+      "cost": 0,
+      "tags": [],
+      "source": "blackwing lair",
+      "notes": ""
+    },
+    {
+      "name": "Sulfuron Ingot",
+      "wowheadID": "17203",
+      "slot": "",
+      "cost": 0,
+      "tags": [],
+      "source": "molten core",
+      "notes": ""
+    },
+    {
+      "name": "Talisman of Ephemeral Power",
+      "wowheadID": "18820",
+      "slot": "trinket",
+      "cost": 400,
+      "tags": [],
+      "source": "molten core",
+      "notes": "Spell DPS"
+    },
+    {
+      "name": "Taut Dragonhide Belt",
+      "wowheadID": "19396",
+      "slot": "waist",
+      "cost": 0,
+      "tags": [],
+      "source": "blackwing lair",
+      "notes": ""
+    },
+    {
+      "name": "Taut Dragonhide Gloves",
+      "wowheadID": "19390",
+      "slot": "hands",
+      "cost": 0,
+      "tags": [],
+      "source": "blackwing lair",
       "notes": ""
     },
     {
@@ -3195,6 +2994,51 @@
       "notes": ""
     },
     {
+      "name": "The Black Book",
+      "wowheadID": "19337",
+      "slot": "trinket",
+      "cost": 0,
+      "tags": [],
+      "source": "blackwing lair",
+      "notes": ""
+    },
+    {
+      "name": "The Eye of Divinity",
+      "wowheadID": "18646",
+      "slot": "trinket",
+      "cost": 600,
+      "tags": [],
+      "source": "molten core",
+      "notes": ""
+    },
+    {
+      "name": "The Untamed Blade",
+      "wowheadID": "19334",
+      "slot": "two-hand",
+      "cost": 300,
+      "tags": [],
+      "source": "blackwing lair",
+      "notes": ""
+    },
+    {
+      "name": "Therazane's Link",
+      "wowheadID": "19380",
+      "slot": "waist",
+      "cost": 200,
+      "tags": [],
+      "source": "blackwing lair",
+      "notes": ""
+    },
+    {
+      "name": "Typhoon",
+      "wowheadID": "18542",
+      "slot": "two-hand",
+      "cost": 0,
+      "tags": [],
+      "source": "world",
+      "notes": ""
+    },
+    {
       "name": "Unmelting Ice Girdle",
       "wowheadID": "18547",
       "slot": "waist",
@@ -3204,34 +3048,70 @@
       "notes": ""
     },
     {
-      "name": "Striker's Mark",
-      "wowheadID": "17069",
-      "slot": "ranged",
-      "cost": 200,
+      "name": "Vambraces of Prophecy",
+      "wowheadID": "16819",
+      "slot": "wrist",
+      "cost": 0,
       "tags": [
-        "bis"
+        "t1"
       ],
       "source": "molten core",
-      "notes": "Rogue/Warrior Priority"
+      "notes": ""
     },
     {
-      "name": "Spinal Reaper",
-      "wowheadID": "17104",
-      "slot": "two-hand",
+      "name": "Venomous Totem",
+      "wowheadID": "19342",
+      "slot": "trinket",
       "cost": 0,
+      "tags": [],
+      "source": "blackwing lair",
+      "notes": ""
+    },
+    {
+      "name": "Vis'kag the Bloodletter",
+      "wowheadID": "17075",
+      "slot": "one-hand",
+      "cost": 400,
+      "tags": [],
+      "source": "onyxia",
+      "notes": ""
+    },
+    {
+      "name": "Waistband of Wrath",
+      "wowheadID": "16960",
+      "slot": "waist",
+      "cost": 0,
+      "tags": [
+        "t2"
+      ],
+      "source": "blackwing lair",
+      "notes": ""
+    },
+    {
+      "name": "Wild Growth Spaulders",
+      "wowheadID": "18810",
+      "slot": "shoulder",
+      "cost": 300,
       "tags": [],
       "source": "molten core",
       "notes": ""
     },
     {
-      "name": "Helmet of Ten Storms",
-      "wowheadID": "16947",
-      "slot": "head",
-      "cost": 350,
-      "tags": [
-        "t2"
-      ],
-      "source": "onyxia",
+      "name": "Wristguards of Stability",
+      "wowheadID": "19146",
+      "slot": "wrist",
+      "cost": 200,
+      "tags": [],
+      "source": "molten core",
+      "notes": ""
+    },
+    {
+      "name": "Wristguards of True Flight",
+      "wowheadID": "18812",
+      "slot": "wrist",
+      "cost": 80,
+      "tags": [],
+      "source": "molten core",
       "notes": ""
     }
   ]

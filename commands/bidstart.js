@@ -55,8 +55,23 @@ module.exports = {
     // content.setImage(item.getWowheadLink(itemObj));
     content.setDescription(item.getWowheadLink(itemObj));
     content.addField("cost", itemObj.cost, false);
+    
+    if (itemObj.cost == 0) {
+      let dkpPrioCost = itemObj.dkpPrioCost;
+      if (!dkpPrioCost) dkpPrioCost = 50;
+      content.addField("dkp-prio-cost", dkpPrioCost, false);
+    }
     if (itemObj.notes) {
       content.addField("notes", itemObj.notes, false);
+    }
+    if (itemObj.tags.includes("t2")) {
+      content.addField("type", "t2", false);
+    }
+    if (itemObj.tags.includes("t3")) {
+      content.addField("type", "t3", false);
+    }
+    if (itemObj.tags.includes("t2.5")) {
+      content.addField("type", "t2.5", false);
     }
     
     content.addField(reactionTagName, "bidscreen", true);
