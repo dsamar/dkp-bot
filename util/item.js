@@ -158,9 +158,12 @@ function bidReact(message, dkpUsername, reactName, isOfficer) {
   if (lockState && lockState.value == "true") {
     return Promise.resolve();
   }
-
-  let cost = parseFloat(getField(embed, "cost").value);
-  let dkpPrioCost = parseFloat(getField(embed, "dkp-prio-cost").value);
+  let dkpPrioCost = parseFloat(getField(embed, "cost").value);
+  // If the prio cost is set specifically, use that instead.
+  let dkpPrioCostField = getField(embed, "dkp-prio-cost");
+  if (dkpPrioCostField) {
+    dkpPrioCost = parseFloat(dkpPrioCostField.value);
+  }
   let typeField = getField(embed, "type");
 
   // Get user dkp value

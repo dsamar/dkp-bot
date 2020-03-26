@@ -54,8 +54,8 @@ client.on("ready", () => {
 });
 
 function handleError(error, user, message) {
-  logger.log("error", error);
-  const errorContent = "ERROR: ```" + error.message + "```";
+  logger.log("error", error.stack);
+  const errorContent = "ERROR: ```" + error.message + "\n" + error.stack + "```";
   // Officer-triggered error messages go in channel chat.
   if (message && message.member.roles.some(role => role.name === officerRole)) {
     return message.channel.send(errorContent);
