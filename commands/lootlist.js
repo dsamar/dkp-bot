@@ -4,12 +4,8 @@ const sanitize = require('../util/sanitize.js');
 const loot = require('../util/loot.js');
 const {table} = require('table')
 
-function serialize(lootEntryList) {
-  const data = lootEntryList.map((item) => {
-    return item.itemName + ', ' + item.cost + ', ' + item.user;
-  });
-  return '```' + data.join('\n') + '```';
-}
+const MESSAGE_LIMIT = 1900;
+
 
 module.exports = {
 	name: 'lootlist',
@@ -24,8 +20,28 @@ module.exports = {
 		const channel = message.guild.channels.find(ch => ch.name === lootLogChannel);
     
     return loot.lootList(message.guild.id, raidID).then((list) => {
-      const content = serialize(list);
-      return channel.send(content);
+      const data = list.map((item) => {
+        return item.itemName + ', ' + item.cost + ', ' + item.user;
+      });
+      let serialized = data.join('\n');
+      let serializedLines = serialized.split("\n");
+      const numMessages = Math.ceil(serialized.length / MESSAGE_LIMIT);
+      const chunkSize = Math.floor(serializedLines.length / numMessages);
+      const promiseList = [];
+      for (let i = 0; i < numMessages; i++) {
+        let currentContent = "";
+        if (i != numMessages - 1) {
+          currentContent =
+            "```" +
+            serializedLines.slice(i * chunkSize, (i + 1) * chunkSize).join("\n") +
+            "```";
+        } else {
+          currentContent =
+            "```" + serializedLines.slice(i * chunkSize).join("\n") + "```";
+        }
+          promiseList.push(channel.send(currentContent));
+      }
+      return Promise.all(promiseList);
     })
 	},
 };
